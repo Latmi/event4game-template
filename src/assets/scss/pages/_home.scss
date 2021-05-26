@@ -8,7 +8,7 @@
     //background-image: url("../../assets/img/people.svg");
     width: 402px;
     height: 417px;
-    @media screen and (max-width: 1439px) and (min-width: 444px) {
+    @media screen and (max-width: 1439px) and (min-width: 769px) {
       width: calc(402px * 0.7);
       height: calc(417px * 0.7);
       margin-top: -15rem;
