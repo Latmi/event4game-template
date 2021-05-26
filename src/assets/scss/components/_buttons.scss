@@ -1,0 +1,246 @@
+.btn-red {
+  background-color: $red;
+  color: white;
+  border-radius: 3rem;
+  padding: 4px 17px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.btn-bordered {
+  border-radius: 30px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 48px;
+  cursor: pointer;
+  background-color: transparent;
+  &.filled {
+    background-color: white;
+    color: $red;
+    border: 3px solid white;
+    &:hover {
+      color: $hover-red;
+    }
+    &:focus {
+      color: $focus-red;
+    }
+  }
+  &.filled-red {
+    background-color: $background-red;
+    color: white;
+    border: 3px solid $background-red;
+    &:hover {
+      color: $hover-red;
+      background-color: white;
+    }
+    &:focus {
+      color: $focus-red;
+      background-color: white;
+      border: 3px solid $focus-red;
+
+    }
+  }
+  &.filled-light {
+    background-color: white;
+    color: $background-red;
+    border: 3px solid white;
+    &:hover {
+      color: $hover-red;
+    }
+    &:focus {
+      color: $focus-red;
+    }
+  }
+  &.filled-light-2 {
+    background-color: white;
+    color: $background-red-light;
+    border: 3px solid white;
+    &:hover {
+      color: $hover-red;
+    }
+    &:focus {
+      color: $focus-red;
+    }
+  }
+
+  &.white {
+    color: white;
+    border: 3px solid white;
+    &:hover {
+      color: $hover-red;
+      border-color: $hover-red;
+    }
+    &:focus {
+      border-color: $focus-red;
+      color: $focus-red;
+    }
+
+  }
+  &.red {
+    color: $background-red;
+    border: 3px solid $background-red;
+    &:hover {
+      color: $hover-red;
+      border-color: $hover-red;
+    }
+    &:focus {
+      border-color: $focus-red;
+      color: $focus-red;
+    }
+
+  }
+  &.white-text {
+    color: white;
+    border: 3px solid white;
+    &:hover {
+      color: white;
+    }
+    &:focus {
+      border-color: $focus-red;
+      color: white;
+    }
+  }
+  &.s-large {
+    width: 408px;
+    height: 70px;
+    font-size: 23px;
+    font-weight: 600;
+    @media screen and (max-width: 1290px) and (min-width: 320px) {
+      width: 90%;
+    }
+    @media screen and (max-width: 920px) and (min-width: 769px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 450px) and (min-width: 0px) {
+      font-size: 16px;
+      height: 50px;
+      line-height: 45px;
+    }
+
+  }
+
+  &.s-medium {
+    width: 308px;
+    height: 54px;
+    font-size: 20px;
+    font-weight: 600;
+    @media screen and (max-width: 950px) and (min-width: 769px) {
+      width: 250px;
+      font-size: 16px;
+    }
+    @media screen and (max-width: 768px) and (min-width: 568px) {
+      width: 378px;
+      font-size: 22px;
+    }
+    @media screen and (max-width: 380px) and (min-width: 320px) {
+      width: 90%;
+      font-size: 18px;
+    }
+  }
+  &.s-small {
+    width: 199px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    line-height: 43px;
+    @media screen and (max-width: 950px) and (min-width: 769px) {
+      font-size: 16px;
+      width: 160px;
+    }
+    @media screen and (max-width: 768px) and (min-width: 568px) {
+      font-size: 22px;
+      width: 260px;
+      height: 60px;
+      line-height: 55px;
+    }
+    @media screen and (max-width: 429px) and (min-width: 0px) {
+      width: 100%;
+    }
+  }
+  &.s-content {
+    width: 95%;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    line-height: 43px;
+  }
+  &.s-content-50 {
+    width: 48%;
+    height: 48px;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    line-height: 43px;
+
+  }
+
+}
+
+.js-select {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 3px solid white;
+  border-radius: 30px;
+  padding: 5px 10px;
+  height: 48px;
+  overflow: hidden;
+  @media screen and (max-width: 950px) and (min-width: 769px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 768px) and (min-width: 568px) {
+    height: 60px;
+    font-size: 22px;
+    line-height: 33px;
+  }
+  &.selected {
+    border: 3px solid $focus-red;
+    background-color: $focus-red;
+  }
+  &.collapsed {
+    background-color: $background-red;
+    height: unset;
+    overflow: auto;
+    .js-select_item {
+      &:first-child {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+  &_item {
+
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid white;
+    &:first-child {
+      padding-right: 0;
+      border-bottom: none;
+      &:hover {
+        color: white;
+      }
+    }
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .label {
+      padding-left: 1rem;
+    }
+    .value {
+      img {
+        margin-left: 10px;
+      }
+    }
+    &:hover {
+      color: $hover-red;
+    }
+  }
+}

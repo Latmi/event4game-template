@@ -1,0 +1,164 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+  background-color: $background-red;
+    &_menu {
+      @media screen and (max-width: 768px) and (min-width: 0px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      @media screen and (max-width: 320px) and (min-width: 0px) {
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      padding: 2rem 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $red-hr;
+      .item {
+        color: white;
+        font-size: 18px;
+        @media screen and (max-width: 992px) and (min-width: 768px) {
+          font-size: 15px;
+        }
+        @media screen and (max-width: 768px) and (min-width: 0px) {
+          padding: 10px;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    &_content {
+      div {
+        @media screen and (max-width: 541px) and (min-width: 0px) {
+          text-align: center;
+        }
+      }
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.8rem;
+      color: white;
+      @media screen and (max-width: 768px) and (min-width: 0px) {
+        flex-wrap: wrap;
+      }
+      @media screen and (max-width: 541px) and (min-width: 0px) {
+        flex-direction: column;
+      }
+      .text {
+        width: 30%;
+        p {
+          @media screen and (max-width: 992px) and (min-width: 769px) {
+            font-size: 14px;
+            width: 100%;
+            margin: 1rem auto;
+          }
+        }
+        @media screen and (max-width: 992px) and (min-width: 769px) {
+          width: 40%;
+          margin-left: 60px;
+        }
+        @media screen and (max-width: 768px) and (min-width: 0px) {
+          width: 80%;
+          order: 3;
+          margin: 1rem auto;
+        }
+        @media screen and (max-width: 320px) and (min-width: 0px) {
+          width: 100%;
+          order: 3;
+          margin: 1rem auto;
+        }
+
+      }
+      .contacts {
+        .row {
+          @media screen and (max-width: 541px) and (min-width: 0px) {
+            justify-content: center;
+            flex-direction: row-reverse;
+          }
+          .col-sm-12 {
+            @media screen and (max-width: 541px) and (min-width: 0px) {
+              order: 1;
+              margin-top: 1rem;
+            }
+            @media screen and (max-width: 566px) and (min-width: 542px) {
+              flex: 2;
+            }
+
+          }
+          .col-6 {
+            @media screen and (max-width: 541px) and (min-width: 0px) {
+              order: 2;
+            }
+
+          }
+        }
+        .col-6 {
+          @media screen and (max-width: 992px) and (min-width: 769px) {
+            padding: 5px;
+          }
+          @media screen and (max-width: 650px) and (min-width: 0px) {
+            padding: 5px;
+          }
+          &:first-child {
+            @media screen and (max-width: 833px) and (min-width: 769px) {
+              margin-left: 5rem;
+            }
+
+          }
+        }
+        .insta {
+          @media screen and (max-width: 541px) and (min-width: 0px) {
+            text-align: left;
+          }
+          @media screen and (max-width: 566px) and (min-width: 542px) {
+            flex: 1;
+          }
+        }
+        .vk {
+          @media screen and (max-width: 541px) and (min-width: 0px) {
+            text-align: right;
+          }
+          @media screen and (max-width: 566px) and (min-width: 542px) {
+            flex: 1;
+          }
+        }
+        .mail, .phone {
+          text-align: right;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 130%;
+          @media screen and (max-width: 992px) and (min-width: 769px) {
+            font-weight: 500;
+            line-height: 150%;
+          }
+          @media screen and (max-width: 541px) and (min-width: 0px) {
+            text-align: center;
+          }
+          a {
+            text-decoration: none;
+          }
+        }
+        .mail {
+          @media screen and (max-width: 992px) and (min-width: 769px) {
+            font-size: 16px;
+            font-weight: 500;
+          }
+          @media screen and (max-width: 563px) and (min-width: 542px) {
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+      }
+      p {
+        margin-top: .5rem;
+        text-align: center;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+}

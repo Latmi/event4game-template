@@ -1,0 +1,72 @@
+/**
+ * Basic typography style for copy text
+ A solution for this problem is percentage. Usually default font-size of the browser is 16px.
+ Setting font-size: 100% will make 1rem = 16px. But it will make calculations a little difficult.
+ A better way is to set font-size: 62.5%. Because 62.5% of 16px is 10px. Which makes 1rem = 10px.
+ CALCULATION: Element font size in rem x 16px;
+ */
+
+ // Body text
+// -------------------------
+
+// html {
+//   font-size: 62.5%;
+// }
+
+body {
+  font-size: 0.875rem;
+  font-weight: $font-weight-light;
+  font-family: $font-family-heebo;
+  letter-spacing: 0.4px;
+  line-height: 1.5rem;
+  color: $body-color;
+
+  @include media-breakpoint-up(lg) {
+    @include font-size(1rem);
+  }
+}
+
+h1 {
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.04em;
+  &.h1 {
+    color: white;
+  }
+}
+
+.cases, .all-team-building, .service-working, .workshop, .exchange {
+  h2 {
+    text-transform: uppercase;
+    color: $black;
+    font-size: 32px;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    @media screen and (max-width: 543px) and (min-width: 503px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 502px) and (min-width: 470px) {
+      font-size: 28px;
+    }
+    @media screen and (max-width: 469px) and (min-width: 440px) {
+      font-size: 26px;
+    }
+    @media screen and (max-width: 439px) and (min-width: 380px) {
+      font-size: 22px;
+    }
+    @media screen and (max-width: 379px) and (min-width: 0px) {
+      font-size: 18px;
+    }
+
+  }
+  h3 {
+    text-transform: uppercase;
+    color: $black;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    @media screen and (max-width: 439px) and (min-width: 0px) {
+      font-size: 18px;
+    }
+  }
+}

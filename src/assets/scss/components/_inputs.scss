@@ -1,0 +1,69 @@
+/* для элемента input c type="radio" */
+.custom-radio>input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+/* для элемента label связанного с .custom-radio */
+.custom-radio>span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+/* стили при наведении курсора на радио */
+.custom-radio>input:not(:disabled):not(:checked)+span:hover {
+  background-color: $hover-red;
+  border-color: $hover-red;
+}
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio>input:not(:disabled):active+span {
+  background-color: $focus-red!important;
+  border-color: $focus-red!important;
+}
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio>input:checked+span {
+  background-color: $focus-red!important;
+  border-color: $focus-red!important;
+}
+
+form {
+  &.modal-type {
+    input {
+      width: 100%;
+      height: 57px;
+      margin-bottom: 1rem;
+      border-radius: 40px;
+      border: none;
+      font-size: 18px;
+      padding-left: 20px;
+      box-shadow: inset 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+      &:focus {
+        outline: none;
+        box-shadow: inset 0px 0px 4px 2px rgba(177, 27, 32, 100);
+      }
+      &.required {
+        &.error {
+          &::placeholder {
+            color: $background-red;
+          }
+        }
+      }
+      @media screen and (max-width: 992px) and (min-width: 769px) {
+
+      }
+    }
+    textarea {
+      border-radius: 30px;
+      box-shadow: inset 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+      width: 100%;
+      border: none;
+      font-size: 18px;
+      padding: 10px 20px;
+      &:focus {
+        outline: none;
+        box-shadow: inset 0px 0px 4px 2px rgba(177, 27, 32, 100);
+      }
+    }
+  }
+
+}

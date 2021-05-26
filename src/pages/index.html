@@ -1,0 +1,547 @@
+---
+layout: default
+title: Home
+---
+<header class="forms">
+  <div class="background-ellipse-red left"></div>
+  <div class="background-ellipse-red right"></div>
+  <div class="container">
+    <div class="row">
+      <div  class="col-xxl-7 col-xl-6 col-lg-6">
+        <h1 class="h1">Федеральный портал<br> по подбору<br> тимбилдинга</h1>
+        <button id="show_form_brief" class="mt-4 btn-bordered white s-medium">Подобрать тимбилдинг</button>
+        <div class="gears">
+
+        </div>
+      </div>
+
+      <div  class="col-xxl-5 col-xl-6 col-lg-6">
+        <form action="" id="set-program">
+          <div class="title">Соберите свою программу</div>
+          <div class="subtitle">Выберите статус</div>
+          <div class="group">
+            <label class="custom-radio">
+              <input type="radio" name="status" value="Онлайн">
+              <span class="btn-bordered white-text s-small">Онлайн</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="status" value="Оффлайн">
+              <span class="btn-bordered white-text s-small">Оффлайн</span>
+            </label>
+          </div>
+          <div class="custom-select-area">
+            <input type="hidden" name="players_count" value="до 50">
+            <div class="js-select">
+              <div class="js-select_item init">
+                <div class="label">Количество игроков</div>
+                <div class="value"><span>до 50</span> <img src="assets/img/arrow-down-white.svg" alt=""></div>
+              </div>
+              <div class="js-select_item">
+                <div class="label"></div>
+                <div class="value"><span>до 100</span></div>
+              </div>
+              <div class="js-select_item">
+                <div class="label"></div>
+                <div class="value"><span>до 150</span></div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subtitle">Выберите категорию</div>
+          <div class="group">
+            <label class="custom-radio">
+              <input type="radio" name="category" value="Интеллект">
+              <span class="btn-bordered white-text s-small">Интеллект</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="category" value="Творческий">
+              <span class="btn-bordered white-text s-small">Творческий</span>
+            </label>
+          </div>
+          <div class="group">
+            <label class="custom-radio">
+              <input type="radio" name="category" value="Тематический">
+              <span class="btn-bordered white-text s-small">Тематический</span>
+            </label>
+            <div>
+              <input type="hidden" name="category">
+              <div class="js-select" data-name="category">
+                <div class="js-select_item init">
+                  <div class="value"><span>Все категории</span> <img src="assets/img/arrow-down-white.svg" alt=""></div>
+                </div>
+                <div class="js-select_item">
+                  <div class="value"><span>Онлайн</span></div>
+                </div>
+                <div class="js-select_item">
+                  <div class="value"><span>Оффлайн</span></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="group mt-4">
+            <button id="show_form_feedback_desc" class="btn-bordered filled s-medium" type="submit">Подобрать программу</button>
+          </div>
+        </form>
+      </div>
+      <div class="graph-animate text-center">
+        <img class="people" src="assets/img/people.svg" alt="">
+        <img class="left rotate" src="assets/img/gear-left.svg" alt="">
+        <img class="top rotate" src="assets/img/gear-top.svg" alt="">
+        <img class="bottom rotate" src="assets/img/gear-bottom.svg" alt="">
+        <img class="right rotate" src="assets/img/gear-right.svg" alt="">
+
+      </div>
+    </div>
+    <div class="trash"><img src="assets/img/trash.svg" alt=""><span class="count">2</span></div>
+  </div>
+</header>
+<section class="advantages container">
+  <div class="row">
+    <div class="col-sm-3 col-6 advantages_item">
+      <div class="advantages_item_image">
+        <img src="assets/img/providers.svg" alt=""><br>
+      </div>
+      <div class="advantages_item_text">
+        Ведущие провайдеры
+      </div>
+    </div>
+    <div class="col-sm-3 col-6 advantages_item">
+      <div class="advantages_item_image">
+        <img src="assets/img/direct_prices.svg" alt=""><br>
+      </div>
+      <div class="advantages_item_text">
+        Прямые цены
+      </div>
+    </div>
+    <div class="col-sm-3 col-6 advantages_item">
+      <div class="advantages_item_image">
+        <img src="assets/img/convenient_service.svg" alt=""><br>
+      </div>
+      <div class="advantages_item_text">
+        Удобный сервис
+      </div>
+    </div>
+    <div class="col-sm-3 col-6 advantages_item">
+      <div class="advantages_item_image">
+        <img src="assets/img/all_formats.svg" alt=""><br>
+      </div>
+      <div class="advantages_item_text">
+        Все форматы
+      </div>
+    </div>
+  </div>
+</section>
+<section class="all-team-building">
+  <div class="container">
+  <h2>Весь тимбилдинг здесь</h2>
+  <div class="team-building-carousel owl-carousel owl-theme">
+    <div class="item">
+      <div>
+        <img src="assets/img/card_01.svg" alt="">
+      </div>
+      <div class="text">Онлайн</div>
+    </div>
+    <div class="item">
+      <div>
+        <img src="assets/img/card_02.svg" alt="">
+      </div>
+      <div class="text">Оффлайн</div>
+    </div>
+    <div class="item">
+      <div>
+        <img src="assets/img/card_03.svg" alt="">
+      </div>
+      <div class="text">Активный</div>
+    </div>
+    <div class="item">
+      <div>
+        <img src="assets/img/card_04.svg" alt="">
+      </div>
+      <div class="text">Интеллектуальный</div>
+    </div>
+    <div class="item">
+      <div>
+        <img src="assets/img/card_05.svg" alt="">
+      </div>
+      <div class="text">Спортивный</div>
+    </div>
+    <div class="item">
+      <div>
+        <img src="assets/img/card_06.svg" alt="">
+      </div>
+      <div class="text">Творческий</div>
+    </div>
+    <div class="item">
+      <div>
+        <img src="assets/img/card_07.svg" alt="">
+      </div>
+      <div class="text">Тематический</div>
+    </div>
+    <div class="item">
+      <div>
+        <img src="assets/img/card_08.svg" alt="">
+      </div>
+      <div class="text">Приключения</div>
+    </div>
+    <div class="item">
+      <div>
+        <img src="assets/img/card_09.svg" alt="">
+      </div>
+      <div class="text">Тест</div>
+    </div>
+    <div class="item">
+      <div>
+        <img src="assets/img/card_10.svg" alt="">
+      </div>
+      <div class="text">Fun</div>
+    </div>
+    <div class="item">
+      <div>
+        <img src="assets/img/card_11.svg" alt="">
+      </div>
+      <div class="text">Бизнес</div>
+    </div>
+    <div class="item">
+      <div>
+        <img src="assets/img/card_12.svg" alt="">
+      </div>
+      <div class="text">Digital</div>
+    </div>
+  </div>
+  </div>
+
+</section>
+<section class="cases">
+  <div class="background-ellipse left"></div>
+  <div class="background-ellipse right"></div>
+  <div class="background-ellipse bottom"></div>
+  <div class="container">
+    <h2>Кейсы</h2>
+    <div class="cases-carousel owl-carousel owl-theme">
+      <div class="item">
+        <div class="images"><img class="preview" src="assets/img/video-preview.jpg" alt=""><a href="https://youtube.com"><img class="play" src="assets/img/play-video.svg" alt=""></a></div>
+        <div class="text">
+          <div class="name">Стимпанк</div>
+          <div class="desc">
+            Эта программа так хороша, что приведет вас в экстаз.
+            И вы точно ее купите. Обещаем. Программа перенесет вас в мир Стимпанка, в котором уже успешно командообразовалить +100500 человек.
+            Не слышали о ней? Тогда скорее смотрите видео!
+          </div>
+          <button class="btn-bordered red s-medium">Хочу так же</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="images"><img class="preview" src="assets/img/video-preview.jpg" alt=""><a href="https://youtube.com"><img class="play" src="assets/img/play-video.svg" alt=""></a></div>
+        <div class="text">
+          <div class="name">Стимпанк</div>
+          <div class="desc">
+            Эта программа так хороша, что приведет вас в экстаз.
+            И вы точно ее купите. Обещаем. Программа перенесет вас в мир Стимпанка, в котором уже успешно командообразовалить +100500 человек.
+            Не слышали о ней? Тогда скорее смотрите видео!
+          </div>
+          <button class="btn-bordered red s-medium">Хочу так же</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="images"><img class="preview" src="assets/img/video-preview.jpg" alt=""><a href="https://youtube.com"><img class="play" src="assets/img/play-video.svg" alt=""></a></div>
+        <div class="text">
+          <div class="name">Стимпанк</div>
+          <div class="desc">
+            Эта программа так хороша, что приведет вас в экстаз.
+            И вы точно ее купите. Обещаем. Программа перенесет вас в мир Стимпанка, в котором уже успешно командообразовалить +100500 человек.
+            Не слышали о ней? Тогда скорее смотрите видео!
+          </div>
+          <button class="btn-bordered red s-medium">Хочу так же</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="images"><img class="preview" src="assets/img/video-preview.jpg" alt=""><img class="play" src="assets/img/play-video.svg" alt=""></div>
+        <div class="text">
+          <div class="name">Стимпанк</div>
+          <div class="desc">
+            Эта программа так хороша, что приведет вас в экстаз.
+            И вы точно ее купите. Обещаем. Программа перенесет вас в мир Стимпанка, в котором уже успешно командообразовалить +100500 человек.
+            Не слышали о ней? Тогда скорее смотрите видео!
+          </div>
+          <button class="btn-bordered red s-medium">Хочу так же</button>
+        </div>
+      </div>
+      <!--Не удалять этих двух Игорьков-->
+      <div class="item"></div>
+      <div class="item"></div>
+      <!--Не удалять этих двух Игорьков-->
+    </div>
+  </div>
+
+</section>
+<section class="service-working">
+  <div class="container">
+    <h2>Как работает сервис?</h2>
+    <div class="d-flex justify-content-between flex-lg-wrap">
+
+
+      <div class="block light">
+        <div class="title">Провайдеру</div>
+        <div class="content">
+          <div class="image"><img src="assets/img/provider-01.svg" alt=""></div>
+          <div class="desc">Разместите заявку, предоставьте материалы и пройдите модерацию</div>
+        </div>
+        <hr>
+        <div class="content">
+          <div class="image"><img src="assets/img/provider-02.svg" alt=""></div>
+          <div class="desc">Сервис направит вам поступившие заявки от клиентов</div>
+        </div>
+        <button class="btn-bordered filled-light-2 s-large mt-5" type="submit">Оставить заявку</button>
+      </div>
+      <div class="block">
+        <div class="title">Клиенту</div>
+        <div class="content">
+          <div class="image"><img src="assets/img/client-01.svg" alt=""></div>
+          <div class="desc">Заполните параметры фильтра
+            и выберите подходящие программы</div>
+        </div>
+        <hr>
+        <div class="content">
+          <div class="image"><img src="assets/img/client-02.svg" alt=""></div>
+          <div class="desc">Сервис свяжет вас с провайдером понравившихся программ напрямую без комиссии</div>
+        </div>
+        <button class="btn-bordered filled-light s-large mt-5" type="submit">Подобрать программу</button>
+      </div>
+      <div class="block-counter">
+        <div class="number">57</div>
+        <div class="text">Программ в каталоге</div>
+      </div>
+      <div class="block-counter">
+        <div class="number">7</div>
+        <div class="text">Провайдеров на портале</div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<section class="workshop">
+  <div class="background-ellipse right"></div>
+  <div class="container">
+    <h2><span>Реквизитная</span> мастерская</h2>
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="text">
+          <p>Game4Event предоставляет услуги по изготовлению игрового реквизита. Сервис сотрудничает с лучшими мастерскими и предлагает оптимальные условия заказа оборудования.</p>
+          <p>Специализация производителей позволяет реализовать практически любую профильную задачу в кратчайшие сроки.</p>
+        </div>
+        <div class="action">
+          <button class="btn-bordered filled-red s-medium mt-4" type="submit">Весь реквизит</button>
+        </div>
+
+      </div>
+      <div class="col-xl-5 offset-xl-1 col-lg-6 text-left mt-lg-0 mt-5">
+        <div class="title">Вы можете:</div>
+        <div class="content">
+          <div class="image"><img src="assets/img/workshop-01.svg" alt=""></div>
+          <div class="desc">Заказать изготовление реквизита по своим эскизам</div>
+        </div>
+        <div class="content">
+          <div class="image"><img src="assets/img/workshop-02.svg" alt=""></div>
+          <div class="desc">Купить готовый реквизит, представленный на портале</div>
+        </div>
+        <div class="content">
+          <div class="image"><img src="assets/img/workshop-03.svg" alt=""></div>
+          <div class="desc">Заказать реплики реквизита программ из каталога
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="workshop-carousel owl-carousel owl-theme">
+          <div class="item">
+            <div>
+              <img src="assets/img/workshop-slider-01.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Сеть</div>
+              <div class="desc">
+                Очень крутая штука, которая отработала вот в таком вот кейсе.
+                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
+              </div>
+            </div>
+            <div class="action">
+              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="assets/img/workshop-slider-01.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Сеть</div>
+              <div class="desc">
+                Очень крутая штука, которая отработала вот в таком вот кейсе.
+                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
+              </div>
+            </div>
+            <div class="action">
+              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="assets/img/workshop-slider-01.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Сеть</div>
+              <div class="desc">
+                Очень крутая штука, которая отработала вот в таком вот кейсе.
+                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
+              </div>
+            </div>
+            <div class="action">
+              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="assets/img/workshop-slider-01.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Сеть</div>
+              <div class="desc">
+                Очень крутая штука, которая отработала вот в таком вот кейсе.
+                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
+              </div>
+            </div>
+            <div class="action">
+              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="assets/img/workshop-slider-01.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Сеть</div>
+              <div class="desc">
+                Очень крутая штука, которая отработала вот в таком вот кейсе.
+                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
+              </div>
+            </div>
+            <div class="action">
+              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="exchange">
+  <div class="container">
+    <h2>Биржа идей</h2>
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <p>Game4Event – это удобная площадка, на которой каждый провайдер тимбилдинга может продать или купить идею или оборудование</p>
+        <div class="buttons">
+          <button class="btn-bordered filled-red s-content-50 mt-xl-4 mt-lg-1" type="submit">Купить идею</button>
+          <button class="btn-bordered red s-content-50 mt-xl-4 mt-lg-4 mt-md-0 mt-3" type="submit">Продать идею</button>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12"><img class="image-info" src="assets/img/exchange-01.svg" alt=""></div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h3>Преимущества покупки идеи</h3>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="image"><img src="assets/img/exchange-s-01.svg" alt=""></div>
+        <div class="title">Интеллектуальные права</div>
+        <div class="desc">Правомочное использование интеллектуальной собственности</div>
+      </div>
+      <div class="col-xl-3 col-md-6 mt-md-0 mt-4">
+        <div class="image"><img src="assets/img/exchange-s-02.svg" alt=""></div>
+        <div class="title">Покупка опыта</div>
+        <div class="desc">Применение готового решения и использование многолетнего опыта</div>
+      </div>
+      <div class="col-xl-3 col-md-6 mt-xl-0 mt-lg-5 mt-md-0 mt-4">
+        <div class="image"><img src="assets/img/exchange-s-03.svg" alt=""></div>
+        <div class="title">Техническая поддержка</div>
+        <div class="desc">Консультации авторов идеи для лучшей релизации</div>
+      </div>
+      <div class="col-xl-3 col-md-6 mt-xl-0 mt-lg-5 mt-md-0 mt-4">
+        <div class="image"><img src="assets/img/exchange-s-04.svg" alt=""></div>
+        <div class="title">Экономия времени</div>
+        <div class="desc">Готовая творческая и техническая документация</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h3>Идея для покупки</h3>
+      </div>
+      <div class="col-12">
+        <div class="exchange-carousel owl-carousel owl-theme">
+          <div class="item">
+            <div>
+              <img src="assets/img/exchange-slider-01.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Цепная реакция</div>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="assets/img/exchange-slider-01.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Цепная реакция</div>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="assets/img/exchange-slider-01.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Цепная реакция</div>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="assets/img/exchange-slider-01.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Цепная реакция</div>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="assets/img/exchange-slider-01.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Цепная реакция</div>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="assets/img/exchange-slider-01.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Цепная реакция</div>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="assets/img/exchange-slider-01.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Цепная реакция</div>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="assets/img/exchange-slider-01.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Цепная реакция</div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
