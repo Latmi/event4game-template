@@ -10,6 +10,7 @@
 }
 
 .btn-bordered {
+
   border-radius: 30px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -139,6 +140,7 @@
       font-size: 18px;
     }
   }
+
   &.s-small {
     width: 199px;
     height: 48px;
@@ -177,10 +179,69 @@
     line-height: 43px;
 
   }
+  &.s-select {
+    width: 240px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    line-height: 43px;
+
+  }
 
 }
 
 .js-select {
+  &.red {
+    border: 3px solid $background-red;
+    color: $background-red;
+    .js-select_item {
+
+      &:first-child {
+        padding-right: 0;
+        border-bottom: none;
+
+        &:hover {
+          color: $background-red;
+
+        }
+      }
+    }
+    &.collapsed {
+      background-color: white;
+      height: unset;
+      overflow: auto;
+      .js-select_item {
+        &:first-child {
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+    &.selected {
+      border: 3px solid $background-red;
+      background-color: white;
+      color: $background-red;
+    }
+
+  }
+  &.s-medium {
+    width: 240px;
+    font-size: 18px;
+    font-weight: 500;
+    @media screen and (max-width: 950px) and (min-width: 769px) {
+      font-size: 16px;
+      width: 160px;
+    }
+    @media screen and (max-width: 768px) and (min-width: 568px) {
+      font-size: 22px;
+      width: 260px;
+      height: 60px;
+      line-height: 55px;
+    }
+    @media screen and (max-width: 429px) and (min-width: 0px) {
+      width: 100%;
+    }
+  }
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -242,5 +303,20 @@
     &:hover {
       color: $hover-red;
     }
+
+    &.center-value {
+      display: block;
+      .value {
+        position: relative;
+        text-align: center;
+
+        img {
+          position: absolute;
+          right: 8px;
+          top: 9px;
+        }
+      }
+    }
+
   }
 }

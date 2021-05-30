@@ -1,0 +1,11 @@
+.team-building {
+  padding-top: 2rem;
+  background-color: $gray-100;
+  h2 {
+    text-align: center;
+  }
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -72,7 +72,19 @@ $(function () {
 
   const owlTeamBuilding = $('.team-building-carousel');
 
-  const owlTBItemsSlideBy = 4;
+  let owlTBItemsSlideBy = 4;
+  const windowWidth = $(window).width();
+  if (windowWidth < 993 && windowWidth >= 769) {
+    owlTBItemsSlideBy = 3;
+  }
+  if (windowWidth < 769 && windowWidth >= 567) {
+    owlTBItemsSlideBy = 2;
+  }
+  if (windowWidth < 567 && windowWidth >= 320) {
+    owlTBItemsSlideBy = 1;
+  }
+
+
   owlTeamBuilding.owlCarousel({
     onChanged: makeCounterOwl,
     onInitialized: makeCounterOwl,
@@ -85,7 +97,7 @@ $(function () {
     margin: 60,
     responsive:{
       320:{
-        items:1.4
+        items:1.4,
       },
       567:{
         items:2.5
@@ -105,7 +117,7 @@ $(function () {
 
   function makeCounterOwl(e) {
     const count = e.item.count / owlTBItemsSlideBy;
-    const index = Math.floor(e.item.index / count) + 1;
+    const index = Math.ceil((e.item.index + 1) / owlTBItemsSlideBy);
     if (count > 1) {
       $('.team-building-carousel .owl-dots')
         .removeClass('disabled')
@@ -210,6 +222,13 @@ $(function () {
   owlCases.owlCarousel({
     onChanged: changeActiveSlide,
     onInitialized: setFirstActiveSlide,
+    onDragged: function(e) {
+    const count = e.item.count;
+    const index = e.item.index;
+      if (index + 2 >= count) {
+        owlCases.trigger('to.owl.carousel', [index - 1, 300]);
+      }
+    },
 
     items: 2.3,
     slideBy: 1,
@@ -272,15 +291,20 @@ $(function () {
 
   function makeCounterOwlWorkshop(e) {
     const count = Math.ceil(e.item.count / owlTBItemsSlideBy);
-    let index = Math.ceil(e.item.index / count);
-    if (index === 0) {
-      index = 1;
+    let index = Math.ceil((e.item.index + 1) / owlTBItemsSlideBy);
+    const del = e.item.count % count;
+
+    console.log('del', del)
+
+    if (del > 0) {
+      if (e.item.index + 1 + del === e.item.count) {
+        index++;
+      }
+      if (e.item.index > 0 && index % owlTBItemsSlideBy === 1) {
+        index = e.item.index;
+      }
     }
 
-    console.log(e.item.count);
-    console.log(e.item.index);
-    console.log('count', e.item.count / owlTBItemsSlideBy);
-    console.log('index', (e.item.index / count));
     if (count > 1) {
       $('.workshop-carousel .owl-dots')
         .removeClass('disabled')
@@ -325,10 +349,18 @@ $(function () {
 
   function makeCounterOwlExchange(e) {
     const count = Math.ceil(e.item.count / owlTBItemsSlideBy);
-    let index = Math.ceil(e.item.index / count);
-    if (index === 0) {
-      index = 1;
+    let index = Math.ceil((e.item.index + 1) / owlTBItemsSlideBy);
+    const del = e.item.count % count;
+
+    if (del > 0) {
+      if (e.item.index + 1 + del === e.item.count) {
+        index++;
+      }
+      if (e.item.index > 0 && index % owlTBItemsSlideBy === 1) {
+        index = e.item.index;
+      }
     }
+
 
     if (count > 1) {
       $('.exchange-carousel .owl-dots')
@@ -408,78 +440,80 @@ $(function () {
     });
   }
 
-  const $gearTop = $('.graph-animate .top');
-  const $gearLeft = $('.graph-animate .left');
-  const $gearBottom = $('.graph-animate .bottom');
-  const $gearRight = $('.graph-animate .right');
-  const $people = $('.graph-animate .people');
+  if ($('.graph-animate').length) {
 
-  const gearTop = {};
-  const gearLeft = {};
-  const gearBottom = {};
-  const gearRight = {};
-  gearTop.width = $gearTop.width();
-  gearLeft.width = $gearLeft.width();
-  gearBottom.width = $gearBottom.width();
-  gearRight.width = $gearRight.width();
-  const people= $people.width();
+    const $gearTop = $('.graph-animate .top');
+    const $gearLeft = $('.graph-animate .left');
+    const $gearBottom = $('.graph-animate .bottom');
+    const $gearRight = $('.graph-animate .right');
+    const $people = $('.graph-animate .people');
 
-  gearTop.css = {top: $gearTop.css('top').replace('px', ''), left: $gearTop.css('left').replace('px', '')};
-  gearLeft.css = {top: $gearLeft.css('top').replace('px', ''), left: $gearLeft.css('left').replace('px', '')};
-  gearBottom.css = {top: $gearBottom.css('top').replace('px', ''), left: $gearBottom.css('left').replace('px', '')};
-  gearRight.css = {top: $gearRight.css('top').replace('px', ''), left: $gearRight.css('left').replace('px', '')};
+    const gearTop = {};
+    const gearLeft = {};
+    const gearBottom = {};
+    const gearRight = {};
+    gearTop.width = $gearTop.width();
+    gearLeft.width = $gearLeft.width();
+    gearBottom.width = $gearBottom.width();
+    gearRight.width = $gearRight.width();
+    const people = $people.width();
 
-  function resizeGraph(arrElements, arrValues, factor) {
-    $people.width(people * factor);
-    arrElements.forEach(function (el, index) {
-      el.width(arrValues[index].width * factor);
-      el.css({top: arrValues[index].css.top * factor, left: arrValues[index].css.left * factor});
-    });
-  }
+    gearTop.css = {top: $gearTop.css('top').replace('px', ''), left: $gearTop.css('left').replace('px', '')};
+    gearLeft.css = {top: $gearLeft.css('top').replace('px', ''), left: $gearLeft.css('left').replace('px', '')};
+    gearBottom.css = {top: $gearBottom.css('top').replace('px', ''), left: $gearBottom.css('left').replace('px', '')};
+    gearRight.css = {top: $gearRight.css('top').replace('px', ''), left: $gearRight.css('left').replace('px', '')};
 
-  const arElements = [$gearTop, $gearLeft, $gearBottom, $gearRight];
-  const arValues = [gearTop, gearLeft, gearBottom, gearRight];
+    function resizeGraph(arrElements, arrValues, factor) {
+      $people.width(people * factor);
+      arrElements.forEach(function (el, index) {
+        el.width(arrValues[index].width * factor);
+        el.css({top: arrValues[index].css.top * factor, left: arrValues[index].css.left * factor});
+      });
+    }
 
-  const winWidt = $('body').width() + 15;
+    const arElements = [$gearTop, $gearLeft, $gearBottom, $gearRight];
+    const arValues = [gearTop, gearLeft, gearBottom, gearRight];
 
-  if (winWidt => 1440) {
-    resizeGraph(arElements, arValues, 1);
-  }
-  if (winWidt < 1440 && winWidt > 768) {
-    resizeGraph(arElements, arValues, 0.7);
-  }
-  if (winWidt <= 917 && winWidt > 768) {
-    resizeGraph(arElements, arValues, 0.5);
-  }
-  if (winWidt <= 917 && winWidt > 768) {
-    resizeGraph(arElements, arValues, 0.5);
-  }
-  if (winWidt <= 458 && winWidt > 0) {
-    resizeGraph(arElements, arValues, 0.8);
-  }
+    const winWidt = $('body').width() + 15;
 
-
-  $(window).resize(function () {
-
-    const windowW = $('body').width() + 15;
-
-    if (windowW => 1440) {
+    if (winWidt => 1440) {
       resizeGraph(arElements, arValues, 1);
     }
-    if (windowW < 1440 && windowW > 917) {
+    if (winWidt < 1440 && winWidt > 768) {
       resizeGraph(arElements, arValues, 0.7);
     }
-    if (windowW <= 917 && windowW > 768) {
+    if (winWidt <= 917 && winWidt > 768) {
       resizeGraph(arElements, arValues, 0.5);
     }
-    if (windowW <= 458 && windowW > 0) {
+    if (winWidt <= 917 && winWidt > 768) {
+      resizeGraph(arElements, arValues, 0.5);
+    }
+    if (winWidt <= 458 && winWidt > 0) {
       resizeGraph(arElements, arValues, 0.8);
     }
 
 
-  });
+    $(window).resize(function () {
+
+      const windowW = $('body').width() + 15;
+
+      if (windowW => 1440) {
+        resizeGraph(arElements, arValues, 1);
+      }
+      if (windowW < 1440 && windowW > 917) {
+        resizeGraph(arElements, arValues, 0.7);
+      }
+      if (windowW <= 917 && windowW > 768) {
+        resizeGraph(arElements, arValues, 0.5);
+      }
+      if (windowW <= 458 && windowW > 0) {
+        resizeGraph(arElements, arValues, 0.8);
+      }
 
 
+    });
+
+  }
 
 
 
