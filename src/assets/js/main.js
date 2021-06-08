@@ -63,6 +63,21 @@ $(function () {
       $select.removeClass('collapsed');
     }
   });
+  //Сворачиваем селект2 при клике вне области
+  // отображаем выбранное значение
+  $(document).click(function(event) {
+    const $target = $(event.target);
+    const $select = $('.js-select2');
+    if(!$target.closest('.selected').length && $select.hasClass('collapsed')) {
+      $('.js-select2').each(function () {
+        if ($(this).hasClass('collapsed')) {
+          const val = $(this).find('input').val();
+          $(this).find('.value').text(val);
+        }
+      });
+      $select.removeClass('collapsed');
+    }
+  });
 
   $('#set-program').submit(function (e) {
     e.preventDefault();
@@ -294,7 +309,6 @@ $(function () {
     let index = Math.ceil((e.item.index + 1) / owlTBItemsSlideBy);
     const del = e.item.count % count;
 
-    console.log('del', del)
 
     if (del > 0) {
       if (e.item.index + 1 + del === e.item.count) {
@@ -303,6 +317,9 @@ $(function () {
       if (e.item.index > 0 && index % owlTBItemsSlideBy === 1) {
         index = e.item.index;
       }
+    }
+    if ($('.workshop-carousel .owl-next').hasClass('disabled')) {
+      index = count;
     }
 
     if (count > 1) {
@@ -361,6 +378,9 @@ $(function () {
       }
     }
 
+    if ($('.exchange-carousel .owl-next').hasClass('disabled')) {
+      index = count;
+    }
 
     if (count > 1) {
       $('.exchange-carousel .owl-dots')
@@ -372,6 +392,12 @@ $(function () {
 
   $('.trash').on('click', function() {
     $.fancybox.open( $('.trash-content'), {
+
+    });
+  });
+
+  $('.show-filters').on('click', function() {
+    $.fancybox.open( $('.show-filters-content'), {
 
     });
   });
@@ -447,32 +473,37 @@ $(function () {
     const $gearBottom = $('.graph-animate .bottom');
     const $gearRight = $('.graph-animate .right');
     const $people = $('.graph-animate .people');
+    const $arrow = $('.graph-animate .arrow');
 
     const gearTop = {};
     const gearLeft = {};
     const gearBottom = {};
     const gearRight = {};
+    const people = {};
+    const arrow = {};
     gearTop.width = $gearTop.width();
     gearLeft.width = $gearLeft.width();
     gearBottom.width = $gearBottom.width();
     gearRight.width = $gearRight.width();
-    const people = $people.width();
+    people.width = $people.width();
+    arrow.width = $arrow.width();
 
     gearTop.css = {top: $gearTop.css('top').replace('px', ''), left: $gearTop.css('left').replace('px', '')};
     gearLeft.css = {top: $gearLeft.css('top').replace('px', ''), left: $gearLeft.css('left').replace('px', '')};
     gearBottom.css = {top: $gearBottom.css('top').replace('px', ''), left: $gearBottom.css('left').replace('px', '')};
     gearRight.css = {top: $gearRight.css('top').replace('px', ''), left: $gearRight.css('left').replace('px', '')};
+    people.css = {top: $people.css('top').replace('px', ''), left: $people.css('left').replace('px', '')};
+    arrow.css = {top: $arrow.css('top').replace('px', ''), left: $arrow.css('left').replace('px', '')};
 
     function resizeGraph(arrElements, arrValues, factor) {
-      $people.width(people * factor);
       arrElements.forEach(function (el, index) {
         el.width(arrValues[index].width * factor);
         el.css({top: arrValues[index].css.top * factor, left: arrValues[index].css.left * factor});
       });
     }
 
-    const arElements = [$gearTop, $gearLeft, $gearBottom, $gearRight];
-    const arValues = [gearTop, gearLeft, gearBottom, gearRight];
+    const arElements = [$gearTop, $gearLeft, $gearBottom, $gearRight, $people, $arrow];
+    const arValues = [gearTop, gearLeft, gearBottom, gearRight, people, arrow];
 
     const winWidt = $('body').width() + 15;
 
@@ -514,6 +545,93 @@ $(function () {
     });
 
   }
+
+  if ($('.search input').length) {
+    const $reset = $('.reset');
+    $('.search input').on('keypress, keyup', function() {
+      if ($(this).val().length > 0) {
+        $reset.show();
+      } else {
+        $reset.hide();
+      }
+    });
+
+    $reset.on('click', function () {
+      $(this).hide();
+    });
+  }
+
+  if ($('.js-select2').length) {
+    $('.js-select2').each(function () {
+      const label = $(this).find('.init').text();
+      $(this).find('.value').text(label);
+    });
+  }
+
+  $('.js-select2').on('click', function () {
+    const self = $(this);
+    $('.js-select2').each(function () {
+      if ($(this) !== self && $(this).hasClass('collapsed')) {
+        const label = $(this).find('input').val();
+        $(this).find('.value').text(label);
+        $(this).removeClass('collapsed');
+      }
+    });
+
+    const label = $(this).find('.init').text();
+
+    $(this).toggleClass('collapsed');
+    if ($(this).hasClass('collapsed')) {
+      $(this).find('.value').text(label);
+    }
+  });
+
+  $('.js-select2 .option').on('click', function () {
+    const val = $(this).text();
+      $(this).parent().prev().find('.value').text(val);
+      $(this).parent().prev().prev().val(val);
+  });
+
+  $('.js-select2 .value ').on('click', function () {
+    const label = $(this).text();
+    $(this).parent().prev().val(label);
+  });
+
+  $('.team-card .filter').hover(
+    function() {
+      $(this).addClass('collapsed');
+      $(this).find('.tags').css({display: 'flex'});
+      $('.team-card .filter').each(function () {
+        if ($(this).hasClass('collapsed')) {
+          $(this).parent().find('.region').hide();
+        }
+      });
+    }, function() {
+      $(this).removeClass('collapsed');
+      $(this).find('.tags').css({display: 'none'});
+      $('.team-card .filter').each(function () {
+          $(this).parent().find('.region').css({display: ''});
+      });
+    }
+  );
+
+  $('.team-card .region').hover(
+    function() {
+      $(this).addClass('collapsed');
+      $(this).find('.tags').css({display: 'flex'});
+      $('.team-card .region').each(function () {
+        if ($(this).hasClass('collapsed')) {
+          $(this).parent().find('.filter').hide();
+        }
+      });
+    }, function() {
+      $(this).removeClass('collapsed');
+      $(this).find('.tags').css({display: 'none'});
+      $('.team-card .region').each(function () {
+        $(this).parent().find('.filter').css({display: ''});
+      });
+    }
+  );
 
 
 

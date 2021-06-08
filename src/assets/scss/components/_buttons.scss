@@ -10,7 +10,6 @@
 }
 
 .btn-bordered {
-
   border-radius: 30px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -35,6 +34,22 @@
     &:hover {
       color: $hover-red;
       background-color: white;
+    }
+    &:focus {
+      color: $focus-red;
+      background-color: white;
+      border: 3px solid $focus-red;
+
+    }
+  }
+  &.filled-gray {
+    background-color: $gray-500;
+    color: white;
+    border: 3px solid $gray-500;
+    &:hover {
+      color: $hover-red;
+      background-color: white;
+      border: 3px solid $hover-red;
     }
     &:focus {
       color: $focus-red;
@@ -192,6 +207,7 @@
 }
 
 .js-select {
+
   &.red {
     border: 3px solid $background-red;
     color: $background-red;
@@ -320,3 +336,120 @@
 
   }
 }
+
+.js-select2 {
+  width: 240px;
+  position: relative;
+  @media screen and (max-width: 992px) {
+    width: 230px;
+  }
+
+  .selected {
+    border-bottom: 3px solid $background-red;
+    background: white;
+    display: flex;
+    border-radius: 30px;
+    border-top: 3px solid $background-red;
+    border-left: 3px solid $background-red;
+    border-right: 3px solid $background-red;
+    padding: .57rem 1rem;
+    cursor: pointer;
+    .value {
+      padding-left:  1rem;
+      flex: 100;
+      text-align: center;
+      border-radius: 2rem;
+      color: $background-red;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .init {
+      display: none;
+    }
+    .arrow {
+      flex: auto;
+    }
+  }
+  .dropdown {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    background: white;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+    border-left: 3px solid $background-red;
+    border-right: 3px solid $background-red;
+    border-bottom: 3px solid $background-red;
+    text-align: center;
+    color: $background-red;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -3px;
+    .option {
+      padding: .5rem 1rem 0;
+      cursor: pointer;
+      &:hover {
+        color: $hover-red
+      }
+      &:first-child {
+        padding: 0 1rem;
+      }
+      &:last-child {
+        padding-bottom: .7rem;
+      }
+    }
+  }
+
+  &.collapsed {
+    .selected {
+      border-bottom: 3px solid transparent;
+      border-radius: 30px 30px 0 0;
+    }
+    .dropdown {
+      display: unset;
+    }
+
+  }
+
+
+
+}
+
+.c-check {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  &+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 1.1em;
+      height: 1.1em;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid #adb5bd;
+      border-radius: 0.15em;
+      margin-right: 0.5em;
+
+
+    }
+  }
+  &:checked {
+    &+label {
+      &::after {
+        content: url("../../assets/img/checked.svg");
+        position: absolute;
+        left: calc(1.5rem + 10px);
+        margin-top: 2px;
+      }
+    }
+  }
+  &:not(:disabled):not(:checked)+label:hover::before {
+    border-color: $hover-red;
+  }
+}
+
+

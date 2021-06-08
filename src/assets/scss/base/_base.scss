@@ -52,6 +52,12 @@ a {
     img {
       margin: 0 1rem;
     }
+
+  }
+}
+a {
+  &.btn-bordered {
+    text-decoration: none;
   }
 }
 

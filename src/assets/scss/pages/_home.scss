@@ -63,15 +63,20 @@
       position: absolute;
 
     }
+    .arrow {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
     .people {
       z-index: 100;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 97px;
+      left: 82px;
     }
     .top {
       position: absolute;
-      top: 32px;
+      top: 22px;
       left: 105px;
       &.rotate {
         animation: rotation-left 10s infinite linear;

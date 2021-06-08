@@ -1,11 +1,451 @@
 .team-building {
   padding-top: 2rem;
   background-color: $gray-100;
+  @media screen and (max-width: 556px) and (min-width: 0px) {
+    padding-top: 1rem;
+  }
   h2 {
     text-align: center;
+    @media screen and (max-width: 768px) and (min-width: 568px) {
+      font-size: 22px;
+    }
+    @media screen and (max-width: 567px) and (min-width: 320px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 556px) and (min-width: 321px) {
+      font-size: 24px;
+      margin-top: 2rem;
+    }
+    @media screen and (max-width: 320px) and (min-width: 0px) {
+      font-size: 20px;
+      margin-top: 2rem;
+    }
+
   }
   .filters {
+    position: relative;
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (max-width: 992px) and (min-width: 990px){
+      justify-content: left;
+    }
+    @media screen and (max-width: 989px) and (min-width: 768px){
+      justify-content: space-around;
+    }
+    &>div {
+      @media screen and (max-width: 992px) {
+        margin: 5px;
+      }
+    }
+
+    .js-select2 {
+      @media screen and (max-width: 753px) and (min-width: 0px){
+        display: none;
+      }
+    }
+
+
+    .custom-radio {
+      @media screen and (max-width: 753px) and (min-width: 0px) {
+        .filled-red {
+          background-color: $gray-100;
+          color: $background-red;
+          border: 2px solid $background-red;
+          &:hover {
+            color: white;
+          }
+          &:focus, &:active {
+            color: white;
+          }
+        }
+        .filled-gray {
+          display: none;
+        }
+        .s-select {
+          width: unset;
+          padding: 0 1rem;
+          line-height: 25px;
+          font-size: 14px;
+          height: 30px;
+        }
+        .btn-bordered {
+          &.red {
+            &:focus {
+              color: white;
+            }
+          }
+        }
+      }
+
+    }
+
+    @media screen and (max-width: 753px) and (min-width: 0px){
+      flex-wrap: nowrap;
+      overflow: scroll;
+      min-height: 55px;
+      margin-top: 1rem;
+    }
+
   }
+
+  .btn-bordered {
+    &.s-select {
+      @media screen and (max-width: 992px) {
+        width: 230px;
+        margin: 5px 5px 0 5px;
+
+      }
+    }
+    &.filled-red {
+      border: 3px solid $background-red;
+    }
+  }
+  .js-select2 {
+    margin-bottom: 10px;
+  }
+}
+
+.filters-mobile {
+  display: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  background-color: white;
+  align-items: center;
+  height: 48px;
+  padding: 0 .7rem;
+  .show-filters {
+    background-color: $gray-100;
+    border-radius: 100px;
+    width: 223px;
+    height: 33px;
+    text-align: center;
+    line-height: 30px;
+
+    flex: 1;
+
+
+    img {
+      margin-right: -1.6rem;
+      margin-left: 1.6rem;
+      @media screen and (max-width: 410px) and (min-width: 0px){
+        margin-right: -.6rem;
+        margin-left: .6rem;
+      }
+    }
+    cursor: pointer;
+  }
+  .count {
+    text-align: center;
+    flex: 1;
+  }
+
+  @media screen and (max-width: 753px) and (min-width: 0px){
+    display: flex;
+
+  }
+
+}
+
+.search {
+  display: flex;
+  border: 3px solid $gray-500;
+  padding: .4rem 1rem;
+  border-radius: 2rem;
+  align-items: center;
+  width: 50%;
+  margin: 1rem auto 0;
+  @media screen and (max-width: 768px) and (min-width: 568px){
+    width: 70%;
+  }
+  @media screen and (max-width: 567px) and (min-width: 0px){
+    width: 100%;
+  }
+
+  .image {
+    flex: .2;
+    img {
+      cursor: pointer;
+    }
+  }
+  form {
+    display: flex;
+    flex: 2;
+    padding-right: 1rem;
+    min-height: 31px;
+    input {
+      border: none;
+      background-color: transparent;
+      width: 100%;
+      &:focus {
+        outline: none;
+        border: none;
+      }
+      &::placeholder {
+        color: $gray-500;
+        text-align: center;
+        margin-left: 2.5rem;
+      }
+    }
+  }
+  .reset {
+    display: none;
+    flex: .2;
+    font-size: 14px;
+    background-color: $gray-500;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border: none;
+
+  }
+}
+
+.team-card {
+  overflow: hidden;
+  box-shadow: 0px 0px 4px 2px rgba(113, 47, 49, 0.25);
+  border-radius: 40px;
+  padding-bottom: 20px;
+  margin-top: 2rem;
+  .image {
+    position: relative;
+    img {
+      width: 100%;
+      border-radius: 30px 30px 0 0;
+    }
+    .filter, .region {
+      cursor: pointer;
+      display: none;
+      width: 68px;
+      height: 68px;
+      background-color: $background-red;
+      top: 0;
+      img {
+        width: unset;
+        margin: 21px 0 0 18px;
+        border-radius: 0;
+      }
+
+    }
+    .filter {
+      position: absolute;
+      left: 0;
+      border-radius: 0 0 16px 0;
+      .tags {
+        display: none;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-top: 12px;
+        .item {
+          font-size: 10px;
+          color: $background-red;
+          border-radius: 20px;
+          background-color: white;
+          width: 27%;
+          text-align: center;
+          margin-top: 4px;
+          margin-left: 4px;
+          height: 19px;
+          line-height: 19px;
+
+        }
+      }
+      &.collapsed {
+        cursor: default;
+        border-radius: 0;
+        width: 100%;
+        img {
+          display: none;
+        }
+      }
+    }
+    .region {
+      position: absolute;
+      right: 0;
+      border-radius: 0 0 0 16px;
+      .tags {
+        display: none;
+        text-align: center;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      &.collapsed {
+        cursor: default;
+        border-radius: 0;
+        width: 100%;
+        img {
+          display: none;
+        }
+      }
+    }
+    &:hover {
+      .filter, .region {
+        display: unset;
+      }
+    }
+  }
+  .title {
+    font-weight: 600;
+    font-size: 18px;
+    color: $black;
+    padding: 20px 0 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 1rem;
+    text-align: left;
+  }
+  hr {
+    border: none;
+    height: 2px;
+    background-color: $gray-500;
+    width: calc(100% - 2rem);
+    margin: 1rem auto;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+
+    @media screen and (max-width: 567px) and (min-width: 320px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+
+    .item {
+      line-height: 15px;
+      @media screen and (max-width: 567px) and (min-width: 320px) {
+        padding: .3rem;
+      }
+      img {
+        padding-right: 10px;
+      }
+    }
+  }
+  .detail {
+    text-align: center;
+    a {
+      margin: 0 auto;
+    }
+    .s-small {
+      @media screen and (max-width: 768px) and (min-width: 568px) {
+        font-size: 20px;
+        width: 70%;
+        height: 50px;
+        line-height: 45px;
+      }
+      @media screen and (max-width: 567px) and (min-width: 320px) {
+        font-size: 18px;
+        width: 80%;
+        height: 50px;
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+.more {
+  margin: 2rem auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  div {
+    width: max-content;
+    margin: 0 auto;
+    cursor: pointer;
+
+  }
+
+}
+.show-filters-content {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  .title {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    @media screen and (max-width: 353px) and (min-width: 0px) {
+      font-size: 16px;
+
+    }
+  }
+  .reset-filters {
+    top: 10px;
+    left: calc(1.5rem + 5px);
+    position: absolute;
+    border: none;
+    font-size: 14px;
+    color: #8E8E8E;
+    background-color: white;
+    &:focus, &:active {
+      outline: none;
+      border: none;
+    }
+  }
+  hr {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 1px;
+    margin: .5rem 0;
+  }
+
+  .section-title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: .5rem 0.5rem 0 1.5rem;
+    font-weight: bold;
+  }
+  .check-group {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+  }
+  .select-town {
+    color: $background-red;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  button[type=submit] {
+    background-color: $background-red;
+    color: white;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    line-height: 35px;
+
+  }
+
+
+
+
+
+}
+
+
+.no-result {
+  margin: 4rem auto;
+  width: 430px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 133.9%;
+  color: #F0D1D1;
+  text-align: center;
+  background-image: url("../../assets/img/no-result.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 303px;
+  display: flex;
+  align-items: center;
 }
