@@ -294,7 +294,6 @@ $(function () {
     let index = Math.ceil((e.item.index + 1) / owlTBItemsSlideBy);
     const del = e.item.count % count;
 
-    console.log('del', del)
 
     if (del > 0) {
       if (e.item.index + 1 + del === e.item.count) {
@@ -303,6 +302,9 @@ $(function () {
       if (e.item.index > 0 && index % owlTBItemsSlideBy === 1) {
         index = e.item.index;
       }
+    }
+    if ($('.workshop-carousel .owl-next').hasClass('disabled')) {
+      index = count;
     }
 
     if (count > 1) {
@@ -361,6 +363,9 @@ $(function () {
       }
     }
 
+    if ($('.exchange-carousel .owl-next').hasClass('disabled')) {
+      index = count;
+    }
 
     if (count > 1) {
       $('.exchange-carousel .owl-dots')
@@ -447,32 +452,37 @@ $(function () {
     const $gearBottom = $('.graph-animate .bottom');
     const $gearRight = $('.graph-animate .right');
     const $people = $('.graph-animate .people');
+    const $arrow = $('.graph-animate .arrow');
 
     const gearTop = {};
     const gearLeft = {};
     const gearBottom = {};
     const gearRight = {};
+    const people = {};
+    const arrow = {};
     gearTop.width = $gearTop.width();
     gearLeft.width = $gearLeft.width();
     gearBottom.width = $gearBottom.width();
     gearRight.width = $gearRight.width();
-    const people = $people.width();
+    people.width = $people.width();
+    arrow.width = $arrow.width();
 
     gearTop.css = {top: $gearTop.css('top').replace('px', ''), left: $gearTop.css('left').replace('px', '')};
     gearLeft.css = {top: $gearLeft.css('top').replace('px', ''), left: $gearLeft.css('left').replace('px', '')};
     gearBottom.css = {top: $gearBottom.css('top').replace('px', ''), left: $gearBottom.css('left').replace('px', '')};
     gearRight.css = {top: $gearRight.css('top').replace('px', ''), left: $gearRight.css('left').replace('px', '')};
+    people.css = {top: $people.css('top').replace('px', ''), left: $people.css('left').replace('px', '')};
+    arrow.css = {top: $arrow.css('top').replace('px', ''), left: $arrow.css('left').replace('px', '')};
 
     function resizeGraph(arrElements, arrValues, factor) {
-      $people.width(people * factor);
       arrElements.forEach(function (el, index) {
         el.width(arrValues[index].width * factor);
         el.css({top: arrValues[index].css.top * factor, left: arrValues[index].css.left * factor});
       });
     }
 
-    const arElements = [$gearTop, $gearLeft, $gearBottom, $gearRight];
-    const arValues = [gearTop, gearLeft, gearBottom, gearRight];
+    const arElements = [$gearTop, $gearLeft, $gearBottom, $gearRight, $people, $arrow];
+    const arValues = [gearTop, gearLeft, gearBottom, gearRight, people, arrow];
 
     const winWidt = $('body').width() + 15;
 
