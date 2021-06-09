@@ -1,0 +1,175 @@
+.blog {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  background-color: $gray-100;
+  @media screen and (max-width: 992px) and (min-width: 0px) {
+    background-color: white;
+  }
+  h2 {
+    padding-bottom: 2rem;
+    text-align: center;
+    @media screen and (max-width: 768px) and (min-width: 568px) {
+      font-size: 22px;
+    }
+    @media screen and (max-width: 567px) and (min-width: 320px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 556px) and (min-width: 321px) {
+      font-size: 24px;
+      margin-top: 2rem;
+      padding-bottom: 0;
+    }
+    @media screen and (max-width: 320px) and (min-width: 0px) {
+      font-size: 20px;
+      margin-top: 2rem;
+      padding-bottom: 0;
+
+    }
+  }
+  @media screen and (max-width: 556px) and (min-width: 0px) {
+    padding-top: 1rem;
+  }
+
+  h3 {
+    margin-top: 4.4rem;
+    padding-bottom: 2rem;
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      margin-top: 3rem;
+    }
+    @media screen and (max-width: 768px) and (min-width: 0px) {
+      margin-top: 1rem;
+    }
+  }
+  .blog-article {
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    text-align: left;
+    overflow: hidden;
+
+    .image {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      @media screen and (max-width: 768px) and (min-width: 567px) {
+        min-height: 320px;
+      }
+      @media screen and (max-width: 566px) and (min-width: 376px) {
+        min-height: 230px;
+      }
+      @media screen and (max-width: 375px) and (min-width: 0px) {
+        min-height: 124px;
+      }
+    }
+    .info {
+      padding-bottom: 2rem;
+    }
+
+    .title, .desc, .detail {
+      padding-left: 2rem;
+      @media screen and (max-width: 375px) and (min-width: 0px) {
+        padding-left: .5rem;
+      }
+    }
+    .title {
+      margin-top: 1rem;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      @media screen and (max-width: 1126px) and (min-width: 0px) {
+        font-size: 22px;
+      }
+      @media screen and (max-width: 375px) and (min-width: 0px) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+    }
+    .desc {
+      margin-top: 1.4rem;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      @media screen and (max-width: 1126px) and (min-width: 0px) {
+        font-size: 16px;
+        letter-spacing: 0.004em;
+      }
+
+    }
+  }
+
+  .filters {
+    margin-top: 2rem;
+    @media screen and (max-width: 1439px) and (min-width: 0px) {
+      justify-content: start;
+    }
+    button {
+      &.s-content-100 {
+        width: 188px;
+        @media screen and (max-width: 768px) and (min-width: 567px) {
+          width: 225px;
+        }
+        @media screen and (max-width: 566px) and (min-width: 376px) {
+          width: 158px;
+        }
+        @media screen and (max-width: 375px) and (min-width: 0px) {
+          font-size: 12px;
+          font-weight: 600;
+          width: 128px;
+        }
+      }
+    }
+  }
+
+  .article-card {
+    &>div {
+      @media screen and (max-width: 566px) and (min-width: 415px) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+      @media screen and (max-width: 414px) and (min-width: 0px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 1.4rem;
+      margin-top: 2rem;
+    }
+    .image {
+      border-radius: 30px;
+      overflow: hidden;
+      img {
+        width: 100%;
+
+      }
+    }
+    .desc {
+      padding: 2rem 1rem 1rem 1rem;
+      box-shadow: 0px 0px 4px 2px rgba(113, 47, 49, 0.25);
+      border-radius: 0px 0px 30px 30px;
+      width: 90%;
+      margin: -1rem auto;
+      text-align: left;
+      .text {
+        font-size: 20px;
+        @media screen and (max-width: 768px) and (min-width: 0px) {
+          font-size: 16px;
+        }
+      }
+      .info {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        .date, .author {
+          color: $background-red;
+        }
+      }
+    }
+
+  }
+
+}

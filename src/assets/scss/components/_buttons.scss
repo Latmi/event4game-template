@@ -41,6 +41,19 @@
       border: 3px solid $focus-red;
 
     }
+    &-revert {
+      background-color: white;
+      color: $background-red;
+      border: 3px solid $background-red;
+      &:hover, &:focus {
+        color: white;
+        background-color: $background-red;
+      }
+      &.active {
+        color: white;
+        background-color: $background-red;
+      }
+    }
   }
   &.filled-gray {
     background-color: $gray-500;
@@ -109,7 +122,6 @@
   }
   &.white-text {
     color: white;
-    border: 3px solid white;
     &:hover {
       color: white;
     }
@@ -192,6 +204,15 @@
     font-weight: 500;
     display: block;
     line-height: 43px;
+
+  }
+  &.s-content-100 {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    line-height: 32px;
 
   }
   &.s-select {
