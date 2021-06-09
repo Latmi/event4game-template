@@ -63,6 +63,21 @@ $(function () {
       $select.removeClass('collapsed');
     }
   });
+  //Сворачиваем селект2 при клике вне области
+  // отображаем выбранное значение
+  $(document).click(function(event) {
+    const $target = $(event.target);
+    const $select = $('.js-select2');
+    if(!$target.closest('.selected').length && $select.hasClass('collapsed')) {
+      $('.js-select2').each(function () {
+        if ($(this).hasClass('collapsed')) {
+          const val = $(this).find('input').val();
+          $(this).find('.value').text(val);
+        }
+      });
+      $select.removeClass('collapsed');
+    }
+  });
 
   $('#set-program').submit(function (e) {
     e.preventDefault();
@@ -381,6 +396,12 @@ $(function () {
     });
   });
 
+  $('.show-filters').on('click', function() {
+    $.fancybox.open( $('.show-filters-content'), {
+
+    });
+  });
+
   if ($('#show_form_feedback_desc')) {
     $('#show_form_feedback_desc').on('click', function() {
       $.fancybox.open({
@@ -524,6 +545,93 @@ $(function () {
     });
 
   }
+
+  if ($('.search input').length) {
+    const $reset = $('.reset');
+    $('.search input').on('keypress, keyup', function() {
+      if ($(this).val().length > 0) {
+        $reset.show();
+      } else {
+        $reset.hide();
+      }
+    });
+
+    $reset.on('click', function () {
+      $(this).hide();
+    });
+  }
+
+  if ($('.js-select2').length) {
+    $('.js-select2').each(function () {
+      const label = $(this).find('.init').text();
+      $(this).find('.value').text(label);
+    });
+  }
+
+  $('.js-select2').on('click', function () {
+    const self = $(this);
+    $('.js-select2').each(function () {
+      if ($(this) !== self && $(this).hasClass('collapsed')) {
+        const label = $(this).find('input').val();
+        $(this).find('.value').text(label);
+        $(this).removeClass('collapsed');
+      }
+    });
+
+    const label = $(this).find('.init').text();
+
+    $(this).toggleClass('collapsed');
+    if ($(this).hasClass('collapsed')) {
+      $(this).find('.value').text(label);
+    }
+  });
+
+  $('.js-select2 .option').on('click', function () {
+    const val = $(this).text();
+      $(this).parent().prev().find('.value').text(val);
+      $(this).parent().prev().prev().val(val);
+  });
+
+  $('.js-select2 .value ').on('click', function () {
+    const label = $(this).text();
+    $(this).parent().prev().val(label);
+  });
+
+  $('.team-card .filter').hover(
+    function() {
+      $(this).addClass('collapsed');
+      $(this).find('.tags').css({display: 'flex'});
+      $('.team-card .filter').each(function () {
+        if ($(this).hasClass('collapsed')) {
+          $(this).parent().find('.region').hide();
+        }
+      });
+    }, function() {
+      $(this).removeClass('collapsed');
+      $(this).find('.tags').css({display: 'none'});
+      $('.team-card .filter').each(function () {
+          $(this).parent().find('.region').css({display: ''});
+      });
+    }
+  );
+
+  $('.team-card .region').hover(
+    function() {
+      $(this).addClass('collapsed');
+      $(this).find('.tags').css({display: 'flex'});
+      $('.team-card .region').each(function () {
+        if ($(this).hasClass('collapsed')) {
+          $(this).parent().find('.filter').hide();
+        }
+      });
+    }, function() {
+      $(this).removeClass('collapsed');
+      $(this).find('.tags').css({display: 'none'});
+      $('.team-card .region').each(function () {
+        $(this).parent().find('.filter').css({display: ''});
+      });
+    }
+  );
 
 
 

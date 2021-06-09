@@ -35,7 +35,18 @@ h1 {
   }
 }
 
-.cases, .all-team-building, .service-working, .workshop, .exchange, .team-building {
+.cases,
+.all-team-building,
+.service-working,
+.workshop,
+.exchange,
+.exchange-detail,
+.team-building,
+.service,
+.service-schema,
+.blog,
+.workshop-detail,
+.service-partners {
   h2 {
     text-transform: uppercase;
     color: $black;
@@ -65,8 +76,11 @@ h1 {
     font-size: 22px;
     letter-spacing: 0.04em;
     font-weight: 600;
-    @media screen and (max-width: 439px) and (min-width: 0px) {
+    @media screen and (max-width: 439px) and (min-width: 321px) {
       font-size: 18px;
+    }
+    @media screen and (max-width: 320px) and (min-width: 0px) {
+      font-size: 20px;
     }
   }
 }
