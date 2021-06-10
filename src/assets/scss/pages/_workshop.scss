@@ -1,4 +1,5 @@
 .workshop-detail {
+  position: relative;
   padding-top: 2rem;
   padding-bottom: 3rem;
   text-align: center;
@@ -8,14 +9,14 @@
   //}
   .background-ellipse-red {
     background-image: url("../../assets/img/background-ellipse-red.png");
+    opacity: 0.07;
 
     &.left {
       width: calc(18px * 7);
       height: calc(18px * 12);
       position: absolute;
       left: 0;
-      bottom: 25%;
-      border-radius: 0 0 0 69px;
+      bottom: 0;
       @media screen and (max-width: 567px) and (min-width: 0px) {
         display: none;
       }
@@ -27,7 +28,7 @@
       height: calc(18px * 12);
       position: absolute;
       right: 0;
-      top: 60px;
+      top: 0;
       @media screen and (max-width: 567px) and (min-width: 0px) {
         display: none;
       }
@@ -68,6 +69,7 @@
     }
     @media screen and (max-width: 768px) and (min-width: 0px) {
       margin-top: 1rem;
+      padding-bottom: 0;
     }
   }
 
@@ -80,6 +82,24 @@
     height: 100%;
     margin: 0 2rem;
     border-radius: 16px;
+
+    @media screen and (max-width: 1439px) and (min-width: 1041px){
+      height: 80%;
+    }
+    @media screen and (max-width: 1040px) and (min-width: 993px){
+      height: 70%;
+    }
+    @media screen and (max-width: 992px) and (min-width: 769px){
+      height: 70%;
+    }
+    @media screen and (max-width: 768px) and (min-width: 345px){
+      height: 302px;
+    }
+    @media screen and (max-width: 344px) and (min-width: 320px){
+      height: 160px;
+      width: calc(100% - 2.2rem);
+    }
+
     &:before {
       content: '';
       width: 100%;
@@ -106,7 +126,19 @@
       color: white;
       top: 0;
       left: -33px;
-      margin-top: calc(27% - 33px);
+      margin-top: calc(35% - 33px);
+      @media screen and (max-width: 1439px) and (min-width: 1041px){
+        margin-top: calc(30% - 33px);
+      }
+      @media screen and (max-width: 768px) and (min-width: 345px){
+        margin-top: calc(151px - 33px);
+      }
+      @media screen and (max-width: 344px) and (min-width: 320px){
+        margin-top: calc(80px - 33px);
+      }
+      //@media screen and (max-width: 1040px) and (min-width: 993px){
+      //  margin-top: calc(25% - 33px);
+      //}
       img {
         width: 66px;
 
@@ -119,4 +151,227 @@
       }
     }
   }
+
+  .btn-bordered {
+    &.s-content-50 {
+      @media screen and (max-width: 1160px) and (min-width: 768px){
+        width: 65%;
+      }
+      @media screen and (max-width: 873px) and (min-width: 768px){
+        font-size: 18px;
+      }
+      @media screen and (max-width: 680px) and (min-width: 567px){
+        font-size: 16px;
+      }
+      @media screen and (max-width: 768px) and (min-width: 567px){
+        width: 40%;
+      }
+      @media screen and (max-width: 566px) and (min-width: 410px){
+        width: 70%;
+      }
+      @media screen and (max-width: 409px) and (min-width: 320px){
+        width: 90%;
+      }
+    }
+    &.s-content-80 {
+      @media screen and (max-width: 956px) and (min-width: 769px){
+        width: 100%;
+      }
+      @media screen and (max-width: 768px) and (min-width: 567px){
+        width: 70%;
+      }
+      @media screen and (max-width: 767px) and (min-width: 345px){
+        width: 70%;
+      }
+      @media screen and (max-width: 344px) and (min-width: 320px){
+        width: 90%;
+      }
+    }
+  }
+
+  .workshop-service {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    min-height: 157px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    .title {
+      font-weight: 600;
+      font-size: 22px;
+      width: 87%;
+    }
+  }
+
+  .filters {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    @media screen and (max-width: 992px) and (min-width: 990px){
+      justify-content: left;
+    }
+    @media screen and (max-width: 989px) and (min-width: 768px){
+      justify-content: space-around;
+    }
+    @media screen and (max-width: 490px) and (min-width: 319px){
+      justify-content: center;
+    }
+    &>div {
+      @media screen and (max-width: 992px) {
+        margin: 5px 0;
+      }
+      @media screen and (max-width: 992px) {
+        margin: 10px 0;
+      }
+    }
+
+    .js-select2 {
+      @media screen and (max-width: 992px) and (min-width: 990px){
+        width: 210px;
+        font-size: 18px;
+      }
+      @media screen and (max-width: 768px) and (min-width: 567px){
+        width: 215px;
+        font-size: 18px;
+      }
+      @media screen and (max-width: 566px) and (min-width: 540px){
+        width: 225px;
+      }
+      @media screen and (max-width: 541px) and (min-width: 320px){
+        width: 200px;
+      }
+      @media screen and (max-width: 320px) and (min-width: 320px){
+        width: 100%;
+      }
+
+
+
+      .dropdown {
+        left: 0;
+      }
+    }
+
+
+    .custom-radio {
+
+      @media screen and (max-width: 992px) and (min-width: 990px){
+        .s-select2 {
+          width: 210px;
+          font-size: 18px;
+        }
+      }
+      @media screen and (max-width: 768px) and (min-width: 567px){
+        margin-bottom: 0;
+        .s-select2 {
+          width: 215px;
+          font-size: 18px;
+        }
+      }
+      @media screen and (max-width: 541px) and (min-width: 320px){
+        margin-bottom: 0;
+        .s-select2 {
+          width: 200px;
+          font-size: 18px;
+        }
+      }
+      @media screen and (max-width: 320px) and (min-width: 320px){
+        .s-select2 {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 320px) and (min-width: 320px){
+        width: 100%;
+      }
+
+
+
+    }
+    .btn-bordered {
+
+      &.s-select2 {
+        @media screen and (max-width: 992px) and (min-width: 990px){
+          width: 210px;
+        }
+        @media screen and (max-width: 768px) and (min-width: 567px){
+          width: 215px;
+        }
+        @media screen and (max-width: 541px) and (min-width: 320px){
+          width: 200px;
+          margin: 0 auto;
+        }
+        @media screen and (max-width: 320px) and (min-width: 320px){
+          width: 100%;
+        }
+
+      }
+    }
+
+
+    @media screen and (max-width: 753px) and (min-width: 0px){
+
+      min-height: 55px;
+      margin-top: 1rem;
+    }
+
+  }
+}
+
+.workshop-footer {
+  min-height: 200px;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  .bg-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: -50px;
+    background: url('../../assets/img/workshop-footer-left.svg') 0 0 no-repeat;
+    width: 294px;
+    height: 182px;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+  .bg-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -50px;
+    background: url('../../assets/img/workshop-footer-right.svg') 0 0 no-repeat;
+    width: 307px;
+    height: 174px;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+  position: relative;
+  text-align: center;
+  h4 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 1rem;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+    button {
+      @media screen and (max-width: 768px) {
+        margin-top: 2rem;
+      }
+      &.btn-bordered {
+        &.s-content {
+          width: 276px;
+        }
+      ;
+      }
+    }
+  }
+
 }

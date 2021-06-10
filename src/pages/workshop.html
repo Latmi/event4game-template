@@ -18,18 +18,18 @@ title: Workshop
       </div>
     </div>
     <div class="row">
-      <div class="col-md-5" >
+      <div class="col-xl-5 col-lg-6 col-md-10 offset-lg-0 offset-md-1" >
         <div class="video" style="background-image: url('assets/img/video.jpg')">
           <div class="play"><a href=""><img src="assets/img/play-video-white.svg" alt="">Смотреть видео</a></div>
         </div>
       </div>
-      <div class="col-md-7 desc text-left">
+      <div class="col-xl-7 col-lg-6 desc text-left mt-lg-0 mt-5">
         <p>Game4Event предоставляет услуги по изготовлению
           игрового реквизита.
         </p>
         <p>Сервис сотрудничает с лучшими мастерскими по изготовлению оборудования для тимбилдинга и готов предложить для вас оптимальные условия по изготовлению.</p>
         <p>Специализация производителей позволяет реализовать практически любую профильную задачу в кратчайшие сроки</p>
-        <div class="buttons d-flex">
+        <div class="buttons d-flex flex-lg-column flex-md-row flex-column align-items-sm-start align-items-center">
           <button class="btn-bordered filled-red s-content-50 mt-xl-4 mt-lg-1 mr-2">Добавить в корзину</button>
           <button class="btn-bordered red s-content-50 mt-xl-4 mt-lg-4 mt-md-0 mt-3" >Заказать в один клик</button>
         </div>
@@ -38,104 +38,254 @@ title: Workshop
 
   </div>
 </section>
-<section class="exchange-detail bg-white">
+<section class="workshop-detail bg-white">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h3>Преимущества покупки идеи</h3>
+        <h3>Услуги мастерской</h3>
       </div>
-      <div class="col-xl-3 col-md-6">
-        <div class="image"><img src="assets/img/exchange-s-01.svg" alt=""></div>
-        <div class="title">Интеллектуальные права</div>
-        <div class="desc">Правомочное использование интеллектуальной собственности</div>
+      <div class="col-lg-4 col-md-6 mt-5 col-sm-10 offset-md-0 offset-sm-1 d-md-block d-flex flex-column align-items-center ">
+        <div class="workshop-service" style="background-image: url('assets/img/workshop-detail-bg-1.svg')">
+          <div class="title">Купить готовый реквизит, представленный на портале</div>
+        </div>
+        <button class="btn-bordered red s-content-80 mt-xl-4 mt-lg-1 mr-2">Смотреть реквизит</button>
+
       </div>
-      <div class="col-xl-3 col-md-6 mt-md-0 mt-4">
-        <div class="image"><img src="assets/img/exchange-s-02.svg" alt=""></div>
-        <div class="title">Покупка опыта</div>
-        <div class="desc">Применение готового решения и использование многолетнего опыта</div>
+
+      <div class="col-lg-4 col-md-6 mt-5 col-sm-10 offset-md-0 offset-sm-1 d-md-block d-flex flex-column align-items-center">
+        <div class="workshop-service" style="background-image: url('assets/img/workshop-detail-bg-2.svg')">
+          <div class="title">Заказать реплики реквизита программ из каталога</div>
+        </div>
+        <button class="btn-bordered red s-content-80 mt-xl-4 mt-lg-1 mr-2">Смотреть программы</button>
+
       </div>
-      <div class="col-xl-3 col-md-6 mt-xl-0 mt-lg-5 mt-md-0 mt-4">
-        <div class="image"><img src="assets/img/exchange-s-03.svg" alt=""></div>
-        <div class="title">Техническая поддержка</div>
-        <div class="desc">Консультации авторов идеи для лучшей релизации</div>
+
+      <div class="col-lg-4 col-md-6 mt-5 col-sm-10 offset-md-0 offset-sm-1 d-md-block d-flex flex-column align-items-center">
+        <div class="workshop-service" style="background-image: url('assets/img/workshop-detail-bg-3.svg')">
+          <div class="title">Заказать изготовление реквизита по своим эскизам</div>
+        </div>
+        <button class="btn-bordered filled-red s-content-80 mt-xl-4 mt-lg-1 mr-2">Оставить заявку</button>
+
       </div>
-      <div class="col-xl-3 col-md-6 mt-xl-0 mt-lg-5 mt-md-0 mt-4">
-        <div class="image"><img src="assets/img/exchange-s-04.svg" alt=""></div>
-        <div class="title">Экономия времени</div>
-        <div class="desc">Готовая творческая и техническая документация</div>
-      </div>
+
     </div>
     <div class="row">
-      <div class="col-12 mt-md-0 mt-4">
-        <h3>Идеи для покупки</h3>
+      <div class="col-12 mt-md-4 mt-md-4 mt-5">
+        <h3>Каталог реквизита</h3>
       </div>
+    </div>
+
+    <form class="filters">
+      <div class="col-sm-auto col-12">
+        <div class="js-select2">
+          <input type="hidden">
+          <div class="selected">
+            <div class="init">По составу</div>
+            <div class="value"></div>
+            <div class="arrow">
+              <img src="assets/img/arrow-down-red.svg" alt=""></div>
+          </div>
+          <div class="dropdown">
+            <div class="option">sel 1</div>
+            <div class="option">sel 2</div>
+            <div class="option">sel 3</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-auto col-12">
+      <div class="js-select2">
+        <input type="hidden">
+        <div class="selected">
+          <div class="init">По типу</div>
+          <div class="value"></div>
+          <div class="arrow">
+            <img src="assets/img/arrow-down-red.svg" alt=""></div>
+        </div>
+        <div class="dropdown">
+          <div class="option">sel 4</div>
+          <div class="option">sel 5</div>
+          <div class="option">sel 6</div>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-auto col-12">
+      <div class="js-select2">
+        <input type="hidden">
+        <div class="selected">
+          <div class="init">По наличию</div>
+          <div class="value"></div>
+          <div class="arrow">
+            <img src="assets/img/arrow-down-red.svg" alt=""></div>
+        </div>
+        <div class="dropdown">
+          <div class="option">sel 7</div>
+          <div class="option">sel 8</div>
+          <div class="option">sel 9</div>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-auto col-12">
+      <label class="custom-radio">
+        <input type="radio" name="" value="Активный">
+        <span class="btn-bordered white-text filled-red s-select2">Активный</span>
+      </label>
+      </div>
+      <div class="col-sm-auto col-12">
+      <label class="custom-radio">
+        <input type="radio" name="" value="Интеллектуальный">
+        <span class="btn-bordered white-text filled-red s-select2">Интеллектуальный</span>
+      </label>
+      </div>
+      <div class="col-sm-auto col-12">
+      <label class="custom-radio">
+        <input type="radio" name="" value="Спортивный">
+        <span class="btn-bordered white-text filled-red s-select2">Спортивный</span>
+      </label>
+      </div>
+      <div class="col-sm-auto col-12">
+      <label class="custom-radio">
+        <input type="radio" name="" value="Творческий">
+        <span class="btn-bordered white-text filled-red s-select2">Творческий</span>
+      </label>
+      </div>
+      <div class="col-sm-auto col-12">
+      <label class="custom-radio">
+        <input type="radio" name="" value="Тематический">
+        <span class="btn-bordered white-text filled-red s-select2">Тематический</span>
+      </label>
+      </div>
+      <div class="col-sm-auto col-12">
+      <label class="custom-radio">
+        <input type="radio" name="" value="Механика">
+        <span class="btn-bordered white-text filled-red s-select2">Механика</span>
+      </label>
+      </div>
+      <div class="col-sm-auto col-12">
+      <label class="custom-radio">
+        <input type="radio" name="" value="Электроника">
+        <span class="btn-bordered white-text filled-red s-select2">Электроника</span>
+      </label>
+      </div>
+      <div class="col-sm-auto col-12">
+      <label class="custom-radio">
+        <input type="radio" name="" value="Digital">
+        <span class="btn-bordered white-text filled-red s-select2">Digital</span>
+      </label>
+      </div>
+      <div class="col-sm-auto col-12">
+      <button type="reset" class="btn-bordered filled-gray s-select2">Сбросить фильтр</button>
+      </div>
+    </form>
+    <div class="row">
       <div class="col-12">
-        <div class="exchange-carousel owl-carousel owl-theme">
+        <div class="workshop-carousel owl-carousel owl-theme">
           <div class="item">
             <div>
-              <img src="assets/img/exchange-slider-01.jpg" alt="">
+              <img src="assets/img/workshop-slider-01.jpg" alt="">
             </div>
             <div class="text">
-              <div class="title">Цепная реакция</div>
+              <div class="title">Сеть</div>
+              <div class="desc">
+                Очень крутая штука, которая отработала вот в таком вот кейсе.
+                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
+              </div>
+            </div>
+            <div class="action">
+              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
             </div>
           </div>
           <div class="item">
             <div>
-              <img src="assets/img/exchange-slider-01.jpg" alt="">
+              <img src="assets/img/workshop-slider-01.jpg" alt="">
             </div>
             <div class="text">
-              <div class="title">Цепная реакция</div>
+              <div class="title">Сеть</div>
+              <div class="desc">
+                Очень крутая штука, которая отработала вот в таком вот кейсе.
+                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
+              </div>
+            </div>
+            <div class="action">
+              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
             </div>
           </div>
           <div class="item">
             <div>
-              <img src="assets/img/exchange-slider-01.jpg" alt="">
+              <img src="assets/img/workshop-slider-01.jpg" alt="">
             </div>
             <div class="text">
-              <div class="title">Цепная реакция</div>
+              <div class="title">Сеть</div>
+              <div class="desc">
+                Очень крутая штука, которая отработала вот в таком вот кейсе.
+                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
+              </div>
+            </div>
+            <div class="action">
+              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
             </div>
           </div>
           <div class="item">
             <div>
-              <img src="assets/img/exchange-slider-01.jpg" alt="">
+              <img src="assets/img/workshop-slider-01.jpg" alt="">
             </div>
             <div class="text">
-              <div class="title">Цепная реакция</div>
+              <div class="title">Сеть</div>
+              <div class="desc">
+                Очень крутая штука, которая отработала вот в таком вот кейсе.
+                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
+              </div>
+            </div>
+            <div class="action">
+              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
             </div>
           </div>
           <div class="item">
             <div>
-              <img src="assets/img/exchange-slider-01.jpg" alt="">
+              <img src="assets/img/workshop-slider-01.jpg" alt="">
             </div>
             <div class="text">
-              <div class="title">Цепная реакция</div>
+              <div class="title">Сеть</div>
+              <div class="desc">
+                Очень крутая штука, которая отработала вот в таком вот кейсе.
+                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
+              </div>
+            </div>
+            <div class="action">
+              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
             </div>
           </div>
           <div class="item">
             <div>
-              <img src="assets/img/exchange-slider-01.jpg" alt="">
+              <img src="assets/img/workshop-slider-01.jpg" alt="">
             </div>
             <div class="text">
-              <div class="title">Цепная реакция</div>
+              <div class="title">Сеть</div>
+              <div class="desc">
+                Очень крутая штука, которая отработала вот в таком вот кейсе.
+                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <div>
-              <img src="assets/img/exchange-slider-01.jpg" alt="">
-            </div>
-            <div class="text">
-              <div class="title">Цепная реакция</div>
-            </div>
-          </div>
-          <div class="item">
-            <div>
-              <img src="assets/img/exchange-slider-01.jpg" alt="">
-            </div>
-            <div class="text">
-              <div class="title">Цепная реакция</div>
+            <div class="action">
+              <button class="btn-bordered filled-red s-content mt-4">Подробнее</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+</section>
+<section class="workshop-footer">
+  <div class="bg-left"></div>
+  <div class="bg-right"></div>
+  <div class="container">
+    <h4>Вы производитель оборудования или хотите продать?</h4>
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-md-10 offset-md-1">
+        <form action="">
+          <div>Оставьте заявку и мы свяжемся с вами!</div>
+          <div><button class="btn-bordered red s-content" type="submit">Смотреть реквизит</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
 </section>

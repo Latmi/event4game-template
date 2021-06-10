@@ -565,6 +565,7 @@ $(function () {
     $('.js-select2').each(function () {
       const label = $(this).find('.init').text();
       $(this).find('.value').text(label);
+      $(this).find('input').val(label);
     });
   }
 

@@ -215,8 +215,26 @@
     line-height: 32px;
 
   }
+  &.s-content-80 {
+    width: 80%;
+    height: 51px;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    line-height: 32px;
+
+  }
   &.s-select {
     width: 240px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    line-height: 43px;
+
+  }
+  &.s-select2 {
+    width: 225px;
     height: 48px;
     font-size: 18px;
     font-weight: 500;
@@ -359,7 +377,7 @@
 }
 
 .js-select2 {
-  width: 240px;
+  width: 225px;
   position: relative;
   @media screen and (max-width: 992px) {
     width: 230px;
