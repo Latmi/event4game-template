@@ -364,6 +364,39 @@ $(function () {
 
   });
 
+
+  const owlTBDetail = $('.team-building-info-carousel');
+
+  owlTBDetail.owlCarousel({
+    onChanged: makeCounterOwlTBDetail,
+    onInitialized: makeCounterOwlTBDetail,
+
+    items: 3.2,
+    slideBy: owlTBItemsSlideBy,
+    merge:true,
+    nav:true,
+    dots: false,
+    margin: 40,
+    responsive:{
+      320:{
+        items:1.2
+      },
+      567:{
+        items:2.7
+      },
+      769:{
+        items:2.2
+      },
+      993:{
+        items:3.2
+      },
+      1000:{
+        items: 3.2,
+      }
+    },
+
+  });
+
   function makeCounterOwlExchange(e) {
     const count = Math.ceil(e.item.count / owlTBItemsSlideBy);
     let index = Math.ceil((e.item.index + 1) / owlTBItemsSlideBy);
@@ -384,6 +417,32 @@ $(function () {
 
     if (count > 1) {
       $('.exchange-carousel .owl-dots')
+        .removeClass('disabled')
+        .css({marginTop: -38})
+        .html(`${index} / ${count}`);
+    }
+  }
+
+  function makeCounterOwlTBDetail(e) {
+    const count = Math.ceil(e.item.count / owlTBItemsSlideBy);
+    let index = Math.ceil((e.item.index + 1) / owlTBItemsSlideBy);
+    const del = e.item.count % count;
+
+    if (del > 0) {
+      if (e.item.index + 1 + del === e.item.count) {
+        index++;
+      }
+      if (e.item.index > 0 && index % owlTBItemsSlideBy === 1) {
+        index = e.item.index;
+      }
+    }
+
+    if ($('.team-building-info-carousel .owl-next').hasClass('disabled')) {
+      index = count;
+    }
+
+    if (count > 1) {
+      $('.team-building-info-carousel .owl-dots')
         .removeClass('disabled')
         .css({marginTop: -38})
         .html(`${index} / ${count}`);
@@ -423,7 +482,7 @@ $(function () {
       });
     });
   }
-  if ($('#show_form_feedback')) {
+  if ($('#show_form_feedback').length) {
     $('#show_form_feedback').on('click', function() {
       $.fancybox.open({
         src: '.feedback',
@@ -444,7 +503,7 @@ $(function () {
       });
     });
   }
-  if ($('#show_form_brief')) {
+  if ($('#show_form_brief').length) {
     $('#show_form_brief').on('click', function() {
       $.fancybox.open({
         src: '.feedback_brief',
@@ -465,6 +524,18 @@ $(function () {
       });
     });
   }
+
+  $('#show-regions').on('click', function() {
+    $.fancybox.open({
+      src: '.regions-modal',
+      type: 'inline',
+      opts : {
+        afterShow : function( instance, current ) {
+
+        }
+      }
+    });
+  });
 
   if ($('.graph-animate').length) {
 
