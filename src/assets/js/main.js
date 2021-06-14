@@ -14,6 +14,84 @@ $(document).ready(function() {
 
 $(function () {
 
+  if ($('.graph-animate').length) {
+
+    const $gearTop = $('.graph-animate .top');
+    const $gearLeft = $('.graph-animate .left');
+    const $gearBottom = $('.graph-animate .bottom');
+    const $gearRight = $('.graph-animate .right');
+    const $people = $('.graph-animate .people');
+    const $arrow = $('.graph-animate .arrow');
+
+    const gearTop = {};
+    const gearLeft = {};
+    const gearBottom = {};
+    const gearRight = {};
+    const people = {};
+    const arrow = {};
+    gearTop.width = $gearTop.width();
+    gearLeft.width = $gearLeft.width();
+    gearBottom.width = $gearBottom.width();
+    gearRight.width = $gearRight.width();
+    people.width = $people.width();
+    arrow.width = $arrow.width();
+
+    gearTop.css = {top: $gearTop.css('top').replace('px', ''), left: $gearTop.css('left').replace('px', '')};
+    gearLeft.css = {top: $gearLeft.css('top').replace('px', ''), left: $gearLeft.css('left').replace('px', '')};
+    gearBottom.css = {top: $gearBottom.css('top').replace('px', ''), left: $gearBottom.css('left').replace('px', '')};
+    gearRight.css = {top: $gearRight.css('top').replace('px', ''), left: $gearRight.css('left').replace('px', '')};
+    people.css = {top: $people.css('top').replace('px', ''), left: $people.css('left').replace('px', '')};
+    arrow.css = {top: $arrow.css('top').replace('px', ''), left: $arrow.css('left').replace('px', '')};
+
+    function resizeGraph(arrElements, arrValues, factor) {
+      arrElements.forEach(function (el, index) {
+        el.width(arrValues[index].width * factor);
+        el.css({top: arrValues[index].css.top * factor, left: arrValues[index].css.left * factor});
+      });
+    }
+
+    const arElements = [$gearTop, $gearLeft, $gearBottom, $gearRight, $people, $arrow];
+    const arValues = [gearTop, gearLeft, gearBottom, gearRight, people, arrow];
+
+    const winWidt = $('body').width();
+    console.log('winWidt', winWidt);
+
+    if (winWidt => 1440) {
+      resizeGraph(arElements, arValues, 1);
+    }
+    if (winWidt < 1440 && winWidt > 917) {
+      resizeGraph(arElements, arValues, 0.7);
+    }
+    if (winWidt <= 917 && winWidt > 768) {
+      resizeGraph(arElements, arValues, 0.5);
+    }
+    if (winWidt <= 458 && winWidt > 0) {
+      resizeGraph(arElements, arValues, 0.8);
+    }
+
+
+    $(window).resize(function () {
+
+      const windowW = $('body').width();
+
+      if (windowW => 1440) {
+        resizeGraph(arElements, arValues, 1);
+      }
+      if (windowW < 1440 && windowW > 917) {
+        resizeGraph(arElements, arValues, 0.7);
+      }
+      if (windowW <= 917 && windowW > 768) {
+        resizeGraph(arElements, arValues, 0.5);
+      }
+      if (windowW <= 458 && windowW > 0) {
+        resizeGraph(arElements, arValues, 0.8);
+      }
+
+
+    });
+
+  }
+
   $('.hamburger').on('click', function () {
     $(this).toggleClass('is-active');
     if ($(this).hasClass('is-active')) {
@@ -108,6 +186,7 @@ $(function () {
     slideBy: owlTBItemsSlideBy,
     merge:true,
     nav:true,
+    navSpeed: 500,
     dots: false,
     margin: 60,
     responsive:{
@@ -249,6 +328,7 @@ $(function () {
     slideBy: 1,
     merge:true,
     nav:true,
+    navSpeed: 500,
     dots: false,
     margin: 60,
     responsive:{
@@ -282,6 +362,7 @@ $(function () {
     slideBy: owlTBItemsSlideBy,
     merge:true,
     nav:true,
+    navSpeed: 500,
     dots: false,
     margin: 40,
     responsive:{
@@ -342,6 +423,7 @@ $(function () {
     slideBy: owlTBItemsSlideBy,
     merge:true,
     nav:true,
+    navSpeed: 500,
     dots: false,
     margin: 40,
     responsive:{
@@ -375,11 +457,12 @@ $(function () {
     slideBy: owlTBItemsSlideBy,
     merge:true,
     nav:true,
+    navSpeed: 500,
     dots: false,
     margin: 40,
     responsive:{
       320:{
-        items:1.2
+        items:1
       },
       567:{
         items:2.7
@@ -537,85 +620,7 @@ $(function () {
     });
   });
 
-  if ($('.graph-animate').length) {
 
-    const $gearTop = $('.graph-animate .top');
-    const $gearLeft = $('.graph-animate .left');
-    const $gearBottom = $('.graph-animate .bottom');
-    const $gearRight = $('.graph-animate .right');
-    const $people = $('.graph-animate .people');
-    const $arrow = $('.graph-animate .arrow');
-
-    const gearTop = {};
-    const gearLeft = {};
-    const gearBottom = {};
-    const gearRight = {};
-    const people = {};
-    const arrow = {};
-    gearTop.width = $gearTop.width();
-    gearLeft.width = $gearLeft.width();
-    gearBottom.width = $gearBottom.width();
-    gearRight.width = $gearRight.width();
-    people.width = $people.width();
-    arrow.width = $arrow.width();
-
-    gearTop.css = {top: $gearTop.css('top').replace('px', ''), left: $gearTop.css('left').replace('px', '')};
-    gearLeft.css = {top: $gearLeft.css('top').replace('px', ''), left: $gearLeft.css('left').replace('px', '')};
-    gearBottom.css = {top: $gearBottom.css('top').replace('px', ''), left: $gearBottom.css('left').replace('px', '')};
-    gearRight.css = {top: $gearRight.css('top').replace('px', ''), left: $gearRight.css('left').replace('px', '')};
-    people.css = {top: $people.css('top').replace('px', ''), left: $people.css('left').replace('px', '')};
-    arrow.css = {top: $arrow.css('top').replace('px', ''), left: $arrow.css('left').replace('px', '')};
-
-    function resizeGraph(arrElements, arrValues, factor) {
-      arrElements.forEach(function (el, index) {
-        el.width(arrValues[index].width * factor);
-        el.css({top: arrValues[index].css.top * factor, left: arrValues[index].css.left * factor});
-      });
-    }
-
-    const arElements = [$gearTop, $gearLeft, $gearBottom, $gearRight, $people, $arrow];
-    const arValues = [gearTop, gearLeft, gearBottom, gearRight, people, arrow];
-
-    const winWidt = $('body').width() + 15;
-
-    if (winWidt => 1440) {
-      resizeGraph(arElements, arValues, 1);
-    }
-    if (winWidt < 1440 && winWidt > 768) {
-      resizeGraph(arElements, arValues, 0.7);
-    }
-    if (winWidt <= 917 && winWidt > 768) {
-      resizeGraph(arElements, arValues, 0.5);
-    }
-    if (winWidt <= 917 && winWidt > 768) {
-      resizeGraph(arElements, arValues, 0.5);
-    }
-    if (winWidt <= 458 && winWidt > 0) {
-      resizeGraph(arElements, arValues, 0.8);
-    }
-
-
-    $(window).resize(function () {
-
-      const windowW = $('body').width() + 15;
-
-      if (windowW => 1440) {
-        resizeGraph(arElements, arValues, 1);
-      }
-      if (windowW < 1440 && windowW > 917) {
-        resizeGraph(arElements, arValues, 0.7);
-      }
-      if (windowW <= 917 && windowW > 768) {
-        resizeGraph(arElements, arValues, 0.5);
-      }
-      if (windowW <= 458 && windowW > 0) {
-        resizeGraph(arElements, arValues, 0.8);
-      }
-
-
-    });
-
-  }
 
   if ($('.search input').length) {
     const $reset = $('.reset');

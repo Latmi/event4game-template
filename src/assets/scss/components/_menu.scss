@@ -1,6 +1,13 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.menu-container {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+
+}
 nav {
   .top-menu-container {
     height: 95px;
@@ -58,6 +65,15 @@ nav {
       }
       .btn-red {
         margin-left: 5px;
+        @media screen and (max-width: 992px) and (min-width: 922px) {
+          margin-left: 50px;
+        }
+        @media screen and (max-width: 921px) and (min-width: 862px) {
+          margin-left: 30px;
+        }
+        @media screen and (max-width: 861px) and (min-width: 769px) {
+          margin-left: 20px;
+        }
       }
 
       .phone {
@@ -107,7 +123,10 @@ nav {
         display: none;
       }
       @media screen and (max-width: 768px) and (min-width: 0px) {
-        margin-left: 30%;
+        margin-left: 50%;
+        img {
+          width: 34px;
+        }
       }
       @media screen and (max-width: 490px) and (min-width: 418px) {
         margin-left: 0;
@@ -130,6 +149,10 @@ nav {
       right: 0;
       top: 95px;
       z-index: 1000;
+      @media screen and (max-width: 475px) and (min-width: 0px) {
+        text-align: center;
+        width: 100%;
+      }
       a {
         font-size: 26px;
         line-height: 69px;
@@ -137,6 +160,11 @@ nav {
         text-decoration: none;
         &:hover {
           color: $hover-red;
+        }
+        @media screen and (max-width: 475px) and (min-width: 0px) {
+          font-size: 22px;
+          font-weight: 600;
+
         }
       }
     }

@@ -29,24 +29,26 @@ title: Home
               <span class="btn-bordered white-text s-small">Оффлайн</span>
             </label>
           </div>
-          <div class="custom-select-area">
-            <input type="hidden" name="players_count" value="до 50">
-            <div class="js-select">
-              <div class="js-select_item init">
-                <div class="label">Количество игроков</div>
-                <div class="value"><span>до 50</span> <img src="assets/img/arrow-down-white.svg" alt=""></div>
-              </div>
-              <div class="js-select_item">
-                <div class="label"></div>
-                <div class="value"><span>до 100</span></div>
-              </div>
-              <div class="js-select_item">
-                <div class="label"></div>
-                <div class="value"><span>до 150</span></div>
 
+
+          <div class="select-area">
+            <div class="js-select2">
+              <input type="hidden">
+              <div class="selected">
+                <div class="init">Колличество игроков</div>
+                <div class="value"></div>
+                <div class="arrow">
+                  <img src="assets/img/arrow-down-white.svg" alt=""></div>
+              </div>
+              <div class="dropdown">
+                <div class="option">до 50</div>
+                <div class="option">до 100</div>
+                <div class="option">до 150</div>
               </div>
             </div>
           </div>
+
+
           <div class="subtitle">Выберите категорию</div>
           <div class="group">
             <label class="custom-radio">
@@ -63,21 +65,25 @@ title: Home
               <input type="radio" name="category" value="Тематический">
               <span class="btn-bordered white-text s-small">Тематический</span>
             </label>
-            <div>
-              <input type="hidden" name="category">
-              <div class="js-select" data-name="category">
-                <div class="js-select_item init">
-                  <div class="value"><span>Все категории</span> <img src="assets/img/arrow-down-white.svg" alt=""></div>
-                </div>
-                <div class="js-select_item">
-                  <div class="value"><span>Онлайн</span></div>
-                </div>
-                <div class="js-select_item">
-                  <div class="value"><span>Оффлайн</span></div>
-                </div>
 
+
+            <div class="select-area" >
+              <div class="js-select2">
+                <input type="hidden">
+                <div class="selected">
+                  <div class="init">Все категории</div>
+                  <div class="value"></div>
+                  <div class="arrow">
+                    <img src="assets/img/arrow-down-white.svg" alt=""></div>
+                </div>
+                <div class="dropdown">
+                  <div class="option">онлайн</div>
+                  <div class="option">офлайн</div>
+                </div>
               </div>
             </div>
+
+
           </div>
           <div class="group mt-4">
             <button id="show_form_feedback_desc" class="btn-bordered filled s-medium" type="submit">Подобрать программу</button>
@@ -94,9 +100,10 @@ title: Home
 
       </div>
     </div>
-    <div class="trash"><img src="assets/img/trash.svg" alt=""><span class="count">2</span></div>
+
   </div>
 </header>
+
 <section class="advantages container">
   <div class="row">
     <div class="col-sm-3 col-6 advantages_item">
@@ -134,7 +141,6 @@ title: Home
   </div>
 </section>
 <section class="all-team-building">
-  <div class="container">
   <h2>Весь тимбилдинг здесь</h2>
   <div class="team-building-carousel owl-carousel owl-theme">
     <div class="item">
@@ -210,14 +216,12 @@ title: Home
       <div class="text">Digital</div>
     </div>
   </div>
-  </div>
 
 </section>
 <section class="cases">
   <div class="background-ellipse left"></div>
   <div class="background-ellipse right"></div>
   <div class="background-ellipse bottom"></div>
-  <div class="container">
     <h2>Кейсы</h2>
     <div class="cases-carousel owl-carousel owl-theme">
       <div class="item">
@@ -273,7 +277,6 @@ title: Home
       <div class="item"></div>
       <!--Не удалять этих двух Игорьков-->
     </div>
-  </div>
 
 </section>
 <section class="service-working">
@@ -292,7 +295,7 @@ title: Home
           <div class="image"><img src="assets/img/provider-02.svg" alt=""></div>
           <div class="desc">Сервис направит вам поступившие заявки от клиентов</div>
         </div>
-        <button class="btn-bordered filled-light-2 s-large mt-5" type="submit">Оставить заявку</button>
+        <button class="btn-bordered filled-service-light s-large mt-5" type="submit">Оставить заявку</button>
       </div>
       <div class="block">
         <div class="title">Клиенту</div>
@@ -306,7 +309,7 @@ title: Home
           <div class="image"><img src="assets/img/client-02.svg" alt=""></div>
           <div class="desc">Сервис свяжет вас с провайдером понравившихся программ напрямую без комиссии</div>
         </div>
-        <button class="btn-bordered filled-light s-large mt-5" type="submit">Подобрать программу</button>
+        <button class="btn-bordered filled-service s-large mt-5" type="submit">Подобрать программу</button>
       </div>
       <div class="block-counter">
         <div class="number">57</div>
@@ -352,100 +355,105 @@ title: Home
           </div>
         </div>
       </div>
-      <div class="col-12">
-        <div class="workshop-carousel owl-carousel owl-theme">
-          <div class="item">
-            <div>
-              <img src="assets/img/workshop-slider-01.jpg" alt="">
-            </div>
-            <div class="text">
-              <div class="title">Сеть</div>
-              <div class="desc">
-                Очень крутая штука, которая отработала вот в таком вот кейсе.
-                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
-              </div>
-            </div>
-            <div class="action">
-              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+    </div>
+  </div>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-12 px-0">
+      <div class="workshop-carousel owl-carousel owl-theme">
+        <div class="item">
+          <div>
+            <img src="assets/img/workshop-slider-01.jpg" alt="">
+          </div>
+          <div class="text">
+            <div class="title">Сеть</div>
+            <div class="desc">
+              Очень крутая штука, которая отработала вот в таком вот кейсе.
+              Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
             </div>
           </div>
-          <div class="item">
-            <div>
-              <img src="assets/img/workshop-slider-01.jpg" alt="">
-            </div>
-            <div class="text">
-              <div class="title">Сеть</div>
-              <div class="desc">
-                Очень крутая штука, которая отработала вот в таком вот кейсе.
-                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
-              </div>
-            </div>
-            <div class="action">
-              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+          <div class="action">
+            <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <img src="assets/img/workshop-slider-01.jpg" alt="">
+          </div>
+          <div class="text">
+            <div class="title">Сеть</div>
+            <div class="desc">
+              Очень крутая штука, которая отработала вот в таком вот кейсе.
+              Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
             </div>
           </div>
-          <div class="item">
-            <div>
-              <img src="assets/img/workshop-slider-01.jpg" alt="">
-            </div>
-            <div class="text">
-              <div class="title">Сеть</div>
-              <div class="desc">
-                Очень крутая штука, которая отработала вот в таком вот кейсе.
-                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
-              </div>
-            </div>
-            <div class="action">
-              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+          <div class="action">
+            <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <img src="assets/img/workshop-slider-01.jpg" alt="">
+          </div>
+          <div class="text">
+            <div class="title">Сеть</div>
+            <div class="desc">
+              Очень крутая штука, которая отработала вот в таком вот кейсе.
+              Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
             </div>
           </div>
-          <div class="item">
-            <div>
-              <img src="assets/img/workshop-slider-01.jpg" alt="">
-            </div>
-            <div class="text">
-              <div class="title">Сеть</div>
-              <div class="desc">
-                Очень крутая штука, которая отработала вот в таком вот кейсе.
-                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
-              </div>
-            </div>
-            <div class="action">
-              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+          <div class="action">
+            <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <img src="assets/img/workshop-slider-01.jpg" alt="">
+          </div>
+          <div class="text">
+            <div class="title">Сеть</div>
+            <div class="desc">
+              Очень крутая штука, которая отработала вот в таком вот кейсе.
+              Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
             </div>
           </div>
-          <div class="item">
-            <div>
-              <img src="assets/img/workshop-slider-01.jpg" alt="">
-            </div>
-            <div class="text">
-              <div class="title">Сеть</div>
-              <div class="desc">
-                Очень крутая штука, которая отработала вот в таком вот кейсе.
-                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
-              </div>
-            </div>
-            <div class="action">
-              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+          <div class="action">
+            <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <img src="assets/img/workshop-slider-01.jpg" alt="">
+          </div>
+          <div class="text">
+            <div class="title">Сеть</div>
+            <div class="desc">
+              Очень крутая штука, которая отработала вот в таком вот кейсе.
+              Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
             </div>
           </div>
-          <div class="item">
-            <div>
-              <img src="assets/img/workshop-slider-01.jpg" alt="">
-            </div>
-            <div class="text">
-              <div class="title">Сеть</div>
-              <div class="desc">
-                Очень крутая штука, которая отработала вот в таком вот кейсе.
-                Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
-              </div>
-            </div>
-            <div class="action">
-              <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+          <div class="action">
+            <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <img src="assets/img/workshop-slider-01.jpg" alt="">
+          </div>
+          <div class="text">
+            <div class="title">Сеть</div>
+            <div class="desc">
+              Очень крутая штука, которая отработала вот в таком вот кейсе.
+              Для вас можем сделать вообще любую штуку, или можете купить такую же, качать нефть и жить в шоколаде
             </div>
           </div>
+          <div class="action">
+            <button class="btn-bordered filled-red s-content mt-4" type="submit">Подробнее</button>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
   </div>
 </section>
 <section class="exchange">
@@ -490,7 +498,11 @@ title: Home
       <div class="col-12">
         <h3>Идея для покупки</h3>
       </div>
-      <div class="col-12">
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 px-0">
         <div class="exchange-carousel owl-carousel owl-theme">
           <div class="item">
             <div>
@@ -558,5 +570,6 @@ title: Home
           </div>
       </div>
     </div>
+  </div>
   </div>
 </section>
