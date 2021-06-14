@@ -317,6 +317,65 @@ $tag-height: 29px;
   }
 
 
+  .fancybox-content {
+    padding: 0;
+    .image-zoom {
+      display: none;
+    }
+    .fancybox-close-small {
+      background-color: rgba(255,255,255, 0.8);
+      padding: 5px;
+      width: 40px;
+      height: 40px;
+      border-radius: 0 16px;
+      svg {
+        width: 30px;
+        height: 30px;
+        path {
+          fill: $background-red
+        }
+      }
+    }
+  }
+  .fancybox-inner {
+    .fancybox-infobar {
+      position: absolute;
+      color: white;
+      top: 70%;
+      left: calc(50% - 30px);
+      font-size: 20px;
+      font-weight: 600;
+
+    }
+  }
+  .fancybox-navigation {
+    .fancybox-button {
+      background-color: transparent;
+      &--arrow_left {
+        left: 45%;
+        @media screen and (max-width: 1100px) and (min-width: 0) {
+          left: 40%;
+        }
+        svg {
+          path {
+            content: ' sd';
+          }
+        }
+      }
+      &--arrow_right {
+        right: 45%;
+        @media screen and (max-width: 1100px) and (min-width: 0) {
+          right: 40%;
+        }
+      }
+      &--arrow_right, &--arrow_left {
+        position: absolute;
+        top: calc(70% - 27px);
+      }
+    }
+  }
+
+
 }
 
 
@@ -414,63 +473,6 @@ $tag-height: 29px;
   }
 }
 
-.fancybox-content {
-  padding: 0;
-  .image-zoom {
-    display: none;
-  }
-  .fancybox-close-small {
-    background-color: rgba(255,255,255, 0.8);
-    padding: 5px;
-    width: 40px;
-    height: 40px;
-    border-radius: 0 16px;
-    svg {
-      width: 30px;
-      height: 30px;
-      path {
-        fill: $background-red
-      }
-    }
-  }
-}
-.fancybox-inner {
-  .fancybox-infobar {
-    position: absolute;
-    color: white;
-    top: 70%;
-    left: calc(50% - 30px);
-    font-size: 20px;
-    font-weight: 600;
-
-  }
-}
-.fancybox-navigation {
-  .fancybox-button {
-    background-color: transparent;
-    &--arrow_left {
-      left: 45%;
-      @media screen and (max-width: 1100px) and (min-width: 0) {
-        left: 40%;
-      }
-      svg {
-        path {
-          content: ' sd';
-        }
-      }
-    }
-    &--arrow_right {
-      right: 45%;
-      @media screen and (max-width: 1100px) and (min-width: 0) {
-        right: 40%;
-      }
-    }
-    &--arrow_right, &--arrow_left {
-      position: absolute;
-      top: calc(70% - 27px);
-    }
-  }
-}
 .regions-modal {
   padding: 2rem;
   @media screen and (min-width: 1440px){
