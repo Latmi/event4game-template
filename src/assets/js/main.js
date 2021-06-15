@@ -23,18 +23,50 @@ $(function () {
     const $people = $('.graph-animate .people');
     const $arrow = $('.graph-animate .arrow');
 
+    const $ctl = $('.graph-animate .circle-top-left');
+    const $ctr = $('.graph-animate .circle-top-right');
+    const $cbl = $('.graph-animate .circle-bottom-left');
+    // const $cbr = $('.graph-animate .circle-bottom-right');
+    //
+    // const $crbl = $('.graph-animate .cross-bottom-left');
+    // const $crtl = $('.graph-animate .cross-top-left');
+    // const $crtr = $('.graph-animate .cross-top-right');
+    // const $crbr = $('.graph-animate .cross-bottom-right');
+
     const gearTop = {};
     const gearLeft = {};
     const gearBottom = {};
     const gearRight = {};
     const people = {};
     const arrow = {};
+
+    const ctl = {};
+    const ctr = {};
+    const cbl = {};
+    // const cbr = {};
+    //
+    // const crbl = {};
+    // const crtl = {};
+    // const crtr = {};
+    // const crbr = {};
+
+
     gearTop.width = $gearTop.width();
     gearLeft.width = $gearLeft.width();
     gearBottom.width = $gearBottom.width();
     gearRight.width = $gearRight.width();
     people.width = $people.width();
     arrow.width = $arrow.width();
+
+    ctl.width = $ctl.width();
+    ctr.width = $ctr.width();
+    cbl.width = $cbl.width();
+    // cbr.width = $cbr.width();
+
+    // crbl.width = $crbl.width();
+    // crtl.width = $crtl.width();
+    // crtr.width = $crtr.width();
+    // crbr.width = $crbr.width();
 
     gearTop.css = {top: $gearTop.css('top').replace('px', ''), left: $gearTop.css('left').replace('px', '')};
     gearLeft.css = {top: $gearLeft.css('top').replace('px', ''), left: $gearLeft.css('left').replace('px', '')};
@@ -43,6 +75,16 @@ $(function () {
     people.css = {top: $people.css('top').replace('px', ''), left: $people.css('left').replace('px', '')};
     arrow.css = {top: $arrow.css('top').replace('px', ''), left: $arrow.css('left').replace('px', '')};
 
+    ctl.css = {top: $ctl.css('top').replace('px', ''), left: $ctl.css('left').replace('px', '')};
+    ctr.css = {top: $ctr.css('top').replace('px', ''), left: $ctr.css('left').replace('px', '')};
+    cbl.css = {top: $cbl.css('top').replace('px', ''), left: $cbl.css('left').replace('px', '')};
+    // cbr.css = {top: $cbr.css('top').replace('px', ''), left: $cbr.css('left').replace('px', '')};
+    //
+    // crbl.css = {top: $crbl.css('top').replace('px', ''), left: $crbl.css('left').replace('px', '')};
+    // crtl.css = {top: $crtl.css('top').replace('px', ''), left: $crtl.css('left').replace('px', '')};
+    // crtr.css = {top: $crtr.css('top').replace('px', ''), left: $crtr.css('left').replace('px', '')};
+    // crbr.css = {top: $crbr.css('top').replace('px', ''), left: $crbr.css('left').replace('px', '')};
+
     function resizeGraph(arrElements, arrValues, factor) {
       arrElements.forEach(function (el, index) {
         el.width(arrValues[index].width * factor);
@@ -50,11 +92,18 @@ $(function () {
       });
     }
 
-    const arElements = [$gearTop, $gearLeft, $gearBottom, $gearRight, $people, $arrow];
-    const arValues = [gearTop, gearLeft, gearBottom, gearRight, people, arrow];
+    const arElements = [
+      $gearTop, $gearLeft, $gearBottom, $gearRight, $people, $arrow,
+      $ctl, $ctr, $cbl
+      // , $cbr, $crbl, $crtl, $crtr, $crbr,
+    ];
+    const arValues = [
+      gearTop, gearLeft, gearBottom, gearRight, people, arrow,
+      ctl, ctr, cbl
+      //  cbr, crbl, crtl, crtr, crbr,
+    ];
 
     const winWidt = $('body').width();
-    console.log('winWidt', winWidt);
 
     if (winWidt => 1440) {
       resizeGraph(arElements, arValues, 1);
@@ -66,7 +115,7 @@ $(function () {
       resizeGraph(arElements, arValues, 0.5);
     }
     if (winWidt <= 458 && winWidt > 0) {
-      resizeGraph(arElements, arValues, 0.8);
+      resizeGraph(arElements, arValues, 0.7);
     }
 
 
@@ -84,7 +133,7 @@ $(function () {
         resizeGraph(arElements, arValues, 0.5);
       }
       if (windowW <= 458 && windowW > 0) {
-        resizeGraph(arElements, arValues, 0.8);
+        resizeGraph(arElements, arValues, 0.7);
       }
 
 

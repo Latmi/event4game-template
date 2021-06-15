@@ -125,6 +125,217 @@
         transform: rotate(-359deg);
       }
     }
+
+
+    @keyframes move-top-left-918 {
+      0% {
+        top: 77px;
+        left: 31.5px;
+      }
+      50% {
+        top: calc(77px - 24px);
+        left: calc(31.5px - 31px);
+      }
+      100% {
+        top: 77px;
+        left: 31.5px;
+      }
+    }
+
+    @keyframes move-top-left-769 {
+      0% {
+        top: 38.5px;
+        left: 15.75px;
+      }
+      50% {
+        top: calc(38.5px - 17px);
+        left: calc(15.75px - 22px);
+      }
+      100% {
+        top: 38.5px;
+        left: 15.75px;
+      }
+    }
+
+
+
+
+    @keyframes move-top-left {
+      0% {
+        top: 110px;
+        left: 45px;
+      }
+      50% {
+        top: calc(110px - 35px);
+        left: calc(45px - 45px);
+      }
+      100% {
+        top: 110px;
+        left: 45px;
+      }
+
+    }
+
+    @keyframes move-top-right-918 {
+      0% {
+        top: 21.7px;
+        left: 296.8px;
+      }
+      50% {
+        top: calc(21.7px - 15px);
+        left: calc(296.8px - 10px);
+      }
+      100% {
+        top: 21.7px;
+        left: 296.8px;
+      }
+    }
+
+    @keyframes move-top-right-769 {
+      0% {
+        top: 15.5px;
+        left: 212px;
+      }
+      50% {
+        top: calc(15.5px - 11px);
+        left: calc(212px - 7px);
+      }
+      100% {
+        top: 15.5px;
+        left: 212px;;
+      }
+    }
+
+    @keyframes move-top-right {
+      0% {
+        top: 31px;
+        left: 424px;
+      }
+      50% {
+        top: calc(31px - 22px);
+        left: calc(424px - 15px);
+      }
+      100% {
+        top: 31px;
+        left: 424px;
+      }
+    }
+
+    @keyframes move-bottom-left-918 {
+      0% {
+        top: 260.4px;
+        left: 24.5px;
+      }
+      50% {
+        top: calc(260.4px + 17px);
+        left: calc(24.5px - 17px);
+      }
+      100% {
+        top: 260.4px;
+        left: 24.5px;
+      }
+    }
+    @keyframes move-bottom-left-769 {
+      0% {
+        top: 186px;
+        left: 17.5px;
+      }
+      50% {
+        top: calc(186px + 12px);
+        left: calc(17.5px - 12px);
+      }
+      100% {
+        top: 186px;
+        left: 17.5px;
+      }
+    }
+
+    @keyframes move-bottom-left {
+      0% {
+        top: 372px;
+        left: 35px;
+      }
+      50% {
+        top: calc(372px + 25px);
+        left: calc(35px - 25px);
+      }
+      100% {
+        top: 372px;
+        left: 35px;
+      }
+    }
+    @keyframes move-cross-bottom-left {
+      0% {
+        top: 305px;
+        left: -30px;
+        transform: rotate(0deg);
+      }
+      50% {
+        top: calc(372px + 17px);
+        left: calc(-30px + 40px);
+        transform: rotate(82deg);
+      }
+      100% {
+        top: 305px;
+        left: -30px;
+        transform: rotate(0deg);
+      }
+    }
+    @keyframes move-cross-top-left {
+      0% {
+        top: 247px;
+        left: -4px;
+        transform: rotate(0deg);
+      }
+      50% {
+        top: calc(247px - 24px);
+        transform: rotate(205deg);
+      }
+      100% {
+        top: 247px;
+        left: -4px;
+        transform: rotate(0deg);
+      }
+    }
+    @keyframes move-cross-top-right {
+      0% {
+        top: 45px;
+        left: 281px;
+        transform: rotate(0deg);
+      }
+      50% {
+        top: calc(45px - 25px);
+        left: calc(281px + 10px);
+        transform: rotate(110deg);
+      }
+      100% {
+        top: 45px;
+        left: 281px;
+        transform: rotate(0deg);
+      }
+    }
+    @keyframes move-cross-bottom-right {
+      0% {
+        top: 92px;
+        left: 412px;
+        transform: rotate(0deg);
+      }
+      30% {
+        left: calc(412px + 15px);
+        transform: rotate(40deg);
+      }
+      60% {
+        left: calc(412px + 0);
+        transform: rotate(70deg);
+      }
+      100% {
+        top: 92px;
+        left: 412px;
+        transform: rotate(0deg);
+      }
+    }
+
+
     img {
       z-index: 50;
       position: absolute;
@@ -175,6 +386,102 @@
         animation: rotation-right 8s infinite linear;
       }
     }
+
+    .circle-top-left {
+      position: absolute;
+      top: 110px;
+      left: 45px;
+      &.move {
+        animation: move-top-left 8s infinite linear;
+        @media screen and (max-width: 1439px) and (min-width: 918px) {
+          animation: move-top-left-918 8s infinite linear;
+        }
+        @media screen and (max-width: 917px) and (min-width: 769px) {
+          animation: move-top-left-769 8s infinite linear;
+        }
+        @media screen and (max-width: 458px) and (min-width: 0px) {
+          animation: move-top-left-918 8s infinite linear;
+        }
+      }
+    }
+
+    .circle-top-right {
+      position: absolute;
+      top: 31px;
+      left: 424px;
+      &.move {
+        animation: move-top-right 8s infinite linear;
+        @media screen and (max-width: 1439px) and (min-width: 918px) {
+          animation: move-top-right-918 8s infinite linear;
+        }
+        @media screen and (max-width: 917px) and (min-width: 769px) {
+          animation: move-top-right-769 8s infinite linear;
+        }
+        @media screen and (max-width: 458px) and (min-width: 0px) {
+          animation: move-top-right-918 8s infinite linear;
+        }
+      }
+    }
+
+    .circle-bottom-left {
+      position: absolute;
+      top: 372px;
+      left: 35px;
+      &.move {
+        animation: move-bottom-left 8s infinite linear;
+        @media screen and (max-width: 1439px) and (min-width: 918px) {
+          animation: move-bottom-left-918 8s infinite linear;
+        }
+        @media screen and (max-width: 917px) and (min-width: 769px) {
+          animation: move-bottom-left-769 8s infinite linear;
+        }
+        @media screen and (max-width: 458px) and (min-width: 0px) {
+          animation: move-bottom-left-918 8s infinite linear;
+        }
+      }
+    }
+
+    .circle-bottom-right {
+      position: absolute;
+      top: 264px;
+      left: 392px;
+    }
+
+    .cross-bottom-left {
+      position: absolute;
+      top: 305px;
+      left: -30px;
+      &.move {
+        animation: move-cross-bottom-left 8s infinite linear;
+      }
+    }
+
+    .cross-top-left {
+      position: absolute;
+      top: 247px;
+      left: -4px;
+      &.move {
+        animation: move-cross-top-left 8s infinite linear;
+      }
+    }
+    .cross-top-right {
+      position: absolute;
+      top: 45px;
+      left: 281px;
+      &.move {
+        animation: move-cross-top-right 8s infinite linear;
+      }
+    }
+
+    .cross-bottom-right {
+      position: absolute;
+      top: 92px;
+      left: 412px;
+      &.move {
+        animation: move-cross-bottom-right 8s infinite linear;
+      }
+    }
+
   }
   position: relative;
   overflow: hidden;

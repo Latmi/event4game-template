@@ -64,6 +64,7 @@ nav {
         display: none;
       }
       .btn-red {
+        cursor: pointer;
         margin-left: 5px;
         @media screen and (max-width: 992px) and (min-width: 922px) {
           margin-left: 50px;
