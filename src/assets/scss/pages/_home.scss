@@ -70,6 +70,7 @@
 
 .forms {
   .graph-animate {
+    opacity: 0;
     position: relative;
     //background-image: url("../../assets/img/people.svg");
     width: 402px;
@@ -264,6 +265,41 @@
         left: 35px;
       }
     }
+
+    @keyframes move-cross-bottom-left-918 {
+      0% {
+        top: 213.5px;
+        left: -21px;
+        transform: rotate(0deg);
+      }
+      50% {
+        top: calc(213.5px + 12px);
+        left: calc(-21px + 28px);
+        transform: rotate(82deg);
+      }
+      100% {
+        top: 213.5px;
+        left: -21px;
+        transform: rotate(0deg);
+      }
+    }
+    @keyframes move-cross-bottom-left-769 {
+      0% {
+        top: 152.5px;
+        left: -15px;
+        transform: rotate(0deg);
+      }
+      50% {
+        top: calc(152.5px + 8px);
+        left: calc(-15px + 20px);
+        transform: rotate(82deg);
+      }
+      100% {
+        top: 152.5px;
+        left: -15px;
+        transform: rotate(0deg);
+      }
+    }
     @keyframes move-cross-bottom-left {
       0% {
         top: 305px;
@@ -271,13 +307,46 @@
         transform: rotate(0deg);
       }
       50% {
-        top: calc(372px + 17px);
+        top: calc(305px + 17px);
         left: calc(-30px + 40px);
         transform: rotate(82deg);
       }
       100% {
         top: 305px;
         left: -30px;
+        transform: rotate(0deg);
+      }
+    }
+
+    @keyframes move-cross-top-left-918 {
+      0% {
+        top: 172.9px;
+        left: -2.8px;
+        transform: rotate(0deg);
+      }
+      50% {
+        top: calc(172.9px - 17px);
+        transform: rotate(205deg);
+      }
+      100% {
+        top: 172.9px;
+        left: -2.8px;
+        transform: rotate(0deg);
+      }
+    }
+    @keyframes move-cross-top-left-769 {
+      0% {
+        top: 123.5px;
+        left: -2px;
+        transform: rotate(0deg);
+      }
+      50% {
+        top: calc(123.5px - 12px);
+        transform: rotate(205deg);
+      }
+      100% {
+        top: 123.5px;
+        left: -2px;
         transform: rotate(0deg);
       }
     }
@@ -297,6 +366,40 @@
         transform: rotate(0deg);
       }
     }
+    @keyframes move-cross-top-right-918 {
+      0% {
+        top: 31.5px;
+        left: 196.7px;
+        transform: rotate(0deg);
+      }
+      50% {
+        top: calc(31.5px - 17px);
+        left: calc(196.7px + 7px);
+        transform: rotate(110deg);
+      }
+      100% {
+        top: 31.5px;
+        left: 196.7px;
+        transform: rotate(0deg);
+      }
+    }
+    @keyframes move-cross-top-right-769 {
+      0% {
+        top: 22.5px;
+        left: 140.5px;
+        transform: rotate(0deg);
+      }
+      50% {
+        top: calc(22.5px - 13px);
+        left: calc(140.5px + 5px);
+        transform: rotate(110deg);
+      }
+      100% {
+        top: 22.5px;
+        left: 140.5px;
+        transform: rotate(0deg);
+      }
+    }
     @keyframes move-cross-top-right {
       0% {
         top: 45px;
@@ -311,6 +414,46 @@
       100% {
         top: 45px;
         left: 281px;
+        transform: rotate(0deg);
+      }
+    }
+    @keyframes move-cross-bottom-right-918 {
+      0% {
+        top: 64.4px;
+        left: 288.4px;
+        transform: rotate(0deg);
+      }
+      30% {
+        left: calc(288.4px + 15px);
+        transform: rotate(40deg);
+      }
+      60% {
+        left: calc(288.4px + 0);
+        transform: rotate(70deg);
+      }
+      100% {
+        top: 64.4px;
+        left: 288.4px;
+        transform: rotate(0deg);
+      }
+    }
+    @keyframes move-cross-bottom-right-769 {
+      0% {
+        top: 46px;
+        left: 206px;
+        transform: rotate(0deg);
+      }
+      30% {
+        left: calc(206px + 15px);
+        transform: rotate(40deg);
+      }
+      60% {
+        left: calc(206px + 0);
+        transform: rotate(70deg);
+      }
+      100% {
+        top: 46px;
+        left: 206px;
         transform: rotate(0deg);
       }
     }
@@ -453,6 +596,15 @@
       left: -30px;
       &.move {
         animation: move-cross-bottom-left 8s infinite linear;
+        @media screen and (max-width: 1439px) and (min-width: 918px) {
+          animation: move-cross-bottom-left-918 8s infinite linear;
+        }
+        @media screen and (max-width: 917px) and (min-width: 769px) {
+          animation: move-cross-bottom-left-769 8s infinite linear;
+        }
+        @media screen and (max-width: 458px) and (min-width: 0px) {
+          animation: move-cross-bottom-left-918 8s infinite linear;
+        }
       }
     }
 
@@ -462,6 +614,15 @@
       left: -4px;
       &.move {
         animation: move-cross-top-left 8s infinite linear;
+        @media screen and (max-width: 1439px) and (min-width: 918px) {
+          animation: move-cross-top-left-918 8s infinite linear;
+        }
+        @media screen and (max-width: 917px) and (min-width: 769px) {
+          animation: move-cross-top-left-769 8s infinite linear;
+        }
+        @media screen and (max-width: 458px) and (min-width: 0px) {
+          animation: move-cross-top-left-918 8s infinite linear;
+        }
       }
     }
     .cross-top-right {
@@ -470,6 +631,15 @@
       left: 281px;
       &.move {
         animation: move-cross-top-right 8s infinite linear;
+        @media screen and (max-width: 1439px) and (min-width: 918px) {
+          animation: move-cross-top-right-918 8s infinite linear;
+        }
+        @media screen and (max-width: 917px) and (min-width: 769px) {
+          animation: move-cross-top-right-769 8s infinite linear;
+        }
+        @media screen and (max-width: 458px) and (min-width: 0px) {
+          animation: move-cross-top-right-918 8s infinite linear;
+        }
       }
     }
 
@@ -479,6 +649,15 @@
       left: 412px;
       &.move {
         animation: move-cross-bottom-right 8s infinite linear;
+        @media screen and (max-width: 1439px) and (min-width: 918px) {
+          animation: move-cross-bottom-right-918 8s infinite linear;
+        }
+        @media screen and (max-width: 917px) and (min-width: 769px) {
+          animation: move-cross-bottom-right-769 8s infinite linear;
+        }
+        @media screen and (max-width: 458px) and (min-width: 0px) {
+          animation: move-cross-bottom-right-918 8s infinite linear;
+        }
       }
     }
 
