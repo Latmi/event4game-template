@@ -697,18 +697,20 @@ $(function () {
   }
 
   $('.js-select2').on('click', function () {
-    const self = $(this);
+
+    const self = this;
+
     $('.js-select2').each(function () {
-      if ($(this) !== self && $(this).hasClass('collapsed')) {
+      if (this !== self && $(this).hasClass('collapsed')) {
         const label = $(this).find('input').val();
         $(this).find('.value').text(label);
         $(this).removeClass('collapsed');
       }
     });
 
+    $(this).toggleClass('collapsed');
     const label = $(this).find('.init').text();
 
-    $(this).toggleClass('collapsed');
     if ($(this).hasClass('collapsed')) {
       $(this).find('.value').text(label);
     }

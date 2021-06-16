@@ -26,6 +26,79 @@
   border-color: $focus-red!important;
 }
 
+.custom-checkbox {
+  span {
+    &.btn-bordered {
+      color: white;
+      border: 3px solid $background-red;
+      background-color: $background-red;
+      &:hover {
+        background-color: $hover-red;
+        border: 3px solid $hover-red;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox>input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox>span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox>input:not(:disabled):not(:checked)+span:hover {
+  background-color: $hover-red;
+  border: 3px solid $hover-red;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.custom-checkbox>input:not(:disabled):active+span {
+  background-color: $focus-red;
+  border: 3px solid $focus-red;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox>input:focus+span {
+  border: 3px solid $focus-red;
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox>input:focus:not(:checked)+span {
+  background-color: $focus-red;
+  border: 3px solid $focus-red;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox>input:checked+span {
+  background-color: $focus-red;
+  border: 3px solid $focus-red;
+}
+
+
+
+
+
+
+
+
+
+
 form {
   &.modal-type {
     input {

@@ -1,11 +1,17 @@
 .btn-red {
-  background-color: $red;
+  background-color: $background-red;
   color: white;
   border-radius: 3rem;
   padding: 4px 17px;
   font-size: 14px;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
+  &:hover {
+    background-color: $hover-red;
+  }
+  &:focus, &:active {
+    background-color: $focus-red;
+  }
 
 }
 
@@ -58,7 +64,7 @@
   &.filled-red-filter {
     background-color: $background-red;
     color: white;
-    border: 3px solid $background-red!important;
+    border: 3px solid $background-red ;
 
     &:hover {
       color: $hover-red;
@@ -79,14 +85,14 @@
     color: white;
     border: 3px solid $gray-500;
     &:hover {
-      color: $hover-red;
-      background-color: white;
-      border: 3px solid $hover-red;
+      color: white;
+      background-color: $gray-700;
+      border: 3px solid $gray-700;
     }
     &:focus {
-      color: $focus-red;
-      background-color: white;
-      border: 3px solid $focus-red;
+      color: white;
+      background-color: $gray-800;
+      border: 3px solid $gray-800;
 
     }
   }
@@ -515,13 +521,13 @@
       font-weight: 500;
       margin-top: -3px;
       .option {
-        padding: .5rem 1rem 0;
+        padding: .5rem 1rem;
         cursor: pointer;
         &:hover {
           color: $hover-red
         }
         &:first-child {
-          padding: 0 1rem;
+          //padding: 0 1rem;
         }
         &:last-child {
           padding-bottom: .7rem;
@@ -553,8 +559,6 @@
   &.s-small {
     width: 225px;
   }
-
-
 
 
   @media screen and (max-width: 992px) {
@@ -605,11 +609,14 @@
     .option {
       padding: .5rem 1rem 0;
       cursor: pointer;
+      border-top: 1px solid white;
+      margin-left: .5rem;
+      margin-right: .5rem;
       &:hover {
         color: $hover-red
       }
       &:first-child {
-        padding: 0 1rem;
+        //padding: 0 1rem;
       }
       &:last-child {
         padding-bottom: .7rem;

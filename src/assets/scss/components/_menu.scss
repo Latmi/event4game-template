@@ -32,6 +32,17 @@ nav {
             color: $hover-red;
           }
         }
+        &.active {
+          position: relative;
+          &:before {
+            content: '';
+            height: 2px;
+            background-color: $background-red;
+            width: 40%;
+            position: absolute;
+            bottom: 0;
+          }
+        }
       }
       @media screen and (max-width: 992px) and (min-width: 0px) {
         display: none;
@@ -125,8 +136,11 @@ nav {
       }
       @media screen and (max-width: 768px) and (min-width: 0px) {
         margin-left: 50%;
-        img {
-          width: 34px;
+        svg {
+          width: 40px;
+          path {
+            fill: $hover-red
+          }
         }
       }
       @media screen and (max-width: 490px) and (min-width: 418px) {

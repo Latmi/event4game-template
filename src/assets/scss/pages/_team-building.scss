@@ -47,38 +47,32 @@
     }
 
 
-    .custom-radio {
-      .filled-red {
-        background-color: $background-red;
-        color: white;
-        border: 3px solid $background-red;
-        &:hover {
-          color: white;
-          background-color: $hover-red;
-          border: 3px solid $hover-red;
-        }
-        &:focus, &:active {
-          color: white;
-          background-color: $focus-red;
-          border: 3px solid $focus-red;
-        }
-      }
+    .custom-checkbox {
+      margin-bottom: 20px;
+
       @media screen and (max-width: 753px) and (min-width: 0px) {
-        .filled-red {
-          background-color: $gray-100;
-          color: $background-red;
-          border: 2px solid $background-red;
-          &:hover {
-            color: white;
-            border: 2px solid $hover-red;
+        span {
+          &.btn-bordered {
+            color: $background-red;
+            border: 2px solid $background-red;
+            background-color: $gray-100;
+            line-height: 26px;
+            &:hover {
+              color: white;
+              background-color: $hover-red;
+              border: 2px solid $hover-red;
+            }
           }
-          &:focus, &:active {
-            color: white!important;
-            border: 2px solid $focus-red;
-          }
+        }
+
+        &>input:checked+span {
+          background-color: $focus-red;
+          border: 2px solid $focus-red;
+          color: white;
         }
         .filled-gray {
-          display: none;
+          //display: none;
+          margin-top: 0;
         }
         .s-select {
           width: unset;
@@ -86,6 +80,7 @@
           line-height: 25px;
           font-size: 14px;
           height: 30px;
+
         }
         .btn-bordered {
           &.red {
@@ -217,6 +212,13 @@
     padding: .2rem 1rem;
     border-radius: 1rem;
     border: none;
+    color: white;
+    &:hover {
+      background-color: $gray-700;
+    }
+    &:focus, &:active {
+      background-color: $gray-800;
+    }
 
   }
 }
@@ -236,7 +238,6 @@
     }
     .filter, .region {
       cursor: pointer;
-      display: none;
       width: 68px;
       height: 68px;
       background-color: $background-red;

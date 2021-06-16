@@ -226,7 +226,7 @@
         margin: 10px 0;
       }
     }
-    .custom-radio {
+    .custom-checkbox {
       margin-bottom: 1.2rem;
     }
 
@@ -258,7 +258,7 @@
     }
 
 
-    .custom-radio {
+    .custom-checkbox {
 
       @media screen and (max-width: 992px) and (min-width: 990px){
         .s-select2 {
@@ -293,6 +293,9 @@
 
     }
     .btn-bordered {
+      &.s-select {
+        width: 226px;
+      }
 
       &.s-select2 {
         @media screen and (max-width: 992px) and (min-width: 990px){

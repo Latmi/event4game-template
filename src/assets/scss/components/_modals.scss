@@ -204,7 +204,29 @@
               }
 
             }
+
           }
+          &:hover {
+            a {
+              color: $gray-700;
+            }
+
+            .image-add {
+              svg {
+                fill: $gray-600;
+                path {
+                  stroke: $gray-700;
+                }
+                circle {
+                  stroke: $gray-700;
+                }
+              }
+
+            }
+
+            border-color: $gray-700 ;
+          }
+
 
           display: flex;
           flex-direction: column;
