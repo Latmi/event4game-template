@@ -718,8 +718,11 @@ $(function () {
 
   $('.js-select2 .option').on('click', function () {
     const val = $(this).text();
+    const id = $(this).attr('data-id');
       $(this).parent().prev().find('.value').text(val);
       $(this).parent().prev().prev().val(val);
+      //Подставляем ID для input
+      $(this).parent().parent().find('input').val(id);
   });
 
   $('.js-select2 .value ').on('click', function () {

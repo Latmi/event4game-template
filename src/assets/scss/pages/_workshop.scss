@@ -89,13 +89,22 @@
     @media screen and (max-width: 1040px) and (min-width: 993px){
       height: 70%;
     }
-    @media screen and (max-width: 992px) and (min-width: 769px){
+    @media screen and (max-width: 992px) and (min-width: 974px){
       height: 70%;
+    }
+    @media screen and (max-width: 973px) and (min-width: 873px){
+      height: 60%;
+    }
+    @media screen and (max-width: 872px) and (min-width: 769px){
+      height: 55%;
     }
     @media screen and (max-width: 768px) and (min-width: 345px){
       height: 302px;
     }
-    @media screen and (max-width: 344px) and (min-width: 320px){
+    @media screen and (max-width: 566px) and (min-width: 414px){
+      height: 200px;
+    }
+    @media screen and (max-width: 413px) and (min-width: 320px){
       height: 160px;
       width: calc(100% - 2.2rem);
     }
@@ -133,7 +142,10 @@
       @media screen and (max-width: 768px) and (min-width: 345px){
         margin-top: calc(151px - 33px);
       }
-      @media screen and (max-width: 344px) and (min-width: 320px){
+      @media screen and (max-width: 566px) and (min-width: 414px){
+        margin-top: calc(100px - 33px);
+      }
+      @media screen and (max-width: 413px) and (min-width: 320px){
         margin-top: calc(80px - 33px);
       }
       //@media screen and (max-width: 1040px) and (min-width: 993px){
@@ -181,7 +193,7 @@
         width: 70%;
       }
       @media screen and (max-width: 767px) and (min-width: 345px){
-        width: 70%;
+        width: 90%;
       }
       @media screen and (max-width: 344px) and (min-width: 320px){
         width: 90%;
@@ -209,11 +221,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
+    @media screen and (max-width: 1439px) and (min-width: 993px){
+      justify-content: center;
+    }
     @media screen and (max-width: 992px) and (min-width: 990px){
       justify-content: left;
     }
     @media screen and (max-width: 989px) and (min-width: 768px){
       justify-content: space-around;
+    }
+    @media screen and (max-width: 764px) and (min-width: 567px){
+      justify-content: center;
     }
     @media screen and (max-width: 490px) and (min-width: 319px){
       justify-content: center;
@@ -231,7 +249,9 @@
     }
 
     .js-select2 {
-      margin-bottom: 1.2rem;
+      @media screen and (max-width: 1600px) and (min-width: 769px){
+        margin-bottom: 1.2rem;
+      }
       @media screen and (max-width: 992px) and (min-width: 990px){
         width: 210px;
         font-size: 18px;
@@ -261,27 +281,27 @@
     .custom-checkbox {
 
       @media screen and (max-width: 992px) and (min-width: 990px){
-        .s-select2 {
+        .btn-bordered.s-select {
           width: 210px;
           font-size: 18px;
         }
       }
       @media screen and (max-width: 768px) and (min-width: 567px){
         margin-bottom: 0;
-        .s-select2 {
+        .btn-bordered.s-select {
           width: 215px;
           font-size: 18px;
         }
       }
       @media screen and (max-width: 541px) and (min-width: 320px){
         margin-bottom: 0;
-        .s-select2 {
+        .btn-bordered.s-select {
           width: 200px;
           font-size: 18px;
         }
       }
       @media screen and (max-width: 320px) and (min-width: 320px){
-        .s-select2 {
+        .btn-bordered.s-select {
           width: 100%;
         }
       }
@@ -295,6 +315,9 @@
     .btn-bordered {
       &.s-select {
         width: 226px;
+        @media screen and (max-width: 320px) and (min-width: 0px){
+          width: 100%;
+        }
       }
 
       &.s-select2 {
@@ -353,6 +376,19 @@
       display: none;
     }
   }
+
+  @media screen and (max-width: 1318px) and (min-width: 993px) {
+    .bg-left, .bg-right {
+      background-size: 65%;
+    }
+    .bg-left {
+      background-position: 0 20px;
+    }
+    .bg-right {
+      background-position: 100% 20px;
+    }
+  }
+
   position: relative;
   text-align: center;
   h4 {
