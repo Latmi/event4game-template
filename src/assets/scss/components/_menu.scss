@@ -145,6 +145,10 @@ nav {
           }
         }
       }
+      @media screen and (max-width: 657px) and (min-width: 491px) {
+        margin-left: 25%;
+
+      }
       @media screen and (max-width: 490px) and (min-width: 418px) {
         margin-left: 0;
       }
