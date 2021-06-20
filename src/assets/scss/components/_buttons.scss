@@ -689,6 +689,13 @@
   bottom: 20px;
   right: 20px;
   z-index: 10000;
+  &:hover {
+    svg {
+      path, circle {
+        stroke: $hover-red;
+      }
+    }
+  }
 }
 
 
