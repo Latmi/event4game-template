@@ -32,6 +32,17 @@ nav {
             color: $hover-red;
           }
         }
+        &.active {
+          position: relative;
+          &:before {
+            content: '';
+            height: 2px;
+            background-color: $background-red;
+            width: 40%;
+            position: absolute;
+            bottom: 0;
+          }
+        }
       }
       @media screen and (max-width: 992px) and (min-width: 0px) {
         display: none;
@@ -66,6 +77,8 @@ nav {
       .btn-red {
         cursor: pointer;
         margin-left: 5px;
+        font-weight: 500;
+        padding: 4px 15px;
         @media screen and (max-width: 992px) and (min-width: 922px) {
           margin-left: 50px;
         }
@@ -125,9 +138,16 @@ nav {
       }
       @media screen and (max-width: 768px) and (min-width: 0px) {
         margin-left: 50%;
-        img {
-          width: 34px;
+        svg {
+          width: 40px;
+          path {
+            fill: $hover-red
+          }
         }
+      }
+      @media screen and (max-width: 657px) and (min-width: 491px) {
+        margin-left: 25%;
+
       }
       @media screen and (max-width: 490px) and (min-width: 418px) {
         margin-left: 0;

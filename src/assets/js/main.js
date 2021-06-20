@@ -697,18 +697,20 @@ $(function () {
   }
 
   $('.js-select2').on('click', function () {
-    const self = $(this);
+
+    const self = this;
+
     $('.js-select2').each(function () {
-      if ($(this) !== self && $(this).hasClass('collapsed')) {
+      if (this !== self && $(this).hasClass('collapsed')) {
         const label = $(this).find('input').val();
         $(this).find('.value').text(label);
         $(this).removeClass('collapsed');
       }
     });
 
+    $(this).toggleClass('collapsed');
     const label = $(this).find('.init').text();
 
-    $(this).toggleClass('collapsed');
     if ($(this).hasClass('collapsed')) {
       $(this).find('.value').text(label);
     }
@@ -716,8 +718,11 @@ $(function () {
 
   $('.js-select2 .option').on('click', function () {
     const val = $(this).text();
+    const id = $(this).attr('data-id');
       $(this).parent().prev().find('.value').text(val);
       $(this).parent().prev().prev().val(val);
+      //Подставляем ID для input
+      $(this).parent().parent().find('input').val(id);
   });
 
   $('.js-select2 .value ').on('click', function () {
@@ -760,7 +765,6 @@ $(function () {
       });
     }
   );
-
 
 
 

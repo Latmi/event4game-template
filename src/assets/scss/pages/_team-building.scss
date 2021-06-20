@@ -22,12 +22,34 @@
     }
 
   }
+
+  .filters-container {
+    @media screen and (max-width: 1439px) and (min-width: 1158px){
+      width: 92%;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 1157px) and (min-width: 1123px){
+      width: 95%;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 1122px) and (min-width: 1100px){
+      width: 97%;
+      margin: 0 auto;
+    }
+  }
+
   .filters {
     position: relative;
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media screen and (max-width: 1439px) and (min-width: 1067px){
+      justify-content: left;
+    }
+    @media screen and (max-width: 1066px) and (min-width: 993px){
+      justify-content: center;
+    }
     @media screen and (max-width: 992px) and (min-width: 990px){
       justify-content: left;
     }
@@ -38,47 +60,57 @@
       @media screen and (max-width: 992px) {
         margin: 5px;
       }
+      @media screen and (max-width: 1439px) and (min-width: 993px){
+        //margin: 1.2rem auto;
+        margin-right: 1.2rem;
+      }
+    }
+    &>label {
+
+      @media screen and (max-width: 1439px) and (min-width: 993px){
+        //margin: 0rem auto;
+        margin-right: 1.2rem;
+      }
     }
 
     .js-select2 {
       @media screen and (max-width: 753px) and (min-width: 0px){
         display: none;
       }
+      @media screen and (max-width: 992px) and (min-width: 758px){
+        margin-bottom: 1.2rem;
+      }
     }
 
 
-    .custom-radio {
-      .filled-red {
-        background-color: $background-red;
-        color: white;
-        border: 3px solid $background-red;
-        &:hover {
-          color: white;
-          background-color: $hover-red;
-          border: 3px solid $hover-red;
-        }
-        &:focus, &:active {
-          color: white;
-          background-color: $focus-red;
-          border: 3px solid $focus-red;
-        }
-      }
+    .custom-checkbox {
+      margin-bottom: 20px;
+
+
       @media screen and (max-width: 753px) and (min-width: 0px) {
-        .filled-red {
-          background-color: $gray-100;
-          color: $background-red;
-          border: 2px solid $background-red;
-          &:hover {
-            color: white;
-            border: 2px solid $hover-red;
+        span {
+          &.btn-bordered {
+            color: $background-red;
+            border: 2px solid $background-red;
+            background-color: $gray-100;
+            line-height: 26px;
+            &:hover {
+              color: white;
+              background-color: $hover-red;
+              border: 2px solid $hover-red;
+            }
           }
-          &:focus, &:active {
-            color: white!important;
-            border: 2px solid $focus-red;
-          }
+        }
+
+        &>input:checked+span {
+          background-color: $focus-red;
+          border: 2px solid $focus-red;
+          color: white;
         }
         .filled-gray {
-          display: none;
+          //display: none;
+          margin-top: 0;
+          overflow:hidden;
         }
         .s-select {
           width: unset;
@@ -86,6 +118,7 @@
           line-height: 25px;
           font-size: 14px;
           height: 30px;
+
         }
         .btn-bordered {
           &.red {
@@ -217,6 +250,13 @@
     padding: .2rem 1rem;
     border-radius: 1rem;
     border: none;
+    color: white;
+    &:hover {
+      background-color: $gray-700;
+    }
+    &:focus, &:active {
+      background-color: $gray-800;
+    }
 
   }
 }
@@ -236,7 +276,6 @@
     }
     .filter, .region {
       cursor: pointer;
-      display: none;
       width: 68px;
       height: 68px;
       background-color: $background-red;

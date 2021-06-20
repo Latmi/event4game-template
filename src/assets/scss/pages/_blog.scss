@@ -103,9 +103,10 @@
     @media screen and (max-width: 1439px) and (min-width: 0px) {
       justify-content: start;
     }
-    button {
+    span {
       &.s-content-100 {
         width: 188px;
+        line-height: 34px;
         @media screen and (max-width: 992px) and (min-width: 769px) {
           width: 217px;
         }
