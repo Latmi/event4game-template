@@ -775,6 +775,23 @@ $(function () {
     }
   );
 
+  const $toTop = $('.to-top');
+  const offsetToTop = 200;
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > $(this).height() + offsetToTop) {
+      $toTop.show();
+    } else {
+      $toTop.hide();
+    }
+
+  });
+
+  $toTop.on('click', function () {
+    const body = $("html, body");
+    body.stop().animate({scrollTop:0}, 600);
+  });
+
 
 
 
