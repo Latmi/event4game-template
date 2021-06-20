@@ -711,9 +711,18 @@ $(function () {
     $(this).toggleClass('collapsed');
     const label = $(this).find('.init').text();
 
+
     if ($(this).hasClass('collapsed')) {
       $(this).find('.value').text(label);
     }
+
+    if ($(this).find('.value').text() !== label) {
+      $(this).addClass('js-selected');
+    } else {
+      $(this).removeClass('js-selected');
+    }
+
+
   });
 
   $('.js-select2 .option').on('click', function () {
