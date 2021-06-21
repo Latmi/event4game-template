@@ -3,11 +3,14 @@
 // -----------------------------------------------------------------------------
 // https://bootstrapvars.com/4.4/
 
+$transition-cubic: cubic-bezier(.46,.23,.53,.85);
+
 $red:                         #E31E24;
 $red-hr:                      #C34246;
 $red-hr-light:                #CB5D60;
 $hover-red:                   #B11B20;
 $focus-red:                   #92181B;
+$error-red:                   #DC171D;
 $background-red:              #d84e52;
 $background-red-light:        #E07275;
 $gray-100:                    #F6F6F6;

@@ -123,7 +123,7 @@ form {
     input {
       width: 100%;
       height: 57px;
-      margin-bottom: 1rem;
+      margin-top: 1rem;
       border-radius: 40px;
       border: none;
       font-size: 18px;
@@ -132,12 +132,25 @@ form {
       box-shadow: inset 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
       &:focus {
         outline: none;
-        box-shadow: inset 0px 0px 4px 2px rgba(177, 27, 32, 100);
+        box-shadow: inset 0px 0px 4px 2px rgba(202, 77, 77, 0.3);
+      }
+      &+span {
+        opacity: 0;
+        transition: 200ms $transition-cubic;
+        height: 0;
+        font-size: 16px;
+        color: $error-red;
+        margin-left: 1.3rem;
+        overflow: hidden;
       }
       &.required {
         &.error {
-          &::placeholder {
-            color: $background-red;
+          box-shadow: none;
+          border: 2px solid $error-red;
+          &+span {
+            transition: 200ms $transition-cubic;
+            opacity: 1;
+            height: 20px;
           }
         }
       }

@@ -595,6 +595,61 @@ $(function () {
     });
   });
 
+  function validateFields(self) {
+    const errorFields = [];
+
+    self.find('input.required').each(function () {
+
+      if ($(this).val().length <= 0) {
+        $(this).addClass('error');
+        errorFields.push($(this));
+      }
+
+    });
+
+    if (errorFields.length) {
+      errorFields[0].focus();
+      return false;
+    } else {
+      return true;
+    }
+
+  }
+  function isEmail(email) {
+    const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
+  function switchError() {
+
+    const errorTextEmail = 'Неверный ввод *';
+    const errorTextDefault = $('.modal-type .input-group span').first().text();
+
+    $('.modal-type input.error').on('keypress, keyup', function () {
+      const value = $(this).val();
+      const fieldType = $(this).attr('type');
+
+      if (value.length) {
+        $(this).removeClass('error');
+      } else {
+        $(this).addClass('error');
+      }
+
+      if (fieldType === 'email') {
+        if (value.length && !isEmail(value)) {
+          $(this).next().text(errorTextEmail);
+          $(this).addClass('error');
+        } else if (isEmail(value)) {
+          $(this).removeClass('error');
+          $(this).next().text(errorTextDefault);
+        }
+        if (!value.length) {
+          $(this).next().text(errorTextDefault);
+        }
+      }
+
+    });
+  }
+
   if ($('#show_form_feedback_desc')) {
     $('#show_form_feedback_desc').on('click', function() {
       $.fancybox.open({
@@ -611,6 +666,7 @@ $(function () {
                 }
               });
             });
+
           }
         }
       });
@@ -625,18 +681,34 @@ $(function () {
           afterShow : function( instance, current ) {
             $('.modal-type').submit(function (e) {
               e.preventDefault();
-              console.log($(this));
-              $(this).find('input.required').each(function () {
-                if ($(this).val().length <= 0) {
-                  $(this).addClass('error');
-                }
-              });
+
+              const isValid = validateFields($(this));
+              if (isValid) {
+                $.fancybox.close();
+                e.target.reset();
+
+                $.fancybox.open({
+                  src: '.modal-success',
+                  type: 'inline',
+                  opts : {
+                    afterShow : function() {
+                      setTimeout(function () {
+                        $.fancybox.close();
+                      }, 2000);
+                    }
+                  }
+                });
+              }
+              switchError();
             });
           }
         }
       });
     });
   }
+
+
+
   if ($('#show_form_brief').length) {
     $('#show_form_brief').on('click', function() {
       $.fancybox.open({

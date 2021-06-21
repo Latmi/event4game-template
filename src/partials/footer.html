@@ -105,14 +105,27 @@
   </div>
 </div>
 
+<div class="modal-success">
+  <div class="bg-mail"></div>
+  <div class="bg-fly"></div>
+  <div class="content">
+    <div class="title">Отлично!</div>
+    <div class="desc">Ваша заявка уже летит к нам</div>
+  </div>
+
+</div>
+
 <div class="feedback">
   <div class="title">Оставьте заявку</div>
   <div class="desc">Менеджер свяжется с вами в ближайшее время</div>
   <form class="modal-type" action="">
-    <div class="input-group"><input class="required" type="text" name="town" placeholder="Город"></div>
-    <div class="input-group"><input class="required" type="text" name="name" placeholder="Имя"></div>
-    <div class="input-group"><input class="required" type="email" name="email" placeholder="E-mail"></div>
-    <div class="input-group"><input class="required" type="tel" name="phone" placeholder="Телефон"></div>
+    <div class="input-group"><input class="required" type="text" name="town" placeholder="Город *"><span>Заполните это поле *</span></div>
+    <div class="input-group"><input class="required" type="text" name="name" placeholder="Имя *"><span>Заполните это поле *</span></div>
+    <div class="input-group"><input class="required" type="email" name="email" placeholder="E-mail *"><span>Заполните это поле *</span></div>
+    <div class="input-group">
+      <input data-inputmask="'mask': '+7(999)-999-99-99'" class="required" type="tel" name="phone" placeholder="Телефон *">
+      <span>Заполните это поле *</span>
+    </div>
     <button class="btn-bordered filled-red s-content-50 mt-4" type="submit">Отправить заявку</button>
   </form>
 </div>
@@ -157,6 +170,8 @@
 <script src="{{root}}assets/vendor/js/owl.carousel.min.js"></script>
 <script src="{{root}}assets/vendor/js/jquery.fancybox.min.js"></script>
 <script src="{{root}}assets/vendor/js/select2.min.js"></script>
+<script src="{{root}}assets/vendor/js/jquery.inputmask.min.js"></script>
+<script src="{{root}}assets/vendor/js/inputmask.binding.js"></script>
 <script src="{{root}}assets/js/util/autoPadding.js"></script>
 <script src="{{root}}assets/js/util/crossPlatform.js"></script>
 <script src="{{root}}assets/js/main.js"></script>
