@@ -50,5 +50,6 @@ package-lock.json
 ### Custom Files ###
 dist/
 accessibility-reports/
+.DS_Store
 *.zip
 
