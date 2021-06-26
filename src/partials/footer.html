@@ -105,14 +105,28 @@
   </div>
 </div>
 
-<div class="modal-success">
+<div class="modal-success success-feedback">
   <div class="bg-mail"></div>
   <div class="bg-fly"></div>
   <div class="content">
     <div class="title">Отлично!</div>
     <div class="desc">Ваша заявка уже летит к нам</div>
   </div>
+</div>
 
+<div class="modal-success success-team-building">
+  <div class="content">
+    <div class="title">Отлично!</div>
+    <div class="desc">Тимбилдинг добавлен в корзину</div>
+    <div class="row buttons">
+      <div class="col-md-6 col-sm-12">
+        <button id="redirect-site" class="btn-bordered red">На сайт</button>
+      </div>
+      <div class="col-md-6 col-sm-12 mt-md-0 mt-sm-3">
+        <button id="redirect-cart" class="btn-bordered red">В корзину</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="feedback">
@@ -123,7 +137,7 @@
     <div class="input-group"><input class="required" type="text" name="name" placeholder="Имя *"><span>Заполните это поле *</span></div>
     <div class="input-group"><input class="required" type="email" name="email" placeholder="E-mail *"><span>Заполните это поле *</span></div>
     <div class="input-group">
-      <input data-inputmask="'mask': '+7(999)-999-99-99'" class="required" type="tel" name="phone" placeholder="Телефон *">
+      <input data-inputmask="'mask': '+7 999-999-99-99'" class="required" type="tel" name="phone" placeholder="Телефон *">
       <span>Заполните это поле *</span>
     </div>
     <button class="btn-bordered filled-red s-content-50 mt-4" type="submit">Отправить заявку</button>
@@ -133,25 +147,61 @@
   <div class="title">Оставьте заявку</div>
   <div class="desc">Менеджер свяжется с вами в ближайшее время</div>
   <form class="modal-type" action="">
-    <div class="input-group"><input class="required" type="text" name="town" placeholder="Город"></div>
-    <div class="input-group"><input class="required" type="text" name="name" placeholder="Имя"></div>
-    <div class="input-group"><input class="required" type="email" name="email" placeholder="E-mail"></div>
-    <div class="input-group"><input class="required" type="tel" name="phone" placeholder="Телефон"></div>
-    <div><textarea name="message" placeholder="Описание..." rows="4"></textarea></div>
+    <div class="input-group">
+      <input class="required" type="text" name="town" placeholder="Город *">
+      <span>Заполните это поле *</span>
+    </div>
+    <div class="input-group">
+      <input class="required" type="text" name="name" placeholder="Имя *">
+      <span>Заполните это поле *</span>
+    </div>
+    <div class="input-group">
+      <input class="required" type="email" name="email" placeholder="E-mail *">
+      <span>Заполните это поле *</span>
+    </div>
+    <div class="input-group">
+      <input data-inputmask="'mask': '+7 999-999-99-99'" class="required" type="tel" name="phone" placeholder="Телефон *">
+      <span>Заполните это поле *</span>
+    </div>
+    <div class="mt-3">
+      <textarea name="message" placeholder="Описание..." rows="4"></textarea>
+    </div>
     <button class="btn-bordered filled-red s-content-50 mt-4" type="submit">Отправить заявку</button>
   </form>
 </div>
 <div class="feedback_brief">
-  <div class="title">Оставьте заявку</div>
+  <div class="title">Заполните бриф</div>
   <div class="desc">Менеджер свяжется с вами в ближайшее время</div>
   <form class="modal-type" action="">
-    <div class="input-group"><input class="required" type="date" name="date" placeholder="Планируемая дата"></div>
-    <div class="input-group"><input class="required" type="number" name="count" placeholder="Количество участников"></div>
-    <div class="input-group"><input class="required" type="text" name="task" placeholder="Задача"></div>
-    <div class="input-group"><input class="required" type="text" name="town" placeholder="Город"></div>
-    <div class="input-group"><input class="required" type="text" name="name" placeholder="Имя"></div>
-    <div class="input-group"><input class="required" type="email" name="email" placeholder="E-mail"></div>
-    <div class="input-group"><input class="required" type="tel" name="phone" placeholder="Телефон"></div>
+    <div class="input-group">
+      <input class="required" type="date" name="date" placeholder="Планируемая дата *">
+      <span>Заполните это поле *</span>
+    </div>
+    <div class="input-group">
+      <input class="required" type="number" name="count" placeholder="Количество участников *">
+      <span>Заполните это поле *</span>
+    </div>
+    <div class="input-group">
+      <input class="required" type="text" name="task" placeholder="Задача *">
+      <span>Заполните это поле *</span>
+    </div>
+    <hr>
+    <div class="input-group">
+      <input class="required" type="text" name="town" placeholder="Город *">
+      <span>Заполните это поле *</span>
+    </div>
+    <div class="input-group">
+      <input class="required" type="text" name="name" placeholder="Имя *">
+      <span>Заполните это поле *</span>
+    </div>
+    <div class="input-group">
+      <input class="required" type="email" name="email" placeholder="E-mail *">
+      <span>Заполните это поле *</span>
+    </div>
+    <div class="input-group">
+      <input data-inputmask="'mask': '+7 999-999-99-99'" class="required" type="tel" name="phone" placeholder="Телефон *">
+      <span>Заполните это поле *</span>
+    </div>
     <button class="btn-bordered filled-red s-content-50 mt-4" type="submit">Отправить заявку</button>
   </form>
 </div>
