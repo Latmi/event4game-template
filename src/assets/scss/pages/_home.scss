@@ -55,7 +55,7 @@
     top: 520px;
   }
   @media screen and (max-width: 768px) and (min-width: 566px) {
-    top: 754px;
+    top: 594px;
   }
   @media screen and (max-width: 567px) and (min-width: 0px) {
     top: 544px;
@@ -64,7 +64,7 @@
     padding: 20px;
   }
   @media screen and (max-width: 373px) and (min-width: 0px) {
-    top: 604px;
+    top: 450px;
   }
 }
 
@@ -985,6 +985,14 @@
       font-size: 22px;
       padding-top: 1rem;
     }
+    svg {
+      width: 100%;
+      &:hover {
+        path[fill-rule=evenodd] {
+          fill: $hover-red
+        }
+      }
+    }
   }
   .owl-next, .owl-prev {
     span {
@@ -1154,6 +1162,11 @@
               right: -25px;
               top: calc(27% - 210px / 2);
             }
+            &:hover {
+              circle {
+                fill: $hover-red;
+              }
+            }
           }
         }
         .text {
@@ -1233,23 +1246,32 @@
     }
 
   }
-  .owl-theme .owl-nav [class*='owl-']:hover {
+  &.owl-theme .owl-nav [class*='owl-']:hover {
     background: none;
-    color: $hover-red;
+    color: $focus-red;
     text-decoration: none;
   }
+
+  &.owl-theme .owl-nav [class*='owl-'] {
+    background: none;
+    color: $hover-red!important;
+    text-decoration: none;
+  }
+
 }
 
 .owl-theme .owl-nav [class*='owl-']:hover {
   background: none;
-  color: $hover-red;
+  color: $focus-red;
   text-decoration: none;
 }
+
+
 
 .dot-line {
   width: 20%;
   height: 6px;
-  background-color: $gray-500;
+  background-color: #FAEDED;
   border-radius: 4px;
   &.active {
     background-color: $background-red;
