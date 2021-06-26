@@ -920,6 +920,48 @@ $(function () {
   });
 
 
+  const owlWorkshopDetail = $('.workshop-detail-carousel');
+
+  owlWorkshopDetail.owlCarousel({
+    onChanged: makeCounterWorkshopDetail,
+    onInitialized: makeCounterWorkshopDetail,
+
+    items: 1,
+    slideBy: 1,
+    merge:true,
+    nav:true,
+    navSpeed: 500,
+    dots: false,
+    margin: 40,
+
+
+  });
+
+  function makeCounterWorkshopDetail(e) {
+    const count = Math.ceil(e.item.count / 1);
+    let index = Math.ceil((e.item.index + 1) / 1);
+    const del = e.item.count % count;
+
+    if (del > 0) {
+      if (e.item.index + 1 + del === e.item.count) {
+        index++;
+      }
+      if (e.item.index > 0 && index % owlTBItemsSlideBy === 1) {
+        index = e.item.index;
+      }
+    }
+
+    if ($('.workshop-detail-carousel .owl-next').hasClass('disabled')) {
+      index = count;
+    }
+
+    if (count > 1) {
+      $('.workshop-detail-carousel .owl-dots')
+        .removeClass('disabled')
+        .css({marginTop: -38})
+        .html(`${index} / ${count}`);
+    }
+  }
 
 
 

@@ -1709,8 +1709,9 @@
     }
     .action {
       text-align: center;
-      button {
+      a {
         display: unset;
+        margin: 0 auto;
       }
     }
 
