@@ -266,8 +266,9 @@
       @media screen and (max-width: 541px) and (min-width: 320px){
         width: 200px;
       }
-      @media screen and (max-width: 320px) and (min-width: 320px){
-        width: 100%;
+      @media screen and (max-width: 415px) and (min-width: 320px){
+        width: 80%;
+        margin: 0 auto;
       }
 
 
@@ -279,6 +280,7 @@
 
 
     .custom-checkbox {
+      width: 100%;
 
       @media screen and (max-width: 992px) and (min-width: 990px){
         .btn-bordered.s-select {
@@ -300,9 +302,10 @@
           font-size: 18px;
         }
       }
-      @media screen and (max-width: 320px) and (min-width: 320px){
+      @media screen and (max-width: 415px) and (min-width: 320px){
         .btn-bordered.s-select {
-          width: 100%;
+          width: 80%;
+          margin: 0 auto;
         }
       }
       @media screen and (max-width: 320px) and (min-width: 320px){
@@ -331,8 +334,8 @@
           width: 200px;
           margin: 0 auto;
         }
-        @media screen and (max-width: 320px) and (min-width: 320px){
-          width: 100%;
+        @media screen and (max-width: 415px) and (min-width: 320px){
+          width: 80%;
         }
 
       }

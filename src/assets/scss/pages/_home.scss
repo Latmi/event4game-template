@@ -1690,6 +1690,7 @@
     padding-bottom: 1rem;
 
   }
+
   .item {
     margin-left: 5px;
     box-shadow: 0 0 4px 4px rgba(113, 47, 49, 0.25);
@@ -1904,6 +1905,11 @@
       text-align: center;
       font-weight: 600;
       font-size: 22px;
+
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .title {
         font-size: 20px;
       }

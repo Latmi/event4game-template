@@ -103,6 +103,9 @@
     @media screen and (max-width: 1439px) and (min-width: 0px) {
       justify-content: start;
     }
+    @media screen and (max-width: 987px) and (min-width: 0px) {
+      justify-content: space-around;
+    }
     span {
       &.s-content-100 {
         width: 188px;

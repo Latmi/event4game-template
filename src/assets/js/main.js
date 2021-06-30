@@ -216,17 +216,8 @@ $(function () {
 
   const owlTeamBuilding = $('.team-building-carousel');
 
-  let owlTBItemsSlideBy = 4;
-  const windowWidth = $(window).width();
-  if (windowWidth < 993 && windowWidth >= 769) {
-    owlTBItemsSlideBy = 3;
-  }
-  if (windowWidth < 769 && windowWidth >= 567) {
-    owlTBItemsSlideBy = 2;
-  }
-  if (windowWidth < 567 && windowWidth >= 320) {
-    owlTBItemsSlideBy = 1;
-  }
+  let owlTBItemsSlideBy = 1;
+
 
 
   owlTeamBuilding.owlCarousel({
