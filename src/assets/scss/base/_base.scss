@@ -65,6 +65,18 @@ a {
   &.btn-bordered {
     text-decoration: none;
   }
+  .btn-bordered {
+    text-decoration: none;
+  }
 }
-
+.owl-carousel {
+  .item {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+  display: block;
+}
 
