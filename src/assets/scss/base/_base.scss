@@ -121,7 +121,7 @@ a {
 }
 
 
-.fancybox-content:not(.feedback):not(.feedback_desc):not(.feedback_brief) {
+.fancybox-content:not(.feedback):not(.feedback_desc):not(.feedback_brief):not(.trash-content) {
     background-color: transparent;
     padding: 0;
     .image-zoom {
