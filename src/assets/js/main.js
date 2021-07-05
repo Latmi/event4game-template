@@ -143,6 +143,43 @@ $(function () {
 
   }
 
+
+  const itemsOwl = {
+    owlExchange:  {init: 4.2, responsive: {320:{items:1},567:{items:2.2},769:{items:3},993:{items:4.2},1000:{items: 4.2}}},
+    owlTBDetail:  {init: 3.2, responsive: {320:{items:1},567:{items:2.7},769:{items:2.2},993:{items:3.2},1000:{items: 3.2}}},
+    owlWorkshop:  {init: 4.2, responsive: {320:{items:1.05},567:{items:2.2},769:{items:3},993:{items:4.2},1000:{items: 4.2}}},
+    owlCases:     {init: 2.3, responsive: {320:{items:1.2},567:{items:1.4},769:{items:1.8},993:{items:2.3},1000:{items: 2.3}}},
+    owlTeamBuilding: {init: 4.5, responsive: {320:{items:1.4},567:{items:2.5},769:{items:3},993:{items:4.5},1000:{items: 4.5}}},
+  };
+
+  const screenSizes = [1000, 993, 769, 567, 320];
+
+  const windowWidth = $('body').width();
+
+  screenSizes.forEach(function (el, index) {
+    if ((index + 1) !== screenSizes.length) {
+      if (windowWidth <= el && windowWidth > screenSizes[index + 1]) {
+        for(const item in itemsOwl) {
+          if (itemsOwl.hasOwnProperty(item)) {
+            itemsOwl[item].init = itemsOwl[item].responsive[el].items;
+          }
+        }
+      }
+    } else {
+      if (windowWidth <= el) {
+        for (const item in itemsOwl) {
+          if (itemsOwl.hasOwnProperty(item)) {
+            itemsOwl[item].init = itemsOwl[item].responsive[el].items;
+          }
+        }
+      }
+    }
+
+  });
+
+
+
+
   $('.hamburger').on('click', function () {
     $(this).toggleClass('is-active');
     if ($(this).hasClass('is-active')) {
@@ -224,37 +261,22 @@ $(function () {
     onChanged: makeCounterOwl,
     onInitialized: makeCounterOwl,
 
-    items: 4.5,
+    items: itemsOwl.owlTeamBuilding,
     slideBy: owlTBItemsSlideBy,
     merge:true,
     nav:true,
     navSpeed: 500,
     dots: false,
     margin: 60,
-    responsive:{
-      320:{
-        items:1.4,
-      },
-      567:{
-        items:2.5
-      },
-      769:{
-        items:3
-      },
-      993:{
-        items:4.5
-      },
-      1000:{
-        items: 4.5,
-      }
-    },
+    responsive: itemsOwl.owlTeamBuilding.responsive,
 
   });
 
   function makeCounterOwl(e) {
     const count = e.item.count / owlTBItemsSlideBy;
     const index = Math.ceil((e.item.index + 1) / owlTBItemsSlideBy);
-    if (count > 1) {
+
+    if (count > itemsOwl.owlTeamBuilding.init) {
       $('.team-building-carousel .owl-dots')
         .removeClass('disabled')
         .css({marginTop: -38})
@@ -366,30 +388,14 @@ $(function () {
       }
     },
 
-    items: 2.3,
+    items: itemsOwl.owlCases,
     slideBy: 1,
     merge:true,
     nav:true,
     navSpeed: 500,
     dots: false,
     margin: 60,
-    responsive:{
-      320:{
-        items:1.2
-      },
-      567:{
-        items:1.4
-      },
-      769:{
-        items:1.8
-      },
-      993:{
-        items: 2.3
-      },
-      1000:{
-        items: 2.3,
-      }
-    },
+    responsive:itemsOwl.owlCases.responsive,
 
   });
 
@@ -400,30 +406,14 @@ $(function () {
     onChanged: makeCounterOwlWorkshop,
     onInitialized: makeCounterOwlWorkshop,
 
-    items: 4.2,
+    items: itemsOwl.owlWorkshop,
     slideBy: owlTBItemsSlideBy,
     merge:true,
     nav:true,
     navSpeed: 500,
     dots: false,
     margin: 40,
-    responsive:{
-      320:{
-        items:1.05
-      },
-      567:{
-        items:2.2
-      },
-      769:{
-        items:3
-      },
-      993:{
-        items:4.2
-      },
-      1000:{
-        items: 4.2,
-      }
-    },
+    responsive:itemsOwl.owlWorkshop.responsive,
 
   });
 
@@ -445,7 +435,7 @@ $(function () {
       index = count;
     }
 
-    if (count > 1) {
+    if (count > itemsOwl.owlWorkshop.init) {
       $('.workshop-carousel .owl-dots')
         .removeClass('disabled')
         .css({marginTop: -38})
@@ -455,38 +445,25 @@ $(function () {
   }
 
 
+
+
   const owlExchange = $('.exchange-carousel');
 
   owlExchange.owlCarousel({
     onChanged: makeCounterOwlExchange,
     onInitialized: makeCounterOwlExchange,
 
-    items: 4.2,
+    items: itemsOwl.owlExchange.init,
     slideBy: owlTBItemsSlideBy,
     merge:true,
     nav:true,
     navSpeed: 500,
     dots: false,
     margin: 40,
-    responsive:{
-      320:{
-        items:1
-      },
-      567:{
-        items:2.2
-      },
-      769:{
-        items:3
-      },
-      993:{
-        items:4.2
-      },
-      1000:{
-        items: 4.2,
-      }
-    },
+    responsive: itemsOwl.owlExchange.responsive
 
   });
+
 
 
   const owlTBDetail = $('.team-building-info-carousel');
@@ -495,30 +472,14 @@ $(function () {
     onChanged: makeCounterOwlTBDetail,
     onInitialized: makeCounterOwlTBDetail,
 
-    items: 3.2,
+    items: itemsOwl.owlTBDetail,
     slideBy: owlTBItemsSlideBy,
     merge:true,
     nav:true,
     navSpeed: 500,
     dots: false,
     margin: 40,
-    responsive:{
-      320:{
-        items:1
-      },
-      567:{
-        items:2.7
-      },
-      769:{
-        items:2.2
-      },
-      993:{
-        items:3.2
-      },
-      1000:{
-        items: 3.2,
-      }
-    },
+    responsive:itemsOwl.owlTBDetail.responsive,
 
   });
 
@@ -540,7 +501,7 @@ $(function () {
       index = count;
     }
 
-    if (count > 1) {
+    if (count > itemsOwl.owlExchange.init) {
       $('.exchange-carousel .owl-dots')
         .removeClass('disabled')
         .css({marginTop: -38})
