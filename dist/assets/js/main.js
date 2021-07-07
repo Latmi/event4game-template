@@ -187,10 +187,7 @@ $(function () {
         769: {
           items: 3
         },
-        993: {
-          items: 4.2
-        },
-        1000: {
+        1025: {
           items: 4.2
         }
       }
@@ -207,10 +204,7 @@ $(function () {
         769: {
           items: 2.2
         },
-        993: {
-          items: 3.2
-        },
-        1000: {
+        1025: {
           items: 3.2
         }
       }
@@ -227,10 +221,7 @@ $(function () {
         769: {
           items: 3
         },
-        993: {
-          items: 4.2
-        },
-        1000: {
+        1025: {
           items: 4.2
         }
       }
@@ -247,10 +238,7 @@ $(function () {
         769: {
           items: 1.8
         },
-        993: {
-          items: 2.3
-        },
-        1000: {
+        1025: {
           items: 2.3
         }
       }
@@ -267,16 +255,13 @@ $(function () {
         769: {
           items: 3
         },
-        993: {
-          items: 4.5
-        },
-        1000: {
+        1025: {
           items: 4.5
         }
       }
     }
   };
-  var screenSizes = [1000, 993, 769, 567, 320];
+  var screenSizes = [1025, 769, 567, 320];
   var windowWidth = $('body').width();
   screenSizes.forEach(function (el, index) {
     if (index + 1 !== screenSizes.length) {
