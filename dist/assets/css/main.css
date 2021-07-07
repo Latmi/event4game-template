@@ -528,7 +528,7 @@ template {
   --breakpoint-sm: 321px;
   --breakpoint-md: 567px;
   --breakpoint-lg: 769px;
-  --breakpoint-xl: 993px;
+  --breakpoint-xl: 1025px;
   --breakpoint-xxl: 1440px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -1168,10 +1168,10 @@ pre code {
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
   /* line 20, node_modules/bootstrap/scss/_grid.scss */
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1180px;
+    max-width: 1280px;
   }
 }
 
@@ -2395,7 +2395,7 @@ pre code {
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
   /* line 34, node_modules/bootstrap/scss/mixins/_grid-framework.scss */
   .col-xl {
     -ms-flex-preferred-size: 0;
@@ -3342,7 +3342,7 @@ pre code {
   }
 }
 
-@media (max-width: 992.98px) {
+@media (max-width: 1024.98px) {
   /* line 171, node_modules/bootstrap/scss/_tables.scss */
   .table-responsive-xl {
     display: block;
@@ -4931,7 +4931,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
   /* line 42, node_modules/bootstrap/scss/_dropdown.scss */
   .dropdown-menu-xl-left {
     right: auto;
@@ -6489,7 +6489,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (max-width: 992.98px) {
+@media (max-width: 1024.98px) {
   /* line 156, node_modules/bootstrap/scss/_navbar.scss */
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl, .navbar-expand-xl > .container-xxl {
@@ -6498,7 +6498,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
   /* line 154, node_modules/bootstrap/scss/_navbar.scss */
   .navbar-expand-xl {
     -webkit-box-orient: horizontal;
@@ -7949,7 +7949,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
   /* line 96, node_modules/bootstrap/scss/_list-group.scss */
   .list-group-horizontal-xl {
     -webkit-box-orient: horizontal;
@@ -8557,7 +8557,7 @@ a.close.disabled {
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
   /* line 239, node_modules/bootstrap/scss/_modal.scss */
   .modal-xl {
     max-width: 1140px;
@@ -9675,7 +9675,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
   /* line 12, node_modules/bootstrap/scss/utilities/_display.scss */
   .d-xl-none {
     display: none !important;
@@ -10657,7 +10657,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
   /* line 11, node_modules/bootstrap/scss/utilities/_flex.scss */
   .flex-xl-row {
     -webkit-box-orient: horizontal !important;
@@ -11103,7 +11103,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
   /* line 7, node_modules/bootstrap/scss/utilities/_float.scss */
   .float-xl-left {
     float: left !important;
@@ -13173,7 +13173,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
   /* line 11, node_modules/bootstrap/scss/utilities/_spacing.scss */
   .m-xl-0 {
     margin: 0 !important;
@@ -14143,7 +14143,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
   /* line 22, node_modules/bootstrap/scss/utilities/_text.scss */
   .text-xl-left {
     text-align: left !important;
@@ -15312,7 +15312,7 @@ nav .top-menu-container .top-menu .menu-item {
   }
 }
 
-@media screen and (max-width: 1093px) and (min-width: 993px) {
+@media screen and (max-width: 1093px) and (max-width: 1025px) {
   /* line 17, src/assets/scss/components/_menu.scss */
   nav .top-menu-container .top-menu .menu-item {
     padding-right: .5rem;
@@ -15325,7 +15325,7 @@ nav .top-menu-container .top-menu .menu-item a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 993px) {
+@media screen and (max-width: 1439px) and (max-width: 1025px) {
   /* line 25, src/assets/scss/components/_menu.scss */
   nav .top-menu-container .top-menu .menu-item a {
     font-size: 14px;
@@ -15352,7 +15352,7 @@ nav .top-menu-container .top-menu .menu-item.active:before {
   bottom: 0;
 }
 
-@media screen and (max-width: 992px) and (min-width: 0px) {
+@media screen and (max-width: 1024px) and (min-width: 0px) {
   /* line 14, src/assets/scss/components/_menu.scss */
   nav .top-menu-container .top-menu {
     display: none;
@@ -15378,14 +15378,14 @@ nav .top-menu-container .logo {
   }
 }
 
-@media screen and (max-width: 1021px) and (min-width: 993px) {
+@media screen and (max-width: 1021px) and (max-width: 1025px) {
   /* line 52, src/assets/scss/components/_menu.scss */
   nav .top-menu-container .logo {
     margin-right: 0;
   }
 }
 
-@media screen and (max-width: 1021px) and (min-width: 993px) {
+@media screen and (max-width: 1021px) and (max-width: 1025px) {
   /* line 64, src/assets/scss/components/_menu.scss */
   nav .top-menu-container .logo img {
     width: 165px;
@@ -15414,7 +15414,7 @@ nav .top-menu-container .contacts .btn-red {
   padding: 4px 15px;
 }
 
-@media screen and (max-width: 992px) and (min-width: 922px) {
+@media screen and (max-width: 1024px) and (min-width: 922px) {
   /* line 77, src/assets/scss/components/_menu.scss */
   nav .top-menu-container .contacts .btn-red {
     margin-left: 50px;
@@ -15462,14 +15462,14 @@ nav .top-menu-container .contacts .phone a:hover {
   color: #B11B20;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 99, src/assets/scss/components/_menu.scss */
   nav .top-menu-container .contacts .phone a {
     line-height: 32px;
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 93, src/assets/scss/components/_menu.scss */
   nav .top-menu-container .contacts .phone {
     margin-bottom: 0;
@@ -15477,7 +15477,7 @@ nav .top-menu-container .contacts .phone a:hover {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 73, src/assets/scss/components/_menu.scss */
   nav .top-menu-container .contacts {
     display: -webkit-box;
@@ -15493,7 +15493,7 @@ nav .top-menu-container .hamburger {
   top: 20px;
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 1025px) {
   /* line 127, src/assets/scss/components/_menu.scss */
   nav .top-menu-container .hamburger {
     display: none;
@@ -16368,7 +16368,7 @@ nav .top-menu-container .hide-menu a:hover {
   border-color: #B11B20;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   /* line 559, src/assets/scss/components/_buttons.scss */
   .js-select2 {
     width: 230px;
@@ -17447,7 +17447,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 5, src/assets/scss/pages/_home.scss */
   .trash {
     top: 520px;
@@ -18737,7 +18737,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 72, src/assets/scss/pages/_home.scss */
   .forms {
     background-size: 150% 90%;
@@ -18813,7 +18813,7 @@ form.modal-type textarea:focus {
   top: 60px;
 }
 
-@media screen and (max-width: 992px) and (min-width: 0px) {
+@media screen and (max-width: 1024px) and (min-width: 0px) {
   /* line 711, src/assets/scss/pages/_home.scss */
   .forms .background-ellipse-red.right {
     top: 0;
@@ -18827,14 +18827,14 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 1240px) and (min-width: 993px) {
+@media screen and (max-width: 1240px) and (max-width: 1025px) {
   /* line 726, src/assets/scss/pages/_home.scss */
   .forms h1 {
     font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 726, src/assets/scss/pages/_home.scss */
   .forms h1 {
     font-size: 1.9rem;
@@ -18896,7 +18896,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 72, src/assets/scss/pages/_home.scss */
   .forms {
     padding-top: 3rem;
@@ -19040,7 +19040,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 951px) {
+@media screen and (max-width: 1024px) and (min-width: 951px) {
   /* line 765, src/assets/scss/pages/_home.scss */
   .forms form {
     width: 90%;
@@ -19216,7 +19216,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 873, src/assets/scss/pages/_home.scss */
   .advantages {
     width: 100%;
@@ -19233,7 +19233,7 @@ form.modal-type textarea:focus {
   text-align: center;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 953, src/assets/scss/pages/_home.scss */
   .all-team-building {
     margin-top: 2rem;
@@ -19248,7 +19248,7 @@ form.modal-type textarea:focus {
   margin-top: 3rem;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 993px) {
+@media screen and (max-width: 1439px) and (max-width: 1025px) {
   /* line 966, src/assets/scss/pages/_home.scss */
   .team-building-carousel {
     width: calc(100% - 5rem);
@@ -19256,7 +19256,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 0px) {
+@media screen and (max-width: 1024px) and (min-width: 0px) {
   /* line 966, src/assets/scss/pages/_home.scss */
   .team-building-carousel {
     width: 100%;
@@ -19301,7 +19301,7 @@ form.modal-type textarea:focus {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 992px) and (min-width: 0px) {
+@media screen and (max-width: 1024px) and (min-width: 0px) {
   /* line 1005, src/assets/scss/pages/_home.scss */
   .team-building-carousel .owl-nav {
     margin-left: 0;
@@ -19323,7 +19323,7 @@ form.modal-type textarea:focus {
   margin-left: -72px;
 }
 
-@media screen and (max-width: 992px) and (min-width: 0px) {
+@media screen and (max-width: 1024px) and (min-width: 0px) {
   /* line 1019, src/assets/scss/pages/_home.scss */
   .team-building-carousel .owl-dots {
     margin-left: 0;
@@ -19345,7 +19345,7 @@ form.modal-type textarea:focus {
   position: relative;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1033, src/assets/scss/pages/_home.scss */
   .cases {
     width: 100%;
@@ -19413,14 +19413,14 @@ form.modal-type textarea:focus {
   bottom: 9px;
 }
 
-@media screen and (max-width: 1158px) and (min-width: 993px) {
+@media screen and (max-width: 1158px) and (max-width: 1025px) {
   /* line 1071, src/assets/scss/pages/_home.scss */
   .cases .background-ellipse.bottom {
     width: calc(18px * 28);
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1071, src/assets/scss/pages/_home.scss */
   .cases .background-ellipse.bottom {
     width: calc(18px * 16);
@@ -19448,14 +19448,14 @@ form.modal-type textarea:focus {
   margin-top: 3rem;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 993px) {
+@media screen and (max-width: 1439px) and (max-width: 1025px) {
   /* line 1094, src/assets/scss/pages/_home.scss */
   .cases-carousel {
     width: calc(100% - 5rem);
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 0px) {
+@media screen and (max-width: 1024px) and (min-width: 0px) {
   /* line 1094, src/assets/scss/pages/_home.scss */
   .cases-carousel {
     width: 100%;
@@ -19607,7 +19607,7 @@ form.modal-type textarea:focus {
   width: 47%;
 }
 
-@media screen and (max-width: 992px) and (min-width: 951px) {
+@media screen and (max-width: 1024px) and (min-width: 951px) {
   /* line 1216, src/assets/scss/pages/_home.scss */
   .cases-carousel .owl-nav {
     width: 66%;
@@ -19651,7 +19651,7 @@ form.modal-type textarea:focus {
   margin-top: -30px;
 }
 
-@media screen and (max-width: 992px) and (min-width: 951px) {
+@media screen and (max-width: 1024px) and (min-width: 951px) {
   /* line 1238, src/assets/scss/pages/_home.scss */
   .cases-carousel .owl-dots {
     width: 57%;
@@ -19722,7 +19722,7 @@ form.modal-type textarea:focus {
   text-align: center;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1291, src/assets/scss/pages/_home.scss */
   .service-working {
     margin-top: .8rem;
@@ -19809,14 +19809,14 @@ form.modal-type textarea:focus {
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1337, src/assets/scss/pages/_home.scss */
   .service-working .block .title {
     font-size: 26px;
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1306, src/assets/scss/pages/_home.scss */
   .service-working .block {
     padding: 1rem 2rem;
@@ -19866,7 +19866,7 @@ form.modal-type textarea:focus {
   width: 70%;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1373, src/assets/scss/pages/_home.scss */
   .service-working .block .content .desc {
     font-size: 18px;
@@ -19891,7 +19891,7 @@ form.modal-type textarea:focus {
   height: 2px;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1387, src/assets/scss/pages/_home.scss */
   .service-working .block hr {
     width: 50%;
@@ -19925,7 +19925,7 @@ form.modal-type textarea:focus {
   margin-left: .8rem;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 993px) {
+@media screen and (max-width: 1439px) and (max-width: 1025px) {
   /* line 1406, src/assets/scss/pages/_home.scss */
   .service-working .block-counter:first-child {
     margin-left: 0;
@@ -19946,7 +19946,7 @@ form.modal-type textarea:focus {
   margin-right: .8rem;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 993px) {
+@media screen and (max-width: 1439px) and (max-width: 1025px) {
   /* line 1416, src/assets/scss/pages/_home.scss */
   .service-working .block-counter:last-child {
     margin-left: 0;
@@ -19969,7 +19969,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1405, src/assets/scss/pages/_home.scss */
   .service-working .block-counter {
     margin-top: 1.4rem;
@@ -20035,7 +20035,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 1119px) and (min-width: 993px) {
+@media screen and (max-width: 1119px) and (max-width: 1025px) {
   /* line 1451, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .number {
     width: 140px;
@@ -20044,7 +20044,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 951px) {
+@media screen and (max-width: 1024px) and (min-width: 951px) {
   /* line 1451, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .number {
     width: 130px;
@@ -20142,7 +20142,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 1119px) and (min-width: 993px) {
+@media screen and (max-width: 1119px) and (max-width: 1025px) {
   /* line 1521, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .text {
     line-height: 5;
@@ -20151,7 +20151,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1521, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .text {
     line-height: 5;
@@ -20222,7 +20222,7 @@ form.modal-type textarea:focus {
   padding-bottom: 2.1rem;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1580, src/assets/scss/pages/_home.scss */
   .workshop h2 {
     padding-bottom: 1.6rem;
@@ -20236,7 +20236,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1579, src/assets/scss/pages/_home.scss */
   .workshop {
     padding-top: 3rem;
@@ -20288,7 +20288,7 @@ form.modal-type textarea:focus {
   line-height: 150%;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1626, src/assets/scss/pages/_home.scss */
   .workshop .text {
     font-size: 20px;
@@ -20302,7 +20302,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1636, src/assets/scss/pages/_home.scss */
   .workshop .text p {
     margin-bottom: .5rem;
@@ -20336,7 +20336,7 @@ form.modal-type textarea:focus {
   padding-top: 1rem;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1651, src/assets/scss/pages/_home.scss */
   .workshop .content .desc {
     font-size: 20px;
@@ -20352,19 +20352,19 @@ form.modal-type textarea:focus {
 
 /* line 1668, src/assets/scss/pages/_home.scss */
 .workshop-carousel {
-  width: calc(100% - 5rem + 15px);
+  width: calc(100% - 5rem);
   margin-left: 5rem;
   margin-top: 3rem;
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (max-width: 1025px) {
   /* line 1668, src/assets/scss/pages/_home.scss */
   .workshop-carousel {
     width: calc(100% - 5rem);
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 415px) {
+@media screen and (max-width: 1024px) and (min-width: 415px) {
   /* line 1668, src/assets/scss/pages/_home.scss */
   .workshop-carousel {
     width: 100%;
@@ -20516,7 +20516,7 @@ form.modal-type textarea:focus {
   padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1773, src/assets/scss/pages/_home.scss */
   .exchange h3 {
     margin-top: 3rem;
@@ -20530,7 +20530,7 @@ form.modal-type textarea:focus {
   line-height: 150%;
 }
 
-@media screen and (max-width: 992px) and (min-width: 768px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
   /* line 1780, src/assets/scss/pages/_home.scss */
   .exchange p {
     text-align: left;
@@ -20571,7 +20571,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1795, src/assets/scss/pages/_home.scss */
   .exchange .buttons {
     -webkit-box-orient: vertical;
@@ -20591,7 +20591,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1810, src/assets/scss/pages/_home.scss */
   .exchange .buttons .s-content-50 {
     width: 70%;
@@ -20633,7 +20633,7 @@ form.modal-type textarea:focus {
   margin-left: 3.5rem;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 993px) {
+@media screen and (max-width: 1439px) and (max-width: 1025px) {
   /* line 1832, src/assets/scss/pages/_home.scss */
   .exchange .image-info {
     margin-left: 0;
@@ -20642,7 +20642,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 1832, src/assets/scss/pages/_home.scss */
   .exchange .image-info {
     width: 100%;
@@ -20692,18 +20692,18 @@ form.modal-type textarea:focus {
 
 /* line 1873, src/assets/scss/pages/_home.scss */
 .exchange-carousel {
-  width: calc(100% - 5rem + 15px);
+  width: calc(100% - 5rem);
   margin-left: 5rem;
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (max-width: 1025px) {
   /* line 1873, src/assets/scss/pages/_home.scss */
   .exchange-carousel {
     width: calc(100% - 5rem);
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 415px) {
+@media screen and (max-width: 1024px) and (min-width: 415px) {
   /* line 1873, src/assets/scss/pages/_home.scss */
   .exchange-carousel {
     width: 100%;
@@ -20784,7 +20784,7 @@ form.modal-type textarea:focus {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 992px) and (min-width: 0) {
+@media screen and (max-width: 1024px) and (min-width: 0) {
   /* line 1927, src/assets/scss/pages/_home.scss */
   .exchange-carousel .owl-nav {
     margin-left: 0;
@@ -20806,7 +20806,7 @@ form.modal-type textarea:focus {
   margin-left: -72px;
 }
 
-@media screen and (max-width: 992px) and (min-width: 0) {
+@media screen and (max-width: 1024px) and (min-width: 0) {
   /* line 1942, src/assets/scss/pages/_home.scss */
   .exchange-carousel .owl-dots {
     margin-left: 0;
@@ -20921,7 +20921,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 1066px) and (min-width: 993px) {
+@media screen and (max-width: 1066px) and (max-width: 1025px) {
   /* line 41, src/assets/scss/pages/_team-building.scss */
   .team-building .filters {
     -webkit-box-pack: center;
@@ -20930,12 +20930,12 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 990px) {
+@media screen and (max-width: 1024px) and (min-width: 990px) {
   /* line 41, src/assets/scss/pages/_team-building.scss */
   .team-building .filters {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -20947,21 +20947,21 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   /* line 59, src/assets/scss/pages/_team-building.scss */
   .team-building .filters > div {
     margin: 5px;
   }
 }
 
-@media screen and (max-width: 1439px) and (min-width: 993px) {
+@media screen and (max-width: 1439px) and (max-width: 1025px) {
   /* line 59, src/assets/scss/pages/_team-building.scss */
   .team-building .filters > div {
     margin-right: 1.2rem;
   }
 }
 
-@media screen and (max-width: 1439px) and (min-width: 993px) {
+@media screen and (max-width: 1439px) and (max-width: 1025px) {
   /* line 68, src/assets/scss/pages/_team-building.scss */
   .team-building .filters > label {
     margin-right: 1.2rem;
@@ -20975,7 +20975,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 758px) {
+@media screen and (max-width: 1024px) and (min-width: 758px) {
   /* line 76, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .js-select2 {
     margin-bottom: 1.2rem;
@@ -21038,7 +21038,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   /* line 145, src/assets/scss/pages/_team-building.scss */
   .team-building .btn-bordered.s-select {
     width: 230px;
@@ -21260,17 +21260,26 @@ form.modal-type textarea:focus {
 }
 
 /* line 276, src/assets/scss/pages/_team-building.scss */
+.team-card:last-child {
+  display: block;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  height: auto;
+}
+
+/* line 281, src/assets/scss/pages/_team-building.scss */
 .team-card .image {
   position: relative;
 }
 
-/* line 278, src/assets/scss/pages/_team-building.scss */
+/* line 283, src/assets/scss/pages/_team-building.scss */
 .team-card .image img {
   width: 100%;
   border-radius: 30px 30px 0 0;
 }
 
-/* line 282, src/assets/scss/pages/_team-building.scss */
+/* line 287, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter, .team-card .image .region {
   cursor: pointer;
   width: 68px;
@@ -21279,21 +21288,21 @@ form.modal-type textarea:focus {
   top: 0;
 }
 
-/* line 288, src/assets/scss/pages/_team-building.scss */
+/* line 293, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter img, .team-card .image .region img {
   width: unset;
   margin: 21px 0 0 18px;
   border-radius: 0;
 }
 
-/* line 295, src/assets/scss/pages/_team-building.scss */
+/* line 300, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter {
   position: absolute;
   left: 0;
   border-radius: 0 0 16px 0;
 }
 
-/* line 299, src/assets/scss/pages/_team-building.scss */
+/* line 304, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter .tags {
   display: none;
   -ms-flex-wrap: wrap;
@@ -21307,7 +21316,7 @@ form.modal-type textarea:focus {
   padding-top: 12px;
 }
 
-/* line 305, src/assets/scss/pages/_team-building.scss */
+/* line 310, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter .tags .item {
   font-size: 10px;
   color: #d84e52;
@@ -21321,26 +21330,26 @@ form.modal-type textarea:focus {
   line-height: 19px;
 }
 
-/* line 319, src/assets/scss/pages/_team-building.scss */
+/* line 324, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter.collapsed {
   cursor: default;
   border-radius: 0;
   width: 100%;
 }
 
-/* line 323, src/assets/scss/pages/_team-building.scss */
+/* line 328, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter.collapsed img {
   display: none;
 }
 
-/* line 328, src/assets/scss/pages/_team-building.scss */
+/* line 333, src/assets/scss/pages/_team-building.scss */
 .team-card .image .region {
   position: absolute;
   right: 0;
   border-radius: 0 0 0 16px;
 }
 
-/* line 332, src/assets/scss/pages/_team-building.scss */
+/* line 337, src/assets/scss/pages/_team-building.scss */
 .team-card .image .region .tags {
   display: none;
   text-align: center;
@@ -21356,24 +21365,24 @@ form.modal-type textarea:focus {
   height: 100%;
 }
 
-/* line 342, src/assets/scss/pages/_team-building.scss */
+/* line 347, src/assets/scss/pages/_team-building.scss */
 .team-card .image .region.collapsed {
   cursor: default;
   border-radius: 0;
   width: 100%;
 }
 
-/* line 346, src/assets/scss/pages/_team-building.scss */
+/* line 351, src/assets/scss/pages/_team-building.scss */
 .team-card .image .region.collapsed img {
   display: none;
 }
 
-/* line 352, src/assets/scss/pages/_team-building.scss */
+/* line 357, src/assets/scss/pages/_team-building.scss */
 .team-card .image:hover .filter, .team-card .image:hover .region {
   display: unset;
 }
 
-/* line 357, src/assets/scss/pages/_team-building.scss */
+/* line 362, src/assets/scss/pages/_team-building.scss */
 .team-card .title {
   font-weight: 600;
   font-size: 18px;
@@ -21383,7 +21392,7 @@ form.modal-type textarea:focus {
   text-transform: uppercase;
 }
 
-/* line 365, src/assets/scss/pages/_team-building.scss */
+/* line 370, src/assets/scss/pages/_team-building.scss */
 .team-card .desc {
   font-weight: 500;
   font-size: 16px;
@@ -21392,7 +21401,7 @@ form.modal-type textarea:focus {
   text-align: left;
 }
 
-/* line 372, src/assets/scss/pages/_team-building.scss */
+/* line 377, src/assets/scss/pages/_team-building.scss */
 .team-card hr {
   border: none;
   height: 2px;
@@ -21401,7 +21410,7 @@ form.modal-type textarea:focus {
   margin: 1rem auto;
 }
 
-/* line 379, src/assets/scss/pages/_team-building.scss */
+/* line 384, src/assets/scss/pages/_team-building.scss */
 .team-card .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21414,7 +21423,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 567px) and (min-width: 320px) {
-  /* line 379, src/assets/scss/pages/_team-building.scss */
+  /* line 384, src/assets/scss/pages/_team-building.scss */
   .team-card .info {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -21424,35 +21433,35 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 391, src/assets/scss/pages/_team-building.scss */
+/* line 396, src/assets/scss/pages/_team-building.scss */
 .team-card .info .item {
   line-height: 15px;
 }
 
 @media screen and (max-width: 567px) and (min-width: 320px) {
-  /* line 391, src/assets/scss/pages/_team-building.scss */
+  /* line 396, src/assets/scss/pages/_team-building.scss */
   .team-card .info .item {
     padding: .3rem;
   }
 }
 
-/* line 396, src/assets/scss/pages/_team-building.scss */
+/* line 401, src/assets/scss/pages/_team-building.scss */
 .team-card .info .item img {
   padding-right: 10px;
 }
 
-/* line 401, src/assets/scss/pages/_team-building.scss */
+/* line 406, src/assets/scss/pages/_team-building.scss */
 .team-card .detail {
   text-align: center;
 }
 
-/* line 403, src/assets/scss/pages/_team-building.scss */
+/* line 408, src/assets/scss/pages/_team-building.scss */
 .team-card .detail a {
   margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 406, src/assets/scss/pages/_team-building.scss */
+  /* line 411, src/assets/scss/pages/_team-building.scss */
   .team-card .detail .s-small {
     font-size: 20px;
     width: 70%;
@@ -21462,7 +21471,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 567px) and (min-width: 320px) {
-  /* line 406, src/assets/scss/pages/_team-building.scss */
+  /* line 411, src/assets/scss/pages/_team-building.scss */
   .team-card .detail .s-small {
     font-size: 18px;
     width: 80%;
@@ -21471,7 +21480,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 423, src/assets/scss/pages/_team-building.scss */
+/* line 428, src/assets/scss/pages/_team-building.scss */
 .more {
   margin: 2rem auto;
   text-align: center;
@@ -21479,7 +21488,7 @@ form.modal-type textarea:focus {
   font-size: 16px;
 }
 
-/* line 428, src/assets/scss/pages/_team-building.scss */
+/* line 433, src/assets/scss/pages/_team-building.scss */
 .more div {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -21488,14 +21497,14 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 436, src/assets/scss/pages/_team-building.scss */
+/* line 441, src/assets/scss/pages/_team-building.scss */
 .show-filters-content {
   display: none;
   width: 100%;
   padding: 10px;
 }
 
-/* line 440, src/assets/scss/pages/_team-building.scss */
+/* line 445, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .title {
   font-weight: 600;
   font-size: 18px;
@@ -21503,13 +21512,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 353px) and (min-width: 0px) {
-  /* line 440, src/assets/scss/pages/_team-building.scss */
+  /* line 445, src/assets/scss/pages/_team-building.scss */
   .show-filters-content .title {
     font-size: 16px;
   }
 }
 
-/* line 449, src/assets/scss/pages/_team-building.scss */
+/* line 454, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .reset-filters {
   top: 10px;
   left: calc(1.5rem + 5px);
@@ -21520,13 +21529,13 @@ form.modal-type textarea:focus {
   background-color: white;
 }
 
-/* line 457, src/assets/scss/pages/_team-building.scss */
+/* line 462, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .reset-filters:focus, .show-filters-content .reset-filters:active {
   outline: none;
   border: none;
 }
 
-/* line 462, src/assets/scss/pages/_team-building.scss */
+/* line 467, src/assets/scss/pages/_team-building.scss */
 .show-filters-content hr {
   border: none;
   background-color: rgba(0, 0, 0, 0.5);
@@ -21534,20 +21543,20 @@ form.modal-type textarea:focus {
   margin: .5rem 0;
 }
 
-/* line 469, src/assets/scss/pages/_team-building.scss */
+/* line 474, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .section-title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   padding: .5rem 0.5rem 0 1.5rem;
   font-weight: bold;
 }
 
-/* line 474, src/assets/scss/pages/_team-building.scss */
+/* line 479, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .check-group {
   margin-top: 1rem;
   padding-left: 1.5rem;
 }
 
-/* line 478, src/assets/scss/pages/_team-building.scss */
+/* line 483, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .select-town {
   color: #d84e52;
   font-weight: 500;
@@ -21555,7 +21564,7 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 485, src/assets/scss/pages/_team-building.scss */
+/* line 490, src/assets/scss/pages/_team-building.scss */
 .show-filters-content button[type=submit] {
   background-color: #d84e52;
   color: white;
@@ -21565,7 +21574,7 @@ form.modal-type textarea:focus {
   line-height: 35px;
 }
 
-/* line 502, src/assets/scss/pages/_team-building.scss */
+/* line 507, src/assets/scss/pages/_team-building.scss */
 .no-result {
   margin: 4rem auto;
   width: 430px;
@@ -21718,7 +21727,7 @@ form.modal-type textarea:focus {
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 68, src/assets/scss/pages/_services.scss */
   .service-schema .block .title {
     font-size: 26px;
@@ -21732,7 +21741,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 38, src/assets/scss/pages/_services.scss */
   .service-schema .block {
     padding: 1rem 2rem;
@@ -21782,7 +21791,7 @@ form.modal-type textarea:focus {
   width: 75%;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 107, src/assets/scss/pages/_services.scss */
   .service-schema .block .content .desc {
     font-size: 18px;
@@ -21807,7 +21816,7 @@ form.modal-type textarea:focus {
   height: 2px;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 121, src/assets/scss/pages/_services.scss */
   .service-schema .block hr {
     width: 50%;
@@ -21898,7 +21907,7 @@ form.modal-type textarea:focus {
   margin-left: .8rem;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 993px) {
+@media screen and (max-width: 1439px) and (max-width: 1025px) {
   /* line 182, src/assets/scss/pages/_services.scss */
   .service-partners .block-counter:first-child {
     margin-left: 0;
@@ -21927,7 +21936,7 @@ form.modal-type textarea:focus {
   margin-right: .8rem;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 993px) {
+@media screen and (max-width: 1439px) and (max-width: 1025px) {
   /* line 196, src/assets/scss/pages/_services.scss */
   .service-partners .block-counter:last-child {
     margin-left: 0;
@@ -21951,7 +21960,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 181, src/assets/scss/pages/_services.scss */
   .service-partners .block-counter {
     margin-top: 1.4rem;
@@ -22017,7 +22026,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 1119px) and (min-width: 993px) {
+@media screen and (max-width: 1119px) and (max-width: 1025px) {
   /* line 232, src/assets/scss/pages/_services.scss */
   .service-partners .block-counter .number {
     width: 140px;
@@ -22026,7 +22035,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 951px) {
+@media screen and (max-width: 1024px) and (min-width: 951px) {
   /* line 232, src/assets/scss/pages/_services.scss */
   .service-partners .block-counter .number {
     width: 130px;
@@ -22124,7 +22133,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 1119px) and (min-width: 993px) {
+@media screen and (max-width: 1119px) and (max-width: 1025px) {
   /* line 302, src/assets/scss/pages/_services.scss */
   .service-partners .block-counter .text {
     line-height: 5;
@@ -22133,7 +22142,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 302, src/assets/scss/pages/_services.scss */
   .service-partners .block-counter .text {
     line-height: 5;
@@ -22250,7 +22259,7 @@ form.modal-type textarea:focus {
   padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 33, src/assets/scss/pages/_exchange.scss */
   .exchange-detail h3 {
     margin-top: 3rem;
@@ -22308,7 +22317,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 70, src/assets/scss/pages/_exchange.scss */
   .exchange-detail .buttons .s-content-50 {
     width: 70%;
@@ -22375,7 +22384,7 @@ form.modal-type textarea:focus {
   margin-left: -1rem;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 993px) {
+@media screen and (max-width: 1439px) and (max-width: 1025px) {
   /* line 114, src/assets/scss/pages/_exchange.scss */
   .exchange-detail .image-info {
     margin-left: 0;
@@ -22384,7 +22393,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 114, src/assets/scss/pages/_exchange.scss */
   .exchange-detail .image-info {
     width: 100%;
@@ -22458,7 +22467,7 @@ form.modal-type textarea:focus {
   background-color: #F6F6F6;
 }
 
-@media screen and (max-width: 992px) and (min-width: 0px) {
+@media screen and (max-width: 1024px) and (min-width: 0px) {
   /* line 1, src/assets/scss/pages/_blog.scss */
   .blog {
     background-color: white;
@@ -22516,7 +22525,7 @@ form.modal-type textarea:focus {
   padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 34, src/assets/scss/pages/_blog.scss */
   .blog h3 {
     margin-top: 3rem;
@@ -22651,7 +22660,7 @@ form.modal-type textarea:focus {
   line-height: 34px;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 110, src/assets/scss/pages/_blog.scss */
   .blog .filters span.s-content-100 {
     width: 217px;
@@ -22855,7 +22864,7 @@ form.modal-type textarea:focus {
   padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 64, src/assets/scss/pages/_workshop.scss */
   .workshop-detail h3 {
     margin-top: 3rem;
@@ -22889,14 +22898,14 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 1040px) and (min-width: 993px) {
+@media screen and (max-width: 1040px) and (max-width: 1025px) {
   /* line 76, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .video {
     height: 70%;
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 974px) {
+@media screen and (max-width: 1024px) and (min-width: 974px) {
   /* line 76, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .video {
     height: 70%;
@@ -23121,7 +23130,7 @@ form.modal-type textarea:focus {
           justify-content: start;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 993px) {
+@media screen and (max-width: 1439px) and (max-width: 1025px) {
   /* line 219, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters {
     -webkit-box-pack: center;
@@ -23130,7 +23139,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 990px) {
+@media screen and (max-width: 1024px) and (min-width: 990px) {
   /* line 219, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters {
     -webkit-box-pack: left;
@@ -23165,14 +23174,14 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   /* line 239, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters > div {
     margin: 5px 0;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   /* line 239, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters > div {
     margin: 10px 0;
@@ -23191,7 +23200,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 990px) {
+@media screen and (max-width: 1024px) and (min-width: 990px) {
   /* line 251, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .js-select2 {
     width: 210px;
@@ -23239,7 +23248,7 @@ form.modal-type textarea:focus {
   width: 100%;
 }
 
-@media screen and (max-width: 992px) and (min-width: 990px) {
+@media screen and (max-width: 1024px) and (min-width: 990px) {
   /* line 286, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .custom-checkbox .btn-bordered.s-select {
     width: 210px;
@@ -23298,7 +23307,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 990px) {
+@media screen and (max-width: 1024px) and (min-width: 990px) {
   /* line 326, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .btn-bordered.s-select2 {
     width: 210px;
@@ -23355,7 +23364,7 @@ form.modal-type textarea:focus {
   height: 182px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   /* line 358, src/assets/scss/pages/_workshop.scss */
   .workshop-footer .bg-left {
     display: none;
@@ -23373,14 +23382,14 @@ form.modal-type textarea:focus {
   height: 174px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   /* line 370, src/assets/scss/pages/_workshop.scss */
   .workshop-footer .bg-right {
     display: none;
   }
 }
 
-@media screen and (max-width: 1318px) and (min-width: 993px) {
+@media screen and (max-width: 1318px) and (max-width: 1025px) {
   /* line 384, src/assets/scss/pages/_workshop.scss */
   .workshop-footer .bg-left, .workshop-footer .bg-right {
     background-size: 65%;
@@ -23858,7 +23867,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 1137px) and (min-width: 993px) {
+@media screen and (max-width: 1137px) and (max-width: 1025px) {
   /* line 265, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .info .buttons .btn-bordered {
     font-size: 16px;
@@ -24311,7 +24320,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 1118px) and (min-width: 993px) {
+@media screen and (max-width: 1118px) and (max-width: 1025px) {
   /* line 543, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .workshop-footer .provider {
     max-width: 680px !important;
@@ -24319,7 +24328,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 1288px) and (min-width: 993px) {
+@media screen and (max-width: 1288px) and (max-width: 1025px) {
   /* line 559, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .workshop-footer .bg-left, .team-building-detail .workshop-footer .bg-right {
     background-size: 70%;
@@ -24729,7 +24738,7 @@ form.modal-type textarea:focus {
   padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 37, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail h3 {
     margin-top: 3rem;
@@ -24768,7 +24777,7 @@ form.modal-type textarea:focus {
   border-radius: 30px 30px 0 0;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 57, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .image {
     height: 168px;
@@ -24825,7 +24834,7 @@ form.modal-type textarea:focus {
   border-radius: 16px;
 }
 
-@media screen and (max-width: 992px) and (min-width: 567px) {
+@media screen and (max-width: 1024px) and (min-width: 567px) {
   /* line 78, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .wrapper {
     padding: 1rem .5rem;
@@ -25140,7 +25149,7 @@ form.modal-type textarea:focus {
   height: 277px;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 257, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .images .blank {
     height: 213px;
@@ -25198,7 +25207,7 @@ form.modal-type textarea:focus {
       flex-basis: 38%;
 }
 
-@media screen and (max-width: 992px) and (min-width: 567px) {
+@media screen and (max-width: 1024px) and (min-width: 567px) {
   /* line 285, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .footer-article .likes {
     -ms-flex-preferred-size: 55%;
@@ -25417,7 +25426,7 @@ form.modal-type textarea:focus {
   font-weight: 600;
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 424, src/assets/scss/pages/_blog-detail.scss */
   .other-articles h3 {
     margin-top: 3rem;
@@ -25462,7 +25471,7 @@ form.modal-type textarea:focus {
       justify-content: space-around;
 }
 
-@media screen and (max-width: 992px) and (min-width: 320px) {
+@media screen and (max-width: 1024px) and (min-width: 320px) {
   /* line 3, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-detail-item .description-block {
     width: 100%;
@@ -25564,7 +25573,7 @@ form.modal-type textarea:focus {
   font-size: 22px;
 }
 
-@media screen and (max-width: 992px) and (min-width: 0px) {
+@media screen and (max-width: 1024px) and (min-width: 0px) {
   /* line 98, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-detail-item .cost {
     margin-bottom: 2rem;
@@ -25644,7 +25653,7 @@ form.modal-type textarea:focus {
   top: 0;
 }
 
-@media screen and (max-width: 992px) and (min-width: 0px) {
+@media screen and (max-width: 1024px) and (min-width: 0px) {
   /* line 146, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-detail-item .background-ellipse-red-2.left {
     display: none;
@@ -25660,7 +25669,7 @@ form.modal-type textarea:focus {
   bottom: 0;
 }
 
-@media screen and (max-width: 992px) and (min-width: 0px) {
+@media screen and (max-width: 1024px) and (min-width: 0px) {
   /* line 158, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-detail-item .background-ellipse-red-2.right {
     display: none;
@@ -25744,14 +25753,14 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 1040px) and (min-width: 993px) {
+@media screen and (max-width: 1040px) and (max-width: 1025px) {
   /* line 205, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-detail-item .video {
     height: 70%;
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 974px) {
+@media screen and (max-width: 1024px) and (min-width: 974px) {
   /* line 205, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-detail-item .video {
     height: 70%;
@@ -25976,7 +25985,7 @@ form.modal-type textarea:focus {
           justify-content: start;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 993px) {
+@media screen and (max-width: 1439px) and (max-width: 1025px) {
   /* line 348, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-detail-item .filters {
     -webkit-box-pack: center;
@@ -25985,7 +25994,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 990px) {
+@media screen and (max-width: 1024px) and (min-width: 990px) {
   /* line 348, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-detail-item .filters {
     -webkit-box-pack: left;
@@ -26020,14 +26029,14 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   /* line 368, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-detail-item .filters > div {
     margin: 5px 0;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   /* line 368, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-detail-item .filters > div {
     margin: 10px 0;
@@ -26046,7 +26055,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 990px) {
+@media screen and (max-width: 1024px) and (min-width: 990px) {
   /* line 380, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-detail-item .filters .js-select2 {
     width: 210px;
@@ -26088,7 +26097,7 @@ form.modal-type textarea:focus {
   left: 0;
 }
 
-@media screen and (max-width: 992px) and (min-width: 990px) {
+@media screen and (max-width: 1024px) and (min-width: 990px) {
   /* line 413, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-detail-item .filters .custom-checkbox .btn-bordered.s-select {
     width: 210px;
@@ -26146,7 +26155,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 990px) {
+@media screen and (max-width: 1024px) and (min-width: 990px) {
   /* line 452, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-detail-item .filters .btn-bordered.s-select2 {
     width: 210px;
@@ -26203,7 +26212,7 @@ form.modal-type textarea:focus {
   height: 182px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   /* line 484, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-footer .bg-left {
     display: none;
@@ -26221,14 +26230,14 @@ form.modal-type textarea:focus {
   height: 174px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   /* line 496, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-footer .bg-right {
     display: none;
   }
 }
 
-@media screen and (max-width: 1318px) and (min-width: 993px) {
+@media screen and (max-width: 1318px) and (max-width: 1025px) {
   /* line 510, src/assets/scss/pages/_workshop-detail.scss */
   .workshop-footer .bg-left, .workshop-footer .bg-right {
     background-size: 65%;

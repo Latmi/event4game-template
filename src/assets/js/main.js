@@ -145,14 +145,14 @@ $(function () {
 
 
   const itemsOwl = {
-    owlExchange:  {init: 4.2, responsive: {320:{items:1},567:{items:2.2},769:{items:3},993:{items:4.2},1000:{items: 4.2}}},
-    owlTBDetail:  {init: 3.2, responsive: {320:{items:1},567:{items:2.7},769:{items:2.2},993:{items:3.2},1000:{items: 3.2}}},
-    owlWorkshop:  {init: 4.2, responsive: {320:{items:1.05},567:{items:2.2},769:{items:3},993:{items:4.2},1000:{items: 4.2}}},
-    owlCases:     {init: 2.3, responsive: {320:{items:1.2},567:{items:1.4},769:{items:1.8},993:{items:2.3},1000:{items: 2.3}}},
-    owlTeamBuilding: {init: 4.5, responsive: {320:{items:1.4},567:{items:2.5},769:{items:3},993:{items:4.5},1000:{items: 4.5}}},
+    owlExchange:  {init: 4.2, responsive: {320:{items:1},567:{items:2.2},769:{items:3},1025:{items:4.2}}},
+    owlTBDetail:  {init: 3.2, responsive: {320:{items:1},567:{items:2.7},769:{items:2.2},1025:{items:3.2}}},
+    owlWorkshop:  {init: 4.2, responsive: {320:{items:1.05},567:{items:2.2},769:{items:3},1025:{items:4.2}}},
+    owlCases:     {init: 2.3, responsive: {320:{items:1.2},567:{items:1.4},769:{items:1.8},1025:{items:2.3}}},
+    owlTeamBuilding: {init: 4.5, responsive: {320:{items:1.4},567:{items:2.5},769:{items:3},1025:{items:4.5}}},
   };
 
-  const screenSizes = [1000, 993, 769, 567, 320];
+  const screenSizes = [1025, 769, 567, 320];
 
   const windowWidth = $('body').width();
 

@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    @media screen and (max-width: 992px) and (min-width: 320px) {
+    @media screen and (max-width: 1024px) and (min-width: 320px) {
       width: 100%;
     }
     @media screen and (max-width: 768px) and (min-width: 320px) {
@@ -97,7 +97,7 @@
   background-color: $gray-100;
   .cost {
     font-size: 22px;
-    @media screen and (max-width: 992px) and (min-width: 0px) {
+    @media screen and (max-width: 1024px) and (min-width: 0px) {
       margin-bottom: 2rem;
     }
     span {
@@ -149,7 +149,7 @@
       position: absolute;
       left: 0;
       top: 0;
-      @media screen and (max-width: 992px) and (min-width: 0px) {
+      @media screen and (max-width: 1024px) and (min-width: 0px) {
         display: none;
       }
 
@@ -161,7 +161,7 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      @media screen and (max-width: 992px) and (min-width: 0px) {
+      @media screen and (max-width: 1024px) and (min-width: 0px) {
         display: none;
       }
     }
@@ -215,10 +215,10 @@
     @media screen and (max-width: 1439px) and (min-width: 1041px){
       height: 80%;
     }
-    @media screen and (max-width: 1040px) and (min-width: 993px){
+    @media screen and (max-width: 1040px) and (max-width: 1025px){
       height: 70%;
     }
-    @media screen and (max-width: 992px) and (min-width: 974px){
+    @media screen and (max-width: 1024px) and (min-width: 974px){
       height: 70%;
     }
     @media screen and (max-width: 973px) and (min-width: 873px){
@@ -277,7 +277,7 @@
       @media screen and (max-width: 413px) and (min-width: 320px){
         margin-top: calc(80px - 33px);
       }
-      //@media screen and (max-width: 1040px) and (min-width: 993px){
+      //@media screen and (max-width: 1040px) and (max-width: 1025px){
       //  margin-top: calc(25% - 33px);
       //}
       img {
@@ -350,10 +350,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    @media screen and (max-width: 1439px) and (min-width: 993px){
+    @media screen and (max-width: 1439px) and (max-width: 1025px){
       justify-content: center;
     }
-    @media screen and (max-width: 992px) and (min-width: 990px){
+    @media screen and (max-width: 1024px) and (min-width: 990px){
       justify-content: left;
     }
     @media screen and (max-width: 989px) and (min-width: 768px){
@@ -366,10 +366,10 @@
       justify-content: center;
     }
     &>div {
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 1024px) {
         margin: 5px 0;
       }
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 1024px) {
         margin: 10px 0;
       }
     }
@@ -381,7 +381,7 @@
       @media screen and (max-width: 1600px) and (min-width: 769px){
         margin-bottom: 1.2rem;
       }
-      @media screen and (max-width: 992px) and (min-width: 990px){
+      @media screen and (max-width: 1024px) and (min-width: 990px){
         width: 210px;
         font-size: 18px;
       }
@@ -409,7 +409,7 @@
 
     .custom-checkbox {
 
-      @media screen and (max-width: 992px) and (min-width: 990px){
+      @media screen and (max-width: 1024px) and (min-width: 990px){
         .btn-bordered.s-select {
           width: 210px;
           font-size: 18px;
@@ -450,7 +450,7 @@
       }
 
       &.s-select2 {
-        @media screen and (max-width: 992px) and (min-width: 990px){
+        @media screen and (max-width: 1024px) and (min-width: 990px){
           width: 210px;
         }
         @media screen and (max-width: 768px) and (min-width: 567px){
@@ -489,7 +489,7 @@
     background: url('../../assets/img/workshop-footer-left.svg') 0 0 no-repeat;
     width: 294px;
     height: 182px;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1024px) {
       display: none;
     }
   }
@@ -501,12 +501,12 @@
     background: url('../../assets/img/workshop-footer-right.svg') 0 0 no-repeat;
     width: 307px;
     height: 174px;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1024px) {
       display: none;
     }
   }
 
-  @media screen and (max-width: 1318px) and (min-width: 993px) {
+  @media screen and (max-width: 1318px) and (max-width: 1025px) {
     .bg-left, .bg-right {
       background-size: 65%;
     }
