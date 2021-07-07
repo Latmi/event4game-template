@@ -51,7 +51,7 @@
       justify-content: center;
     }
     @media screen and (max-width: 1024px) and (min-width: 990px){
-      justify-content: left;
+      justify-content: center;
     }
     @media screen and (max-width: 989px) and (min-width: 768px){
       justify-content: space-around;
@@ -273,6 +273,11 @@
   flex-direction: column;
   justify-content: space-between;
   margin-top: 0!important;
+  &:last-child {
+    display: block;
+    justify-content: unset;
+    height: auto;
+  }
   .image {
     position: relative;
     img {

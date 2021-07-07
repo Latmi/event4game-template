@@ -1666,7 +1666,7 @@
 }
 
 .workshop-carousel {
-  width: calc(100% - 5rem + 15px);
+  width: calc(100% - 5rem);
   margin-left: 5rem;
   @media screen and (max-width: 1025px) {
     width: calc(100% - 5rem);
@@ -1871,7 +1871,7 @@
 }
 
 .exchange-carousel {
-  width: calc(100% - 5rem + 15px);
+  width: calc(100% - 5rem);
   margin-left: 5rem;
   @media screen and (max-width: 1025px) {
     width: calc(100% - 5rem);

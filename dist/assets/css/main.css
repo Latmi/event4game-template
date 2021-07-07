@@ -20352,7 +20352,7 @@ form.modal-type textarea:focus {
 
 /* line 1668, src/assets/scss/pages/_home.scss */
 .workshop-carousel {
-  width: calc(100% - 5rem + 15px);
+  width: calc(100% - 5rem);
   margin-left: 5rem;
   margin-top: 3rem;
 }
@@ -20692,7 +20692,7 @@ form.modal-type textarea:focus {
 
 /* line 1873, src/assets/scss/pages/_home.scss */
 .exchange-carousel {
-  width: calc(100% - 5rem + 15px);
+  width: calc(100% - 5rem);
   margin-left: 5rem;
 }
 
@@ -20933,9 +20933,9 @@ form.modal-type textarea:focus {
 @media screen and (max-width: 1024px) and (min-width: 990px) {
   /* line 41, src/assets/scss/pages/_team-building.scss */
   .team-building .filters {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -21260,17 +21260,26 @@ form.modal-type textarea:focus {
 }
 
 /* line 276, src/assets/scss/pages/_team-building.scss */
+.team-card:last-child {
+  display: block;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  height: auto;
+}
+
+/* line 281, src/assets/scss/pages/_team-building.scss */
 .team-card .image {
   position: relative;
 }
 
-/* line 278, src/assets/scss/pages/_team-building.scss */
+/* line 283, src/assets/scss/pages/_team-building.scss */
 .team-card .image img {
   width: 100%;
   border-radius: 30px 30px 0 0;
 }
 
-/* line 282, src/assets/scss/pages/_team-building.scss */
+/* line 287, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter, .team-card .image .region {
   cursor: pointer;
   width: 68px;
@@ -21279,21 +21288,21 @@ form.modal-type textarea:focus {
   top: 0;
 }
 
-/* line 288, src/assets/scss/pages/_team-building.scss */
+/* line 293, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter img, .team-card .image .region img {
   width: unset;
   margin: 21px 0 0 18px;
   border-radius: 0;
 }
 
-/* line 295, src/assets/scss/pages/_team-building.scss */
+/* line 300, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter {
   position: absolute;
   left: 0;
   border-radius: 0 0 16px 0;
 }
 
-/* line 299, src/assets/scss/pages/_team-building.scss */
+/* line 304, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter .tags {
   display: none;
   -ms-flex-wrap: wrap;
@@ -21307,7 +21316,7 @@ form.modal-type textarea:focus {
   padding-top: 12px;
 }
 
-/* line 305, src/assets/scss/pages/_team-building.scss */
+/* line 310, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter .tags .item {
   font-size: 10px;
   color: #d84e52;
@@ -21321,26 +21330,26 @@ form.modal-type textarea:focus {
   line-height: 19px;
 }
 
-/* line 319, src/assets/scss/pages/_team-building.scss */
+/* line 324, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter.collapsed {
   cursor: default;
   border-radius: 0;
   width: 100%;
 }
 
-/* line 323, src/assets/scss/pages/_team-building.scss */
+/* line 328, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter.collapsed img {
   display: none;
 }
 
-/* line 328, src/assets/scss/pages/_team-building.scss */
+/* line 333, src/assets/scss/pages/_team-building.scss */
 .team-card .image .region {
   position: absolute;
   right: 0;
   border-radius: 0 0 0 16px;
 }
 
-/* line 332, src/assets/scss/pages/_team-building.scss */
+/* line 337, src/assets/scss/pages/_team-building.scss */
 .team-card .image .region .tags {
   display: none;
   text-align: center;
@@ -21356,24 +21365,24 @@ form.modal-type textarea:focus {
   height: 100%;
 }
 
-/* line 342, src/assets/scss/pages/_team-building.scss */
+/* line 347, src/assets/scss/pages/_team-building.scss */
 .team-card .image .region.collapsed {
   cursor: default;
   border-radius: 0;
   width: 100%;
 }
 
-/* line 346, src/assets/scss/pages/_team-building.scss */
+/* line 351, src/assets/scss/pages/_team-building.scss */
 .team-card .image .region.collapsed img {
   display: none;
 }
 
-/* line 352, src/assets/scss/pages/_team-building.scss */
+/* line 357, src/assets/scss/pages/_team-building.scss */
 .team-card .image:hover .filter, .team-card .image:hover .region {
   display: unset;
 }
 
-/* line 357, src/assets/scss/pages/_team-building.scss */
+/* line 362, src/assets/scss/pages/_team-building.scss */
 .team-card .title {
   font-weight: 600;
   font-size: 18px;
@@ -21383,7 +21392,7 @@ form.modal-type textarea:focus {
   text-transform: uppercase;
 }
 
-/* line 365, src/assets/scss/pages/_team-building.scss */
+/* line 370, src/assets/scss/pages/_team-building.scss */
 .team-card .desc {
   font-weight: 500;
   font-size: 16px;
@@ -21392,7 +21401,7 @@ form.modal-type textarea:focus {
   text-align: left;
 }
 
-/* line 372, src/assets/scss/pages/_team-building.scss */
+/* line 377, src/assets/scss/pages/_team-building.scss */
 .team-card hr {
   border: none;
   height: 2px;
@@ -21401,7 +21410,7 @@ form.modal-type textarea:focus {
   margin: 1rem auto;
 }
 
-/* line 379, src/assets/scss/pages/_team-building.scss */
+/* line 384, src/assets/scss/pages/_team-building.scss */
 .team-card .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21414,7 +21423,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 567px) and (min-width: 320px) {
-  /* line 379, src/assets/scss/pages/_team-building.scss */
+  /* line 384, src/assets/scss/pages/_team-building.scss */
   .team-card .info {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -21424,35 +21433,35 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 391, src/assets/scss/pages/_team-building.scss */
+/* line 396, src/assets/scss/pages/_team-building.scss */
 .team-card .info .item {
   line-height: 15px;
 }
 
 @media screen and (max-width: 567px) and (min-width: 320px) {
-  /* line 391, src/assets/scss/pages/_team-building.scss */
+  /* line 396, src/assets/scss/pages/_team-building.scss */
   .team-card .info .item {
     padding: .3rem;
   }
 }
 
-/* line 396, src/assets/scss/pages/_team-building.scss */
+/* line 401, src/assets/scss/pages/_team-building.scss */
 .team-card .info .item img {
   padding-right: 10px;
 }
 
-/* line 401, src/assets/scss/pages/_team-building.scss */
+/* line 406, src/assets/scss/pages/_team-building.scss */
 .team-card .detail {
   text-align: center;
 }
 
-/* line 403, src/assets/scss/pages/_team-building.scss */
+/* line 408, src/assets/scss/pages/_team-building.scss */
 .team-card .detail a {
   margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 406, src/assets/scss/pages/_team-building.scss */
+  /* line 411, src/assets/scss/pages/_team-building.scss */
   .team-card .detail .s-small {
     font-size: 20px;
     width: 70%;
@@ -21462,7 +21471,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 567px) and (min-width: 320px) {
-  /* line 406, src/assets/scss/pages/_team-building.scss */
+  /* line 411, src/assets/scss/pages/_team-building.scss */
   .team-card .detail .s-small {
     font-size: 18px;
     width: 80%;
@@ -21471,7 +21480,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 423, src/assets/scss/pages/_team-building.scss */
+/* line 428, src/assets/scss/pages/_team-building.scss */
 .more {
   margin: 2rem auto;
   text-align: center;
@@ -21479,7 +21488,7 @@ form.modal-type textarea:focus {
   font-size: 16px;
 }
 
-/* line 428, src/assets/scss/pages/_team-building.scss */
+/* line 433, src/assets/scss/pages/_team-building.scss */
 .more div {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -21488,14 +21497,14 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 436, src/assets/scss/pages/_team-building.scss */
+/* line 441, src/assets/scss/pages/_team-building.scss */
 .show-filters-content {
   display: none;
   width: 100%;
   padding: 10px;
 }
 
-/* line 440, src/assets/scss/pages/_team-building.scss */
+/* line 445, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .title {
   font-weight: 600;
   font-size: 18px;
@@ -21503,13 +21512,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 353px) and (min-width: 0px) {
-  /* line 440, src/assets/scss/pages/_team-building.scss */
+  /* line 445, src/assets/scss/pages/_team-building.scss */
   .show-filters-content .title {
     font-size: 16px;
   }
 }
 
-/* line 449, src/assets/scss/pages/_team-building.scss */
+/* line 454, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .reset-filters {
   top: 10px;
   left: calc(1.5rem + 5px);
@@ -21520,13 +21529,13 @@ form.modal-type textarea:focus {
   background-color: white;
 }
 
-/* line 457, src/assets/scss/pages/_team-building.scss */
+/* line 462, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .reset-filters:focus, .show-filters-content .reset-filters:active {
   outline: none;
   border: none;
 }
 
-/* line 462, src/assets/scss/pages/_team-building.scss */
+/* line 467, src/assets/scss/pages/_team-building.scss */
 .show-filters-content hr {
   border: none;
   background-color: rgba(0, 0, 0, 0.5);
@@ -21534,20 +21543,20 @@ form.modal-type textarea:focus {
   margin: .5rem 0;
 }
 
-/* line 469, src/assets/scss/pages/_team-building.scss */
+/* line 474, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .section-title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   padding: .5rem 0.5rem 0 1.5rem;
   font-weight: bold;
 }
 
-/* line 474, src/assets/scss/pages/_team-building.scss */
+/* line 479, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .check-group {
   margin-top: 1rem;
   padding-left: 1.5rem;
 }
 
-/* line 478, src/assets/scss/pages/_team-building.scss */
+/* line 483, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .select-town {
   color: #d84e52;
   font-weight: 500;
@@ -21555,7 +21564,7 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 485, src/assets/scss/pages/_team-building.scss */
+/* line 490, src/assets/scss/pages/_team-building.scss */
 .show-filters-content button[type=submit] {
   background-color: #d84e52;
   color: white;
@@ -21565,7 +21574,7 @@ form.modal-type textarea:focus {
   line-height: 35px;
 }
 
-/* line 502, src/assets/scss/pages/_team-building.scss */
+/* line 507, src/assets/scss/pages/_team-building.scss */
 .no-result {
   margin: 4rem auto;
   width: 430px;
