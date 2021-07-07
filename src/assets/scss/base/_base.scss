@@ -158,6 +158,15 @@ a {
   }
 }
 
+.fancybox-content.show-filters-content {
+  padding: 10px;
+  button {
+    &[data-fancybox-close] {
+      top: 0;
+    }
+  }
+}
+
 
 
 .owl-nav.disabled {
