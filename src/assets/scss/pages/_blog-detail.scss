@@ -337,6 +337,8 @@
             margin: .5rem 0;
           }
           img {
+            width: unset;
+            margin: unset;
             &:first-child {
               margin-left: 20px;
               @media screen and (max-width: 566px) and (min-width: 0px) {
@@ -412,7 +414,7 @@
 
       img {
         width: 100%;
-        padding: 1.5rem 0;
+        margin: 1.5rem 0;
         height: auto;
         border-radius: 30px;
 

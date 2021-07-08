@@ -135,9 +135,12 @@
       color: white;
       top: 0;
       left: -33px;
-      margin-top: calc(35% - 33px);
-      @media screen and (max-width: 1439px) and (min-width: 1041px){
-        margin-top: calc(30% - 33px);
+      margin-top: calc(28% - 33px);
+      @media screen and (max-width: 1439px) and (min-width: 1367px){
+        margin-top: calc(25% - 33px);
+      }
+      @media screen and (max-width: 1366px) and (min-width: 1041px){
+        margin-top: calc(24% - 33px);
       }
       @media screen and (max-width: 768px) and (min-width: 345px){
         margin-top: calc(151px - 33px);

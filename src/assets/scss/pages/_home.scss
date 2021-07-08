@@ -817,6 +817,15 @@
       }
       &>label, &>.select-area {
         min-width: 217px;
+        @media screen and (max-width: 1439px) and (min-width: 1221px) {
+          min-width: 249px;
+        }
+        @media screen and (max-width: 1220px) and (min-width: 1137px) {
+          min-width: 229px;
+        }
+        @media screen and (max-width: 1138px) and (min-width: 1024px) {
+          min-width: 200px;
+        }
         @media screen and (max-width: 950px) and (min-width: 769px) {
           min-width: 188px;
         }
@@ -831,6 +840,11 @@
         }
         @media screen and (max-width: 552px) and (min-width: 500px) {
           min-width: 240px;
+        }
+      }
+      .s-small {
+        @media screen and (max-width: 1439px) and (min-width: 1024px) {
+          width: 100%;
         }
       }
     }
