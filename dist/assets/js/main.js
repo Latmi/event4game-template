@@ -961,22 +961,19 @@ $(function () {
     var hTitle = 0,
         hText = 0;
     $('.article-card>div').each(function () {
-      var $title = $(this).find('.title');
-      var $text = $(this).find('.desc');
+      var $title = $(this).find('.title'); // const $text = $(this).find('.desc');
 
       if (hTitle < $title.height()) {
         hTitle = $title.height();
-      }
+      } // if (hText < $text.height()) {
+      //   hText = $text.height();
+      // }
 
-      if (hText < $text.height()) {
-        hText = $text.height();
-      }
     });
     $('.article-card>div').each(function () {
-      var $title = $(this).find('.title');
-      var $text = $(this).find('.desc');
-      $title.height(hTitle);
-      $text.height(hText);
+      var $title = $(this).find('.title'); // const $text = $(this).find('.desc');
+
+      $title.height(hTitle); // $text.height(hText);
     });
   }
 });
