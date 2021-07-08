@@ -20980,72 +20980,81 @@ form.modal-type textarea:focus {
   }
 }
 
+@media screen and (max-width: 767px) and (min-width: 0px) {
+  /* line 41, src/assets/scss/pages/_team-building.scss */
+  .team-building .filters {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 @media screen and (max-width: 1024px) {
-  /* line 59, src/assets/scss/pages/_team-building.scss */
+  /* line 63, src/assets/scss/pages/_team-building.scss */
   .team-building .filters > div {
     margin: 5px;
   }
 }
 
 @media screen and (max-width: 1439px) and (max-width: 1025px) {
-  /* line 59, src/assets/scss/pages/_team-building.scss */
+  /* line 63, src/assets/scss/pages/_team-building.scss */
   .team-building .filters > div {
     margin-right: 1.2rem;
   }
 }
 
 @media screen and (max-width: 1439px) and (max-width: 1025px) {
-  /* line 68, src/assets/scss/pages/_team-building.scss */
+  /* line 72, src/assets/scss/pages/_team-building.scss */
   .team-building .filters > label {
     margin-right: 1.2rem;
   }
 }
 
 @media screen and (max-width: 753px) and (min-width: 0px) {
-  /* line 76, src/assets/scss/pages/_team-building.scss */
+  /* line 80, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .js-select2 {
     display: none;
   }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 758px) {
-  /* line 76, src/assets/scss/pages/_team-building.scss */
+  /* line 80, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .js-select2 {
     margin-bottom: 1.2rem;
   }
 }
 
-/* line 86, src/assets/scss/pages/_team-building.scss */
+/* line 90, src/assets/scss/pages/_team-building.scss */
 .team-building .filters .custom-checkbox {
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 753px) and (min-width: 0px) {
-  /* line 92, src/assets/scss/pages/_team-building.scss */
+  /* line 96, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .custom-checkbox span.btn-bordered {
     color: #d84e52;
     border: 2px solid #d84e52;
     background-color: #F6F6F6;
     line-height: 26px;
   }
-  /* line 97, src/assets/scss/pages/_team-building.scss */
+  /* line 101, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .custom-checkbox span.btn-bordered:hover {
     color: white;
     background-color: #B11B20;
     border: 2px solid #B11B20;
   }
-  /* line 105, src/assets/scss/pages/_team-building.scss */
+  /* line 109, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .custom-checkbox > input:checked + span {
     background-color: #92181B;
     border: 2px solid #92181B;
     color: white;
   }
-  /* line 110, src/assets/scss/pages/_team-building.scss */
+  /* line 114, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .custom-checkbox .filled-gray {
     margin-top: 0;
     overflow: hidden;
   }
-  /* line 115, src/assets/scss/pages/_team-building.scss */
+  /* line 119, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .custom-checkbox .s-select {
     width: unset;
     padding: 0 1rem;
@@ -21054,7 +21063,7 @@ form.modal-type textarea:focus {
     height: 30px;
     margin-top: 5px;
   }
-  /* line 126, src/assets/scss/pages/_team-building.scss */
+  /* line 130, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .custom-checkbox .btn-bordered.red:focus {
     color: white;
   }
@@ -21072,29 +21081,29 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 145, src/assets/scss/pages/_team-building.scss */
+  /* line 149, src/assets/scss/pages/_team-building.scss */
   .team-building .btn-bordered.s-select {
     width: 230px;
     margin: 5px 5px 0 5px;
   }
 }
 
-/* line 152, src/assets/scss/pages/_team-building.scss */
+/* line 156, src/assets/scss/pages/_team-building.scss */
 .team-building .btn-bordered.filled-red {
   border: 3px solid #d84e52;
 }
 
-/* line 156, src/assets/scss/pages/_team-building.scss */
+/* line 160, src/assets/scss/pages/_team-building.scss */
 .team-building .js-select2 {
   margin-bottom: 20px;
 }
 
-/* line 159, src/assets/scss/pages/_team-building.scss */
+/* line 163, src/assets/scss/pages/_team-building.scss */
 .team-building .custom-radio {
   margin-bottom: 20px;
 }
 
-/* line 164, src/assets/scss/pages/_team-building.scss */
+/* line 168, src/assets/scss/pages/_team-building.scss */
 .filters-mobile {
   display: none;
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
@@ -21108,7 +21117,7 @@ form.modal-type textarea:focus {
   padding: 0 .7rem;
 }
 
-/* line 172, src/assets/scss/pages/_team-building.scss */
+/* line 176, src/assets/scss/pages/_team-building.scss */
 .filters-mobile .show-filters {
   background-color: #F6F6F6;
   border-radius: 100px;
@@ -21122,21 +21131,21 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 183, src/assets/scss/pages/_team-building.scss */
+/* line 187, src/assets/scss/pages/_team-building.scss */
 .filters-mobile .show-filters img {
   margin-right: -1.6rem;
   margin-left: 1.6rem;
 }
 
 @media screen and (max-width: 410px) and (min-width: 0px) {
-  /* line 183, src/assets/scss/pages/_team-building.scss */
+  /* line 187, src/assets/scss/pages/_team-building.scss */
   .filters-mobile .show-filters img {
     margin-right: -.6rem;
     margin-left: .6rem;
   }
 }
 
-/* line 193, src/assets/scss/pages/_team-building.scss */
+/* line 197, src/assets/scss/pages/_team-building.scss */
 .filters-mobile .count {
   text-align: center;
   -webkit-box-flex: 1;
@@ -21145,7 +21154,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 753px) and (min-width: 0px) {
-  /* line 164, src/assets/scss/pages/_team-building.scss */
+  /* line 168, src/assets/scss/pages/_team-building.scss */
   .filters-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -21153,7 +21162,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 205, src/assets/scss/pages/_team-building.scss */
+/* line 209, src/assets/scss/pages/_team-building.scss */
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21169,32 +21178,32 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 205, src/assets/scss/pages/_team-building.scss */
+  /* line 209, src/assets/scss/pages/_team-building.scss */
   .search {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 567px) and (min-width: 0px) {
-  /* line 205, src/assets/scss/pages/_team-building.scss */
+  /* line 209, src/assets/scss/pages/_team-building.scss */
   .search {
     width: 100%;
   }
 }
 
-/* line 220, src/assets/scss/pages/_team-building.scss */
+/* line 224, src/assets/scss/pages/_team-building.scss */
 .search .image {
   -webkit-box-flex: .2;
       -ms-flex: .2;
           flex: .2;
 }
 
-/* line 222, src/assets/scss/pages/_team-building.scss */
+/* line 226, src/assets/scss/pages/_team-building.scss */
 .search .image img {
   cursor: pointer;
 }
 
-/* line 226, src/assets/scss/pages/_team-building.scss */
+/* line 230, src/assets/scss/pages/_team-building.scss */
 .search form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21206,20 +21215,20 @@ form.modal-type textarea:focus {
   min-height: 31px;
 }
 
-/* line 231, src/assets/scss/pages/_team-building.scss */
+/* line 235, src/assets/scss/pages/_team-building.scss */
 .search form input {
   border: none;
   background-color: transparent;
   width: 100%;
 }
 
-/* line 235, src/assets/scss/pages/_team-building.scss */
+/* line 239, src/assets/scss/pages/_team-building.scss */
 .search form input:focus {
   outline: none;
   border: none;
 }
 
-/* line 239, src/assets/scss/pages/_team-building.scss */
+/* line 243, src/assets/scss/pages/_team-building.scss */
 .search form input::-webkit-input-placeholder {
   color: #cbcbcb;
   text-align: center;
@@ -21246,7 +21255,7 @@ form.modal-type textarea:focus {
   margin-left: 2.5rem;
 }
 
-/* line 246, src/assets/scss/pages/_team-building.scss */
+/* line 250, src/assets/scss/pages/_team-building.scss */
 .search .reset {
   display: none;
   -webkit-box-flex: .2;
@@ -21260,17 +21269,17 @@ form.modal-type textarea:focus {
   color: white;
 }
 
-/* line 255, src/assets/scss/pages/_team-building.scss */
+/* line 259, src/assets/scss/pages/_team-building.scss */
 .search .reset:hover {
   background-color: #a4a4a4;
 }
 
-/* line 258, src/assets/scss/pages/_team-building.scss */
+/* line 262, src/assets/scss/pages/_team-building.scss */
 .search .reset:focus, .search .reset:active {
   background-color: #787878;
 }
 
-/* line 265, src/assets/scss/pages/_team-building.scss */
+/* line 269, src/assets/scss/pages/_team-building.scss */
 .team-card {
   background-color: white;
   overflow: hidden;
@@ -21292,7 +21301,7 @@ form.modal-type textarea:focus {
   margin-top: 0 !important;
 }
 
-/* line 276, src/assets/scss/pages/_team-building.scss */
+/* line 280, src/assets/scss/pages/_team-building.scss */
 .team-card:last-child {
   display: block;
   -webkit-box-pack: unset;
@@ -21301,18 +21310,18 @@ form.modal-type textarea:focus {
   height: auto;
 }
 
-/* line 281, src/assets/scss/pages/_team-building.scss */
+/* line 285, src/assets/scss/pages/_team-building.scss */
 .team-card .image {
   position: relative;
 }
 
-/* line 283, src/assets/scss/pages/_team-building.scss */
+/* line 287, src/assets/scss/pages/_team-building.scss */
 .team-card .image img {
   width: 100%;
   border-radius: 30px 30px 0 0;
 }
 
-/* line 287, src/assets/scss/pages/_team-building.scss */
+/* line 291, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter, .team-card .image .region {
   cursor: pointer;
   width: 68px;
@@ -21321,21 +21330,21 @@ form.modal-type textarea:focus {
   top: 0;
 }
 
-/* line 293, src/assets/scss/pages/_team-building.scss */
+/* line 297, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter img, .team-card .image .region img {
   width: unset;
   margin: 21px 0 0 18px;
   border-radius: 0;
 }
 
-/* line 300, src/assets/scss/pages/_team-building.scss */
+/* line 304, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter {
   position: absolute;
   left: 0;
   border-radius: 0 0 16px 0;
 }
 
-/* line 304, src/assets/scss/pages/_team-building.scss */
+/* line 308, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter .tags {
   display: none;
   -ms-flex-wrap: wrap;
@@ -21349,7 +21358,7 @@ form.modal-type textarea:focus {
   padding-top: 12px;
 }
 
-/* line 310, src/assets/scss/pages/_team-building.scss */
+/* line 314, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter .tags .item {
   font-size: 10px;
   color: #d84e52;
@@ -21363,26 +21372,26 @@ form.modal-type textarea:focus {
   line-height: 19px;
 }
 
-/* line 324, src/assets/scss/pages/_team-building.scss */
+/* line 328, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter.collapsed {
   cursor: default;
   border-radius: 0;
   width: 100%;
 }
 
-/* line 328, src/assets/scss/pages/_team-building.scss */
+/* line 332, src/assets/scss/pages/_team-building.scss */
 .team-card .image .filter.collapsed img {
   display: none;
 }
 
-/* line 333, src/assets/scss/pages/_team-building.scss */
+/* line 337, src/assets/scss/pages/_team-building.scss */
 .team-card .image .region {
   position: absolute;
   right: 0;
   border-radius: 0 0 0 16px;
 }
 
-/* line 337, src/assets/scss/pages/_team-building.scss */
+/* line 341, src/assets/scss/pages/_team-building.scss */
 .team-card .image .region .tags {
   display: none;
   text-align: center;
@@ -21398,24 +21407,24 @@ form.modal-type textarea:focus {
   height: 100%;
 }
 
-/* line 347, src/assets/scss/pages/_team-building.scss */
+/* line 351, src/assets/scss/pages/_team-building.scss */
 .team-card .image .region.collapsed {
   cursor: default;
   border-radius: 0;
   width: 100%;
 }
 
-/* line 351, src/assets/scss/pages/_team-building.scss */
+/* line 355, src/assets/scss/pages/_team-building.scss */
 .team-card .image .region.collapsed img {
   display: none;
 }
 
-/* line 357, src/assets/scss/pages/_team-building.scss */
+/* line 361, src/assets/scss/pages/_team-building.scss */
 .team-card .image:hover .filter, .team-card .image:hover .region {
   display: unset;
 }
 
-/* line 362, src/assets/scss/pages/_team-building.scss */
+/* line 366, src/assets/scss/pages/_team-building.scss */
 .team-card .title {
   font-weight: 600;
   font-size: 18px;
@@ -21425,7 +21434,7 @@ form.modal-type textarea:focus {
   text-transform: uppercase;
 }
 
-/* line 370, src/assets/scss/pages/_team-building.scss */
+/* line 374, src/assets/scss/pages/_team-building.scss */
 .team-card .desc {
   font-weight: 500;
   font-size: 16px;
@@ -21434,7 +21443,7 @@ form.modal-type textarea:focus {
   text-align: left;
 }
 
-/* line 377, src/assets/scss/pages/_team-building.scss */
+/* line 381, src/assets/scss/pages/_team-building.scss */
 .team-card hr {
   border: none;
   height: 2px;
@@ -21443,7 +21452,7 @@ form.modal-type textarea:focus {
   margin: 1rem auto;
 }
 
-/* line 384, src/assets/scss/pages/_team-building.scss */
+/* line 388, src/assets/scss/pages/_team-building.scss */
 .team-card .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21456,7 +21465,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 567px) and (min-width: 320px) {
-  /* line 384, src/assets/scss/pages/_team-building.scss */
+  /* line 388, src/assets/scss/pages/_team-building.scss */
   .team-card .info {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -21466,35 +21475,35 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 396, src/assets/scss/pages/_team-building.scss */
+/* line 400, src/assets/scss/pages/_team-building.scss */
 .team-card .info .item {
   line-height: 15px;
 }
 
 @media screen and (max-width: 567px) and (min-width: 320px) {
-  /* line 396, src/assets/scss/pages/_team-building.scss */
+  /* line 400, src/assets/scss/pages/_team-building.scss */
   .team-card .info .item {
     padding: .3rem;
   }
 }
 
-/* line 401, src/assets/scss/pages/_team-building.scss */
+/* line 405, src/assets/scss/pages/_team-building.scss */
 .team-card .info .item img {
   padding-right: 10px;
 }
 
-/* line 406, src/assets/scss/pages/_team-building.scss */
+/* line 410, src/assets/scss/pages/_team-building.scss */
 .team-card .detail {
   text-align: center;
 }
 
-/* line 408, src/assets/scss/pages/_team-building.scss */
+/* line 412, src/assets/scss/pages/_team-building.scss */
 .team-card .detail a {
   margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 411, src/assets/scss/pages/_team-building.scss */
+  /* line 415, src/assets/scss/pages/_team-building.scss */
   .team-card .detail .s-small {
     font-size: 20px;
     width: 70%;
@@ -21504,7 +21513,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 567px) and (min-width: 320px) {
-  /* line 411, src/assets/scss/pages/_team-building.scss */
+  /* line 415, src/assets/scss/pages/_team-building.scss */
   .team-card .detail .s-small {
     font-size: 18px;
     width: 80%;
@@ -21513,7 +21522,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 428, src/assets/scss/pages/_team-building.scss */
+/* line 432, src/assets/scss/pages/_team-building.scss */
 .more {
   margin: 2rem auto;
   text-align: center;
@@ -21521,7 +21530,7 @@ form.modal-type textarea:focus {
   font-size: 16px;
 }
 
-/* line 433, src/assets/scss/pages/_team-building.scss */
+/* line 437, src/assets/scss/pages/_team-building.scss */
 .more div {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -21530,14 +21539,14 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 441, src/assets/scss/pages/_team-building.scss */
+/* line 445, src/assets/scss/pages/_team-building.scss */
 .show-filters-content {
   display: none;
   width: 100%;
   padding: 10px;
 }
 
-/* line 445, src/assets/scss/pages/_team-building.scss */
+/* line 449, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .title {
   font-weight: 600;
   font-size: 18px;
@@ -21545,13 +21554,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 353px) and (min-width: 0px) {
-  /* line 445, src/assets/scss/pages/_team-building.scss */
+  /* line 449, src/assets/scss/pages/_team-building.scss */
   .show-filters-content .title {
     font-size: 16px;
   }
 }
 
-/* line 454, src/assets/scss/pages/_team-building.scss */
+/* line 458, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .reset-filters {
   top: 10px;
   left: calc(1.5rem + 5px);
@@ -21562,13 +21571,13 @@ form.modal-type textarea:focus {
   background-color: white;
 }
 
-/* line 462, src/assets/scss/pages/_team-building.scss */
+/* line 466, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .reset-filters:focus, .show-filters-content .reset-filters:active {
   outline: none;
   border: none;
 }
 
-/* line 467, src/assets/scss/pages/_team-building.scss */
+/* line 471, src/assets/scss/pages/_team-building.scss */
 .show-filters-content hr {
   border: none;
   background-color: rgba(0, 0, 0, 0.5);
@@ -21576,20 +21585,20 @@ form.modal-type textarea:focus {
   margin: .5rem 0;
 }
 
-/* line 474, src/assets/scss/pages/_team-building.scss */
+/* line 478, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .section-title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   padding: .5rem 0.5rem 0 1.5rem;
   font-weight: bold;
 }
 
-/* line 479, src/assets/scss/pages/_team-building.scss */
+/* line 483, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .check-group {
   margin-top: 1rem;
   padding-left: 1.5rem;
 }
 
-/* line 483, src/assets/scss/pages/_team-building.scss */
+/* line 487, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .select-town {
   color: #d84e52;
   font-weight: 500;
@@ -21597,7 +21606,7 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 490, src/assets/scss/pages/_team-building.scss */
+/* line 494, src/assets/scss/pages/_team-building.scss */
 .show-filters-content button[type=submit] {
   background-color: #d84e52;
   color: white;
@@ -21607,7 +21616,7 @@ form.modal-type textarea:focus {
   line-height: 35px;
 }
 
-/* line 507, src/assets/scss/pages/_team-building.scss */
+/* line 511, src/assets/scss/pages/_team-building.scss */
 .no-result {
   margin: 4rem auto;
   width: 430px;

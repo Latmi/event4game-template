@@ -56,6 +56,10 @@
     @media screen and (max-width: 989px) and (min-width: 768px){
       justify-content: space-around;
     }
+    @media screen and (max-width: 767px) and (min-width: 0px){
+      justify-content: flex-start;
+    }
+
     &>div {
       @media screen and (max-width: 1024px) {
         margin: 5px;
