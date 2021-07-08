@@ -167,6 +167,9 @@
     width: 90%;
     margin: -1rem auto;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .text {
       font-size: 20px;
       @media screen and (max-width: 768px) and (min-width: 0px) {

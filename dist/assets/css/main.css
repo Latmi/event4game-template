@@ -22813,21 +22813,31 @@ form.modal-type textarea:focus {
   width: 90%;
   margin: -1rem auto;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-/* line 170, src/assets/scss/pages/_blog.scss */
+/* line 173, src/assets/scss/pages/_blog.scss */
 .article-card .desc .text {
   font-size: 20px;
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 170, src/assets/scss/pages/_blog.scss */
+  /* line 173, src/assets/scss/pages/_blog.scss */
   .article-card .desc .text {
     font-size: 16px;
   }
 }
 
-/* line 176, src/assets/scss/pages/_blog.scss */
+/* line 179, src/assets/scss/pages/_blog.scss */
 .article-card .desc .info {
   margin-top: 1rem;
   display: -webkit-box;
@@ -22838,7 +22848,7 @@ form.modal-type textarea:focus {
           justify-content: space-between;
 }
 
-/* line 180, src/assets/scss/pages/_blog.scss */
+/* line 183, src/assets/scss/pages/_blog.scss */
 .article-card .desc .info .date, .article-card .desc .info .author {
   color: #d84e52;
 }

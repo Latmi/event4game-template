@@ -956,4 +956,27 @@ $(function () {
       }).html(index + " / " + count);
     }
   }
+
+  if ($('.article-card').length) {
+    var hTitle = 0,
+        hText = 0;
+    $('.article-card>div').each(function () {
+      var $title = $(this).find('.title');
+      var $text = $(this).find('.desc');
+
+      if (hTitle < $title.height()) {
+        hTitle = $title.height();
+      }
+
+      if (hText < $text.height()) {
+        hText = $text.height();
+      }
+    });
+    $('.article-card>div').each(function () {
+      var $title = $(this).find('.title');
+      var $text = $(this).find('.desc');
+      $title.height(hTitle);
+      $text.height(hText);
+    });
+  }
 });
