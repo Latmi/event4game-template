@@ -22968,10 +22968,10 @@ form.modal-type textarea:focus {
   border-radius: 16px;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 1041px) {
+@media screen and (max-width: 1980px) and (min-width: 1441px) {
   /* line 76, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .video {
-    height: 80%;
+    height: 129%;
   }
 }
 
@@ -22985,7 +22985,7 @@ form.modal-type textarea:focus {
 @media screen and (max-width: 1024px) and (min-width: 974px) {
   /* line 76, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .video {
-    height: 70%;
+    height: 87%;
   }
 }
 
@@ -23214,7 +23214,7 @@ form.modal-type textarea:focus {
           justify-content: start;
 }
 
-@media screen and (max-width: 1439px) and (max-width: 1025px) {
+@media screen and (max-width: 1439px) and (min-width: 1025px) {
   /* line 222, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters {
     -webkit-box-pack: center;
