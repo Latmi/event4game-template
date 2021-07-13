@@ -24897,34 +24897,34 @@ form.modal-type textarea:focus {
 }
 
 /* line 60, src/assets/scss/pages/_blog-detail.scss */
-.blog-detail .blog-article-detail .image {
+.blog-detail .blog-article-detail .col-12.image {
   height: 221px;
   border-radius: 30px 30px 0 0;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
   /* line 60, src/assets/scss/pages/_blog-detail.scss */
-  .blog-detail .blog-article-detail .image {
+  .blog-detail .blog-article-detail .col-12.image {
     height: 168px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
   /* line 60, src/assets/scss/pages/_blog-detail.scss */
-  .blog-detail .blog-article-detail .image {
+  .blog-detail .blog-article-detail .col-12.image {
     height: 133px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
   /* line 60, src/assets/scss/pages/_blog-detail.scss */
-  .blog-detail .blog-article-detail .image {
+  .blog-detail .blog-article-detail .col-12.image {
     margin-left: 4px;
     -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100% - 4px);
-            flex: 0 0 calc(100% - 4px);
+        -ms-flex: 0 0 calc(100% - 8px);
+            flex: 0 0 calc(100% - 8px);
   }
 }
 
@@ -25026,20 +25026,22 @@ form.modal-type textarea:focus {
         -ms-flex-order: 1;
             order: 1;
     min-height: 30px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
-  /* line 127, src/assets/scss/pages/_blog-detail.scss */
+  /* line 128, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .wrapper .image img {
     width: 94px;
   }
 }
 
-/* line 132, src/assets/scss/pages/_blog-detail.scss */
+/* line 134, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .author .wrapper .name {
   height: 90px;
 }
 
 @media screen and (max-width: 768px) and (min-width: 476px) {
-  /* line 132, src/assets/scss/pages/_blog-detail.scss */
+  /* line 134, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .wrapper .name {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -25051,26 +25053,26 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 476px) {
-  /* line 132, src/assets/scss/pages/_blog-detail.scss */
+  /* line 134, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .wrapper .name {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 475px) and (min-width: 0px) {
-  /* line 132, src/assets/scss/pages/_blog-detail.scss */
+  /* line 134, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .wrapper .name {
     height: 20px;
   }
 }
 
-/* line 147, src/assets/scss/pages/_blog-detail.scss */
+/* line 149, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .author .wrapper .social {
   margin-top: 1rem;
 }
 
 @media screen and (max-width: 768px) and (min-width: 476px) {
-  /* line 147, src/assets/scss/pages/_blog-detail.scss */
+  /* line 149, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .wrapper .social {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
@@ -25079,26 +25081,26 @@ form.modal-type textarea:focus {
     right: 22px;
     margin-top: 3.4rem;
   }
-  /* line 154, src/assets/scss/pages/_blog-detail.scss */
+  /* line 156, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .wrapper .social img {
     width: 35px;
   }
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 159, src/assets/scss/pages/_blog-detail.scss */
+  /* line 161, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .wrapper .social img {
     width: 30px;
   }
 }
 
-/* line 164, src/assets/scss/pages/_blog-detail.scss */
+/* line 166, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .author .wrapper .staff {
   margin-top: 1rem;
 }
 
 @media screen and (max-width: 768px) and (min-width: 476px) {
-  /* line 164, src/assets/scss/pages/_blog-detail.scss */
+  /* line 166, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .wrapper .staff {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -25111,20 +25113,20 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 476px) and (max-width: 566px) and (min-width: 0px) {
-  /* line 164, src/assets/scss/pages/_blog-detail.scss */
+  /* line 166, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .wrapper .staff {
     font-size: 14px;
   }
 }
 
-/* line 180, src/assets/scss/pages/_blog-detail.scss */
+/* line 182, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .author .buttons {
   text-align: center;
   margin-top: 1rem;
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 180, src/assets/scss/pages/_blog-detail.scss */
+  /* line 182, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .buttons {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -25143,7 +25145,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 180, src/assets/scss/pages/_blog-detail.scss */
+  /* line 182, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .buttons {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
@@ -25162,7 +25164,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 0px) {
-  /* line 180, src/assets/scss/pages/_blog-detail.scss */
+  /* line 182, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -25172,7 +25174,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 203, src/assets/scss/pages/_blog-detail.scss */
+/* line 205, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .author .buttons .s-author {
   width: 100%;
   font-size: 12px;
@@ -25184,7 +25186,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 203, src/assets/scss/pages/_blog-detail.scss */
+  /* line 205, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .buttons .s-author {
     margin-left: 1rem;
     -ms-flex-preferred-size: 44%;
@@ -25193,7 +25195,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 203, src/assets/scss/pages/_blog-detail.scss */
+  /* line 205, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .buttons .s-author {
     margin-left: .4rem;
     -ms-flex-preferred-size: 44%;
@@ -25202,14 +25204,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 0px) {
-  /* line 203, src/assets/scss/pages/_blog-detail.scss */
+  /* line 205, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .author .buttons .s-author {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
 }
 
-/* line 231, src/assets/scss/pages/_blog-detail.scss */
+/* line 233, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .image {
   background-size: cover;
   background-repeat: no-repeat;
@@ -25217,28 +25219,28 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 567px) {
-  /* line 231, src/assets/scss/pages/_blog-detail.scss */
+  /* line 233, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .image {
     min-height: 320px;
   }
 }
 
 @media screen and (max-width: 566px) and (min-width: 376px) {
-  /* line 231, src/assets/scss/pages/_blog-detail.scss */
+  /* line 233, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .image {
     min-height: 230px;
   }
 }
 
 @media screen and (max-width: 375px) and (min-width: 0px) {
-  /* line 231, src/assets/scss/pages/_blog-detail.scss */
+  /* line 233, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .image {
     min-height: 124px;
   }
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 231, src/assets/scss/pages/_blog-detail.scss */
+  /* line 233, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .image {
     min-height: 110px;
     height: 110px;
@@ -25246,7 +25248,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 231, src/assets/scss/pages/_blog-detail.scss */
+  /* line 233, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .image {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -25254,13 +25256,13 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 254, src/assets/scss/pages/_blog-detail.scss */
+/* line 256, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info {
   padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 254, src/assets/scss/pages/_blog-detail.scss */
+  /* line 256, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info {
     background-color: white;
     border-radius: 0 0 30px 30px;
@@ -25274,20 +25276,20 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 264, src/assets/scss/pages/_blog-detail.scss */
+/* line 266, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info .images {
   margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 264, src/assets/scss/pages/_blog-detail.scss */
+  /* line 266, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .images {
     margin-left: -7px;
     width: 100%;
   }
 }
 
-/* line 271, src/assets/scss/pages/_blog-detail.scss */
+/* line 273, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info .images .blank {
   background-color: #cbcbcb;
   border-radius: 30px;
@@ -25295,28 +25297,28 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 271, src/assets/scss/pages/_blog-detail.scss */
+  /* line 273, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .images .blank {
     height: 213px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 271, src/assets/scss/pages/_blog-detail.scss */
+  /* line 273, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .images .blank {
     height: 202px;
   }
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 271, src/assets/scss/pages/_blog-detail.scss */
+  /* line 273, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .images .blank {
     height: 143px;
     border-radius: 16px;
   }
 }
 
-/* line 287, src/assets/scss/pages/_blog-detail.scss */
+/* line 289, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info .footer-article {
   margin-top: 2rem;
   display: -webkit-box;
@@ -25328,7 +25330,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 287, src/assets/scss/pages/_blog-detail.scss */
+  /* line 289, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .footer-article {
     position: relative;
     margin-top: 4rem;
@@ -25336,7 +25338,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 287, src/assets/scss/pages/_blog-detail.scss */
+  /* line 289, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .footer-article {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -25346,14 +25348,14 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 299, src/assets/scss/pages/_blog-detail.scss */
+/* line 301, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info .footer-article .likes {
   -ms-flex-preferred-size: 38%;
       flex-basis: 38%;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 567px) {
-  /* line 299, src/assets/scss/pages/_blog-detail.scss */
+  /* line 301, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .footer-article .likes {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
@@ -25361,7 +25363,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 299, src/assets/scss/pages/_blog-detail.scss */
+  /* line 301, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .footer-article .likes {
     -ms-flex-preferred-size: 65%;
         flex-basis: 65%;
@@ -25369,7 +25371,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 299, src/assets/scss/pages/_blog-detail.scss */
+  /* line 301, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .footer-article .likes {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -25379,23 +25381,23 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 312, src/assets/scss/pages/_blog-detail.scss */
+/* line 314, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info .footer-article .likes svg {
   margin: -6px 5px 0 10px;
   cursor: pointer;
 }
 
-/* line 316, src/assets/scss/pages/_blog-detail.scss */
+/* line 318, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info .footer-article .likes svg:hover path {
   fill: #B11B20;
 }
 
-/* line 321, src/assets/scss/pages/_blog-detail.scss */
+/* line 323, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info .footer-article .likes svg.active path {
   fill: #B11B20;
 }
 
-/* line 326, src/assets/scss/pages/_blog-detail.scss */
+/* line 328, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info .footer-article .likes span {
   color: white;
   border-radius: 50%;
@@ -25407,14 +25409,14 @@ form.modal-type textarea:focus {
   line-height: 35px;
 }
 
-/* line 337, src/assets/scss/pages/_blog-detail.scss */
+/* line 339, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info .footer-article .soc {
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 337, src/assets/scss/pages/_blog-detail.scss */
+  /* line 339, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .footer-article .soc {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
@@ -25422,7 +25424,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 337, src/assets/scss/pages/_blog-detail.scss */
+  /* line 339, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .footer-article .soc {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -25432,26 +25434,26 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 347, src/assets/scss/pages/_blog-detail.scss */
+/* line 349, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info .footer-article .soc img {
   width: unset;
   margin: unset;
 }
 
-/* line 350, src/assets/scss/pages/_blog-detail.scss */
+/* line 352, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info .footer-article .soc img:first-child {
   margin-left: 20px;
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 350, src/assets/scss/pages/_blog-detail.scss */
+  /* line 352, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .footer-article .soc img:first-child {
     margin-left: 5px;
   }
 }
 
 @media screen and (max-width: 566px) and (min-width: 476px) {
-  /* line 359, src/assets/scss/pages/_blog-detail.scss */
+  /* line 361, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .footer-article .date {
     position: absolute;
     bottom: 80px;
@@ -25460,7 +25462,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 359, src/assets/scss/pages/_blog-detail.scss */
+  /* line 361, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .info .footer-article .date {
     position: unset;
     bottom: unset;
@@ -25473,19 +25475,19 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 378, src/assets/scss/pages/_blog-detail.scss */
+/* line 380, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .title, .blog-detail .blog-article-detail .desc, .blog-detail .blog-article-detail .detail {
   padding-left: 2rem;
 }
 
 @media screen and (max-width: 375px) and (min-width: 0px) {
-  /* line 378, src/assets/scss/pages/_blog-detail.scss */
+  /* line 380, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .title, .blog-detail .blog-article-detail .desc, .blog-detail .blog-article-detail .detail {
     padding-left: .5rem;
   }
 }
 
-/* line 385, src/assets/scss/pages/_blog-detail.scss */
+/* line 387, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .title {
   margin-top: 1rem;
   font-weight: 600;
@@ -25494,14 +25496,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1126px) and (min-width: 0px) {
-  /* line 385, src/assets/scss/pages/_blog-detail.scss */
+  /* line 387, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .title {
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 375px) and (min-width: 0px) {
-  /* line 385, src/assets/scss/pages/_blog-detail.scss */
+  /* line 387, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .title {
     font-size: 20px;
     line-height: 26px;
@@ -25509,13 +25511,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 385, src/assets/scss/pages/_blog-detail.scss */
+  /* line 387, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .title {
     padding-left: 0;
   }
 }
 
-/* line 403, src/assets/scss/pages/_blog-detail.scss */
+/* line 405, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .desc {
   margin-top: 1.4rem;
   font-weight: 500;
@@ -25526,7 +25528,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1126px) and (min-width: 0px) {
-  /* line 403, src/assets/scss/pages/_blog-detail.scss */
+  /* line 405, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .desc {
     font-size: 16px;
     letter-spacing: 0.004em;
@@ -25534,7 +25536,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 403, src/assets/scss/pages/_blog-detail.scss */
+  /* line 405, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .desc {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -25542,14 +25544,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 403, src/assets/scss/pages/_blog-detail.scss */
+  /* line 405, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .desc {
     text-align: left;
     padding: 0;
   }
 }
 
-/* line 422, src/assets/scss/pages/_blog-detail.scss */
+/* line 424, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .desc .img {
   max-width: 100%;
   margin: 2rem 0;
@@ -25557,7 +25559,7 @@ form.modal-type textarea:focus {
   height: auto !important;
 }
 
-/* line 430, src/assets/scss/pages/_blog-detail.scss */
+/* line 432, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .desc img {
   width: 100%;
   margin: 1.5rem 0;
@@ -25565,14 +25567,14 @@ form.modal-type textarea:focus {
   border-radius: 30px;
 }
 
-/* line 442, src/assets/scss/pages/_blog-detail.scss */
+/* line 444, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .workshop-footer {
   margin-top: 5rem;
   padding-bottom: 0;
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 442, src/assets/scss/pages/_blog-detail.scss */
+  /* line 444, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .workshop-footer {
     margin-top: 1rem;
     padding-top: 2rem;
@@ -25580,12 +25582,12 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 454, src/assets/scss/pages/_blog-detail.scss */
+/* line 456, src/assets/scss/pages/_blog-detail.scss */
 .other-articles {
   margin-bottom: 5rem;
 }
 
-/* line 456, src/assets/scss/pages/_blog-detail.scss */
+/* line 458, src/assets/scss/pages/_blog-detail.scss */
 .other-articles h3 {
   text-transform: uppercase;
   text-align: center;
@@ -25594,14 +25596,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 456, src/assets/scss/pages/_blog-detail.scss */
+  /* line 458, src/assets/scss/pages/_blog-detail.scss */
   .other-articles h3 {
     margin-top: 3rem;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 456, src/assets/scss/pages/_blog-detail.scss */
+  /* line 458, src/assets/scss/pages/_blog-detail.scss */
   .other-articles h3 {
     margin-top: 1rem;
   }

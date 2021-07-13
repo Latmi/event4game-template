@@ -57,7 +57,7 @@
     }
     text-align: left;
     overflow: hidden;
-    .image {
+    .col-12.image {
       height: 221px;
       border-radius: 30px 30px 0 0;
       @media screen and (max-width: 1024px) and (min-width: 769px) {
@@ -69,7 +69,7 @@
       @media screen and (max-width: 768px) and (min-width: 0px) {
         margin-left: 4px;
         box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
-        flex: 0 0 calc(100% - 4px);
+        flex: 0 0 calc(100% - 8px);
 
       }
 
@@ -124,8 +124,10 @@
           @media screen and (max-width: 768px) and (min-width: 476px) {
             order: 1;
             min-height: 30px;
+            box-shadow: none;
             img {
               width: 94px;
+
             }
           }
         }
