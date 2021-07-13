@@ -14642,7 +14642,17 @@ a .btn-bordered {
   right: 15px;
 }
 
-/* line 163, src/assets/scss/base/_base.scss */
+/* line 161, src/assets/scss/base/_base.scss */
+.fancybox-content.show-filters-content {
+  padding: 10px;
+}
+
+/* line 164, src/assets/scss/base/_base.scss */
+.fancybox-content.show-filters-content button[data-fancybox-close] {
+  top: 0;
+}
+
+/* line 172, src/assets/scss/base/_base.scss */
 .owl-nav.disabled {
   display: none !important;
 }
@@ -20978,7 +20988,7 @@ form.modal-type textarea:focus {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 1067px) {
+@media screen and (max-width: 1439px) and (min-width: 1367px) {
   /* line 41, src/assets/scss/pages/_team-building.scss */
   .team-building .filters {
     -ms-flex-pack: distribute;
@@ -20986,7 +20996,7 @@ form.modal-type textarea:focus {
   }
 }
 
-@media screen and (max-width: 1066px) and (max-width: 1025px) {
+@media screen and (max-width: 1366px) and (max-width: 1025px) {
   /* line 41, src/assets/scss/pages/_team-building.scss */
   .team-building .filters {
     -webkit-box-pack: center;
@@ -21510,6 +21520,14 @@ form.modal-type textarea:focus {
   line-height: 15px;
 }
 
+@media screen and (max-width: 1439px) and (min-width: 1025px) {
+  /* line 396, src/assets/scss/pages/_team-building.scss */
+  .team-card .info .item {
+    padding: .3rem;
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 567px) and (min-width: 320px) {
   /* line 400, src/assets/scss/pages/_team-building.scss */
   .team-card .info .item {
@@ -21557,7 +21575,7 @@ form.modal-type textarea:focus {
   height: auto;
 }
 
-/* line 440, src/assets/scss/pages/_team-building.scss */
+
 .more {
   margin: 2rem auto;
   text-align: center;
@@ -21565,7 +21583,7 @@ form.modal-type textarea:focus {
   font-size: 16px;
 }
 
-/* line 445, src/assets/scss/pages/_team-building.scss */
+
 .more div {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -21574,14 +21592,14 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 453, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content {
   display: none;
   width: 100%;
   padding: 10px;
 }
 
-/* line 457, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content .title {
   font-weight: 600;
   font-size: 18px;
@@ -21589,13 +21607,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 353px) and (min-width: 0px) {
-  /* line 457, src/assets/scss/pages/_team-building.scss */
+
   .show-filters-content .title {
     font-size: 16px;
   }
 }
 
-/* line 466, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content .reset-filters {
   top: 10px;
   left: calc(1.5rem + 5px);
@@ -21606,13 +21624,13 @@ form.modal-type textarea:focus {
   background-color: white;
 }
 
-/* line 474, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content .reset-filters:focus, .show-filters-content .reset-filters:active {
   outline: none;
   border: none;
 }
 
-/* line 479, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content hr {
   border: none;
   background-color: rgba(0, 0, 0, 0.5);
@@ -21620,20 +21638,20 @@ form.modal-type textarea:focus {
   margin: .5rem 0;
 }
 
-/* line 486, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content .section-title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   padding: .5rem 0.5rem 0 1.5rem;
   font-weight: bold;
 }
 
-/* line 491, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content .check-group {
   margin-top: 1rem;
   padding-left: 1.5rem;
 }
 
-/* line 495, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content .select-town {
   color: #d84e52;
   font-weight: 500;
@@ -21641,7 +21659,7 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 502, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content button[type=submit] {
   background-color: #d84e52;
   color: white;
@@ -21651,7 +21669,7 @@ form.modal-type textarea:focus {
   line-height: 35px;
 }
 
-/* line 519, src/assets/scss/pages/_team-building.scss */
+
 .no-result {
   margin: 4rem auto;
   width: 430px;
@@ -22783,8 +22801,9 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 147, src/assets/scss/pages/_blog.scss */
+/* line 153, src/assets/scss/pages/_blog.scss */
 .article-card .title {
+  min-height: 93px;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
@@ -22793,18 +22812,19 @@ form.modal-type textarea:focus {
   text-align: center;
 }
 
-/* line 155, src/assets/scss/pages/_blog.scss */
+/* line 162, src/assets/scss/pages/_blog.scss */
 .article-card .image {
   border-radius: 30px;
   overflow: hidden;
+  z-index: 1;
 }
 
-/* line 158, src/assets/scss/pages/_blog.scss */
+/* line 167, src/assets/scss/pages/_blog.scss */
 .article-card .image img {
   width: 100%;
 }
 
-/* line 163, src/assets/scss/pages/_blog.scss */
+/* line 172, src/assets/scss/pages/_blog.scss */
 .article-card .desc {
   padding: 2rem 1rem 1rem 1rem;
   -webkit-box-shadow: 0px 0px 4px 2px rgba(113, 47, 49, 0.25);
@@ -22825,19 +22845,19 @@ form.modal-type textarea:focus {
           justify-content: space-between;
 }
 
-/* line 173, src/assets/scss/pages/_blog.scss */
+
 .article-card .desc .text {
   font-size: 20px;
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 173, src/assets/scss/pages/_blog.scss */
+
   .article-card .desc .text {
     font-size: 16px;
   }
 }
 
-/* line 179, src/assets/scss/pages/_blog.scss */
+
 .article-card .desc .info {
   margin-top: 1rem;
   display: -webkit-box;
@@ -22848,7 +22868,7 @@ form.modal-type textarea:focus {
           justify-content: space-between;
 }
 
-/* line 183, src/assets/scss/pages/_blog.scss */
+
 .article-card .desc .info .date, .article-card .desc .info .author {
   color: #d84e52;
 }
@@ -24858,6 +24878,10 @@ form.modal-type textarea:focus {
   -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
+  margin-left: 4px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% - 4px);
+          flex: 0 0 calc(100% - 4px);
   text-align: left;
   overflow: hidden;
 }
@@ -24872,25 +24896,26 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 57, src/assets/scss/pages/_blog-detail.scss */
+/* line 60, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .image {
   height: 221px;
   border-radius: 30px 30px 0 0;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 57, src/assets/scss/pages/_blog-detail.scss */
+  /* line 60, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .image {
     height: 168px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 57, src/assets/scss/pages/_blog-detail.scss */
+  /* line 60, src/assets/scss/pages/_blog-detail.scss */
   .blog-detail .blog-article-detail .image {
     height: 133px;
   }
 }
+
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
   /* line 57, src/assets/scss/pages/_blog-detail.scss */
@@ -24904,13 +24929,12 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 75, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .author {
   font-weight: 600;
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 75, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -24922,13 +24946,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 0px) {
-  /* line 75, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author {
     display: unset;
   }
 }
 
-/* line 84, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .author .wrapper {
   margin-top: 9rem;
   padding: 2rem 1rem;
@@ -24948,14 +24972,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 567px) {
-  /* line 84, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper {
     padding: 1rem .5rem;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 84, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -24975,7 +24999,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 84, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper {
     padding: 1rem 0;
     -ms-flex-preferred-size: 61%;
@@ -24984,38 +25008,39 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 0px) {
-  /* line 84, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper {
     display: block;
   }
 }
 
-/* line 119, src/assets/scss/pages/_blog-detail.scss */
+
+
 .blog-detail .blog-article-detail .author .wrapper .image {
   height: 90px;
 }
 
 @media screen and (max-width: 768px) and (min-width: 476px) {
-  /* line 119, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .image {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     min-height: 30px;
   }
-  /* line 124, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .image img {
     width: 94px;
   }
 }
 
-/* line 129, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .author .wrapper .name {
   height: 90px;
 }
 
 @media screen and (max-width: 768px) and (min-width: 476px) {
-  /* line 129, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .name {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -25027,26 +25052,26 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 476px) {
-  /* line 129, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .name {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 475px) and (min-width: 0px) {
-  /* line 129, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .name {
     height: 20px;
   }
 }
 
-/* line 144, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .author .wrapper .social {
   margin-top: 1rem;
 }
 
 @media screen and (max-width: 768px) and (min-width: 476px) {
-  /* line 144, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .social {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
@@ -25055,26 +25080,26 @@ form.modal-type textarea:focus {
     right: 22px;
     margin-top: 3.4rem;
   }
-  /* line 151, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .social img {
     width: 35px;
   }
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 156, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .social img {
     width: 30px;
   }
 }
 
-/* line 161, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .author .wrapper .staff {
   margin-top: 1rem;
 }
 
 @media screen and (max-width: 768px) and (min-width: 476px) {
-  /* line 161, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .staff {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -25087,20 +25112,20 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 476px) and (max-width: 566px) and (min-width: 0px) {
-  /* line 161, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .staff {
     font-size: 14px;
   }
 }
 
-/* line 177, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .author .buttons {
   text-align: center;
   margin-top: 1rem;
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 177, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .buttons {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -25119,7 +25144,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 177, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .buttons {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
@@ -25138,7 +25163,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 0px) {
-  /* line 177, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -25148,7 +25173,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 200, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .author .buttons .s-author {
   width: 100%;
   font-size: 12px;
@@ -25160,7 +25185,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 200, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .buttons .s-author {
     margin-left: 1rem;
     -ms-flex-preferred-size: 44%;
@@ -25169,7 +25194,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 200, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .buttons .s-author {
     margin-left: .4rem;
     -ms-flex-preferred-size: 44%;
@@ -25178,14 +25203,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 0px) {
-  /* line 200, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .buttons .s-author {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
 }
 
-/* line 228, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .image {
   background-size: cover;
   background-repeat: no-repeat;
@@ -25193,28 +25218,28 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 567px) {
-  /* line 228, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .image {
     min-height: 320px;
   }
 }
 
 @media screen and (max-width: 566px) and (min-width: 376px) {
-  /* line 228, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .image {
     min-height: 230px;
   }
 }
 
 @media screen and (max-width: 375px) and (min-width: 0px) {
-  /* line 228, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .image {
     min-height: 124px;
   }
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 228, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .image {
     min-height: 110px;
     height: 110px;
@@ -25222,7 +25247,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 228, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .image {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -25230,13 +25255,13 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 251, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info {
   padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 251, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info {
     background-color: white;
     border-radius: 0 0 30px 30px;
@@ -25246,16 +25271,25 @@ form.modal-type textarea:focus {
     -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
     margin-left: 4px;
-    margin-right: 4px;
+    width: calc(100% - 9px) !important;
   }
 }
 
-/* line 261, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .images {
   margin-bottom: 2rem;
 }
 
-/* line 263, src/assets/scss/pages/_blog-detail.scss */
+
+@media screen and (max-width: 475px) and (min-width: 320px) {
+  /* line 258, src/assets/scss/pages/_blog-detail.scss */
+  .blog-detail .blog-article-detail .info .images {
+    margin-left: -7px;
+    width: 100%;
+  }
+}
+
+
 .blog-detail .blog-article-detail .info .images .blank {
   background-color: #cbcbcb;
   border-radius: 30px;
@@ -25263,28 +25297,28 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 263, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .images .blank {
     height: 213px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 263, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .images .blank {
     height: 202px;
   }
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 263, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .images .blank {
     height: 143px;
     border-radius: 16px;
   }
 }
 
-/* line 279, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .footer-article {
   margin-top: 2rem;
   display: -webkit-box;
@@ -25296,7 +25330,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 279, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .footer-article {
     position: relative;
     margin-top: 4rem;
@@ -25304,7 +25338,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 279, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .footer-article {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -25314,14 +25348,14 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 291, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .footer-article .likes {
   -ms-flex-preferred-size: 38%;
       flex-basis: 38%;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 567px) {
-  /* line 291, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .footer-article .likes {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
@@ -25329,7 +25363,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 291, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .footer-article .likes {
     -ms-flex-preferred-size: 65%;
         flex-basis: 65%;
@@ -25337,7 +25371,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 291, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .footer-article .likes {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -25347,23 +25381,22 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 304, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .footer-article .likes svg {
   margin: -6px 5px 0 10px;
   cursor: pointer;
 }
 
-/* line 308, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info .footer-article .likes svg:hover path {
   fill: #B11B20;
 }
 
-/* line 313, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .footer-article .likes svg.active path {
   fill: #B11B20;
 }
 
-/* line 318, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .footer-article .likes span {
   color: white;
   border-radius: 50%;
@@ -25375,14 +25408,14 @@ form.modal-type textarea:focus {
   line-height: 35px;
 }
 
-/* line 329, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .footer-article .soc {
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 329, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .footer-article .soc {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
@@ -25390,7 +25423,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 329, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .footer-article .soc {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -25399,6 +25432,7 @@ form.modal-type textarea:focus {
     margin: .5rem 0;
   }
 }
+
 
 /* line 339, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info .footer-article .soc img {
@@ -25517,22 +25551,24 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 415, src/assets/scss/pages/_blog-detail.scss */
-.blog-detail .blog-article-detail .desc img {
-  width: 100%;
-  margin: 1.5rem 0;
-  height: auto;
+
+
+.blog-detail .blog-article-detail .desc .img {
+  max-width: 100%;
+  margin: 2rem 0;
   border-radius: 30px;
+  height: auto !important;
 }
 
-/* line 427, src/assets/scss/pages/_blog-detail.scss */
+/* line 425, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .workshop-footer {
   margin-top: 5rem;
   padding-bottom: 0;
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 427, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .workshop-footer {
     margin-top: 1rem;
     padding-top: 2rem;
@@ -25540,12 +25576,12 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 439, src/assets/scss/pages/_blog-detail.scss */
+
 .other-articles {
   margin-bottom: 5rem;
 }
 
-/* line 441, src/assets/scss/pages/_blog-detail.scss */
+
 .other-articles h3 {
   text-transform: uppercase;
   text-align: center;
@@ -25554,14 +25590,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 441, src/assets/scss/pages/_blog-detail.scss */
+
   .other-articles h3 {
     margin-top: 3rem;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 441, src/assets/scss/pages/_blog-detail.scss */
+
   .other-articles h3 {
     margin-top: 1rem;
   }
