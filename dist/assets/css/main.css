@@ -14657,6 +14657,44 @@ a .btn-bordered {
   display: none !important;
 }
 
+/* line 167, src/assets/scss/base/_base.scss */
+.mobile-submit {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+}
+
+/* line 176, src/assets/scss/base/_base.scss */
+.fancybox-filters .fancybox-bg {
+  background: unset;
+}
+
+/* line 180, src/assets/scss/base/_base.scss */
+.fancybox-filters .fancybox-slide {
+  padding: 0;
+}
+
+/* line 184, src/assets/scss/base/_base.scss */
+.fancybox-filters .fancybox-button--arrow_left, .fancybox-filters .fancybox-button--arrow_right, .fancybox-filters .fancybox-infobar {
+  display: none;
+}
+
+/* line 188, src/assets/scss/base/_base.scss */
+.fancybox-filters .show-filters-content {
+  padding: 10px;
+}
+
+/* line 191, src/assets/scss/base/_base.scss */
+.fancybox-filters .show-filters-content button[data-fancybox-close] {
+  top: 0;
+}
+
+/* line 202, src/assets/scss/base/_base.scss */
+.trash-content .s-select {
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
@@ -17568,7 +17606,7 @@ form.modal-type textarea:focus {
   .forms .graph-animate {
     width: calc(402px * 0.8);
     height: calc(417px * 0.8);
-    margin: -64rem auto;
+    margin: -60rem auto;
   }
 }
 
@@ -19015,6 +19053,27 @@ form.modal-type textarea:focus {
   min-width: 217px;
 }
 
+@media screen and (max-width: 1439px) and (min-width: 1221px) {
+  /* line 818, src/assets/scss/pages/_home.scss */
+  .forms form .group > label, .forms form .group > .select-area {
+    min-width: 249px;
+  }
+}
+
+@media screen and (max-width: 1220px) and (min-width: 1137px) {
+  /* line 818, src/assets/scss/pages/_home.scss */
+  .forms form .group > label, .forms form .group > .select-area {
+    min-width: 229px;
+  }
+}
+
+@media screen and (max-width: 1138px) and (min-width: 1024px) {
+  /* line 818, src/assets/scss/pages/_home.scss */
+  .forms form .group > label, .forms form .group > .select-area {
+    min-width: 200px;
+  }
+}
+
 @media screen and (max-width: 950px) and (min-width: 769px) {
   /* line 818, src/assets/scss/pages/_home.scss */
   .forms form .group > label, .forms form .group > .select-area {
@@ -19047,6 +19106,13 @@ form.modal-type textarea:focus {
   /* line 818, src/assets/scss/pages/_home.scss */
   .forms form .group > label, .forms form .group > .select-area {
     min-width: 240px;
+  }
+}
+
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+  /* line 845, src/assets/scss/pages/_home.scss */
+  .forms form .group .s-small {
+    width: 100%;
   }
 }
 
@@ -19093,23 +19159,23 @@ form.modal-type textarea:focus {
 @media screen and (max-width: 429px) and (min-width: 320px) {
   /* line 765, src/assets/scss/pages/_home.scss */
   .forms form {
-    margin-top: 30rem;
+    margin-top: 25rem;
   }
 }
 
-/* line 869, src/assets/scss/pages/_home.scss */
+/* line 883, src/assets/scss/pages/_home.scss */
 .custom-select-area {
   margin-top: 10px;
 }
 
-/* line 873, src/assets/scss/pages/_home.scss */
+/* line 887, src/assets/scss/pages/_home.scss */
 .advantages {
   width: 85%;
   margin: 1rem auto;
 }
 
 @media screen and (max-width: 320px) and (min-width: 0px) {
-  /* line 876, src/assets/scss/pages/_home.scss */
+  /* line 890, src/assets/scss/pages/_home.scss */
   .advantages .row {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -19118,51 +19184,51 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 321px) {
-  /* line 873, src/assets/scss/pages/_home.scss */
+  /* line 887, src/assets/scss/pages/_home.scss */
   .advantages {
     margin-top: 5rem;
   }
 }
 
 @media screen and (max-width: 567px) and (min-width: 321px) {
-  /* line 873, src/assets/scss/pages/_home.scss */
+  /* line 887, src/assets/scss/pages/_home.scss */
   .advantages {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 320px) and (min-width: 0px) {
-  /* line 873, src/assets/scss/pages/_home.scss */
+  /* line 887, src/assets/scss/pages/_home.scss */
   .advantages {
     margin-top: 1rem;
   }
 }
 
 @media screen and (max-width: 541px) and (min-width: 0px) {
-  /* line 873, src/assets/scss/pages/_home.scss */
+  /* line 887, src/assets/scss/pages/_home.scss */
   .advantages {
     width: 100%;
   }
 }
 
-/* line 895, src/assets/scss/pages/_home.scss */
+/* line 909, src/assets/scss/pages/_home.scss */
 .advantages_item {
   text-align: center;
 }
 
-/* line 897, src/assets/scss/pages/_home.scss */
+/* line 911, src/assets/scss/pages/_home.scss */
 .advantages_item:first-child, .advantages_item:last-child {
   margin-top: -3rem;
 }
 
 @media screen and (max-width: 415px) and (min-width: 0px) {
-  /* line 897, src/assets/scss/pages/_home.scss */
+  /* line 911, src/assets/scss/pages/_home.scss */
   .advantages_item:first-child, .advantages_item:last-child {
     margin-top: 0;
   }
 }
 
-/* line 907, src/assets/scss/pages/_home.scss */
+/* line 921, src/assets/scss/pages/_home.scss */
 .advantages_item_text {
   font-family: 'Montserrat', sans-serif;
   color: #0B0B0B;
@@ -19174,14 +19240,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 907, src/assets/scss/pages/_home.scss */
+  /* line 921, src/assets/scss/pages/_home.scss */
   .advantages_item_text {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 567px) and (min-width: 320px) {
-  /* line 907, src/assets/scss/pages/_home.scss */
+  /* line 921, src/assets/scss/pages/_home.scss */
   .advantages_item_text {
     font-size: 16px;
     line-height: 1.2;
@@ -19189,7 +19255,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 541px) and (min-width: 477px) {
-  /* line 907, src/assets/scss/pages/_home.scss */
+  /* line 921, src/assets/scss/pages/_home.scss */
   .advantages_item_text {
     font-size: 14px;
     line-height: 1.1;
@@ -19197,7 +19263,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 476px) and (min-width: 320px) {
-  /* line 907, src/assets/scss/pages/_home.scss */
+  /* line 921, src/assets/scss/pages/_home.scss */
   .advantages_item_text {
     font-size: 16px;
     line-height: 1.1;
@@ -19206,35 +19272,35 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
-  /* line 933, src/assets/scss/pages/_home.scss */
+  /* line 947, src/assets/scss/pages/_home.scss */
   .advantages_item_image img {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 541px) and (min-width: 0px) {
-  /* line 933, src/assets/scss/pages/_home.scss */
+  /* line 947, src/assets/scss/pages/_home.scss */
   .advantages_item_image img {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 476px) and (min-width: 320px) {
-  /* line 933, src/assets/scss/pages/_home.scss */
+  /* line 947, src/assets/scss/pages/_home.scss */
   .advantages_item_image img {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 873, src/assets/scss/pages/_home.scss */
+  /* line 887, src/assets/scss/pages/_home.scss */
   .advantages {
     width: 100%;
     margin-top: -1.8rem;
   }
 }
 
-/* line 953, src/assets/scss/pages/_home.scss */
+/* line 967, src/assets/scss/pages/_home.scss */
 .all-team-building {
   background-color: #F6F6F6;
   margin-top: 3rem;
@@ -19244,14 +19310,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 953, src/assets/scss/pages/_home.scss */
+  /* line 967, src/assets/scss/pages/_home.scss */
   .all-team-building {
     margin-top: 2rem;
     padding-top: 2rem;
   }
 }
 
-/* line 966, src/assets/scss/pages/_home.scss */
+/* line 980, src/assets/scss/pages/_home.scss */
 .team-building-carousel {
   width: calc(100% - 5rem);
   margin-left: 5rem;
@@ -19259,7 +19325,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (max-width: 1025px) {
-  /* line 966, src/assets/scss/pages/_home.scss */
+  /* line 980, src/assets/scss/pages/_home.scss */
   .team-building-carousel {
     width: calc(100% - 5rem);
     margin-left: 5rem;
@@ -19267,19 +19333,19 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 0px) {
-  /* line 966, src/assets/scss/pages/_home.scss */
+  /* line 980, src/assets/scss/pages/_home.scss */
   .team-building-carousel {
     width: 100%;
     margin-left: 0;
     margin-top: 2.5rem;
   }
-  /* line 978, src/assets/scss/pages/_home.scss */
+  /* line 992, src/assets/scss/pages/_home.scss */
   .team-building-carousel .owl-stage-outer {
     padding-left: 1rem;
   }
 }
 
-/* line 985, src/assets/scss/pages/_home.scss */
+/* line 999, src/assets/scss/pages/_home.scss */
 .team-building-carousel .item .text {
   text-align: center;
   font-weight: 600;
@@ -19287,22 +19353,22 @@ form.modal-type textarea:focus {
   padding-top: 1rem;
 }
 
-/* line 991, src/assets/scss/pages/_home.scss */
+/* line 1005, src/assets/scss/pages/_home.scss */
 .team-building-carousel .item svg {
   width: 100%;
 }
 
-/* line 994, src/assets/scss/pages/_home.scss */
+/* line 1008, src/assets/scss/pages/_home.scss */
 .team-building-carousel .item svg:hover path[fill-rule=evenodd] {
   fill: #B11B20;
 }
 
-/* line 1001, src/assets/scss/pages/_home.scss */
+/* line 1015, src/assets/scss/pages/_home.scss */
 .team-building-carousel .owl-next span, .team-building-carousel .owl-prev span {
   font-size: 60px;
 }
 
-/* line 1005, src/assets/scss/pages/_home.scss */
+/* line 1019, src/assets/scss/pages/_home.scss */
 .team-building-carousel .owl-nav {
   margin-left: -72px;
   margin-top: 20px;
@@ -19312,42 +19378,42 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 0px) {
-  /* line 1005, src/assets/scss/pages/_home.scss */
+  /* line 1019, src/assets/scss/pages/_home.scss */
   .team-building-carousel .owl-nav {
     margin-left: 0;
   }
 }
 
-/* line 1012, src/assets/scss/pages/_home.scss */
+/* line 1026, src/assets/scss/pages/_home.scss */
 .team-building-carousel .owl-nav .owl-prev {
   margin-right: 45px;
 }
 
-/* line 1015, src/assets/scss/pages/_home.scss */
+/* line 1029, src/assets/scss/pages/_home.scss */
 .team-building-carousel .owl-nav .owl-next {
   margin-left: 45px;
 }
 
-/* line 1019, src/assets/scss/pages/_home.scss */
+/* line 1033, src/assets/scss/pages/_home.scss */
 .team-building-carousel .owl-dots {
   margin-left: -72px;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 0px) {
-  /* line 1019, src/assets/scss/pages/_home.scss */
+  /* line 1033, src/assets/scss/pages/_home.scss */
   .team-building-carousel .owl-dots {
     margin-left: 0;
   }
 }
 
-/* line 1026, src/assets/scss/pages/_home.scss */
+/* line 1040, src/assets/scss/pages/_home.scss */
 .team-building-carousel .owl-theme .owl-nav [class*='owl-']:hover {
   background: none;
   color: #B11B20;
   text-decoration: none;
 }
 
-/* line 1033, src/assets/scss/pages/_home.scss */
+/* line 1047, src/assets/scss/pages/_home.scss */
 .cases {
   padding-top: 4rem;
   padding-bottom: 3rem;
@@ -19356,19 +19422,19 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1033, src/assets/scss/pages/_home.scss */
+  /* line 1047, src/assets/scss/pages/_home.scss */
   .cases {
     width: 100%;
     padding-top: 3rem;
   }
 }
 
-/* line 1042, src/assets/scss/pages/_home.scss */
+/* line 1056, src/assets/scss/pages/_home.scss */
 .cases .background-ellipse {
   background-image: url("../../assets/img/background-elipse.png");
 }
 
-/* line 1044, src/assets/scss/pages/_home.scss */
+/* line 1058, src/assets/scss/pages/_home.scss */
 .cases .background-ellipse.left {
   width: calc(18px * 7);
   height: calc(18px * 12);
@@ -19378,13 +19444,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 567px) and (min-width: 0px) {
-  /* line 1044, src/assets/scss/pages/_home.scss */
+  /* line 1058, src/assets/scss/pages/_home.scss */
   .cases .background-ellipse.left {
     display: none;
   }
 }
 
-/* line 1054, src/assets/scss/pages/_home.scss */
+/* line 1068, src/assets/scss/pages/_home.scss */
 .cases .background-ellipse.right {
   width: calc(18px * 20);
   height: calc(18px * 8);
@@ -19394,27 +19460,27 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 950px) and (min-width: 0px) {
-  /* line 1054, src/assets/scss/pages/_home.scss */
+  /* line 1068, src/assets/scss/pages/_home.scss */
   .cases .background-ellipse.right {
     z-index: -1;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
-  /* line 1054, src/assets/scss/pages/_home.scss */
+  /* line 1068, src/assets/scss/pages/_home.scss */
   .cases .background-ellipse.right {
     width: calc(18px * 4);
   }
 }
 
 @media screen and (max-width: 567px) and (min-width: 0px) {
-  /* line 1054, src/assets/scss/pages/_home.scss */
+  /* line 1068, src/assets/scss/pages/_home.scss */
   .cases .background-ellipse.right {
     display: none;
   }
 }
 
-/* line 1071, src/assets/scss/pages/_home.scss */
+/* line 1085, src/assets/scss/pages/_home.scss */
 .cases .background-ellipse.bottom {
   width: calc(18px * 32);
   height: calc(18px * 12);
@@ -19424,34 +19490,34 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1158px) and (max-width: 1025px) {
-  /* line 1071, src/assets/scss/pages/_home.scss */
+  /* line 1085, src/assets/scss/pages/_home.scss */
   .cases .background-ellipse.bottom {
     width: calc(18px * 28);
   }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1071, src/assets/scss/pages/_home.scss */
+  /* line 1085, src/assets/scss/pages/_home.scss */
   .cases .background-ellipse.bottom {
     width: calc(18px * 16);
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
-  /* line 1071, src/assets/scss/pages/_home.scss */
+  /* line 1085, src/assets/scss/pages/_home.scss */
   .cases .background-ellipse.bottom {
     width: calc(18px * 4);
   }
 }
 
 @media screen and (max-width: 567px) and (min-width: 0px) {
-  /* line 1071, src/assets/scss/pages/_home.scss */
+  /* line 1085, src/assets/scss/pages/_home.scss */
   .cases .background-ellipse.bottom {
     display: none;
   }
 }
 
-/* line 1094, src/assets/scss/pages/_home.scss */
+/* line 1108, src/assets/scss/pages/_home.scss */
 .cases-carousel {
   width: calc(100% - 5rem);
   margin-left: 5rem;
@@ -19459,43 +19525,43 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (max-width: 1025px) {
-  /* line 1094, src/assets/scss/pages/_home.scss */
+  /* line 1108, src/assets/scss/pages/_home.scss */
   .cases-carousel {
     width: calc(100% - 5rem);
   }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 0px) {
-  /* line 1094, src/assets/scss/pages/_home.scss */
+  /* line 1108, src/assets/scss/pages/_home.scss */
   .cases-carousel {
     width: 100%;
     margin-left: 0;
     margin-top: 1.6rem;
   }
-  /* line 1104, src/assets/scss/pages/_home.scss */
+  /* line 1118, src/assets/scss/pages/_home.scss */
   .cases-carousel .owl-stage-outer {
     padding-left: 1rem;
   }
 }
 
-/* line 1110, src/assets/scss/pages/_home.scss */
+/* line 1124, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-item.disabled {
   width: 70%;
 }
 
-/* line 1115, src/assets/scss/pages/_home.scss */
+/* line 1129, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-item.disabled .item .images .preview {
   -webkit-filter: brightness(40%);
   filter: brightness(40%);
   border-radius: 17px;
 }
 
-/* line 1121, src/assets/scss/pages/_home.scss */
+/* line 1135, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-item.disabled .item .images .play {
   display: none;
 }
 
-/* line 1125, src/assets/scss/pages/_home.scss */
+/* line 1139, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-item.disabled .item .text {
   height: 50px;
   overflow: hidden;
@@ -19506,7 +19572,7 @@ form.modal-type textarea:focus {
   border-radius: 0px 0px 16px 16px;
 }
 
-/* line 1132, src/assets/scss/pages/_home.scss */
+/* line 1146, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-item.disabled .item .text .name {
   text-align: center;
   font-weight: 600;
@@ -19514,25 +19580,25 @@ form.modal-type textarea:focus {
   padding-top: 1rem;
 }
 
-/* line 1138, src/assets/scss/pages/_home.scss */
+/* line 1152, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-item.disabled .item .text .desc {
   text-align: left;
   padding: 14px 20px;
   line-height: 145%;
 }
 
-/* line 1143, src/assets/scss/pages/_home.scss */
+/* line 1157, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-item.disabled .item .text .btn-bordered {
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-/* line 1154, src/assets/scss/pages/_home.scss */
+/* line 1168, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-item.current .item .images .preview {
   border-radius: 17px;
 }
 
-/* line 1157, src/assets/scss/pages/_home.scss */
+/* line 1171, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-item.current .item .images .play {
   cursor: pointer;
   width: 140px;
@@ -19542,7 +19608,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 450px) and (min-width: 0px) {
-  /* line 1157, src/assets/scss/pages/_home.scss */
+  /* line 1171, src/assets/scss/pages/_home.scss */
   .cases-carousel .owl-item.current .item .images .play {
     width: 70px;
     right: -25px;
@@ -19550,12 +19616,12 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 1169, src/assets/scss/pages/_home.scss */
+/* line 1183, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-item.current .item .images .play:hover circle {
   fill: #B11B20;
 }
 
-/* line 1175, src/assets/scss/pages/_home.scss */
+/* line 1189, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-item.current .item .text {
   width: 90%;
   margin: 0 auto;
@@ -19564,7 +19630,7 @@ form.modal-type textarea:focus {
   border-radius: 0px 0px 16px 16px;
 }
 
-/* line 1180, src/assets/scss/pages/_home.scss */
+/* line 1194, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-item.current .item .text .name {
   text-align: center;
   font-weight: 600;
@@ -19572,7 +19638,7 @@ form.modal-type textarea:focus {
   padding-top: 1rem;
 }
 
-/* line 1186, src/assets/scss/pages/_home.scss */
+/* line 1200, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-item.current .item .text .desc {
   font-weight: 500;
   text-align: left;
@@ -19580,14 +19646,14 @@ form.modal-type textarea:focus {
   line-height: 145%;
 }
 
-/* line 1192, src/assets/scss/pages/_home.scss */
+/* line 1206, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-item.current .item .text .btn-bordered {
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 415px) and (min-width: 320px) {
-  /* line 1195, src/assets/scss/pages/_home.scss */
+  /* line 1209, src/assets/scss/pages/_home.scss */
   .cases-carousel .owl-item.current .item .text .btn-bordered.s-medium {
     width: 88%;
     font-size: 18px;
@@ -19595,17 +19661,17 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 1208, src/assets/scss/pages/_home.scss */
+/* line 1222, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-stage-outer {
   padding-bottom: 5px;
 }
 
-/* line 1212, src/assets/scss/pages/_home.scss */
+/* line 1226, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-next span, .cases-carousel .owl-prev span {
   font-size: 60px;
 }
 
-/* line 1216, src/assets/scss/pages/_home.scss */
+/* line 1230, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-nav {
   margin-top: 24px;
   display: -webkit-box;
@@ -19618,7 +19684,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 951px) {
-  /* line 1216, src/assets/scss/pages/_home.scss */
+  /* line 1230, src/assets/scss/pages/_home.scss */
   .cases-carousel .owl-nav {
     width: 66%;
     margin-top: 44px;
@@ -19626,7 +19692,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 950px) and (min-width: 769px) {
-  /* line 1216, src/assets/scss/pages/_home.scss */
+  /* line 1230, src/assets/scss/pages/_home.scss */
   .cases-carousel .owl-nav {
     width: 60%;
     margin-top: 44px;
@@ -19634,7 +19700,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 1216, src/assets/scss/pages/_home.scss */
+  /* line 1230, src/assets/scss/pages/_home.scss */
   .cases-carousel .owl-nav {
     width: 77%;
     margin-top: 44px;
@@ -19642,13 +19708,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 567px) and (min-width: 0px) {
-  /* line 1216, src/assets/scss/pages/_home.scss */
+  /* line 1230, src/assets/scss/pages/_home.scss */
   .cases-carousel .owl-nav {
     width: 100%;
   }
 }
 
-/* line 1238, src/assets/scss/pages/_home.scss */
+/* line 1252, src/assets/scss/pages/_home.scss */
 .cases-carousel .owl-dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19662,56 +19728,56 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 951px) {
-  /* line 1238, src/assets/scss/pages/_home.scss */
+  /* line 1252, src/assets/scss/pages/_home.scss */
   .cases-carousel .owl-dots {
     width: 57%;
   }
 }
 
 @media screen and (max-width: 950px) and (min-width: 769px) {
-  /* line 1238, src/assets/scss/pages/_home.scss */
+  /* line 1252, src/assets/scss/pages/_home.scss */
   .cases-carousel .owl-dots {
     width: 51%;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 1238, src/assets/scss/pages/_home.scss */
+  /* line 1252, src/assets/scss/pages/_home.scss */
   .cases-carousel .owl-dots {
     width: 67%;
   }
 }
 
 @media screen and (max-width: 567px) and (min-width: 0px) {
-  /* line 1238, src/assets/scss/pages/_home.scss */
+  /* line 1252, src/assets/scss/pages/_home.scss */
   .cases-carousel .owl-dots {
     width: 85%;
     margin-left: 7%;
   }
 }
 
-/* line 1259, src/assets/scss/pages/_home.scss */
+/* line 1273, src/assets/scss/pages/_home.scss */
 .cases-carousel.owl-theme .owl-nav [class*='owl-']:hover {
   background: none;
   color: #92181B;
   text-decoration: none;
 }
 
-/* line 1265, src/assets/scss/pages/_home.scss */
+/* line 1279, src/assets/scss/pages/_home.scss */
 .cases-carousel.owl-theme .owl-nav [class*='owl-'] {
   background: none;
   color: #B11B20 !important;
   text-decoration: none;
 }
 
-/* line 1273, src/assets/scss/pages/_home.scss */
+/* line 1287, src/assets/scss/pages/_home.scss */
 .owl-theme .owl-nav [class*='owl-']:hover {
   background: none;
   color: #92181B;
   text-decoration: none;
 }
 
-/* line 1281, src/assets/scss/pages/_home.scss */
+/* line 1295, src/assets/scss/pages/_home.scss */
 .dot-line {
   width: 20%;
   height: 6px;
@@ -19719,12 +19785,12 @@ form.modal-type textarea:focus {
   border-radius: 4px;
 }
 
-/* line 1286, src/assets/scss/pages/_home.scss */
+/* line 1300, src/assets/scss/pages/_home.scss */
 .dot-line.active {
   background-color: #d84e52;
 }
 
-/* line 1291, src/assets/scss/pages/_home.scss */
+/* line 1305, src/assets/scss/pages/_home.scss */
 .service-working {
   padding-top: 3.5rem;
   padding-bottom: 3.4rem;
@@ -19733,14 +19799,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1291, src/assets/scss/pages/_home.scss */
+  /* line 1305, src/assets/scss/pages/_home.scss */
   .service-working {
     margin-top: .8rem;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
-  /* line 1299, src/assets/scss/pages/_home.scss */
+  /* line 1313, src/assets/scss/pages/_home.scss */
   .service-working .d-flex {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -19751,7 +19817,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 1306, src/assets/scss/pages/_home.scss */
+/* line 1320, src/assets/scss/pages/_home.scss */
 .service-working .block {
   margin-top: 2.5rem;
   background-color: #d84e52;
@@ -19774,7 +19840,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 451px) {
-  /* line 1306, src/assets/scss/pages/_home.scss */
+  /* line 1320, src/assets/scss/pages/_home.scss */
   .service-working .block {
     width: 80%;
     margin: 2rem auto;
@@ -19782,7 +19848,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 450px) and (min-width: 0px) {
-  /* line 1306, src/assets/scss/pages/_home.scss */
+  /* line 1320, src/assets/scss/pages/_home.scss */
   .service-working .block {
     width: 100%;
     padding: 2rem 0.5rem;
@@ -19791,7 +19857,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
-  /* line 1326, src/assets/scss/pages/_home.scss */
+  /* line 1340, src/assets/scss/pages/_home.scss */
   .service-working .block:first-child {
     background-color: black;
     -webkit-box-ordinal-group: 2;
@@ -19801,7 +19867,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
-  /* line 1332, src/assets/scss/pages/_home.scss */
+  /* line 1346, src/assets/scss/pages/_home.scss */
   .service-working .block:last-child {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -19809,7 +19875,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 1337, src/assets/scss/pages/_home.scss */
+/* line 1351, src/assets/scss/pages/_home.scss */
 .service-working .block .title {
   text-transform: uppercase;
   color: white;
@@ -19820,21 +19886,21 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1337, src/assets/scss/pages/_home.scss */
+  /* line 1351, src/assets/scss/pages/_home.scss */
   .service-working .block .title {
     font-size: 26px;
   }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1306, src/assets/scss/pages/_home.scss */
+  /* line 1320, src/assets/scss/pages/_home.scss */
   .service-working .block {
     padding: 1rem 2rem;
   }
 }
 
 @media screen and (max-width: 700px) and (min-width: 320px) {
-  /* line 1306, src/assets/scss/pages/_home.scss */
+  /* line 1320, src/assets/scss/pages/_home.scss */
   .service-working .block {
     width: 100%;
     margin: 0;
@@ -19842,7 +19908,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 1356, src/assets/scss/pages/_home.scss */
+/* line 1370, src/assets/scss/pages/_home.scss */
 .service-working .block .content {
   text-align: left;
   display: -webkit-box;
@@ -19857,27 +19923,27 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 450px) and (min-width: 0px) {
-  /* line 1361, src/assets/scss/pages/_home.scss */
+  /* line 1375, src/assets/scss/pages/_home.scss */
   .service-working .block .content .image {
     width: 20%;
   }
 }
 
 @media screen and (max-width: 450px) and (min-width: 0px) {
-  /* line 1366, src/assets/scss/pages/_home.scss */
+  /* line 1380, src/assets/scss/pages/_home.scss */
   .service-working .block .content .image img {
     width: 100%;
   }
 }
 
-/* line 1373, src/assets/scss/pages/_home.scss */
+/* line 1387, src/assets/scss/pages/_home.scss */
 .service-working .block .content .desc {
   font-size: 20px;
   width: 70%;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1373, src/assets/scss/pages/_home.scss */
+  /* line 1387, src/assets/scss/pages/_home.scss */
   .service-working .block .content .desc {
     font-size: 18px;
     width: 65%;
@@ -19885,7 +19951,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 450px) and (min-width: 0px) {
-  /* line 1373, src/assets/scss/pages/_home.scss */
+  /* line 1387, src/assets/scss/pages/_home.scss */
   .service-working .block .content .desc {
     font-size: 14px;
     width: 70%;
@@ -19893,7 +19959,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 1387, src/assets/scss/pages/_home.scss */
+/* line 1401, src/assets/scss/pages/_home.scss */
 .service-working .block hr {
   background-color: #C34246;
   width: 60%;
@@ -19902,24 +19968,24 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1387, src/assets/scss/pages/_home.scss */
+  /* line 1401, src/assets/scss/pages/_home.scss */
   .service-working .block hr {
     width: 50%;
     margin-right: 3.4rem;
   }
 }
 
-/* line 1398, src/assets/scss/pages/_home.scss */
+/* line 1412, src/assets/scss/pages/_home.scss */
 .service-working .block.light {
   background-color: #E07275;
 }
 
-/* line 1400, src/assets/scss/pages/_home.scss */
+/* line 1414, src/assets/scss/pages/_home.scss */
 .service-working .block.light hr {
   background-color: #CB5D60;
 }
 
-/* line 1405, src/assets/scss/pages/_home.scss */
+/* line 1419, src/assets/scss/pages/_home.scss */
 .service-working .block-counter {
   margin-top: 2.9rem;
   display: -webkit-box;
@@ -19930,20 +19996,20 @@ form.modal-type textarea:focus {
           align-items: center;
 }
 
-/* line 1406, src/assets/scss/pages/_home.scss */
+/* line 1420, src/assets/scss/pages/_home.scss */
 .service-working .block-counter:first-child {
   margin-left: .8rem;
 }
 
 @media screen and (max-width: 1439px) and (max-width: 1025px) {
-  /* line 1406, src/assets/scss/pages/_home.scss */
+  /* line 1420, src/assets/scss/pages/_home.scss */
   .service-working .block-counter:first-child {
     margin-left: 0;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
-  /* line 1406, src/assets/scss/pages/_home.scss */
+  /* line 1420, src/assets/scss/pages/_home.scss */
   .service-working .block-counter:first-child {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -19951,20 +20017,20 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 1416, src/assets/scss/pages/_home.scss */
+/* line 1430, src/assets/scss/pages/_home.scss */
 .service-working .block-counter:last-child {
   margin-right: .8rem;
 }
 
 @media screen and (max-width: 1439px) and (max-width: 1025px) {
-  /* line 1416, src/assets/scss/pages/_home.scss */
+  /* line 1430, src/assets/scss/pages/_home.scss */
   .service-working .block-counter:last-child {
     margin-left: 0;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
-  /* line 1416, src/assets/scss/pages/_home.scss */
+  /* line 1430, src/assets/scss/pages/_home.scss */
   .service-working .block-counter:last-child {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
@@ -19973,21 +20039,21 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 554px) and (min-width: 0px) {
-  /* line 1416, src/assets/scss/pages/_home.scss */
+  /* line 1430, src/assets/scss/pages/_home.scss */
   .service-working .block-counter:last-child {
     margin: 2rem auto;
   }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1405, src/assets/scss/pages/_home.scss */
+  /* line 1419, src/assets/scss/pages/_home.scss */
   .service-working .block-counter {
     margin-top: 1.4rem;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 701px) {
-  /* line 1405, src/assets/scss/pages/_home.scss */
+  /* line 1419, src/assets/scss/pages/_home.scss */
   .service-working .block-counter {
     margin-left: 5rem;
     margin-top: 1.3rem;
@@ -19996,7 +20062,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 700px) and (min-width: 555px) {
-  /* line 1405, src/assets/scss/pages/_home.scss */
+  /* line 1419, src/assets/scss/pages/_home.scss */
   .service-working .block-counter {
     margin-left: 0;
     margin-top: 1.3rem;
@@ -20005,14 +20071,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 554px) and (min-width: 0px) {
-  /* line 1405, src/assets/scss/pages/_home.scss */
+  /* line 1419, src/assets/scss/pages/_home.scss */
   .service-working .block-counter {
     margin: 2rem auto;
   }
 }
 
 @media screen and (max-width: 360px) and (min-width: 0px) {
-  /* line 1405, src/assets/scss/pages/_home.scss */
+  /* line 1419, src/assets/scss/pages/_home.scss */
   .service-working .block-counter {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -20021,7 +20087,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 1451, src/assets/scss/pages/_home.scss */
+/* line 1465, src/assets/scss/pages/_home.scss */
 .service-working .block-counter .number {
   line-height: 1.8;
   color: white;
@@ -20037,7 +20103,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1120px) {
-  /* line 1451, src/assets/scss/pages/_home.scss */
+  /* line 1465, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .number {
     width: 150px;
     height: 150px;
@@ -20046,7 +20112,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1119px) and (max-width: 1025px) {
-  /* line 1451, src/assets/scss/pages/_home.scss */
+  /* line 1465, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .number {
     width: 140px;
     height: 140px;
@@ -20055,7 +20121,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 951px) {
-  /* line 1451, src/assets/scss/pages/_home.scss */
+  /* line 1465, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .number {
     width: 130px;
     height: 130px;
@@ -20065,7 +20131,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 950px) and (min-width: 769px) {
-  /* line 1451, src/assets/scss/pages/_home.scss */
+  /* line 1465, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .number {
     width: 100px;
     height: 100px;
@@ -20076,7 +20142,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 700px) and (min-width: 555px) {
-  /* line 1451, src/assets/scss/pages/_home.scss */
+  /* line 1465, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .number {
     width: 130px;
     height: 130px;
@@ -20086,7 +20152,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 554px) and (min-width: 460px) {
-  /* line 1451, src/assets/scss/pages/_home.scss */
+  /* line 1465, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .number {
     width: 110px;
     height: 110px;
@@ -20096,7 +20162,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 459px) and (min-width: 395px) {
-  /* line 1451, src/assets/scss/pages/_home.scss */
+  /* line 1465, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .number {
     width: 90px;
     height: 90px;
@@ -20107,7 +20173,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 394px) and (min-width: 0px) {
-  /* line 1451, src/assets/scss/pages/_home.scss */
+  /* line 1465, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .number {
     width: 80px;
     height: 80px;
@@ -20118,7 +20184,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 360px) and (min-width: 0px) {
-  /* line 1451, src/assets/scss/pages/_home.scss */
+  /* line 1465, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .number {
     background-color: transparent;
     color: #d84e52;
@@ -20128,7 +20194,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 1521, src/assets/scss/pages/_home.scss */
+/* line 1535, src/assets/scss/pages/_home.scss */
 .service-working .block-counter .text {
   color: #d84e52;
   text-transform: uppercase;
@@ -20144,7 +20210,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1120px) {
-  /* line 1521, src/assets/scss/pages/_home.scss */
+  /* line 1535, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .text {
     line-height: 5;
     font-size: 16px;
@@ -20153,7 +20219,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1119px) and (max-width: 1025px) {
-  /* line 1521, src/assets/scss/pages/_home.scss */
+  /* line 1535, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .text {
     line-height: 5;
     font-size: 16px;
@@ -20162,7 +20228,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1521, src/assets/scss/pages/_home.scss */
+  /* line 1535, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .text {
     line-height: 5;
     font-size: 16px;
@@ -20171,7 +20237,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 950px) and (min-width: 769px) {
-  /* line 1521, src/assets/scss/pages/_home.scss */
+  /* line 1535, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .text {
     line-height: 4.5;
     font-size: 13px;
@@ -20180,7 +20246,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 554px) and (min-width: 460px) {
-  /* line 1521, src/assets/scss/pages/_home.scss */
+  /* line 1535, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .text {
     line-height: 5;
     font-size: 16px;
@@ -20189,7 +20255,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 459px) and (min-width: 395px) {
-  /* line 1521, src/assets/scss/pages/_home.scss */
+  /* line 1535, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .text {
     line-height: 4.5;
     font-size: 14px;
@@ -20198,7 +20264,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 394px) and (min-width: 0px) {
-  /* line 1521, src/assets/scss/pages/_home.scss */
+  /* line 1535, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .text {
     line-height: 4.5;
     font-size: 12px;
@@ -20207,7 +20273,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 360px) and (min-width: 0px) {
-  /* line 1521, src/assets/scss/pages/_home.scss */
+  /* line 1535, src/assets/scss/pages/_home.scss */
   .service-working .block-counter .text {
     background-color: transparent;
     color: #0B0B0B;
@@ -20219,7 +20285,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 1579, src/assets/scss/pages/_home.scss */
+/* line 1593, src/assets/scss/pages/_home.scss */
 .workshop {
   position: relative;
   padding-top: 3.5rem;
@@ -20227,34 +20293,34 @@ form.modal-type textarea:focus {
   text-align: center;
 }
 
-/* line 1580, src/assets/scss/pages/_home.scss */
+/* line 1594, src/assets/scss/pages/_home.scss */
 .workshop h2 {
   padding-bottom: 2.1rem;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1580, src/assets/scss/pages/_home.scss */
+  /* line 1594, src/assets/scss/pages/_home.scss */
   .workshop h2 {
     padding-bottom: 1.6rem;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 1585, src/assets/scss/pages/_home.scss */
+  /* line 1599, src/assets/scss/pages/_home.scss */
   .workshop h2 span {
     display: none;
   }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1579, src/assets/scss/pages/_home.scss */
+  /* line 1593, src/assets/scss/pages/_home.scss */
   .workshop {
     padding-top: 3rem;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 345px) {
-  /* line 1600, src/assets/scss/pages/_home.scss */
+  /* line 1614, src/assets/scss/pages/_home.scss */
   .workshop .btn-bordered.s-medium {
     width: 309px;
     font-size: 20px;
@@ -20262,19 +20328,19 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 344px) and (min-width: 320px) {
-  /* line 1600, src/assets/scss/pages/_home.scss */
+  /* line 1614, src/assets/scss/pages/_home.scss */
   .workshop .btn-bordered.s-medium {
     width: 100%;
     font-size: 20px;
   }
 }
 
-/* line 1611, src/assets/scss/pages/_home.scss */
+/* line 1625, src/assets/scss/pages/_home.scss */
 .workshop .background-ellipse {
   background-image: url("../../assets/img/background-elipse.png");
 }
 
-/* line 1613, src/assets/scss/pages/_home.scss */
+/* line 1627, src/assets/scss/pages/_home.scss */
 .workshop .background-ellipse.right {
   width: calc(18px * 16);
   height: calc(18px * 7);
@@ -20285,13 +20351,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 567px) and (min-width: 0px) {
-  /* line 1613, src/assets/scss/pages/_home.scss */
+  /* line 1627, src/assets/scss/pages/_home.scss */
   .workshop .background-ellipse.right {
     display: none;
   }
 }
 
-/* line 1626, src/assets/scss/pages/_home.scss */
+/* line 1640, src/assets/scss/pages/_home.scss */
 .workshop .text {
   text-align: left;
   font-size: 22px;
@@ -20299,37 +20365,37 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1626, src/assets/scss/pages/_home.scss */
+  /* line 1640, src/assets/scss/pages/_home.scss */
   .workshop .text {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 320px) and (min-width: 0px) {
-  /* line 1626, src/assets/scss/pages/_home.scss */
+  /* line 1640, src/assets/scss/pages/_home.scss */
   .workshop .text {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1636, src/assets/scss/pages/_home.scss */
+  /* line 1650, src/assets/scss/pages/_home.scss */
   .workshop .text p {
     margin-bottom: .5rem;
   }
 }
 
-/* line 1642, src/assets/scss/pages/_home.scss */
+/* line 1656, src/assets/scss/pages/_home.scss */
 .workshop .action {
   text-align: left;
 }
 
-/* line 1645, src/assets/scss/pages/_home.scss */
+/* line 1659, src/assets/scss/pages/_home.scss */
 .workshop .title {
   font-size: 24px;
 }
 
-/* line 1648, src/assets/scss/pages/_home.scss */
+/* line 1662, src/assets/scss/pages/_home.scss */
 .workshop .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20337,7 +20403,7 @@ form.modal-type textarea:focus {
   margin-top: 2rem;
 }
 
-/* line 1651, src/assets/scss/pages/_home.scss */
+/* line 1665, src/assets/scss/pages/_home.scss */
 .workshop .content .desc {
   font-weight: 500;
   font-size: 22px;
@@ -20347,20 +20413,20 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1651, src/assets/scss/pages/_home.scss */
+  /* line 1665, src/assets/scss/pages/_home.scss */
   .workshop .content .desc {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 413px) and (min-width: 0px) {
-  /* line 1651, src/assets/scss/pages/_home.scss */
+  /* line 1665, src/assets/scss/pages/_home.scss */
   .workshop .content .desc {
     font-size: 16px;
   }
 }
 
-/* line 1668, src/assets/scss/pages/_home.scss */
+/* line 1682, src/assets/scss/pages/_home.scss */
 .workshop-carousel {
   width: calc(100% - 5rem);
   margin-left: 5rem;
@@ -20368,42 +20434,42 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1025px) {
-  /* line 1668, src/assets/scss/pages/_home.scss */
+  /* line 1682, src/assets/scss/pages/_home.scss */
   .workshop-carousel {
     width: calc(100% - 5rem);
   }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 415px) {
-  /* line 1668, src/assets/scss/pages/_home.scss */
+  /* line 1682, src/assets/scss/pages/_home.scss */
   .workshop-carousel {
     width: 100%;
     margin-left: 0;
   }
-  /* line 1677, src/assets/scss/pages/_home.scss */
+  /* line 1691, src/assets/scss/pages/_home.scss */
   .workshop-carousel .owl-stage-outer {
     padding-left: 1rem;
   }
 }
 
 @media screen and (max-width: 414px) and (min-width: 0px) {
-  /* line 1668, src/assets/scss/pages/_home.scss */
+  /* line 1682, src/assets/scss/pages/_home.scss */
   .workshop-carousel {
     width: calc(100% - 1.3rem);
     margin-left: 1rem;
   }
-  /* line 1684, src/assets/scss/pages/_home.scss */
+  /* line 1698, src/assets/scss/pages/_home.scss */
   .workshop-carousel .owl-stage-outer {
     padding-left: 0;
   }
 }
 
-/* line 1689, src/assets/scss/pages/_home.scss */
+/* line 1703, src/assets/scss/pages/_home.scss */
 .workshop-carousel .owl-stage-outer {
   padding-bottom: 1rem;
 }
 
-/* line 1694, src/assets/scss/pages/_home.scss */
+/* line 1708, src/assets/scss/pages/_home.scss */
 .workshop-carousel .item {
   margin-left: 5px;
   -webkit-box-shadow: 0 0 4px 4px rgba(113, 47, 49, 0.25);
@@ -20414,12 +20480,12 @@ form.modal-type textarea:focus {
   margin-top: .5rem;
 }
 
-/* line 1701, src/assets/scss/pages/_home.scss */
+/* line 1715, src/assets/scss/pages/_home.scss */
 .workshop-carousel .item img {
   border-radius: 16px 16px 0 0;
 }
 
-/* line 1705, src/assets/scss/pages/_home.scss */
+/* line 1719, src/assets/scss/pages/_home.scss */
 .workshop-carousel .item .text {
   padding: 1rem;
   text-align: center;
@@ -20428,12 +20494,12 @@ form.modal-type textarea:focus {
   padding-top: .5rem;
 }
 
-/* line 1711, src/assets/scss/pages/_home.scss */
+/* line 1725, src/assets/scss/pages/_home.scss */
 .workshop-carousel .item .text .title {
   font-size: 20px;
 }
 
-/* line 1714, src/assets/scss/pages/_home.scss */
+/* line 1728, src/assets/scss/pages/_home.scss */
 .workshop-carousel .item .text .desc {
   padding-top: .5rem;
   text-align: left;
@@ -20441,28 +20507,28 @@ form.modal-type textarea:focus {
   line-height: 131.4%;
 }
 
-/* line 1721, src/assets/scss/pages/_home.scss */
+/* line 1735, src/assets/scss/pages/_home.scss */
 .workshop-carousel .item .action {
   text-align: center;
 }
 
-/* line 1723, src/assets/scss/pages/_home.scss */
+/* line 1737, src/assets/scss/pages/_home.scss */
 .workshop-carousel .item .action a {
   display: block;
   margin: 0 auto;
 }
 
-/* line 1726, src/assets/scss/pages/_home.scss */
+/* line 1740, src/assets/scss/pages/_home.scss */
 .workshop-carousel .item .action a .btn-bordered {
   margin: 0 auto;
 }
 
-/* line 1734, src/assets/scss/pages/_home.scss */
+/* line 1748, src/assets/scss/pages/_home.scss */
 .workshop-carousel .owl-next span, .workshop-carousel .owl-prev span {
   font-size: 60px;
 }
 
-/* line 1738, src/assets/scss/pages/_home.scss */
+/* line 1752, src/assets/scss/pages/_home.scss */
 .workshop-carousel .owl-nav {
   margin-left: -72px;
   margin-top: 20px;
@@ -20472,42 +20538,42 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (min-width: 320px) {
-  /* line 1738, src/assets/scss/pages/_home.scss */
+  /* line 1752, src/assets/scss/pages/_home.scss */
   .workshop-carousel .owl-nav {
     margin-left: 0;
   }
 }
 
-/* line 1745, src/assets/scss/pages/_home.scss */
+/* line 1759, src/assets/scss/pages/_home.scss */
 .workshop-carousel .owl-nav .owl-prev {
   margin-right: 45px;
 }
 
-/* line 1748, src/assets/scss/pages/_home.scss */
+/* line 1762, src/assets/scss/pages/_home.scss */
 .workshop-carousel .owl-nav .owl-next {
   margin-left: 45px;
 }
 
-/* line 1752, src/assets/scss/pages/_home.scss */
+/* line 1766, src/assets/scss/pages/_home.scss */
 .workshop-carousel .owl-dots {
   margin-left: -72px;
 }
 
 @media screen and (max-width: 1439px) and (min-width: 320px) {
-  /* line 1752, src/assets/scss/pages/_home.scss */
+  /* line 1766, src/assets/scss/pages/_home.scss */
   .workshop-carousel .owl-dots {
     margin-left: 0;
   }
 }
 
-/* line 1758, src/assets/scss/pages/_home.scss */
+/* line 1772, src/assets/scss/pages/_home.scss */
 .workshop-carousel .owl-theme .owl-nav [class*='owl-']:hover {
   background: none;
   color: #B11B20;
   text-decoration: none;
 }
 
-/* line 1765, src/assets/scss/pages/_home.scss */
+/* line 1779, src/assets/scss/pages/_home.scss */
 .exchange {
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -20515,25 +20581,25 @@ form.modal-type textarea:focus {
   background-color: #F6F6F6;
 }
 
-/* line 1770, src/assets/scss/pages/_home.scss */
+/* line 1784, src/assets/scss/pages/_home.scss */
 .exchange h2 {
   padding-bottom: 2rem;
 }
 
-/* line 1773, src/assets/scss/pages/_home.scss */
+/* line 1787, src/assets/scss/pages/_home.scss */
 .exchange h3 {
   margin-top: 4.4rem;
   padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1773, src/assets/scss/pages/_home.scss */
+  /* line 1787, src/assets/scss/pages/_home.scss */
   .exchange h3 {
     margin-top: 3rem;
   }
 }
 
-/* line 1780, src/assets/scss/pages/_home.scss */
+/* line 1794, src/assets/scss/pages/_home.scss */
 .exchange p {
   font-weight: 500;
   font-size: 22px;
@@ -20541,28 +20607,28 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-  /* line 1780, src/assets/scss/pages/_home.scss */
+  /* line 1794, src/assets/scss/pages/_home.scss */
   .exchange p {
     text-align: left;
   }
 }
 
 @media screen and (max-width: 567px) and (min-width: 0px) {
-  /* line 1780, src/assets/scss/pages/_home.scss */
+  /* line 1794, src/assets/scss/pages/_home.scss */
   .exchange p {
     text-align: left;
   }
 }
 
 @media screen and (max-width: 450px) and (min-width: 0px) {
-  /* line 1780, src/assets/scss/pages/_home.scss */
+  /* line 1794, src/assets/scss/pages/_home.scss */
   .exchange p {
     text-align: left;
     font-size: 18px;
   }
 }
 
-/* line 1795, src/assets/scss/pages/_home.scss */
+/* line 1809, src/assets/scss/pages/_home.scss */
 .exchange .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20573,7 +20639,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 1795, src/assets/scss/pages/_home.scss */
+  /* line 1809, src/assets/scss/pages/_home.scss */
   .exchange .buttons {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -20582,7 +20648,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1795, src/assets/scss/pages/_home.scss */
+  /* line 1809, src/assets/scss/pages/_home.scss */
   .exchange .buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -20592,7 +20658,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 567px) and (min-width: 0px) {
-  /* line 1795, src/assets/scss/pages/_home.scss */
+  /* line 1809, src/assets/scss/pages/_home.scss */
   .exchange .buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -20602,49 +20668,49 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1810, src/assets/scss/pages/_home.scss */
+  /* line 1824, src/assets/scss/pages/_home.scss */
   .exchange .buttons .s-content-50 {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 1810, src/assets/scss/pages/_home.scss */
+  /* line 1824, src/assets/scss/pages/_home.scss */
   .exchange .buttons .s-content-50 {
     width: 40%;
   }
-  /* line 1816, src/assets/scss/pages/_home.scss */
+  /* line 1830, src/assets/scss/pages/_home.scss */
   .exchange .buttons .s-content-50:last-child {
     margin-left: 2rem;
   }
 }
 
 @media screen and (max-width: 567px) and (min-width: 0px) {
-  /* line 1810, src/assets/scss/pages/_home.scss */
+  /* line 1824, src/assets/scss/pages/_home.scss */
   .exchange .buttons .s-content-50 {
     width: 60%;
   }
-  /* line 1822, src/assets/scss/pages/_home.scss */
+  /* line 1836, src/assets/scss/pages/_home.scss */
   .exchange .buttons .s-content-50:last-child {
     margin-top: 1rem !important;
   }
 }
 
 @media screen and (max-width: 450px) and (min-width: 0px) {
-  /* line 1810, src/assets/scss/pages/_home.scss */
+  /* line 1824, src/assets/scss/pages/_home.scss */
   .exchange .buttons .s-content-50 {
     width: 100%;
   }
 }
 
-/* line 1832, src/assets/scss/pages/_home.scss */
+/* line 1846, src/assets/scss/pages/_home.scss */
 .exchange .image-info {
   margin-top: -4rem;
   margin-left: 3.5rem;
 }
 
 @media screen and (max-width: 1439px) and (max-width: 1025px) {
-  /* line 1832, src/assets/scss/pages/_home.scss */
+  /* line 1846, src/assets/scss/pages/_home.scss */
   .exchange .image-info {
     margin-left: 0;
     width: 80%;
@@ -20653,7 +20719,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 1832, src/assets/scss/pages/_home.scss */
+  /* line 1846, src/assets/scss/pages/_home.scss */
   .exchange .image-info {
     width: 100%;
     margin-left: -1rem;
@@ -20662,14 +20728,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 686px) {
-  /* line 1832, src/assets/scss/pages/_home.scss */
+  /* line 1846, src/assets/scss/pages/_home.scss */
   .exchange .image-info {
     margin-top: 2rem;
   }
 }
 
 @media screen and (max-width: 685px) and (min-width: 320px) {
-  /* line 1832, src/assets/scss/pages/_home.scss */
+  /* line 1846, src/assets/scss/pages/_home.scss */
   .exchange .image-info {
     margin-top: 2rem;
     width: 80%;
@@ -20677,7 +20743,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 450px) and (min-width: 0px) {
-  /* line 1832, src/assets/scss/pages/_home.scss */
+  /* line 1846, src/assets/scss/pages/_home.scss */
   .exchange .image-info {
     margin-top: 2rem;
     width: 100%;
@@ -20685,14 +20751,14 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 1859, src/assets/scss/pages/_home.scss */
+/* line 1873, src/assets/scss/pages/_home.scss */
 .exchange .title {
   margin-top: .5rem;
   font-size: 20px;
   font-weight: 600;
 }
 
-/* line 1864, src/assets/scss/pages/_home.scss */
+/* line 1878, src/assets/scss/pages/_home.scss */
 .exchange .desc {
   margin-top: .8rem;
   font-weight: 500;
@@ -20700,49 +20766,49 @@ form.modal-type textarea:focus {
   line-height: 20px;
 }
 
-/* line 1873, src/assets/scss/pages/_home.scss */
+/* line 1887, src/assets/scss/pages/_home.scss */
 .exchange-carousel {
   width: calc(100% - 5rem);
   margin-left: 5rem;
 }
 
 @media screen and (max-width: 1025px) {
-  /* line 1873, src/assets/scss/pages/_home.scss */
+  /* line 1887, src/assets/scss/pages/_home.scss */
   .exchange-carousel {
     width: calc(100% - 5rem);
   }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 415px) {
-  /* line 1873, src/assets/scss/pages/_home.scss */
+  /* line 1887, src/assets/scss/pages/_home.scss */
   .exchange-carousel {
     width: 100%;
     margin-left: 0;
   }
-  /* line 1882, src/assets/scss/pages/_home.scss */
+  /* line 1896, src/assets/scss/pages/_home.scss */
   .exchange-carousel .owl-stage-outer {
     padding-left: 1rem;
   }
 }
 
 @media screen and (max-width: 414px) and (min-width: 0px) {
-  /* line 1873, src/assets/scss/pages/_home.scss */
+  /* line 1887, src/assets/scss/pages/_home.scss */
   .exchange-carousel {
     width: calc(100% - 2.2rem);
     margin-left: 1rem;
   }
-  /* line 1889, src/assets/scss/pages/_home.scss */
+  /* line 1903, src/assets/scss/pages/_home.scss */
   .exchange-carousel .owl-stage-outer {
     margin-left: -5px;
   }
 }
 
-/* line 1893, src/assets/scss/pages/_home.scss */
+/* line 1907, src/assets/scss/pages/_home.scss */
 .exchange-carousel .owl-stage-outer {
   padding-bottom: 1rem;
 }
 
-/* line 1896, src/assets/scss/pages/_home.scss */
+/* line 1910, src/assets/scss/pages/_home.scss */
 .exchange-carousel .item {
   margin-left: 5px;
   -webkit-box-shadow: 0 0 4px 4px rgba(113, 47, 49, 0.25);
@@ -20753,7 +20819,7 @@ form.modal-type textarea:focus {
   margin-top: .5rem;
 }
 
-/* line 1904, src/assets/scss/pages/_home.scss */
+/* line 1918, src/assets/scss/pages/_home.scss */
 .exchange-carousel .item .text {
   text-align: center;
   font-weight: 600;
@@ -20770,22 +20836,22 @@ form.modal-type textarea:focus {
           justify-content: center;
 }
 
-/* line 1913, src/assets/scss/pages/_home.scss */
+/* line 1927, src/assets/scss/pages/_home.scss */
 .exchange-carousel .item .text .title {
   font-size: 20px;
 }
 
-/* line 1918, src/assets/scss/pages/_home.scss */
+/* line 1932, src/assets/scss/pages/_home.scss */
 .exchange-carousel .item img {
   border-radius: 16px 16px 0 0;
 }
 
-/* line 1923, src/assets/scss/pages/_home.scss */
+/* line 1937, src/assets/scss/pages/_home.scss */
 .exchange-carousel .owl-next span, .exchange-carousel .owl-prev span {
   font-size: 60px;
 }
 
-/* line 1927, src/assets/scss/pages/_home.scss */
+/* line 1941, src/assets/scss/pages/_home.scss */
 .exchange-carousel .owl-nav {
   margin-left: -72px;
   margin-top: 20px;
@@ -20795,42 +20861,42 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 0) {
-  /* line 1927, src/assets/scss/pages/_home.scss */
+  /* line 1941, src/assets/scss/pages/_home.scss */
   .exchange-carousel .owl-nav {
     margin-left: 0;
   }
 }
 
-/* line 1935, src/assets/scss/pages/_home.scss */
+/* line 1949, src/assets/scss/pages/_home.scss */
 .exchange-carousel .owl-nav .owl-prev {
   margin-right: 45px;
 }
 
-/* line 1938, src/assets/scss/pages/_home.scss */
+/* line 1952, src/assets/scss/pages/_home.scss */
 .exchange-carousel .owl-nav .owl-next {
   margin-left: 45px;
 }
 
-/* line 1942, src/assets/scss/pages/_home.scss */
+/* line 1956, src/assets/scss/pages/_home.scss */
 .exchange-carousel .owl-dots {
   margin-left: -72px;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 0) {
-  /* line 1942, src/assets/scss/pages/_home.scss */
+  /* line 1956, src/assets/scss/pages/_home.scss */
   .exchange-carousel .owl-dots {
     margin-left: 0;
   }
 }
 
-/* line 1949, src/assets/scss/pages/_home.scss */
+/* line 1963, src/assets/scss/pages/_home.scss */
 .exchange-carousel .owl-theme .owl-nav [class*='owl-']:hover {
   background: none;
   color: #B11B20;
   text-decoration: none;
 }
 
-/* line 1956, src/assets/scss/pages/_home.scss */
+/* line 1970, src/assets/scss/pages/_home.scss */
 .owl-dots {
   font-size: 20px;
   font-weight: 600;
@@ -20956,72 +21022,81 @@ form.modal-type textarea:focus {
   }
 }
 
+@media screen and (max-width: 767px) and (min-width: 0px) {
+  /* line 41, src/assets/scss/pages/_team-building.scss */
+  .team-building .filters {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 @media screen and (max-width: 1024px) {
-  /* line 59, src/assets/scss/pages/_team-building.scss */
+  /* line 63, src/assets/scss/pages/_team-building.scss */
   .team-building .filters > div {
     margin: 5px;
   }
 }
 
-@media screen and (max-width: 1439px) and (max-width: 1025px) {
-  /* line 59, src/assets/scss/pages/_team-building.scss */
+@media screen and (max-width: 1439px) and (min-width: 1025px) {
+  /* line 63, src/assets/scss/pages/_team-building.scss */
   .team-building .filters > div {
     margin-right: 1.2rem;
   }
 }
 
-@media screen and (max-width: 1439px) and (max-width: 1025px) {
-  /* line 68, src/assets/scss/pages/_team-building.scss */
+@media screen and (max-width: 1439px) and (min-width: 1025px) {
+  /* line 72, src/assets/scss/pages/_team-building.scss */
   .team-building .filters > label {
     margin-right: 1.2rem;
   }
 }
 
 @media screen and (max-width: 753px) and (min-width: 0px) {
-  /* line 76, src/assets/scss/pages/_team-building.scss */
+  /* line 80, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .js-select2 {
     display: none;
   }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 758px) {
-  /* line 76, src/assets/scss/pages/_team-building.scss */
+  /* line 80, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .js-select2 {
     margin-bottom: 1.2rem;
   }
 }
 
-/* line 86, src/assets/scss/pages/_team-building.scss */
+/* line 90, src/assets/scss/pages/_team-building.scss */
 .team-building .filters .custom-checkbox {
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 753px) and (min-width: 0px) {
-  /* line 92, src/assets/scss/pages/_team-building.scss */
+  /* line 96, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .custom-checkbox span.btn-bordered {
     color: #d84e52;
     border: 2px solid #d84e52;
     background-color: #F6F6F6;
     line-height: 26px;
   }
-  /* line 97, src/assets/scss/pages/_team-building.scss */
+  /* line 101, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .custom-checkbox span.btn-bordered:hover {
     color: white;
     background-color: #B11B20;
     border: 2px solid #B11B20;
   }
-  /* line 105, src/assets/scss/pages/_team-building.scss */
+  /* line 109, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .custom-checkbox > input:checked + span {
     background-color: #92181B;
     border: 2px solid #92181B;
     color: white;
   }
-  /* line 110, src/assets/scss/pages/_team-building.scss */
+  /* line 114, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .custom-checkbox .filled-gray {
     margin-top: 0;
     overflow: hidden;
   }
-  /* line 115, src/assets/scss/pages/_team-building.scss */
+  /* line 119, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .custom-checkbox .s-select {
     width: unset;
     padding: 0 1rem;
@@ -21030,7 +21105,7 @@ form.modal-type textarea:focus {
     height: 30px;
     margin-top: 5px;
   }
-  /* line 126, src/assets/scss/pages/_team-building.scss */
+  /* line 130, src/assets/scss/pages/_team-building.scss */
   .team-building .filters .custom-checkbox .btn-bordered.red:focus {
     color: white;
   }
@@ -21048,29 +21123,29 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 145, src/assets/scss/pages/_team-building.scss */
+  /* line 149, src/assets/scss/pages/_team-building.scss */
   .team-building .btn-bordered.s-select {
     width: 230px;
     margin: 5px 5px 0 5px;
   }
 }
 
-/* line 152, src/assets/scss/pages/_team-building.scss */
+/* line 156, src/assets/scss/pages/_team-building.scss */
 .team-building .btn-bordered.filled-red {
   border: 3px solid #d84e52;
 }
 
-/* line 156, src/assets/scss/pages/_team-building.scss */
+/* line 160, src/assets/scss/pages/_team-building.scss */
 .team-building .js-select2 {
   margin-bottom: 20px;
 }
 
-/* line 159, src/assets/scss/pages/_team-building.scss */
+/* line 163, src/assets/scss/pages/_team-building.scss */
 .team-building .custom-radio {
   margin-bottom: 20px;
 }
 
-/* line 164, src/assets/scss/pages/_team-building.scss */
+/* line 168, src/assets/scss/pages/_team-building.scss */
 .filters-mobile {
   display: none;
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
@@ -21084,7 +21159,7 @@ form.modal-type textarea:focus {
   padding: 0 .7rem;
 }
 
-/* line 172, src/assets/scss/pages/_team-building.scss */
+/* line 176, src/assets/scss/pages/_team-building.scss */
 .filters-mobile .show-filters {
   background-color: #F6F6F6;
   border-radius: 100px;
@@ -21098,21 +21173,21 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 183, src/assets/scss/pages/_team-building.scss */
+/* line 187, src/assets/scss/pages/_team-building.scss */
 .filters-mobile .show-filters img {
   margin-right: -1.6rem;
   margin-left: 1.6rem;
 }
 
 @media screen and (max-width: 410px) and (min-width: 0px) {
-  /* line 183, src/assets/scss/pages/_team-building.scss */
+  /* line 187, src/assets/scss/pages/_team-building.scss */
   .filters-mobile .show-filters img {
     margin-right: -.6rem;
     margin-left: .6rem;
   }
 }
 
-/* line 193, src/assets/scss/pages/_team-building.scss */
+/* line 197, src/assets/scss/pages/_team-building.scss */
 .filters-mobile .count {
   text-align: center;
   -webkit-box-flex: 1;
@@ -21121,7 +21196,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 753px) and (min-width: 0px) {
-  /* line 164, src/assets/scss/pages/_team-building.scss */
+  /* line 168, src/assets/scss/pages/_team-building.scss */
   .filters-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -21129,7 +21204,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 205, src/assets/scss/pages/_team-building.scss */
+/* line 209, src/assets/scss/pages/_team-building.scss */
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21145,32 +21220,32 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 205, src/assets/scss/pages/_team-building.scss */
+  /* line 209, src/assets/scss/pages/_team-building.scss */
   .search {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 567px) and (min-width: 0px) {
-  /* line 205, src/assets/scss/pages/_team-building.scss */
+  /* line 209, src/assets/scss/pages/_team-building.scss */
   .search {
     width: 100%;
   }
 }
 
-/* line 220, src/assets/scss/pages/_team-building.scss */
+/* line 224, src/assets/scss/pages/_team-building.scss */
 .search .image {
   -webkit-box-flex: .2;
       -ms-flex: .2;
           flex: .2;
 }
 
-/* line 222, src/assets/scss/pages/_team-building.scss */
+/* line 226, src/assets/scss/pages/_team-building.scss */
 .search .image img {
   cursor: pointer;
 }
 
-/* line 226, src/assets/scss/pages/_team-building.scss */
+/* line 230, src/assets/scss/pages/_team-building.scss */
 .search form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21182,20 +21257,20 @@ form.modal-type textarea:focus {
   min-height: 31px;
 }
 
-/* line 231, src/assets/scss/pages/_team-building.scss */
+/* line 235, src/assets/scss/pages/_team-building.scss */
 .search form input {
   border: none;
   background-color: transparent;
   width: 100%;
 }
 
-/* line 235, src/assets/scss/pages/_team-building.scss */
+/* line 239, src/assets/scss/pages/_team-building.scss */
 .search form input:focus {
   outline: none;
   border: none;
 }
 
-/* line 239, src/assets/scss/pages/_team-building.scss */
+/* line 243, src/assets/scss/pages/_team-building.scss */
 .search form input::-webkit-input-placeholder {
   color: #cbcbcb;
   text-align: center;
@@ -21222,7 +21297,7 @@ form.modal-type textarea:focus {
   margin-left: 2.5rem;
 }
 
-/* line 246, src/assets/scss/pages/_team-building.scss */
+/* line 250, src/assets/scss/pages/_team-building.scss */
 .search .reset {
   display: none;
   -webkit-box-flex: .2;
@@ -21236,17 +21311,17 @@ form.modal-type textarea:focus {
   color: white;
 }
 
-/* line 255, src/assets/scss/pages/_team-building.scss */
+/* line 259, src/assets/scss/pages/_team-building.scss */
 .search .reset:hover {
   background-color: #a4a4a4;
 }
 
-/* line 258, src/assets/scss/pages/_team-building.scss */
+/* line 262, src/assets/scss/pages/_team-building.scss */
 .search .reset:focus, .search .reset:active {
   background-color: #787878;
 }
 
-/* line 265, src/assets/scss/pages/_team-building.scss */
+/* line 269, src/assets/scss/pages/_team-building.scss */
 .team-card {
   background-color: white;
   overflow: hidden;
@@ -21266,15 +21341,6 @@ form.modal-type textarea:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 0 !important;
-}
-
-/* line 276, src/assets/scss/pages/_team-building.scss */
-.team-card:last-child {
-  display: block;
-  -webkit-box-pack: unset;
-      -ms-flex-pack: unset;
-          justify-content: unset;
-  height: auto;
 }
 
 /* line 281, src/assets/scss/pages/_team-building.scss */
@@ -21442,7 +21508,14 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 396, src/assets/scss/pages/_team-building.scss */
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+  /* line 384, src/assets/scss/pages/_team-building.scss */
+  .team-card .info {
+    font-size: 14px;
+  }
+}
+
+/* line 400, src/assets/scss/pages/_team-building.scss */
 .team-card .info .item {
   line-height: 15px;
 }
@@ -21456,7 +21529,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 567px) and (min-width: 320px) {
-  /* line 396, src/assets/scss/pages/_team-building.scss */
+  /* line 400, src/assets/scss/pages/_team-building.scss */
   .team-card .info .item {
     padding: .3rem;
   }
@@ -21497,7 +21570,12 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 432, src/assets/scss/pages/_team-building.scss */
+/* line 434, src/assets/scss/pages/_team-building.scss */
+.item-cards div:not(.item-card) .team-card {
+  height: auto;
+}
+
+
 .more {
   margin: 2rem auto;
   text-align: center;
@@ -21505,7 +21583,7 @@ form.modal-type textarea:focus {
   font-size: 16px;
 }
 
-/* line 437, src/assets/scss/pages/_team-building.scss */
+
 .more div {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -21514,14 +21592,14 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 445, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content {
   display: none;
   width: 100%;
   padding: 10px;
 }
 
-/* line 449, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content .title {
   font-weight: 600;
   font-size: 18px;
@@ -21529,13 +21607,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 353px) and (min-width: 0px) {
-  /* line 449, src/assets/scss/pages/_team-building.scss */
+
   .show-filters-content .title {
     font-size: 16px;
   }
 }
 
-/* line 458, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content .reset-filters {
   top: 10px;
   left: calc(1.5rem + 5px);
@@ -21546,13 +21624,13 @@ form.modal-type textarea:focus {
   background-color: white;
 }
 
-/* line 466, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content .reset-filters:focus, .show-filters-content .reset-filters:active {
   outline: none;
   border: none;
 }
 
-/* line 471, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content hr {
   border: none;
   background-color: rgba(0, 0, 0, 0.5);
@@ -21560,20 +21638,20 @@ form.modal-type textarea:focus {
   margin: .5rem 0;
 }
 
-/* line 478, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content .section-title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   padding: .5rem 0.5rem 0 1.5rem;
   font-weight: bold;
 }
 
-/* line 483, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content .check-group {
   margin-top: 1rem;
   padding-left: 1.5rem;
 }
 
-/* line 487, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content .select-town {
   color: #d84e52;
   font-weight: 500;
@@ -21581,7 +21659,7 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 494, src/assets/scss/pages/_team-building.scss */
+
 .show-filters-content button[type=submit] {
   background-color: #d84e52;
   color: white;
@@ -21591,7 +21669,7 @@ form.modal-type textarea:focus {
   line-height: 35px;
 }
 
-/* line 511, src/assets/scss/pages/_team-building.scss */
+
 .no-result {
   margin: 4rem auto;
   width: 430px;
@@ -22755,21 +22833,31 @@ form.modal-type textarea:focus {
   width: 90%;
   margin: -1rem auto;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-/* line 180, src/assets/scss/pages/_blog.scss */
+
 .article-card .desc .text {
   font-size: 20px;
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 180, src/assets/scss/pages/_blog.scss */
+
   .article-card .desc .text {
     font-size: 16px;
   }
 }
 
-/* line 186, src/assets/scss/pages/_blog.scss */
+
 .article-card .desc .info {
   margin-top: 1rem;
   display: -webkit-box;
@@ -22780,7 +22868,7 @@ form.modal-type textarea:focus {
           justify-content: space-between;
 }
 
-/* line 190, src/assets/scss/pages/_blog.scss */
+
 .article-card .desc .info .date, .article-card .desc .info .author {
   color: #d84e52;
 }
@@ -22910,10 +22998,10 @@ form.modal-type textarea:focus {
   border-radius: 16px;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 1041px) {
+@media screen and (max-width: 1980px) and (min-width: 1441px) {
   /* line 76, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .video {
-    height: 80%;
+    height: 129%;
   }
 }
 
@@ -22927,7 +23015,7 @@ form.modal-type textarea:focus {
 @media screen and (max-width: 1024px) and (min-width: 974px) {
   /* line 76, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .video {
-    height: 70%;
+    height: 87%;
   }
 }
 
@@ -22996,13 +23084,20 @@ form.modal-type textarea:focus {
   color: white;
   top: 0;
   left: -33px;
-  margin-top: calc(35% - 33px);
+  margin-top: calc(28% - 33px);
 }
 
-@media screen and (max-width: 1439px) and (min-width: 1041px) {
+@media screen and (max-width: 1439px) and (min-width: 1367px) {
   /* line 132, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .video .play {
-    margin-top: calc(30% - 33px);
+    margin-top: calc(25% - 33px);
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1041px) {
+  /* line 132, src/assets/scss/pages/_workshop.scss */
+  .workshop-detail .video .play {
+    margin-top: calc(24% - 33px);
   }
 }
 
@@ -23027,92 +23122,92 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 154, src/assets/scss/pages/_workshop.scss */
+/* line 157, src/assets/scss/pages/_workshop.scss */
 .workshop-detail .video .play img {
   width: 66px;
 }
 
-/* line 158, src/assets/scss/pages/_workshop.scss */
+/* line 161, src/assets/scss/pages/_workshop.scss */
 .workshop-detail .video .play a {
   text-decoration: none;
 }
 
-/* line 160, src/assets/scss/pages/_workshop.scss */
+/* line 163, src/assets/scss/pages/_workshop.scss */
 .workshop-detail .video .play a:hover {
   color: white;
 }
 
 @media screen and (max-width: 1160px) and (min-width: 768px) {
-  /* line 168, src/assets/scss/pages/_workshop.scss */
+  /* line 171, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .btn-bordered.s-content-40 {
     width: 65%;
   }
 }
 
 @media screen and (max-width: 873px) and (min-width: 768px) {
-  /* line 168, src/assets/scss/pages/_workshop.scss */
+  /* line 171, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .btn-bordered.s-content-40 {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 680px) and (min-width: 567px) {
-  /* line 168, src/assets/scss/pages/_workshop.scss */
+  /* line 171, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .btn-bordered.s-content-40 {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 567px) {
-  /* line 168, src/assets/scss/pages/_workshop.scss */
+  /* line 171, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .btn-bordered.s-content-40 {
     width: 40%;
   }
 }
 
 @media screen and (max-width: 566px) and (min-width: 410px) {
-  /* line 168, src/assets/scss/pages/_workshop.scss */
+  /* line 171, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .btn-bordered.s-content-40 {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 409px) and (min-width: 320px) {
-  /* line 168, src/assets/scss/pages/_workshop.scss */
+  /* line 171, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .btn-bordered.s-content-40 {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 956px) and (min-width: 769px) {
-  /* line 188, src/assets/scss/pages/_workshop.scss */
+  /* line 191, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .btn-bordered.s-content-80 {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 567px) {
-  /* line 188, src/assets/scss/pages/_workshop.scss */
+  /* line 191, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .btn-bordered.s-content-80 {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 767px) and (min-width: 345px) {
-  /* line 188, src/assets/scss/pages/_workshop.scss */
+  /* line 191, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .btn-bordered.s-content-80 {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 344px) and (min-width: 320px) {
-  /* line 188, src/assets/scss/pages/_workshop.scss */
+  /* line 191, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .btn-bordered.s-content-80 {
     width: 90%;
   }
 }
 
-/* line 204, src/assets/scss/pages/_workshop.scss */
+/* line 207, src/assets/scss/pages/_workshop.scss */
 .workshop-detail .workshop-service {
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -23129,14 +23224,14 @@ form.modal-type textarea:focus {
   text-align: left;
 }
 
-/* line 212, src/assets/scss/pages/_workshop.scss */
+/* line 215, src/assets/scss/pages/_workshop.scss */
 .workshop-detail .workshop-service .title {
   font-weight: 600;
   font-size: 22px;
   width: 87%;
 }
 
-/* line 219, src/assets/scss/pages/_workshop.scss */
+/* line 222, src/assets/scss/pages/_workshop.scss */
 .workshop-detail .filters {
   position: relative;
   display: -webkit-box;
@@ -23149,8 +23244,8 @@ form.modal-type textarea:focus {
           justify-content: start;
 }
 
-@media screen and (max-width: 1439px) and (max-width: 1025px) {
-  /* line 219, src/assets/scss/pages/_workshop.scss */
+@media screen and (max-width: 1439px) and (min-width: 1025px) {
+  /* line 222, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -23159,7 +23254,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 990px) {
-  /* line 219, src/assets/scss/pages/_workshop.scss */
+  /* line 222, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
@@ -23168,7 +23263,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 989px) and (min-width: 768px) {
-  /* line 219, src/assets/scss/pages/_workshop.scss */
+  /* line 222, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -23176,7 +23271,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 764px) and (min-width: 567px) {
-  /* line 219, src/assets/scss/pages/_workshop.scss */
+  /* line 222, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -23185,7 +23280,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 490px) and (min-width: 319px) {
-  /* line 219, src/assets/scss/pages/_workshop.scss */
+  /* line 222, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -23194,33 +23289,33 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 239, src/assets/scss/pages/_workshop.scss */
+  /* line 242, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters > div {
     margin: 5px 0;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 239, src/assets/scss/pages/_workshop.scss */
+  /* line 242, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters > div {
     margin: 10px 0;
   }
 }
 
-/* line 247, src/assets/scss/pages/_workshop.scss */
+/* line 250, src/assets/scss/pages/_workshop.scss */
 .workshop-detail .filters .custom-checkbox {
   margin-bottom: 1.2rem;
 }
 
 @media screen and (max-width: 1600px) and (min-width: 769px) {
-  /* line 251, src/assets/scss/pages/_workshop.scss */
+  /* line 254, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .js-select2 {
     margin-bottom: 1.2rem;
   }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 990px) {
-  /* line 251, src/assets/scss/pages/_workshop.scss */
+  /* line 254, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .js-select2 {
     width: 210px;
     font-size: 18px;
@@ -23228,7 +23323,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 567px) {
-  /* line 251, src/assets/scss/pages/_workshop.scss */
+  /* line 254, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .js-select2 {
     width: 215px;
     font-size: 18px;
@@ -23236,39 +23331,39 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 540px) {
-  /* line 251, src/assets/scss/pages/_workshop.scss */
+  /* line 254, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .js-select2 {
     width: 225px;
   }
 }
 
 @media screen and (max-width: 541px) and (min-width: 320px) {
-  /* line 251, src/assets/scss/pages/_workshop.scss */
+  /* line 254, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .js-select2 {
     width: 200px;
   }
 }
 
 @media screen and (max-width: 415px) and (min-width: 320px) {
-  /* line 251, src/assets/scss/pages/_workshop.scss */
+  /* line 254, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .js-select2 {
     width: 80%;
     margin: 0 auto;
   }
 }
 
-/* line 276, src/assets/scss/pages/_workshop.scss */
+/* line 279, src/assets/scss/pages/_workshop.scss */
 .workshop-detail .filters .js-select2 .dropdown {
   left: 0;
 }
 
-/* line 282, src/assets/scss/pages/_workshop.scss */
+/* line 285, src/assets/scss/pages/_workshop.scss */
 .workshop-detail .filters .custom-checkbox {
   width: 100%;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 990px) {
-  /* line 286, src/assets/scss/pages/_workshop.scss */
+  /* line 289, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .custom-checkbox .btn-bordered.s-select {
     width: 210px;
     font-size: 18px;
@@ -23276,11 +23371,11 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 567px) {
-  /* line 282, src/assets/scss/pages/_workshop.scss */
+  /* line 285, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .custom-checkbox {
     margin-bottom: 0;
   }
-  /* line 293, src/assets/scss/pages/_workshop.scss */
+  /* line 296, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .custom-checkbox .btn-bordered.s-select {
     width: 215px;
     font-size: 18px;
@@ -23288,11 +23383,11 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 541px) and (min-width: 320px) {
-  /* line 282, src/assets/scss/pages/_workshop.scss */
+  /* line 285, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .custom-checkbox {
     margin-bottom: 0;
   }
-  /* line 300, src/assets/scss/pages/_workshop.scss */
+  /* line 303, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .custom-checkbox .btn-bordered.s-select {
     width: 200px;
     font-size: 18px;
@@ -23300,7 +23395,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 415px) and (min-width: 320px) {
-  /* line 306, src/assets/scss/pages/_workshop.scss */
+  /* line 309, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .custom-checkbox .btn-bordered.s-select {
     width: 80%;
     margin: 0 auto;
@@ -23308,40 +23403,40 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 320px) and (min-width: 320px) {
-  /* line 282, src/assets/scss/pages/_workshop.scss */
+  /* line 285, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .custom-checkbox {
     width: 100%;
   }
 }
 
-/* line 319, src/assets/scss/pages/_workshop.scss */
+/* line 322, src/assets/scss/pages/_workshop.scss */
 .workshop-detail .filters .btn-bordered.s-select {
   width: 226px;
 }
 
 @media screen and (max-width: 320px) and (min-width: 0px) {
-  /* line 319, src/assets/scss/pages/_workshop.scss */
+  /* line 322, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .btn-bordered.s-select {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 990px) {
-  /* line 326, src/assets/scss/pages/_workshop.scss */
+  /* line 329, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .btn-bordered.s-select2 {
     width: 210px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 567px) {
-  /* line 326, src/assets/scss/pages/_workshop.scss */
+  /* line 329, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .btn-bordered.s-select2 {
     width: 215px;
   }
 }
 
 @media screen and (max-width: 541px) and (min-width: 320px) {
-  /* line 326, src/assets/scss/pages/_workshop.scss */
+  /* line 329, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .btn-bordered.s-select2 {
     width: 200px;
     margin: 0 auto;
@@ -23349,21 +23444,21 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 415px) and (min-width: 320px) {
-  /* line 326, src/assets/scss/pages/_workshop.scss */
+  /* line 329, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters .btn-bordered.s-select2 {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 753px) and (min-width: 0px) {
-  /* line 219, src/assets/scss/pages/_workshop.scss */
+  /* line 222, src/assets/scss/pages/_workshop.scss */
   .workshop-detail .filters {
     min-height: 55px;
     margin-top: 1rem;
   }
 }
 
-/* line 354, src/assets/scss/pages/_workshop.scss */
+/* line 357, src/assets/scss/pages/_workshop.scss */
 .workshop-footer {
   min-height: 200px;
   margin-top: 2rem;
@@ -23372,7 +23467,7 @@ form.modal-type textarea:focus {
   text-align: center;
 }
 
-/* line 358, src/assets/scss/pages/_workshop.scss */
+/* line 361, src/assets/scss/pages/_workshop.scss */
 .workshop-footer .bg-left {
   position: absolute;
   left: 0;
@@ -23384,13 +23479,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 358, src/assets/scss/pages/_workshop.scss */
+  /* line 361, src/assets/scss/pages/_workshop.scss */
   .workshop-footer .bg-left {
     display: none;
   }
 }
 
-/* line 370, src/assets/scss/pages/_workshop.scss */
+/* line 373, src/assets/scss/pages/_workshop.scss */
 .workshop-footer .bg-right {
   position: absolute;
   right: 0;
@@ -23402,34 +23497,34 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 370, src/assets/scss/pages/_workshop.scss */
+  /* line 373, src/assets/scss/pages/_workshop.scss */
   .workshop-footer .bg-right {
     display: none;
   }
 }
 
 @media screen and (max-width: 1318px) and (max-width: 1025px) {
-  /* line 384, src/assets/scss/pages/_workshop.scss */
+  /* line 387, src/assets/scss/pages/_workshop.scss */
   .workshop-footer .bg-left, .workshop-footer .bg-right {
     background-size: 65%;
   }
-  /* line 387, src/assets/scss/pages/_workshop.scss */
+  /* line 390, src/assets/scss/pages/_workshop.scss */
   .workshop-footer .bg-left {
     background-position: 0 20px;
   }
-  /* line 390, src/assets/scss/pages/_workshop.scss */
+  /* line 393, src/assets/scss/pages/_workshop.scss */
   .workshop-footer .bg-right {
     background-position: 100% 20px;
   }
 }
 
-/* line 397, src/assets/scss/pages/_workshop.scss */
+/* line 400, src/assets/scss/pages/_workshop.scss */
 .workshop-footer h4 {
   font-size: 22px;
   font-weight: 600;
 }
 
-/* line 401, src/assets/scss/pages/_workshop.scss */
+/* line 404, src/assets/scss/pages/_workshop.scss */
 .workshop-footer form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23446,7 +23541,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 401, src/assets/scss/pages/_workshop.scss */
+  /* line 404, src/assets/scss/pages/_workshop.scss */
   .workshop-footer form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -23456,13 +23551,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 411, src/assets/scss/pages/_workshop.scss */
+  /* line 414, src/assets/scss/pages/_workshop.scss */
   .workshop-footer form button {
     margin-top: 2rem;
   }
 }
 
-/* line 416, src/assets/scss/pages/_workshop.scss */
+/* line 419, src/assets/scss/pages/_workshop.scss */
 .workshop-footer form button.btn-bordered.s-content {
   width: 276px;
 }
@@ -23760,12 +23855,12 @@ form.modal-type textarea:focus {
   color: white;
 }
 
-/* line 199, src/assets/scss/pages/_team-building-detail.scss */
+/* line 183, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .breadcrumbs {
   padding-top: 1rem;
 }
 
-/* line 203, src/assets/scss/pages/_team-building-detail.scss */
+/* line 187, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card {
   -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
@@ -23774,7 +23869,14 @@ form.modal-type textarea:focus {
   overflow: hidden;
 }
 
-/* line 210, src/assets/scss/pages/_team-building-detail.scss */
+@media screen and (max-width: 1024px) and (min-width: 0px) {
+  /* line 187, src/assets/scss/pages/_team-building-detail.scss */
+  .team-building-detail .team-building-card {
+    margin: 2rem 0;
+  }
+}
+
+/* line 198, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -23784,25 +23886,25 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 566px) {
-  /* line 210, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 198, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .image {
     height: 280px;
   }
 }
 
 @media screen and (max-width: 565px) and (min-width: 320px) {
-  /* line 210, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 198, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .image {
     height: 160px;
   }
 }
 
-/* line 224, src/assets/scss/pages/_team-building-detail.scss */
+/* line 212, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .info {
   background-color: white;
 }
 
-/* line 226, src/assets/scss/pages/_team-building-detail.scss */
+/* line 214, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .info .title {
   text-transform: uppercase;
   font-weight: 600;
@@ -23812,20 +23914,20 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (min-width: 992px) {
-  /* line 226, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 214, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .info .title {
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 767px) and (min-width: 566px) {
-  /* line 226, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 214, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .info .title {
     font-size: 20px;
   }
 }
 
-/* line 239, src/assets/scss/pages/_team-building-detail.scss */
+/* line 227, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .info .props {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23838,13 +23940,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (min-width: 992px) {
-  /* line 239, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 227, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .info .props {
     font-size: 14px;
   }
 }
 
-/* line 246, src/assets/scss/pages/_team-building-detail.scss */
+/* line 234, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .info .props .item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23855,24 +23957,24 @@ form.modal-type textarea:focus {
   font-weight: 600;
 }
 
-/* line 250, src/assets/scss/pages/_team-building-detail.scss */
+/* line 238, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .info .props .item img {
   padding-right: .4rem;
 }
 
-/* line 256, src/assets/scss/pages/_team-building-detail.scss */
+/* line 244, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .info .desc p {
   font-size: 18px;
 }
 
 @media screen and (max-width: 1439px) and (min-width: 992px) {
-  /* line 256, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 244, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .info .desc p {
     font-size: 16px;
   }
 }
 
-/* line 265, src/assets/scss/pages/_team-building-detail.scss */
+/* line 253, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .info .buttons .btn-bordered {
   width: 100%;
   font-size: 20px;
@@ -23880,41 +23982,41 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (min-width: 992px) {
-  /* line 265, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 253, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .info .buttons .btn-bordered {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 1137px) and (max-width: 1025px) {
-  /* line 265, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 253, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .info .buttons .btn-bordered {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 913px) and (min-width: 767px) {
-  /* line 265, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 253, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .info .buttons .btn-bordered {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 565px) and (min-width: 320px) {
-  /* line 265, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 253, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .info .buttons .btn-bordered {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 474px) and (min-width: 321px) {
-  /* line 265, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 253, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .info .buttons .btn-bordered {
     width: 170%;
   }
 }
 
-/* line 287, src/assets/scss/pages/_team-building-detail.scss */
+/* line 275, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .actions {
   background-color: #d84e52;
   color: white;
@@ -23922,53 +24024,53 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 565px) and (min-width: 320px) {
-  /* line 287, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 275, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions {
     padding: 1rem;
   }
 }
 
-/* line 296, src/assets/scss/pages/_team-building-detail.scss */
+/* line 284, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .actions .show-video a {
   font-weight: 500;
   text-decoration: none;
 }
 
 @media screen and (max-width: 1439px) and (min-width: 992px) {
-  /* line 296, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 284, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .show-video a {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
-  /* line 296, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 284, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .show-video a {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 767px) and (min-width: 566px) {
-  /* line 296, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 284, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .show-video a {
     font-size: 12px;
   }
 }
 
 @media screen and (max-width: 565px) and (min-width: 320px) {
-  /* line 296, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 284, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .show-video a {
     font-size: 14px;
   }
 }
 
-/* line 311, src/assets/scss/pages/_team-building-detail.scss */
+/* line 299, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .actions .show-video a img {
   padding: 0 1.4rem;
 }
 
 @media screen and (max-width: 1439px) and (min-width: 566px) {
-  /* line 311, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 299, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .show-video a img {
     width: 49px;
     height: 49px;
@@ -23978,46 +24080,46 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 991px) and (min-width: 566px) {
-  /* line 311, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 299, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .show-video a img {
     width: 40px;
     height: 40px;
   }
 }
 
-/* line 324, src/assets/scss/pages/_team-building-detail.scss */
+/* line 312, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .actions .show-video a:hover {
   color: white;
 }
 
-/* line 330, src/assets/scss/pages/_team-building-detail.scss */
+/* line 318, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .actions .region {
   font-size: 16px;
   font-weight: 500;
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
-  /* line 330, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 318, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .region {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 767px) and (min-width: 566px) {
-  /* line 330, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 318, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .region {
     font-size: 12px;
   }
 }
 
 @media screen and (max-width: 565px) and (min-width: 320px) {
-  /* line 330, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 318, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .region {
     font-size: 14px;
   }
 }
 
-/* line 342, src/assets/scss/pages/_team-building-detail.scss */
+/* line 330, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .actions .region_work {
   margin-bottom: 16px;
   display: -webkit-box;
@@ -24029,14 +24131,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (min-width: 992px) {
-  /* line 342, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 330, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .region_work {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
 }
 
-/* line 351, src/assets/scss/pages/_team-building-detail.scss */
+/* line 339, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .actions .region_work span {
   display: block;
   text-align: center;
@@ -24052,7 +24154,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1101px) {
-  /* line 351, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 339, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .region_work span {
     width: 127px;
     height: 25px;
@@ -24061,7 +24163,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1100px) and (min-width: 320px) {
-  /* line 351, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 339, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .region_work span {
     width: 107px;
     height: 23px;
@@ -24069,7 +24171,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 375, src/assets/scss/pages/_team-building-detail.scss */
+/* line 363, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .actions .region_base {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24080,14 +24182,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (min-width: 992px) {
-  /* line 375, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 363, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .region_base {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
 }
 
-/* line 383, src/assets/scss/pages/_team-building-detail.scss */
+/* line 371, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .actions .region_base span {
   cursor: pointer;
   display: block;
@@ -24104,7 +24206,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1101px) {
-  /* line 383, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 371, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .region_base span {
     width: 127px;
     height: 25px;
@@ -24113,7 +24215,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1100px) and (min-width: 320px) {
-  /* line 383, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 371, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .region_base span {
     width: 107px;
     height: 23px;
@@ -24121,19 +24223,19 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 407, src/assets/scss/pages/_team-building-detail.scss */
+/* line 395, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .actions .region_base span .hide {
   font-style: normal;
 }
 
 @media screen and (max-width: 1439px) and (min-width: 320px) {
-  /* line 407, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 395, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .region_base span .hide {
     display: none;
   }
 }
 
-/* line 416, src/assets/scss/pages/_team-building-detail.scss */
+/* line 404, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .actions .tags {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24146,7 +24248,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 565px) and (min-width: 320px) {
-  /* line 416, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 404, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .tags {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -24154,7 +24256,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 423, src/assets/scss/pages/_team-building-detail.scss */
+/* line 411, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-card .actions .tags .tag {
   text-align: center;
   line-height: 29px;
@@ -24171,7 +24273,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1101px) {
-  /* line 423, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 411, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .tags .tag {
     width: 127px;
     height: 25px;
@@ -24180,7 +24282,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1100px) and (min-width: 320px) {
-  /* line 423, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 411, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .tags .tag {
     width: 107px;
     height: 23px;
@@ -24189,14 +24291,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
-  /* line 423, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 411, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .tags .tag {
     margin-left: .4rem;
   }
 }
 
 @media screen and (max-width: 565px) and (min-width: 320px) {
-  /* line 423, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 411, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-card .actions .tags .tag {
     margin-left: 0;
     width: 117px;
@@ -24205,7 +24307,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 461, src/assets/scss/pages/_team-building-detail.scss */
+/* line 449, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-info {
   -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
@@ -24215,42 +24317,42 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 415px) and (min-width: 0px) {
-  /* line 461, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 449, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-info {
     padding: 2rem 1rem;
   }
 }
 
-/* line 470, src/assets/scss/pages/_team-building-detail.scss */
+/* line 458, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-info .title {
   font-size: 22px;
   margin-bottom: 2rem;
 }
 
-/* line 475, src/assets/scss/pages/_team-building-detail.scss */
+/* line 463, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-info .desc p {
   font-size: 18px;
 }
 
-/* line 479, src/assets/scss/pages/_team-building-detail.scss */
+/* line 467, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-info .desc.li p {
   padding-left: 2rem;
 }
 
-/* line 481, src/assets/scss/pages/_team-building-detail.scss */
+/* line 469, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-info .desc.li p:before {
   content: url("../../assets/img/circle-red.svg");
   position: absolute;
   left: 1rem;
 }
 
-/* line 490, src/assets/scss/pages/_team-building-detail.scss */
+/* line 478, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-info .more {
   color: #d84e52;
   cursor: pointer;
 }
 
-/* line 495, src/assets/scss/pages/_team-building-detail.scss */
+/* line 483, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-info .task {
   background-color: #d84e52;
   color: white;
@@ -24261,7 +24363,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 415px) and (min-width: 0px) {
-  /* line 495, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 483, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-info .task {
     width: calc(100% + 2rem);
     margin-left: -1rem;
@@ -24269,39 +24371,39 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 415px) and (min-width: 0px) {
-  /* line 508, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 496, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-info .slider {
     text-align: center;
   }
 }
 
-/* line 516, src/assets/scss/pages/_team-building-detail.scss */
+/* line 504, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-interesting {
   margin-top: 3rem;
 }
 
-/* line 518, src/assets/scss/pages/_team-building-detail.scss */
+/* line 506, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .team-building-interesting h2 {
   padding-bottom: 1rem;
   text-align: center;
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 518, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 506, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-interesting h2 {
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 567px) and (min-width: 320px) {
-  /* line 518, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 506, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-interesting h2 {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 556px) and (min-width: 321px) {
-  /* line 518, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 506, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-interesting h2 {
     font-size: 24px;
     margin-top: 2rem;
@@ -24310,7 +24412,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 320px) and (min-width: 0px) {
-  /* line 518, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 506, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .team-building-interesting h2 {
     font-size: 20px;
     margin-top: 2rem;
@@ -24318,13 +24420,13 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 541, src/assets/scss/pages/_team-building-detail.scss */
+/* line 529, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .workshop-footer {
   margin-top: 5rem;
 }
 
 @media screen and (max-width: 1800px) and (min-width: 1440px) {
-  /* line 543, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 531, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .workshop-footer .provider {
     max-width: 715px !important;
     margin: 0 auto;
@@ -24332,7 +24434,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1119px) {
-  /* line 543, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 531, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .workshop-footer .provider {
     max-width: 715px !important;
     margin: 0 auto;
@@ -24340,7 +24442,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1118px) and (max-width: 1025px) {
-  /* line 543, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 531, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .workshop-footer .provider {
     max-width: 680px !important;
     margin: 0 auto;
@@ -24348,31 +24450,31 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1288px) and (max-width: 1025px) {
-  /* line 559, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 547, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .workshop-footer .bg-left, .team-building-detail .workshop-footer .bg-right {
     background-size: 70%;
   }
-  /* line 562, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 550, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .workshop-footer .bg-left {
     background-position: 0 20px;
   }
-  /* line 565, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 553, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .workshop-footer .bg-right {
     background-position: 100% 20px;
   }
 }
 
-/* line 572, src/assets/scss/pages/_team-building-detail.scss */
+/* line 560, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .fancybox-content {
   padding: 0;
 }
 
-/* line 574, src/assets/scss/pages/_team-building-detail.scss */
+/* line 562, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .fancybox-content .image-zoom {
   display: none;
 }
 
-/* line 577, src/assets/scss/pages/_team-building-detail.scss */
+/* line 565, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .fancybox-content .fancybox-close-small {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 5px;
@@ -24381,18 +24483,18 @@ form.modal-type textarea:focus {
   border-radius: 0 16px;
 }
 
-/* line 583, src/assets/scss/pages/_team-building-detail.scss */
+/* line 571, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .fancybox-content .fancybox-close-small svg {
   width: 30px;
   height: 30px;
 }
 
-/* line 586, src/assets/scss/pages/_team-building-detail.scss */
+/* line 574, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .fancybox-content .fancybox-close-small svg path {
   fill: #d84e52;
 }
 
-/* line 593, src/assets/scss/pages/_team-building-detail.scss */
+/* line 581, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .fancybox-inner .fancybox-infobar {
   position: absolute;
   color: white;
@@ -24402,89 +24504,89 @@ form.modal-type textarea:focus {
   font-weight: 600;
 }
 
-/* line 604, src/assets/scss/pages/_team-building-detail.scss */
+/* line 592, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .fancybox-navigation .fancybox-button {
   background-color: transparent;
 }
 
-/* line 606, src/assets/scss/pages/_team-building-detail.scss */
+/* line 594, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .fancybox-navigation .fancybox-button--arrow_left {
   left: 45%;
 }
 
 @media screen and (max-width: 1100px) and (min-width: 0) {
-  /* line 606, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 594, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .fancybox-navigation .fancybox-button--arrow_left {
     left: 40%;
   }
 }
 
-/* line 612, src/assets/scss/pages/_team-building-detail.scss */
+/* line 600, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .fancybox-navigation .fancybox-button--arrow_left svg path {
   content: ' sd';
 }
 
-/* line 617, src/assets/scss/pages/_team-building-detail.scss */
+/* line 605, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .fancybox-navigation .fancybox-button--arrow_right {
   right: 45%;
 }
 
 @media screen and (max-width: 1100px) and (min-width: 0) {
-  /* line 617, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 605, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-detail .fancybox-navigation .fancybox-button--arrow_right {
     right: 40%;
   }
 }
 
-/* line 623, src/assets/scss/pages/_team-building-detail.scss */
+/* line 611, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-detail .fancybox-navigation .fancybox-button--arrow_right, .team-building-detail .fancybox-navigation .fancybox-button--arrow_left {
   position: absolute;
   top: calc(70% - 27px);
 }
 
-/* line 650, src/assets/scss/pages/_team-building-detail.scss */
+/* line 638, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-info-carousel {
   width: calc(100% + 48px);
 }
 
 @media screen and (max-width: 1439px) and (min-width: 321px) {
-  /* line 650, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 638, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-info-carousel {
     width: calc(100% + 15px);
   }
 }
 
 @media screen and (max-width: 420px) and (min-width: 0) {
-  /* line 650, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 638, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-info-carousel {
     width: 100%;
   }
 }
 
-/* line 658, src/assets/scss/pages/_team-building-detail.scss */
+/* line 646, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-info-carousel .owl-stage-outer {
   padding-bottom: 1rem;
 }
 
-/* line 661, src/assets/scss/pages/_team-building-detail.scss */
+/* line 649, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-info-carousel .item {
   text-align: center;
   padding: .4rem;
 }
 
-/* line 666, src/assets/scss/pages/_team-building-detail.scss */
+/* line 654, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-info-carousel .item .text {
   text-align: center;
   font-weight: 600;
   font-size: 22px;
 }
 
-/* line 670, src/assets/scss/pages/_team-building-detail.scss */
+/* line 658, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-info-carousel .item .text .title {
   font-size: 20px;
 }
 
-/* line 675, src/assets/scss/pages/_team-building-detail.scss */
+/* line 663, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-info-carousel .item img {
   width: 100%;
   border-radius: 16px;
@@ -24492,7 +24594,7 @@ form.modal-type textarea:focus {
           box-shadow: 0 0 4px 4px rgba(113, 47, 49, 0.25);
 }
 
-/* line 680, src/assets/scss/pages/_team-building-detail.scss */
+/* line 668, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-info-carousel .item .image-zoom {
   width: 40px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -24503,12 +24605,12 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 691, src/assets/scss/pages/_team-building-detail.scss */
+/* line 679, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-info-carousel .owl-next span, .team-building-info-carousel .owl-prev span {
   font-size: 60px;
 }
 
-/* line 695, src/assets/scss/pages/_team-building-detail.scss */
+/* line 683, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-info-carousel .owl-nav {
   margin-left: -72px;
   margin-top: 20px;
@@ -24518,80 +24620,80 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1439px) and (min-width: 321px) {
-  /* line 695, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 683, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-info-carousel .owl-nav {
     margin-left: -15px;
   }
 }
 
 @media screen and (max-width: 420px) and (min-width: 0) {
-  /* line 695, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 683, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-info-carousel .owl-nav {
     margin-left: 0;
   }
 }
 
-/* line 705, src/assets/scss/pages/_team-building-detail.scss */
+/* line 693, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-info-carousel .owl-nav .owl-prev {
   margin-right: 45px;
 }
 
-/* line 708, src/assets/scss/pages/_team-building-detail.scss */
+/* line 696, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-info-carousel .owl-nav .owl-next {
   margin-left: 45px;
 }
 
-/* line 712, src/assets/scss/pages/_team-building-detail.scss */
+/* line 700, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-info-carousel .owl-dots {
   margin-left: -72px;
 }
 
 @media screen and (max-width: 1439px) and (min-width: 321px) {
-  /* line 712, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 700, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-info-carousel .owl-dots {
     margin-left: -15px;
   }
 }
 
 @media screen and (max-width: 420px) and (min-width: 0) {
-  /* line 712, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 700, src/assets/scss/pages/_team-building-detail.scss */
   .team-building-info-carousel .owl-dots {
     margin-left: 0;
   }
 }
 
-/* line 721, src/assets/scss/pages/_team-building-detail.scss */
+/* line 709, src/assets/scss/pages/_team-building-detail.scss */
 .team-building-info-carousel .owl-theme .owl-nav [class*='owl-']:hover {
   background: none;
   color: #B11B20;
   text-decoration: none;
 }
 
-/* line 728, src/assets/scss/pages/_team-building-detail.scss */
+/* line 716, src/assets/scss/pages/_team-building-detail.scss */
 .regions-modal {
   padding: 2rem;
   display: none;
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 728, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 716, src/assets/scss/pages/_team-building-detail.scss */
   .regions-modal {
     width: 80%;
   }
 }
 
-/* line 734, src/assets/scss/pages/_team-building-detail.scss */
+/* line 722, src/assets/scss/pages/_team-building-detail.scss */
 .regions-modal .title {
   font-size: 22px;
 }
 
-/* line 738, src/assets/scss/pages/_team-building-detail.scss */
+/* line 726, src/assets/scss/pages/_team-building-detail.scss */
 .regions-modal .btn-bordered {
   width: 100%;
   margin-top: 1rem;
 }
 
-/* line 743, src/assets/scss/pages/_team-building-detail.scss */
+/* line 731, src/assets/scss/pages/_team-building-detail.scss */
 .regions-modal .search {
   max-width: 200px;
   display: -webkit-box;
@@ -24608,32 +24710,32 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 743, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 731, src/assets/scss/pages/_team-building-detail.scss */
   .regions-modal .search {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 567px) and (min-width: 0px) {
-  /* line 743, src/assets/scss/pages/_team-building-detail.scss */
+  /* line 731, src/assets/scss/pages/_team-building-detail.scss */
   .regions-modal .search {
     width: 80%;
   }
 }
 
-/* line 759, src/assets/scss/pages/_team-building-detail.scss */
+/* line 747, src/assets/scss/pages/_team-building-detail.scss */
 .regions-modal .search .image {
   -webkit-box-flex: .2;
       -ms-flex: .2;
           flex: .2;
 }
 
-/* line 761, src/assets/scss/pages/_team-building-detail.scss */
+/* line 749, src/assets/scss/pages/_team-building-detail.scss */
 .regions-modal .search .image img {
   cursor: pointer;
 }
 
-/* line 765, src/assets/scss/pages/_team-building-detail.scss */
+/* line 753, src/assets/scss/pages/_team-building-detail.scss */
 .regions-modal .search form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24645,7 +24747,7 @@ form.modal-type textarea:focus {
   min-height: 31px;
 }
 
-/* line 770, src/assets/scss/pages/_team-building-detail.scss */
+/* line 758, src/assets/scss/pages/_team-building-detail.scss */
 .regions-modal .search form input {
   border: none;
   background-color: transparent;
@@ -24653,13 +24755,13 @@ form.modal-type textarea:focus {
   padding-left: 1rem;
 }
 
-/* line 775, src/assets/scss/pages/_team-building-detail.scss */
+/* line 763, src/assets/scss/pages/_team-building-detail.scss */
 .regions-modal .search form input:focus {
   outline: none;
   border: none;
 }
 
-/* line 779, src/assets/scss/pages/_team-building-detail.scss */
+/* line 767, src/assets/scss/pages/_team-building-detail.scss */
 .regions-modal .search form input::-webkit-input-placeholder {
   color: #cbcbcb;
   text-align: center;
@@ -24814,13 +24916,25 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 72, src/assets/scss/pages/_blog-detail.scss */
+
+@media screen and (max-width: 768px) and (min-width: 0px) {
+  /* line 57, src/assets/scss/pages/_blog-detail.scss */
+  .blog-detail .blog-article-detail .image {
+    margin-left: 4px;
+    -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% - 4px);
+            flex: 0 0 calc(100% - 4px);
+  }
+}
+
 .blog-detail .blog-article-detail .author {
   font-weight: 600;
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 72, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -24832,13 +24946,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 0px) {
-  /* line 72, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author {
     display: unset;
   }
 }
 
-/* line 81, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .author .wrapper {
   margin-top: 9rem;
   padding: 2rem 1rem;
@@ -24858,14 +24972,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 567px) {
-  /* line 81, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper {
     padding: 1rem .5rem;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 81, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -24885,7 +24999,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 81, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper {
     padding: 1rem 0;
     -ms-flex-preferred-size: 61%;
@@ -24894,38 +25008,39 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 0px) {
-  /* line 81, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper {
     display: block;
   }
 }
 
-/* line 116, src/assets/scss/pages/_blog-detail.scss */
+
+
 .blog-detail .blog-article-detail .author .wrapper .image {
   height: 90px;
 }
 
 @media screen and (max-width: 768px) and (min-width: 476px) {
-  /* line 116, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .image {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     min-height: 30px;
   }
-  /* line 121, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .image img {
     width: 94px;
   }
 }
 
-/* line 126, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .author .wrapper .name {
   height: 90px;
 }
 
 @media screen and (max-width: 768px) and (min-width: 476px) {
-  /* line 126, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .name {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -24937,26 +25052,26 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 476px) {
-  /* line 126, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .name {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 475px) and (min-width: 0px) {
-  /* line 126, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .name {
     height: 20px;
   }
 }
 
-/* line 141, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .author .wrapper .social {
   margin-top: 1rem;
 }
 
 @media screen and (max-width: 768px) and (min-width: 476px) {
-  /* line 141, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .social {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
@@ -24965,26 +25080,26 @@ form.modal-type textarea:focus {
     right: 22px;
     margin-top: 3.4rem;
   }
-  /* line 148, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .social img {
     width: 35px;
   }
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 153, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .social img {
     width: 30px;
   }
 }
 
-/* line 158, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .author .wrapper .staff {
   margin-top: 1rem;
 }
 
 @media screen and (max-width: 768px) and (min-width: 476px) {
-  /* line 158, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .staff {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -24997,20 +25112,20 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 476px) and (max-width: 566px) and (min-width: 0px) {
-  /* line 158, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .wrapper .staff {
     font-size: 14px;
   }
 }
 
-/* line 174, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .author .buttons {
   text-align: center;
   margin-top: 1rem;
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 174, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .buttons {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -25029,7 +25144,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 174, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .buttons {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
@@ -25048,7 +25163,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 0px) {
-  /* line 174, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -25058,7 +25173,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 197, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .author .buttons .s-author {
   width: 100%;
   font-size: 12px;
@@ -25070,7 +25185,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 197, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .buttons .s-author {
     margin-left: 1rem;
     -ms-flex-preferred-size: 44%;
@@ -25079,7 +25194,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 197, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .buttons .s-author {
     margin-left: .4rem;
     -ms-flex-preferred-size: 44%;
@@ -25088,14 +25203,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 0px) {
-  /* line 197, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .author .buttons .s-author {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
 }
 
-/* line 225, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .image {
   background-size: cover;
   background-repeat: no-repeat;
@@ -25103,28 +25218,28 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 567px) {
-  /* line 225, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .image {
     min-height: 320px;
   }
 }
 
 @media screen and (max-width: 566px) and (min-width: 376px) {
-  /* line 225, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .image {
     min-height: 230px;
   }
 }
 
 @media screen and (max-width: 375px) and (min-width: 0px) {
-  /* line 225, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .image {
     min-height: 124px;
   }
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 225, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .image {
     min-height: 110px;
     height: 110px;
@@ -25132,7 +25247,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 225, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .image {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -25140,13 +25255,13 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 248, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info {
   padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 248, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info {
     background-color: white;
     border-radius: 0 0 30px 30px;
@@ -25160,10 +25275,11 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 258, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .images {
   margin-bottom: 2rem;
 }
+
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
   /* line 258, src/assets/scss/pages/_blog-detail.scss */
@@ -25173,7 +25289,7 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 265, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .images .blank {
   background-color: #cbcbcb;
   border-radius: 30px;
@@ -25181,28 +25297,28 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 265, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .images .blank {
     height: 213px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 265, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .images .blank {
     height: 202px;
   }
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 265, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .images .blank {
     height: 143px;
     border-radius: 16px;
   }
 }
 
-/* line 281, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .footer-article {
   margin-top: 2rem;
   display: -webkit-box;
@@ -25214,7 +25330,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 281, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .footer-article {
     position: relative;
     margin-top: 4rem;
@@ -25222,7 +25338,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 281, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .footer-article {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -25232,14 +25348,14 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 293, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .footer-article .likes {
   -ms-flex-preferred-size: 38%;
       flex-basis: 38%;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 567px) {
-  /* line 293, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .footer-article .likes {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
@@ -25247,7 +25363,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 293, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .footer-article .likes {
     -ms-flex-preferred-size: 65%;
         flex-basis: 65%;
@@ -25255,7 +25371,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 293, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .footer-article .likes {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -25265,23 +25381,22 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 306, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .footer-article .likes svg {
   margin: -6px 5px 0 10px;
   cursor: pointer;
 }
 
-/* line 310, src/assets/scss/pages/_blog-detail.scss */
 .blog-detail .blog-article-detail .info .footer-article .likes svg:hover path {
   fill: #B11B20;
 }
 
-/* line 315, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .footer-article .likes svg.active path {
   fill: #B11B20;
 }
 
-/* line 320, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .footer-article .likes span {
   color: white;
   border-radius: 50%;
@@ -25293,14 +25408,14 @@ form.modal-type textarea:focus {
   line-height: 35px;
 }
 
-/* line 331, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .blog-article-detail .info .footer-article .soc {
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
 }
 
 @media screen and (max-width: 566px) and (min-width: 0px) {
-  /* line 331, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .footer-article .soc {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
@@ -25308,7 +25423,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 475px) and (min-width: 320px) {
-  /* line 331, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .blog-article-detail .info .footer-article .soc {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -25316,6 +25431,13 @@ form.modal-type textarea:focus {
     text-align: center;
     margin: .5rem 0;
   }
+}
+
+
+/* line 339, src/assets/scss/pages/_blog-detail.scss */
+.blog-detail .blog-article-detail .info .footer-article .soc img {
+  width: unset;
+  margin: unset;
 }
 
 /* line 342, src/assets/scss/pages/_blog-detail.scss */
@@ -25429,7 +25551,8 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 414, src/assets/scss/pages/_blog-detail.scss */
+
+
 .blog-detail .blog-article-detail .desc .img {
   max-width: 100%;
   margin: 2rem 0;
@@ -25438,13 +25561,14 @@ form.modal-type textarea:focus {
 }
 
 /* line 425, src/assets/scss/pages/_blog-detail.scss */
+
 .blog-detail .workshop-footer {
   margin-top: 5rem;
   padding-bottom: 0;
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 425, src/assets/scss/pages/_blog-detail.scss */
+
   .blog-detail .workshop-footer {
     margin-top: 1rem;
     padding-top: 2rem;
@@ -25452,12 +25576,12 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 437, src/assets/scss/pages/_blog-detail.scss */
+
 .other-articles {
   margin-bottom: 5rem;
 }
 
-/* line 439, src/assets/scss/pages/_blog-detail.scss */
+
 .other-articles h3 {
   text-transform: uppercase;
   text-align: center;
@@ -25466,14 +25590,14 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* line 439, src/assets/scss/pages/_blog-detail.scss */
+
   .other-articles h3 {
     margin-top: 3rem;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  /* line 439, src/assets/scss/pages/_blog-detail.scss */
+
   .other-articles h3 {
     margin-top: 1rem;
   }
