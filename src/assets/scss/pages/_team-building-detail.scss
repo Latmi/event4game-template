@@ -179,22 +179,6 @@ $tag-height: 29px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   background-color: $gray-100;
   .breadcrumbs {
     padding-top: 1rem;
@@ -205,6 +189,10 @@ $tag-height: 29px;
     border-radius: 30px;
     margin: 4rem 0;
     overflow: hidden;
+
+    @media screen and (max-width: 1024px) and (min-width: 0px){
+      margin: 2rem 0;
+    }
 
 
     .image {

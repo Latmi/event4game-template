@@ -915,6 +915,37 @@ $(function () {
     }
   }
 
+  if ($('.article-card').length) {
+
+    let hTitle = 0,
+        hText = 0;
+
+    $('.article-card>div').each(function () {
+      const $title = $(this).find('.title');
+      // const $text = $(this).find('.desc');
+
+      if (hTitle < $title.height()) {
+        hTitle = $title.height();
+      }
+      // if (hText < $text.height()) {
+      //   hText = $text.height();
+      // }
+
+    });
+
+    $('.article-card>div').each(function () {
+      const $title = $(this).find('.title');
+      // const $text = $(this).find('.desc');
+
+      $title.height(hTitle);
+      // $text.height(hText);
+
+    });
+
+  }
+
+
+
 
 
 

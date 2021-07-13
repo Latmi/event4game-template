@@ -173,3 +173,42 @@ a {
     display: none!important;
 }
 
+.mobile-submit {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+}
+
+
+.fancybox-filters {
+  .fancybox-bg {
+    background: unset;
+  }
+
+  .fancybox-slide {
+    padding: 0;
+
+  }
+  .fancybox-button--arrow_left, .fancybox-button--arrow_right, .fancybox-infobar {
+    display: none;
+  }
+
+  .show-filters-content {
+    padding: 10px;
+    button {
+      &[data-fancybox-close] {
+
+        top: 0;
+
+      }
+    }
+
+  }
+}
+
+.trash-content {
+  .s-select {
+    margin: 0 auto;
+  }
+}
