@@ -21462,7 +21462,7 @@ form.modal-type textarea:focus {
   font-weight: 600;
   font-size: 18px;
   color: #0B0B0B;
-  padding: 20px 0 15px 0;
+  padding: 20px 15px 15px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -25627,7 +25627,7 @@ form.modal-type textarea:focus {
   border-radius: 60px;
   width: 90%;
   margin: 2rem auto;
-  padding: 2rem 0;
+  padding: 2rem;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

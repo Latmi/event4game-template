@@ -14,6 +14,10 @@ $(document).ready(function() {
 
 $(function () {
 
+  // $.fancybox.defaults.loop = true;
+
+
+
   if ($('.graph-animate').length) {
 
     const $gearTop = $('.graph-animate .top');
@@ -472,15 +476,28 @@ $(function () {
     onChanged: makeCounterOwlTBDetail,
     onInitialized: makeCounterOwlTBDetail,
 
-    items: itemsOwl.owlTBDetail,
+    items: itemsOwl.owlTBDetail.init,
     slideBy: owlTBItemsSlideBy,
     merge:true,
     nav:true,
     navSpeed: 500,
     dots: false,
     margin: 40,
+    loop: true,
     responsive:itemsOwl.owlTBDetail.responsive,
 
+  });
+
+  $('[data-fancybox="images"]').fancybox({
+    loop: true,
+    onInit : function() {
+      $('.fancybox-button--arrow_right').on('click', function() {
+        owlTBDetail.trigger('next.owl.carousel');
+      });
+      $('.fancybox-button--arrow_left').on('click', function() {
+        owlTBDetail.trigger('prev.owl.carousel');
+      });
+    }
   });
 
   function makeCounterOwlExchange(e) {
@@ -511,7 +528,8 @@ $(function () {
 
   function makeCounterOwlTBDetail(e) {
     const count = Math.ceil(e.item.count / owlTBItemsSlideBy);
-    let index = Math.ceil((e.item.index + 1) / owlTBItemsSlideBy);
+    let indexState = Math.ceil((e.item.index + 1) / owlTBItemsSlideBy);
+    let index = indexState - count + Math.ceil(itemsOwl.owlTBDetail.init) + 1;
     const del = e.item.count % count;
 
     if (del > 0) {
@@ -526,6 +544,10 @@ $(function () {
     if ($('.team-building-info-carousel .owl-next').hasClass('disabled')) {
       index = count;
     }
+    if (index === 0) {
+      index = count;
+    }
+
 
     if (count > 1) {
       $('.team-building-info-carousel .owl-dots')
@@ -534,6 +556,8 @@ $(function () {
         .html(`${index} / ${count}`);
     }
   }
+
+
 
   $('.trash').on('click', function() {
     $.fancybox.open( $('.trash-content'), {

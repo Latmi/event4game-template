@@ -543,14 +543,26 @@ $(function () {
   owlTBDetail.owlCarousel({
     onChanged: makeCounterOwlTBDetail,
     onInitialized: makeCounterOwlTBDetail,
-    items: itemsOwl.owlTBDetail,
+    items: itemsOwl.owlTBDetail.init,
     slideBy: owlTBItemsSlideBy,
     merge: true,
     nav: true,
     navSpeed: 500,
     dots: false,
     margin: 40,
+    loop: true,
     responsive: itemsOwl.owlTBDetail.responsive
+  });
+  $('[data-fancybox="images"]').fancybox({
+    loop: true,
+    onInit: function onInit() {
+      $('.fancybox-button--arrow_right').on('click', function () {
+        owlTBDetail.trigger('next.owl.carousel');
+      });
+      $('.fancybox-button--arrow_left').on('click', function () {
+        owlTBDetail.trigger('prev.owl.carousel');
+      });
+    }
   });
 
   function makeCounterOwlExchange(e) {
@@ -581,7 +593,8 @@ $(function () {
 
   function makeCounterOwlTBDetail(e) {
     var count = Math.ceil(e.item.count / owlTBItemsSlideBy);
-    var index = Math.ceil((e.item.index + 1) / owlTBItemsSlideBy);
+    var indexState = Math.ceil((e.item.index + 1) / owlTBItemsSlideBy);
+    var index = indexState - count + Math.ceil(itemsOwl.owlTBDetail.init) + 1;
     var del = e.item.count % count;
 
     if (del > 0) {
@@ -595,6 +608,10 @@ $(function () {
     }
 
     if ($('.team-building-info-carousel .owl-next').hasClass('disabled')) {
+      index = count;
+    }
+
+    if (index === 0) {
       index = count;
     }
 
