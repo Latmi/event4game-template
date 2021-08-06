@@ -8,6 +8,7 @@ $(document).ready(function () {
   console.log("document ready"); //endRemoveIf(production)
 });
 $(function () {
+  // $.fancybox.defaults.loop = true;
   if ($('.graph-animate').length) {
     var resizeGraph = function resizeGraph(arrElements, arrValues, factor) {
       arrElements.forEach(function (el, index) {
@@ -974,23 +975,19 @@ $(function () {
     }
   }
 
-  if ($('.article-card').length) {
+  if ($('.article-card').length && $(window).width() <= 566) {
     var hTitle = 0,
         hText = 0;
     $('.article-card>div').each(function () {
-      var $title = $(this).find('.title'); // const $text = $(this).find('.desc');
+      var $title = $(this).find('.title');
 
       if (hTitle < $title.height()) {
         hTitle = $title.height();
-      } // if (hText < $text.height()) {
-      //   hText = $text.height();
-      // }
-
+      }
     });
     $('.article-card>div').each(function () {
-      var $title = $(this).find('.title'); // const $text = $(this).find('.desc');
-
-      $title.height(hTitle); // $text.height(hText);
+      var $title = $(this).find('.title');
+      $title.height(hTitle);
     });
   }
 });
