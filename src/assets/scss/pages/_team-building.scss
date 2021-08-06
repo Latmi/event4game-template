@@ -387,6 +387,7 @@
     justify-content: space-between;
     margin: 1.5rem 0;
     padding: 0 1rem;
+    flex-wrap: wrap;
 
     @media screen and (max-width: 567px) and (min-width: 320px) {
       flex-wrap: wrap;
@@ -400,12 +401,17 @@
 
     .item {
       line-height: 15px;
+      flex: 0 0 50%;
+      text-align: center;
+      padding-bottom: .8rem;
       @media screen and (max-width: 1439px) and (min-width: 1025px) {
         padding: .3rem;
         font-size: 14px;
+        padding-bottom: .5rem;
       }
       @media screen and (max-width: 567px) and (min-width: 320px) {
         padding: .3rem;
+        padding-bottom: .5rem;
       }
       img {
         padding-right: 10px;
@@ -523,7 +529,7 @@
 
 .no-result {
   margin: 4rem auto;
-  width: 430px;
+  width: 540px;
   font-weight: 600;
   font-size: 40px;
   line-height: 133.9%;
