@@ -473,8 +473,8 @@ $(function () {
   const owlTBDetail = $('.team-building-info-carousel');
 
   owlTBDetail.owlCarousel({
-    onChanged: makeCounterOwlTBDetail,
     onInitialized: makeCounterOwlTBDetail,
+    onTranslate: makeCounterOwlTBDetail,
 
     items: itemsOwl.owlTBDetail.init,
     slideBy: owlTBItemsSlideBy,
@@ -527,33 +527,23 @@ $(function () {
   }
 
   function makeCounterOwlTBDetail(e) {
-    const count = Math.ceil(e.item.count / owlTBItemsSlideBy);
-    let indexState = Math.ceil((e.item.index + 1) / owlTBItemsSlideBy);
-    let index = indexState - count + Math.ceil(itemsOwl.owlTBDetail.init) + 1;
-    const del = e.item.count % count;
 
-    if (del > 0) {
-      if (e.item.index + 1 + del === e.item.count) {
-        index++;
-      }
-      if (e.item.index > 0 && index % owlTBItemsSlideBy === 1) {
-        index = e.item.index;
-      }
+    const count = e.item.count;
+    let countM = -(e.item.count / 2 - (e.item.index + 1));
+
+    if (count % 2 !== 0) {
+      countM = Math.floor(countM);
     }
 
-    if ($('.team-building-info-carousel .owl-next').hasClass('disabled')) {
-      index = count;
+    if (countM === -0 || countM === 0) {
+      countM = count;
     }
-    if (index === 0) {
-      index = count;
-    }
-
 
     if (count > 1) {
       $('.team-building-info-carousel .owl-dots')
         .removeClass('disabled')
         .css({marginTop: -38})
-        .html(`${index} / ${count}`);
+        .html(`${countM} / ${count}`);
     }
   }
 
@@ -939,7 +929,7 @@ $(function () {
     }
   }
 
-  if ($('.article-card').length && $(window).width() <= 566) {
+  if ($('.article-card').length && $(window).width() >= 566) {
 
     let hTitle = 0,
         hText = 0;

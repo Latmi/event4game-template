@@ -123,6 +123,7 @@ a {
 
 .fancybox-content:not(.feedback):not(.feedback_desc):not(.feedback_brief):not(.trash-content):not(.regions-modal):not(.show-filters-content):not(.modal-success) {
   background-color: transparent;
+  max-width: 78vw;
   padding: 0;
   .image-zoom {
     display: none;

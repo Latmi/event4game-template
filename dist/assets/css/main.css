@@ -14605,59 +14605,60 @@ a .btn-bordered {
 /* line 124, src/assets/scss/base/_base.scss */
 .fancybox-content:not(.feedback):not(.feedback_desc):not(.feedback_brief):not(.trash-content):not(.regions-modal):not(.show-filters-content):not(.modal-success) {
   background-color: transparent;
+  max-width: 78vw;
   padding: 0;
 }
 
-/* line 127, src/assets/scss/base/_base.scss */
+/* line 128, src/assets/scss/base/_base.scss */
 .fancybox-content:not(.feedback):not(.feedback_desc):not(.feedback_brief):not(.trash-content):not(.regions-modal):not(.show-filters-content):not(.modal-success) .image-zoom {
   display: none;
 }
 
-/* line 131, src/assets/scss/base/_base.scss */
+/* line 132, src/assets/scss/base/_base.scss */
 .fancybox-content:not(.feedback):not(.feedback_desc):not(.feedback_brief):not(.trash-content):not(.regions-modal):not(.show-filters-content):not(.modal-success) button[data-fancybox-close] {
   background-color: white;
   border-radius: 0 16px;
 }
 
-/* line 135, src/assets/scss/base/_base.scss */
+/* line 136, src/assets/scss/base/_base.scss */
 .fancybox-content:not(.feedback):not(.feedback_desc):not(.feedback_brief):not(.trash-content):not(.regions-modal):not(.show-filters-content):not(.modal-success) button[data-fancybox-close] svg path {
   fill: #D84E52;
 }
 
-/* line 141, src/assets/scss/base/_base.scss */
+/* line 142, src/assets/scss/base/_base.scss */
 .fancybox-content:not(.feedback):not(.feedback_desc):not(.feedback_brief):not(.trash-content):not(.regions-modal):not(.show-filters-content):not(.modal-success) img {
   width: 100%;
   border-radius: 18px;
 }
 
-/* line 148, src/assets/scss/base/_base.scss */
+/* line 149, src/assets/scss/base/_base.scss */
 .fancybox-content.feedback, .fancybox-content.feedback_desc, .fancybox-content.feedback_brief, .fancybox-content.trash-content, .fancybox-content.regions-modal, .fancybox-content.show-filters-content, .fancybox-content.modal-success {
   padding: 24px 44px;
 }
 
-/* line 151, src/assets/scss/base/_base.scss */
+/* line 152, src/assets/scss/base/_base.scss */
 .fancybox-content.feedback button[data-fancybox-close], .fancybox-content.feedback_desc button[data-fancybox-close], .fancybox-content.feedback_brief button[data-fancybox-close], .fancybox-content.trash-content button[data-fancybox-close], .fancybox-content.regions-modal button[data-fancybox-close], .fancybox-content.show-filters-content button[data-fancybox-close], .fancybox-content.modal-success button[data-fancybox-close] {
   padding: 3px;
   top: 15px;
   right: 15px;
 }
 
-/* line 161, src/assets/scss/base/_base.scss */
+/* line 162, src/assets/scss/base/_base.scss */
 .fancybox-content.show-filters-content {
   padding: 10px;
 }
 
-/* line 164, src/assets/scss/base/_base.scss */
+/* line 165, src/assets/scss/base/_base.scss */
 .fancybox-content.show-filters-content button[data-fancybox-close] {
   top: 0;
 }
 
-/* line 172, src/assets/scss/base/_base.scss */
+/* line 173, src/assets/scss/base/_base.scss */
 .owl-nav.disabled {
   display: none !important;
 }
 
-/* line 176, src/assets/scss/base/_base.scss */
+/* line 177, src/assets/scss/base/_base.scss */
 .mobile-submit {
   position: fixed;
   bottom: 0px;
@@ -14665,32 +14666,32 @@ a .btn-bordered {
   left: 0px;
 }
 
-/* line 185, src/assets/scss/base/_base.scss */
+/* line 186, src/assets/scss/base/_base.scss */
 .fancybox-filters .fancybox-bg {
   background: unset;
 }
 
-/* line 189, src/assets/scss/base/_base.scss */
+/* line 190, src/assets/scss/base/_base.scss */
 .fancybox-filters .fancybox-slide {
   padding: 0;
 }
 
-/* line 193, src/assets/scss/base/_base.scss */
+/* line 194, src/assets/scss/base/_base.scss */
 .fancybox-filters .fancybox-button--arrow_left, .fancybox-filters .fancybox-button--arrow_right, .fancybox-filters .fancybox-infobar {
   display: none;
 }
 
-/* line 197, src/assets/scss/base/_base.scss */
+/* line 198, src/assets/scss/base/_base.scss */
 .fancybox-filters .show-filters-content {
   padding: 10px;
 }
 
-/* line 200, src/assets/scss/base/_base.scss */
+/* line 201, src/assets/scss/base/_base.scss */
 .fancybox-filters .show-filters-content button[data-fancybox-close] {
   top: 0;
 }
 
-/* line 211, src/assets/scss/base/_base.scss */
+/* line 212, src/assets/scss/base/_base.scss */
 .trash-content .s-select {
   margin: 0 auto;
 }
@@ -21494,7 +21495,7 @@ form.modal-type textarea:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 1.5rem 0;
-  padding: 0 1rem;
+  padding: 0 2.3rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -21523,8 +21524,11 @@ form.modal-type textarea:focus {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
-  text-align: center;
   padding-bottom: .8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1025px) {
@@ -21544,23 +21548,45 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 416, src/assets/scss/pages/_team-building.scss */
+/* line 417, src/assets/scss/pages/_team-building.scss */
 .team-card .info .item img {
   padding-right: 10px;
 }
 
-/* line 421, src/assets/scss/pages/_team-building.scss */
+/* line 420, src/assets/scss/pages/_team-building.scss */
+.team-card .info .item .image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40px;
+          flex: 0 0 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 424, src/assets/scss/pages/_team-building.scss */
+.team-card .info .item .image img {
+  display: block;
+  height: 20px;
+}
+
+/* line 429, src/assets/scss/pages/_team-building.scss */
+.team-card .info .item .text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+/* line 434, src/assets/scss/pages/_team-building.scss */
 .team-card .detail {
   text-align: center;
 }
 
-/* line 423, src/assets/scss/pages/_team-building.scss */
+/* line 436, src/assets/scss/pages/_team-building.scss */
 .team-card .detail a {
   margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) and (min-width: 568px) {
-  /* line 426, src/assets/scss/pages/_team-building.scss */
+  /* line 439, src/assets/scss/pages/_team-building.scss */
   .team-card .detail .s-small {
     font-size: 20px;
     width: 70%;
@@ -21570,7 +21596,7 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 567px) and (min-width: 320px) {
-  /* line 426, src/assets/scss/pages/_team-building.scss */
+  /* line 439, src/assets/scss/pages/_team-building.scss */
   .team-card .detail .s-small {
     font-size: 18px;
     width: 80%;
@@ -21579,12 +21605,12 @@ form.modal-type textarea:focus {
   }
 }
 
-/* line 445, src/assets/scss/pages/_team-building.scss */
+/* line 458, src/assets/scss/pages/_team-building.scss */
 .item-cards div:not(.item-card) .team-card {
   height: auto;
 }
 
-/* line 451, src/assets/scss/pages/_team-building.scss */
+/* line 464, src/assets/scss/pages/_team-building.scss */
 .more {
   margin: 2rem auto;
   text-align: center;
@@ -21592,7 +21618,7 @@ form.modal-type textarea:focus {
   font-size: 16px;
 }
 
-/* line 456, src/assets/scss/pages/_team-building.scss */
+/* line 469, src/assets/scss/pages/_team-building.scss */
 .more div {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -21601,14 +21627,14 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 464, src/assets/scss/pages/_team-building.scss */
+/* line 477, src/assets/scss/pages/_team-building.scss */
 .show-filters-content {
   display: none;
   width: 100%;
   padding: 10px;
 }
 
-/* line 468, src/assets/scss/pages/_team-building.scss */
+/* line 481, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .title {
   font-weight: 600;
   font-size: 18px;
@@ -21616,13 +21642,13 @@ form.modal-type textarea:focus {
 }
 
 @media screen and (max-width: 353px) and (min-width: 0px) {
-  /* line 468, src/assets/scss/pages/_team-building.scss */
+  /* line 481, src/assets/scss/pages/_team-building.scss */
   .show-filters-content .title {
     font-size: 16px;
   }
 }
 
-/* line 477, src/assets/scss/pages/_team-building.scss */
+/* line 490, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .reset-filters {
   top: 10px;
   left: calc(1.5rem + 5px);
@@ -21633,13 +21659,13 @@ form.modal-type textarea:focus {
   background-color: white;
 }
 
-/* line 485, src/assets/scss/pages/_team-building.scss */
+/* line 498, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .reset-filters:focus, .show-filters-content .reset-filters:active {
   outline: none;
   border: none;
 }
 
-/* line 490, src/assets/scss/pages/_team-building.scss */
+/* line 503, src/assets/scss/pages/_team-building.scss */
 .show-filters-content hr {
   border: none;
   background-color: rgba(0, 0, 0, 0.5);
@@ -21647,20 +21673,20 @@ form.modal-type textarea:focus {
   margin: .5rem 0;
 }
 
-/* line 497, src/assets/scss/pages/_team-building.scss */
+/* line 510, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .section-title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   padding: .5rem 0.5rem 0 1.5rem;
   font-weight: bold;
 }
 
-/* line 502, src/assets/scss/pages/_team-building.scss */
+/* line 515, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .check-group {
   margin-top: 1rem;
   padding-left: 1.5rem;
 }
 
-/* line 506, src/assets/scss/pages/_team-building.scss */
+/* line 519, src/assets/scss/pages/_team-building.scss */
 .show-filters-content .select-town {
   color: #d84e52;
   font-weight: 500;
@@ -21668,7 +21694,7 @@ form.modal-type textarea:focus {
   cursor: pointer;
 }
 
-/* line 513, src/assets/scss/pages/_team-building.scss */
+/* line 526, src/assets/scss/pages/_team-building.scss */
 .show-filters-content button[type=submit] {
   background-color: #d84e52;
   color: white;
@@ -21678,7 +21704,7 @@ form.modal-type textarea:focus {
   line-height: 35px;
 }
 
-/* line 530, src/assets/scss/pages/_team-building.scss */
+/* line 543, src/assets/scss/pages/_team-building.scss */
 .no-result {
   margin: 4rem auto;
   width: 540px;
